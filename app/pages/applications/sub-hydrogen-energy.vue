@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>Hydrogen Energy</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">H₂-rated</div><div class="lbl">100% H₂ compatible</div></div><div><div class="num">3 sec</div><div class="lbl">Heat-Up</div></div><div><div class="num">First attempt</div><div class="lbl">Ignition reliability</div></div><div><div class="num">Safety-critical</div><div class="lbl">Application</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters">View CN-300 Specs →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters-final">View CN-300 Specs →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/advanced-combustion">Back to Advanced Combustion</a></span>
+            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Si₃N₄ Hot Surface (CN-300)</div>
             <div class="comp-tagline">100K+ cycles · 3 sec · highest first-attempt reliability</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>Large surface ignition zone</b> — vs point spark, ensures H₂ ignition across wider stoichiometric range</div></li><li><span class="ci">✓</span><div><b>3-second heat-up</b> — fires before H₂ accumulates in combustion chamber</div></li><li><span class="ci">✓</span><div><b>100,000+ cycle life</b> — reliable across seasonal on/off cycling</div></li><li><span class="ci">✓</span><div><b>H₂-compatible material chemistry</b> — Si₃N₄ inert to H₂ at operating temperature</div></li><li><span class="ci">✓</span><div><b>H2Ready certification</b> in progress — data available Q3 2026</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/silicon-nitride-igniters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specifications and H₂ compatibility data.</div><div class="rel-link">View →</div></a><a href="/applications/commercial-boilers" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Commercial & Industrial Boilers</div><div class="rel-desc">H₂-blended boiler ignition at commercial scale.</div><div class="rel-link">View →</div></a><a href="/applications/clean-energy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Clean Energy & Battery</div><div class="rel-desc">H₂ fuel cells, SOFC, and clean energy ceramic applications.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specifications and H₂ compatibility data.</div><div class="rel-link">View →</div></a><a href="/applications/sub-commercial-boilers" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Commercial & Industrial Boilers</div><div class="rel-desc">H₂-blended boiler ignition at commercial scale.</div><div class="rel-link">View →</div></a><a href="/applications/app-clean-energy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Clean Energy & Battery</div><div class="rel-desc">H₂ fuel cells, SOFC, and clean energy ceramic applications.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

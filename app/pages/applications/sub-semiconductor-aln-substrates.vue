@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>AlN Substrates</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">170 W/m·K</div><div class="lbl">Thermal Conductivity</div></div><div><div class="num">4.5 ppm/°C</div><div class="lbl">CTE — matches SiC/GaN</div></div><div><div class="num">15 kV/mm</div><div class="lbl">Dielectric Strength</div></div><div><div class="num">DBC/AMB</div><div class="lbl">Metallisation Ready</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request a Quote →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/custom-ceramic-dfm">View Custom DFM →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/custom-ceramic">View Custom DFM →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/semiconductor">Back to Semiconductor & Electronics</a></span>
+            <span class="nav-back">← <a href="/applications/app-semiconductor">Back to Semiconductor & Electronics</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Aluminum Nitride (AlN)</div>
             <div class="comp-tagline">170 W/m·K · CTE 4.5 · next-gen SiC/GaN substrate</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>170 W/m·K thermal conductivity</b> — 7× lower thermal resistance than Al₂O₃</div></li><li><span class="ci">✓</span><div><b>CTE 4.5 ppm/°C</b> — virtually eliminates CTE mismatch solder fatigue with SiC/GaN</div></li><li><span class="ci">✓</span><div><b>Ra ≤0.4µm</b> — ready for DBC and AMB metallisation</div></li><li><span class="ci">✓</span><div><b>Dielectric strength ≥15 kV/mm</b> — qualified for 1,200V SiC module isolation</div></li><li><span class="ci">✓</span><div><b>AEC-Q200 grade</b> material documentation for automotive qualification</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/custom-ceramic-dfm">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/custom-ceramic">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/applications/semiconductor-aln-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Heaters for Semiconductor</div><div class="rel-desc">AlN wafer chuck heaters — same material, different application.</div><div class="rel-link">View →</div></a><a href="/applications/semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic-dfm" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">AlN and Al₂O₃ custom substrates to your drawing.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/applications/sub-semiconductor-aln-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Heaters for Semiconductor</div><div class="rel-desc">AlN wafer chuck heaters — same material, different application.</div><div class="rel-link">View →</div></a><a href="/applications/app-semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">AlN and Al₂O₃ custom substrates to your drawing.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>BBQ & Outdoor Grills</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">100K+</div><div class="lbl">Cycle Life</div></div><div><div class="num">3 sec</div><div class="lbl">Heat-Up</div></div><div><div class="num">−30/+60°C</div><div class="lbl">Outdoor Range</div></div><div><div class="num">UL/CE</div><div class="lbl">Certified</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters">View CN-300 Specs →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters-final">View CN-300 Specs →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/advanced-combustion">Back to Advanced Combustion</a></span>
+            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">CN-300 series · 100K+ cycles · sealed element</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>Moisture-proof sealed element</b> — no ingress failure in outdoor service</div></li><li><span class="ci">✓</span><div><b>100,000+ cycle life</b> — 3–5× longer than Al₂O₃ in identical duty</div></li><li><span class="ci">✓</span><div><b>3-second heat-up</b> to 1,100°C — reliable first-attempt ignition</div></li><li><span class="ci">✓</span><div><b>−30°C cold start rated</b> — tested, not estimated</div></li><li><span class="ci">✓</span><div><b>UL Recognized + CE marked</b> — both markets from one SKU</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/silicon-nitride-igniters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specs, voltage variants, and OEM compatibility data.</div><div class="rel-link">View →</div></a><a href="/applications/biomass-pellet-stoves" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Biomass & Pellet Stoves</div><div class="rel-desc">The most demanding ignition application — 20,000 cycles/year.</div><div class="rel-link">View →</div></a><a href="/applications/advanced-combustion" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Advanced Combustion</div><div class="rel-desc">All 8 ignition scenarios in one overview.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specs, voltage variants, and OEM compatibility data.</div><div class="rel-link">View →</div></a><a href="/applications/advanced-combustion-fixed#biomass" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Biomass & Pellet Stoves</div><div class="rel-desc">The most demanding ignition application — 20,000 cycles/year.</div><div class="rel-link">View →</div></a><a href="/applications/advanced-combustion-fixed" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Advanced Combustion</div><div class="rel-desc">All 8 ignition scenarios in one overview.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

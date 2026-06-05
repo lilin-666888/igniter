@@ -95,7 +95,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300 Si₃N₄ Igniter</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Si₃N₄ Igniter</a>
               <a href="/products/ceramic-igniters">Al₂O₃ Igniter</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
@@ -128,7 +128,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300 Si₃N₄</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Si₃N₄</a>
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -161,8 +161,8 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300/120 (NA)</a>
-              <a href="/products/silicon-nitride-igniters">CN-300/230 (EU)</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300/120 (NA)</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300/230 (EU)</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Match My Part →</a>
           </div>
@@ -194,7 +194,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/ceramic-igniters">SiC Hot Rod</a>
-              <a href="/products/silicon-nitride-igniters">CN-300 Commercial</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Commercial</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
           </div>
@@ -225,7 +225,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300/120 · CN-300/230</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300/120 · CN-300/230</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
           </div>
@@ -256,7 +256,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300 Igniter</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Igniter</a>
               <a href="/products/ceramic-heaters">Ceramic Heaters</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -288,7 +288,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300 Igniter</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Igniter</a>
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -320,7 +320,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters">CN-300 Si₃N₄</a>
+              <a href="/products/silicon-nitride-igniters-final">CN-300 Si₃N₄</a>
               <a href="/products/ceramic-igniters">Custom to Drawing</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Discuss Application →</a>

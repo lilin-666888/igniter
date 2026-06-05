@@ -59,7 +59,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Al₂O₃ purity</span><span class="tech-v">≥99.7%</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1600°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Tube / boat / rod</span></div><div class="tech-row"><span class="tech-k">Atmosphere</span><span class="tech-v">Air / N₂ / H₂</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Al₂O₃ purity</span><span class="tech-v">≥99.99%</span></div><div class="tech-row"><span class="tech-k">HF resistance</span><span class="tech-v">Resistant (unlike quartz)</span></div><div class="tech-row"><span class="tech-k">Temperature</span><span class="tech-v">Plasma: 6000–8000K</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Injector / torch tube</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -107,7 +107,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ 99.7%+</span></div><div class="tech-row"><span class="tech-k">Acid resistance</span><span class="tech-v">Most acids resistant</span></div><div class="tech-row"><span class="tech-k">Tare weight</span><span class="tech-v">Consistent batch-to-batch</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Crucible / dish / boat</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Dimensional tolerance</span><span class="tech-v">±0.05mm</span></div><div class="tech-row"><span class="tech-k">Thermal mass</span><span class="tech-v">Consistent</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ 99.9%</span></div><div class="tech-row"><span class="tech-k">Instruments</span><span class="tech-v">TA / Mettler / Netzsch compatible</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -155,7 +155,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Si₃N₄ membrane</span><span class="tech-v">100nm thickness</span></div><div class="tech-row"><span class="tech-k">Electron transparency</span><span class="tech-v">High</span></div><div class="tech-row"><span class="tech-k">Substrate size</span><span class="tech-v">Custom to drawing</span></div><div class="tech-row"><span class="tech-k">Surface finish</span><span class="tech-v">Ra ≤0.02µm</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-powder">Ceramic Powder</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-powder">Ceramic Powder</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Lead time</span><span class="tech-v">14 days prototype</span></div><div class="tech-row"><span class="tech-k">MOQ</span><span class="tech-v">None (single-unit)</span></div><div class="tech-row"><span class="tech-k">Materials</span><span class="tech-v">Al₂O₃ / Si₃N₄ / ZrO₂</span></div><div class="tech-row"><span class="tech-k">Tolerance</span><span class="tech-v">±0.01mm ground</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Custom Al₂O₃ and Si₃N₄ laboratory tubes, crucibles, and fixtures.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic-dfm" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">Custom ceramic parts to your drawing — 14-day prototype, no MOQ.</div><div class="rel-link">View →</div></a><a href="/applications/biology-medicine" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Biology & Medicine</div><div class="rel-desc">Biocompatible ceramic components for medical instruments and diagnostics.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Custom Al₂O₃ and Si₃N₄ laboratory tubes, crucibles, and fixtures.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">Custom ceramic parts to your drawing — 14-day prototype, no MOQ.</div><div class="rel-link">View →</div></a><a href="/applications/app-biology-medicine" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Biology & Medicine</div><div class="rel-desc">Biocompatible ceramic components for medical instruments and diagnostics.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Weight vs Inconel</span><span class="tech-v">−30%</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1400°C</span></div><div class="tech-row"><span class="tech-k">Lubrication</span><span class="tech-v">Not required</span></div><div class="tech-row"><span class="tech-k">Spool-up</span><span class="tech-v">Faster by 30–40%</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -107,7 +107,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">B₄C</span></div><div class="tech-row"><span class="tech-k">Hardness</span><span class="tech-v">HV 2800–3500</span></div><div class="tech-row"><span class="tech-k">Density</span><span class="tech-v">2.52 g/cm³</span></div><div class="tech-row"><span class="tech-k">Standard</span><span class="tech-v">NIJ Level IV</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -155,7 +155,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1600°C (SiC)</span></div><div class="tech-row"><span class="tech-k">Thermal shock</span><span class="tech-v">Excellent</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">SiC / Si₃N₄</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Custom to drawing</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">B₄C / SiC</span></div><div class="tech-row"><span class="tech-k">Hardness</span><span class="tech-v">HV 2800+</span></div><div class="tech-row"><span class="tech-k">Erosion resistance</span><span class="tech-v">10–20× vs WC</span></div><div class="tech-row"><span class="tech-k">Lead time</span><span class="tech-v">14 days custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/precision-bearings" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Precision Ceramic Bearings</div><div class="rel-desc">Full Si₃N₄ and hybrid bearings for aerospace and precision machinery.</div><div class="rel-link">View →</div></a><a href="/products/silicon-nitride-shaft-rod" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Si₃N₄ Shaft Rods</div><div class="rel-desc">Precision shaft rods for gyroscopes and precision actuators.</div><div class="rel-link">View →</div></a><a href="/applications/semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">Si₃N₄ and AlN in semiconductor wafer handling.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/precision-bearings" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Precision Ceramic Bearings</div><div class="rel-desc">Full Si₃N₄ and hybrid bearings for aerospace and precision machinery.</div><div class="rel-link">View →</div></a><a href="/products/silicon-nitride-shaft-rod" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Si₃N₄ Shaft Rods</div><div class="rel-desc">Precision shaft rods for gyroscopes and precision actuators.</div><div class="rel-link">View →</div></a><a href="/applications/app-semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">Si₃N₄ and AlN in semiconductor wafer handling.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

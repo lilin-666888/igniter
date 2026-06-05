@@ -75,7 +75,7 @@ useHead({
     </div>
     <div class="lineup-foot">
     <span class="lineup-mat"><b>Material:</b> <a href="/materials/silicon-nitride">Si₃N₄</a></span>
-    <a class="lineup-link" href="/products/silicon-nitride-igniters">View Details →</a>
+    <a class="lineup-link" href="/products/silicon-nitride-igniters-final">View Details →</a>
     </div>
     </div>
     <div class="lineup-card" id="hot-surface">
@@ -196,7 +196,7 @@ useHead({
     <h2>Appliances our igniters <span class="accent">run in</span>.</h2>
     <p class="sec-lead">From residential pellet stoves to industrial boilers — each application links to a deeper engineering page with the recommended igniter type and case data.</p>
     <div class="app-uses">
-    <a class="app-use" href="/applications/biomass-pellet-stoves" style="text-decoration:none;">
+    <a class="app-use" href="/applications/advanced-combustion-fixed#biomass" style="text-decoration:none;">
     <div class="app-use-bar"></div>
     <div class="app-use-icon">🔥</div>
     <div class="app-use-title">Pellet &amp; Biomass Stoves</div>
@@ -249,7 +249,7 @@ useHead({
     <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our CN-300 series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
     <div class="casecta-ctas">
     <a class="btn-primary" href="/contact">Request Free Samples →</a>
-    <a class="btn-ghost" href="/applications/biomass-pellet-stoves">Pellet Stove Case →</a>
+    <a class="btn-ghost" href="/applications/advanced-combustion-fixed#biomass">Pellet Stove Case →</a>
     </div>
     </div>
     <div class="casecta-side">

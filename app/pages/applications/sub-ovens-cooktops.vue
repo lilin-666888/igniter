@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>Ovens & Cooktops</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">Grease-resistant</div><div class="lbl">Sealed Element</div></div><div><div class="num">3 sec</div><div class="lbl">Heat-Up</div></div><div><div class="num">100K+</div><div class="lbl">Cycle Life</div></div><div><div class="num">UL/CE</div><div class="lbl">Certified</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters">View CN-300 Specs →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters-final">View CN-300 Specs →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/advanced-combustion">Back to Advanced Combustion</a></span>
+            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">CN-300 compact · 100K+ cycles · grease-resistant</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>Grease-carbonisation resistant</b> — high thermal conductivity prevents hot-spot under carbon deposits</div></li><li><span class="ci">✓</span><div><b>8–10 year residential cooking life</b> — vs 2–4yr for Al₂O₃</div></li><li><span class="ci">✓</span><div><b>Compact profile</b> for cooktop burner recess integration</div></li><li><span class="ci">✓</span><div><b>NSF certified</b> for commercial kitchen food service equipment</div></li><li><span class="ci">✓</span><div><b>Food acid resistant</b> — dense Si₃N₄ resists acetic/citric acid from cooking vapours</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/silicon-nitride-igniters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specifications and OEM compatibility.</div><div class="rel-link">View →</div></a><a href="/applications/bbq-grills" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">BBQ & Outdoor Grills</div><div class="rel-desc">Outdoor cooking ignition — moisture and UV resistance.</div><div class="rel-link">View →</div></a><a href="/applications/gas-appliances" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Residential Gas Appliances</div><div class="rel-desc">Gas furnace and water heater ignition.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specifications and OEM compatibility.</div><div class="rel-link">View →</div></a><a href="/applications/sub-bbq-grills" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">BBQ & Outdoor Grills</div><div class="rel-desc">Outdoor cooking ignition — moisture and UV resistance.</div><div class="rel-link">View →</div></a><a href="/applications/sub-gas-appliances" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Residential Gas Appliances</div><div class="rel-desc">Gas furnace and water heater ignition.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

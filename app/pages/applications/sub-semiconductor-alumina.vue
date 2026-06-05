@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>High-Purity Al₂O₃</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">≥99.99%</div><div class="lbl">Al₂O₃ Purity</div></div><div><div class="num"><5 ppm</div><div class="lbl">Na Contamination</div></div><div><div class="num">1600°C</div><div class="lbl">Max Operating</div></div><div><div class="num">ISO 9001</div><div class="lbl">Certified</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request a Quote →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/custom-ceramic-dfm">View Custom DFM →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/custom-ceramic">View Custom DFM →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/semiconductor">Back to Semiconductor & Electronics</a></span>
+            <span class="nav-back">← <a href="/applications/app-semiconductor">Back to Semiconductor & Electronics</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Al₂O₃ 99.99% (Semiconductor Grade)</div>
             <div class="comp-tagline">Na &lt;5 ppm · 1,600°C · front-end qualified</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>Na &lt;5 ppm</b> — meets front-end semiconductor process specification</div></li><li><span class="ci">✓</span><div><b>1,600°C operating temperature</b> — full silicon diffusion furnace capability</div></li><li><span class="ci">✓</span><div><b>ICP-MS purity cert</b> with every shipment — 15 elements reported</div></li><li><span class="ci">✓</span><div><b>Lot traceability</b> to raw powder batch — full chain of custody</div></li><li><span class="ci">✓</span><div><b>JIS B 7719 / SEMI M70</b> standard diffusion tube dimensions</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/custom-ceramic-dfm">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/custom-ceramic">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/applications/semiconductor-aln-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Heaters for Semiconductor</div><div class="rel-desc">AlN wafer chuck heaters — 170 W/m·K temperature uniformity.</div><div class="rel-link">View →</div></a><a href="/applications/semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic-dfm" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">Custom Al₂O₃ and AlN process components to your drawing.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/applications/sub-semiconductor-aln-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Heaters for Semiconductor</div><div class="rel-desc">AlN wafer chuck heaters — 170 W/m·K temperature uniformity.</div><div class="rel-link">View →</div></a><a href="/applications/app-semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/custom-ceramic" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Custom Ceramic DFM</div><div class="rel-desc">Custom Al₂O₃ and AlN process components to your drawing.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

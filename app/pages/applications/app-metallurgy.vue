@@ -59,7 +59,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Operating temp</span><span class="tech-v">700–900°C molten Al</span></div><div class="tech-row"><span class="tech-k">Non-wetting</span><span class="tech-v">To molten aluminium</span></div><div class="tech-row"><span class="tech-k">Cycle life</span><span class="tech-v">3–5× vs cast iron</span></div><div class="tech-row"><span class="tech-k">Thermal shock</span><span class="tech-v">Excellent resistance</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1700°C (Al₂O₃)</span></div><div class="tech-row"><span class="tech-k">Atmosphere</span><span class="tech-v">Oxidising / reducing</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ / Si₃N₄</span></div><div class="tech-row"><span class="tech-k">OD range</span><span class="tech-v">Ø 6–100mm</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ / SiC</span></div><div class="tech-row"><span class="tech-k">Atmosphere</span><span class="tech-v">Carburising / nitriding</span></div><div class="tech-row"><span class="tech-k">Temp range</span><span class="tech-v">Up to 1200°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Tray / fixture / custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -155,7 +155,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Non-wetting</span><span class="tech-v">To Al / Zn / Cu alloys</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Si₃N₄</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">900°C in molten Al</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Crucible / immersion tube</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">SiC / reaction-bonded</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1400°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Shelf / post / batts</span></div><div class="tech-row"><span class="tech-k">Thermal cycles</span><span class="tech-v">1000+ rated</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Si₃N₄ lift tubes, protection tubes, and structural components for foundry.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-heaters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Heaters</div><div class="rel-desc">SiC and Si₃N₄ industrial heaters for furnace and process heating.</div><div class="rel-link">View →</div></a><a href="/applications/chemical-processing" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Chemical Processing</div><div class="rel-desc">Shared ceramic components in high-temperature fluid and slurry handling.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Si₃N₄ lift tubes, protection tubes, and structural components for foundry.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-heaters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Heaters</div><div class="rel-desc">SiC and Si₃N₄ industrial heaters for furnace and process heating.</div><div class="rel-link">View →</div></a><a href="/applications/app-chemical-processing" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Chemical Processing</div><div class="rel-desc">Shared ceramic components in high-temperature fluid and slurry handling.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

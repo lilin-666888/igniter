@@ -165,7 +165,7 @@ useHead({
           <p>A mid-tier Japanese dental ceramic block manufacturer was buying Y-TZP zirconia powder through Japanese trading companies at premium pricing. After qualifying our Y-TZP-A medical-grade powder (3 lots of qualification testing), they switched to direct purchase. Material cost dropped 42% while meeting the same dental restoration ceramic spec. The qualification process worked specifically because we synthesize our own powder — they could trace from the raw zirconium through to their finished dental block.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request Direct-Supply Quote →</a>
-            <a class="btn-ghost" href="/products/powders">Powder Catalog →</a>
+            <a class="btn-ghost" href="/products/ceramic-powder">Powder Catalog →</a>
           </div>
         </div>
         <div class="casecta-side">

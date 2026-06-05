@@ -29,7 +29,7 @@ useHead({
           </div>
         </div>
         <div class="ph-side">
-          <a href="/applications/advanced-combustion" class="hero-flagship">
+          <a href="/applications/advanced-combustion-fixed" class="hero-flagship">
             <div class="hf-tag">★ Largest Revenue Vertical</div>
             <div class="hf-title">Advanced Combustion & Ignition</div>
             <div class="hf-desc">Si₃N₄ &amp; SiC hot surface igniters shipping in OEM volume — pellet stoves, gas appliances, boilers, HVAC.</div>
@@ -66,7 +66,7 @@ useHead({
 
         <div class="ind-list">
 
-          <a href="/applications/advanced-combustion" class="ind-row flagship">
+          <a href="/applications/advanced-combustion-fixed" class="ind-row flagship">
             <div class="ind-left"><div class="ind-num">01</div><div class="ind-icon">🔥</div></div>
             <div class="ind-mid">
               <span class="ind-flagtag">★ Largest Revenue Vertical</span>
@@ -77,7 +77,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/semiconductor" class="ind-row">
+          <a href="/applications/app-semiconductor" class="ind-row">
             <div class="ind-left"><div class="ind-num">02</div><div class="ind-icon">💻</div></div>
             <div class="ind-mid">
               <div class="ind-name">Semiconductor &amp; Electronics</div>
@@ -87,7 +87,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/aerospace" class="ind-row">
+          <a href="/applications/app-aerospace" class="ind-row">
             <div class="ind-left"><div class="ind-num">03</div><div class="ind-icon">✈️</div></div>
             <div class="ind-mid">
               <div class="ind-name">Aerospace, Defense &amp; Precision Machinery</div>
@@ -97,7 +97,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/clean-energy" class="ind-row">
+          <a href="/applications/app-clean-energy" class="ind-row">
             <div class="ind-left"><div class="ind-num">04</div><div class="ind-icon">🔋</div></div>
             <div class="ind-mid">
               <div class="ind-name">Clean Energy &amp; Battery Manufacturing</div>
@@ -107,7 +107,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/metallurgy" class="ind-row">
+          <a href="/applications/app-metallurgy" class="ind-row">
             <div class="ind-left"><div class="ind-num">05</div><div class="ind-icon">🏭</div></div>
             <div class="ind-mid">
               <div class="ind-name">Metallurgy, Foundry &amp; High-Temperature Processing</div>
@@ -117,7 +117,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/chemical-processing" class="ind-row">
+          <a href="/applications/app-chemical-processing" class="ind-row">
             <div class="ind-left"><div class="ind-num">06</div><div class="ind-icon">⚗️</div></div>
             <div class="ind-mid">
               <div class="ind-name">Chemical Processing &amp; Fluid Control</div>
@@ -127,7 +127,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/laboratory" class="ind-row">
+          <a href="/applications/app-laboratory" class="ind-row">
             <div class="ind-left"><div class="ind-num">07</div><div class="ind-icon">🧪</div></div>
             <div class="ind-mid">
               <div class="ind-name">Laboratory Equipment &amp; Instruments</div>
@@ -137,7 +137,7 @@ useHead({
             <div class="ind-go">Explore <span class="arw">→</span></div>
           </a>
 
-          <a href="/applications/biomedical" class="ind-row">
+          <a href="/applications/app-biology-medicine" class="ind-row">
             <div class="ind-left"><div class="ind-num">08</div><div class="ind-icon">🧬</div></div>
             <div class="ind-mid">
               <div class="ind-name">Biology &amp; Medicine</div>

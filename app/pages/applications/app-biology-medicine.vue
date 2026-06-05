@@ -59,7 +59,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Biocompatibility</span><span class="tech-v">ISO 10993 certified</span></div><div class="tech-row"><span class="tech-k">MRI</span><span class="tech-v">Non-magnetic</span></div><div class="tech-row"><span class="tech-k">Sterilisation</span><span class="tech-v">Autoclave / gamma / EO</span></div><div class="tech-row"><span class="tech-k">Osseointegration</span><span class="tech-v">Excellent</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/full-silicon-nitride-bearings">Full Si₃N₄ Bearings</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/full-silicon-nitride-bearings">Full Si₃N₄ Bearings</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">3Y-TZP ZrO₂</span></div><div class="tech-row"><span class="tech-k">Flexural strength</span><span class="tech-v">>1000 MPa</span></div><div class="tech-row"><span class="tech-k">Biocompatibility</span><span class="tech-v">ISO 10993</span></div><div class="tech-row"><span class="tech-k">CAD/CAM</span><span class="tech-v">Mill-grade blanks</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-powder">Ceramic Powder</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-powder">Ceramic Powder</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Chemical inertness</span><span class="tech-v">Reagent-resistant</span></div><div class="tech-row"><span class="tech-k">Particle generation</span><span class="tech-v">Near-zero</span></div><div class="tech-row"><span class="tech-k">Dimensional stability</span><span class="tech-v">±0.01mm</span></div><div class="tech-row"><span class="tech-k">Sterilisable</span><span class="tech-v">Yes</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Biocompatibility</span><span class="tech-v">Non-cytotoxic</span></div><div class="tech-row"><span class="tech-k">Sterilisation</span><span class="tech-v">Autoclave</span></div><div class="tech-row"><span class="tech-k">Chemical inertness</span><span class="tech-v">Cell media compatible</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Sparger / filter / custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/precision-bearings" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Precision Ceramic Bearings</div><div class="rel-desc">Full Si₃N₄ and ZrO₂ bearings for surgical and MRI-compatible applications.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-powder" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Powder</div><div class="rel-desc">3Y-TZP ZrO₂ powder for dental crown CAD/CAM milling.</div><div class="rel-link">View →</div></a><a href="/applications/laboratory" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Laboratory Equipment</div><div class="rel-desc">Shared Al₂O₃ and Si₃N₄ in analytical instruments and research.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/precision-bearings" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Precision Ceramic Bearings</div><div class="rel-desc">Full Si₃N₄ and ZrO₂ bearings for surgical and MRI-compatible applications.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-powder" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Powder</div><div class="rel-desc">3Y-TZP ZrO₂ powder for dental crown CAD/CAM milling.</div><div class="rel-link">View →</div></a><a href="/applications/app-laboratory" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Laboratory Equipment</div><div class="rel-desc">Shared Al₂O₃ and Si₃N₄ in analytical instruments and research.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

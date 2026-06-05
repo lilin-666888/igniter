@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">8Y-TZP ZrO₂</span></div><div class="tech-row"><span class="tech-k">Operating temp</span><span class="tech-v">700–1000°C</span></div><div class="tech-row"><span class="tech-k">Ionic conductivity</span><span class="tech-v">High O²⁻ conduction</span></div><div class="tech-row"><span class="tech-k">Purity</span><span class="tech-v">≥99.5%</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-powder">Si₃N₄ Powder</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-powder">Si₃N₄ Powder</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -107,7 +107,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Chemical resistance</span><span class="tech-v">H₂SO₄ / KOH resistant</span></div><div class="tech-row"><span class="tech-k">Temperature</span><span class="tech-v">Up to 200°C</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Si₃N₄ / Al₂O₃</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Custom to drawing</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Al₂O₃ purity</span><span class="tech-v">≥99.99%</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1200°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Boat / tube / plate</span></div><div class="tech-row"><span class="tech-k">Batch consistency</span><span class="tech-v">Certified</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/grinding-media" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Grinding Media</div><div class="rel-desc">Si₃N₄ and ZrO₂ grinding balls — zero contamination for battery slurry.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-powder" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Powder</div><div class="rel-desc">High-purity Si₃N₄ and ZrO₂ powders for SOFC and advanced ceramics.</div><div class="rel-link">View →</div></a><a href="/applications/semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">Shared AlN and high-purity Al₂O₃ applications in electronics manufacturing.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/grinding-media" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Grinding Media</div><div class="rel-desc">Si₃N₄ and ZrO₂ grinding balls — zero contamination for battery slurry.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-powder" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Powder</div><div class="rel-desc">High-purity Si₃N₄ and ZrO₂ powders for SOFC and advanced ceramics.</div><div class="rel-link">View →</div></a><a href="/applications/app-semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">Shared AlN and high-purity Al₂O₃ applications in electronics manufacturing.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

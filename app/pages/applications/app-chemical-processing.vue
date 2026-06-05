@@ -59,7 +59,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">SiC (reaction-bonded / sintered)</span></div><div class="tech-row"><span class="tech-k">Hardness</span><span class="tech-v">HV 2500+</span></div><div class="tech-row"><span class="tech-k">Chemical resistance</span><span class="tech-v">HF / H₂SO₄ / Cl₂</span></div><div class="tech-row"><span class="tech-k">PV limit</span><span class="tech-v">Very high</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ / ZrO₂</span></div><div class="tech-row"><span class="tech-k">Chemical resistance</span><span class="tech-v">HCl / NaOH / HNO₃</span></div><div class="tech-row"><span class="tech-k">Temperature</span><span class="tech-v">Up to 300°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Ball / seat / disc</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-balls">Ceramic Balls</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-balls">Ceramic Balls</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -107,7 +107,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Shaft material</span><span class="tech-v">Si₃N₄</span></div><div class="tech-row"><span class="tech-k">Impeller material</span><span class="tech-v">SiC</span></div><div class="tech-row"><span class="tech-k">Non-magnetic</span><span class="tech-v">Yes</span></div><div class="tech-row"><span class="tech-k">Lubrication</span><span class="tech-v">Not required</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-shaft-rod">Si₃N₄ Shaft Rods</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-shaft-rod">Si₃N₄ Shaft Rods</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">HF resistance</span><span class="tech-v">ZrO₂: excellent</span></div><div class="tech-row"><span class="tech-k">NaOH (conc.)</span><span class="tech-v">ZrO₂: resistant</span></div><div class="tech-row"><span class="tech-k">Temperature</span><span class="tech-v">Up to 300°C</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">ZrO₂ / Al₂O₃</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -155,7 +155,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Hardness</span><span class="tech-v">SiC: HV 2500</span></div><div class="tech-row"><span class="tech-k">Wear vs steel</span><span class="tech-v">3–10× lower</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Liner / elbow / cyclone</span></div><div class="tech-row"><span class="tech-k">Slurry temp</span><span class="tech-v">Up to 300°C</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1600°C (SiC)</span></div><div class="tech-row"><span class="tech-k">Atmosphere</span><span class="tech-v">Oxidising / reducing / halogen</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Si₃N₄ / SiC</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Tube / support / custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-structural">Ceramic Structural Parts</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Corrosion-resistant Si₃N₄, SiC, and ZrO₂ structural components.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-balls" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Balls</div><div class="rel-desc">ZrO₂ and Si₃N₄ balls for valve seats and check valves.</div><div class="rel-link">View →</div></a><a href="/applications/metallurgy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Metallurgy & Foundry</div><div class="rel-desc">Shared SiC and Si₃N₄ in high-temperature process environments.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Corrosion-resistant Si₃N₄, SiC, and ZrO₂ structural components.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-balls" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Balls</div><div class="rel-desc">ZrO₂ and Si₃N₄ balls for valve seats and check valves.</div><div class="rel-link">View →</div></a><a href="/applications/app-metallurgy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Metallurgy & Foundry</div><div class="rel-desc">Shared SiC and Si₃N₄ in high-temperature process environments.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

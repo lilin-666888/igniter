@@ -59,7 +59,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Thermal conductivity</span><span class="tech-v">AlN: 170–220 W/m·K</span></div><div class="tech-row"><span class="tech-k">Temperature uniformity</span><span class="tech-v">±1°C across 300mm wafer</span></div><div class="tech-row"><span class="tech-k">Max temperature</span><span class="tech-v">Up to 800°C</span></div><div class="tech-row"><span class="tech-k">Voltage</span><span class="tech-v">Custom DC / AC</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-heaters">AlN Heaters</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/ceramic-heaters">AlN Heaters</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -83,7 +83,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ 99.99% purity</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1200°C continuous</span></div><div class="tech-row"><span class="tech-k">Contamination</span><span class="tech-v">Zero metallic</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Disc / ring / custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -107,7 +107,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Thermal conductivity</span><span class="tech-v">170–220 W/m·K</span></div><div class="tech-row"><span class="tech-k">Dielectric constant</span><span class="tech-v">8.8 @ 1MHz</span></div><div class="tech-row"><span class="tech-k">Size range</span><span class="tech-v">Custom to drawing</span></div><div class="tech-row"><span class="tech-k">Surface finish</span><span class="tech-v">Ra ≤0.4µm</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -131,7 +131,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Al₂O₃ purity</span><span class="tech-v">≥99.99%</span></div><div class="tech-row"><span class="tech-k">Max temp</span><span class="tech-v">1600°C</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Tube / ring / boat</span></div><div class="tech-row"><span class="tech-k">Na contamination</span><span class="tech-v"><5 ppm</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-powder">Ceramic Powder</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-powder">Ceramic Powder</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -155,7 +155,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Si₃N₄</span></div><div class="tech-row"><span class="tech-k">Magnetic</span><span class="tech-v">Non-magnetic</span></div><div class="tech-row"><span class="tech-k">Particle generation</span><span class="tech-v">Near-zero</span></div><div class="tech-row"><span class="tech-k">Dimensional stability</span><span class="tech-v">±0.01mm</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-shaft-rod">Si₃N₄ Shaft Rods</a><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/silicon-nitride-shaft-rod">Si₃N₄ Shaft Rods</a><a href="/products/custom-ceramic">Custom Ceramic DFM</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -179,7 +179,7 @@ useHead({
             <div class="tech-row"><span class="tech-k">Plasma resistance</span><span class="tech-v">F₂ / Cl₂ resistant</span></div><div class="tech-row"><span class="tech-k">Material</span><span class="tech-v">Al₂O₃ / ZrO₂</span></div><div class="tech-row"><span class="tech-k">Form</span><span class="tech-v">Focus ring / liner</span></div><div class="tech-row"><span class="tech-k">Lead time</span><span class="tech-v">14 days custom</span></div>
           </div>
           <div class="rec-row">
-            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic-dfm">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
+            <div class="rec-links"><span class="rl">Products →</span><a href="/products/custom-ceramic">Custom Ceramic DFM</a><a href="/products/ceramic-structural">Ceramic Structural Parts</a></div>
             <a href="#quote" class="rec-cta-sm">Request Samples →</a>
           </div>
         </div>
@@ -212,7 +212,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/applications/clean-energy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Clean Energy & Battery</div><div class="rel-desc">AlN and Si₃N₄ in fuel cell and battery manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Custom Si₃N₄ and Al₂O₃ structural components for semiconductor tooling.</div><div class="rel-link">View →</div></a><a href="/materials/silicon-nitride" class="rel-card"><div class="rel-eyebrow">Material</div><div class="rel-title">Silicon Nitride (Si₃N₄)</div><div class="rel-desc">Why Si₃N₄ dominates semiconductor handling applications.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/applications/app-clean-energy" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Clean Energy & Battery</div><div class="rel-desc">AlN and Si₃N₄ in fuel cell and battery manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-structural" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Structural Parts</div><div class="rel-desc">Custom Si₃N₄ and Al₂O₃ structural components for semiconductor tooling.</div><div class="rel-link">View →</div></a><a href="/materials/silicon-nitride" class="rel-card"><div class="rel-eyebrow">Material</div><div class="rel-title">Silicon Nitride (Si₃N₄)</div><div class="rel-desc">Why Si₃N₄ dominates semiconductor handling applications.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

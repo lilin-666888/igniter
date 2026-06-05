@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>Commercial & Industrial Boilers</span>
       </div>
@@ -30,10 +30,10 @@ useHead({
           <div class="bio-statbar"><div><div class="num">SiC/Si₃N₄</div><div class="lbl">Both Materials</div></div><div><div class="num">Up to 480V</div><div class="lbl">High Voltage</div></div><div><div class="num">1500°C</div><div class="lbl">SiC Surface</div></div><div><div class="num">CE/UL</div><div class="lbl">Certified</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
-            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters">View CN-300 Specs →</a>
+            <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters-final">View CN-300 Specs →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/advanced-combustion">Back to Advanced Combustion</a></span>
+            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -81,7 +81,7 @@ useHead({
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">CN-300 · 100K+ cycles · highest cycle life</div>
             <ul class="comp-list"><li><span class="ci">✓</span><div><b>100,000+ cycle life</b> — best-in-class endurance for continuous-duty boilers</div></li><li><span class="ci">✓</span><div><b>3-second heat-up</b> to 1,100°C — fast modulation response</div></li><li><span class="ci">✓</span><div><b>Custom 277V/480V variants</b> for US commercial electrical systems</div></li><li><span class="ci">✓</span><div><b>UL Recognized + CE</b> — global commercial heating market coverage</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters">View Full Specs →</a></div>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/silicon-nitride-igniters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Standard 120V/230V — highest-volume commercial heating igniter.</div><div class="rel-link">View →</div></a><a href="/applications/gas-appliances" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Residential Gas Appliances</div><div class="rel-desc">Standard 120V/230V residential duty — the baseline application.</div><div class="rel-link">View →</div></a><a href="/applications/water-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Water Heaters</div><div class="rel-desc">Tankless water heater high-cycle ignition applications.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Standard 120V/230V — highest-volume commercial heating igniter.</div><div class="rel-link">View →</div></a><a href="/applications/sub-gas-appliances" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Residential Gas Appliances</div><div class="rel-desc">Standard 120V/230V residential duty — the baseline application.</div><div class="rel-link">View →</div></a><a href="/applications/sub-water-heaters" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Water Heaters</div><div class="rel-desc">Tankless water heater high-cycle ignition applications.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>

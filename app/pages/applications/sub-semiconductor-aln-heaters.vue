@@ -13,7 +13,7 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications">Applications</a>
         <span class="sep">/</span>
-        <a href="/applications/advanced-combustion">Advanced Combustion</a>
+        <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
         <span>AlN Heaters</span>
       </div>
@@ -33,7 +33,7 @@ useHead({
             <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/ceramic-heaters">View Ceramic Heaters →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/semiconductor">Back to Semiconductor & Electronics</a></span>
+            <span class="nav-back">← <a href="/applications/app-semiconductor">Back to Semiconductor & Electronics</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
@@ -143,7 +143,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/applications/semiconductor-aln-substrates" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Substrates for Semiconductor</div><div class="rel-desc">AlN for power electronics packaging — same material, different form.</div><div class="rel-link">View →</div></a><a href="/applications/semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-heaters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Heaters</div><div class="rel-desc">Full range: Si₃N₄, SiC, Al₂O₃, and AlN heating elements.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/applications/sub-semiconductor-aln-substrates" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">AlN Substrates for Semiconductor</div><div class="rel-desc">AlN for power electronics packaging — same material, different form.</div><div class="rel-link">View →</div></a><a href="/applications/app-semiconductor" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Semiconductor & Electronics</div><div class="rel-desc">All ceramic applications in semiconductor manufacturing.</div><div class="rel-link">View →</div></a><a href="/products/ceramic-heaters" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">Ceramic Heaters</div><div class="rel-desc">Full range: Si₃N₄, SiC, Al₂O₃, and AlN heating elements.</div><div class="rel-link">View →</div></a></div>
       </div>
     </section>
   </div>
