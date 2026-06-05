@@ -33,16 +33,46 @@ function isActive(to: string) {
         </div>
         <div class="logo-text">CERAMI<b>TELL</b><small>Advanced Industrial Ceramics</small></div>
       </NuxtLink>
+
       <div class="nav-links">
-        <NuxtLink
+        <div
           v-for="link in navLinks"
           :key="link.to"
-          :to="link.to"
-          :class="{ active: isActive(link.to) }"
+          class="nav-item"
+          :class="{ 'has-dropdown': link.children?.length, 'nav-item-wide': (link.children?.length ?? 0) > 5 }"
         >
-          {{ link.label }}
-        </NuxtLink>
+          <NuxtLink
+            :to="link.to"
+            class="nav-link"
+            :class="{ active: isActive(link.to) }"
+          >
+            {{ link.label }}
+            <span v-if="link.children?.length" class="nav-caret" aria-hidden="true">▾</span>
+          </NuxtLink>
+
+          <div v-if="link.children?.length" class="nav-dropdown">
+            <div class="nav-dropdown-inner">
+              <div class="nav-dropdown-label">Browse {{ link.label }}</div>
+              <div class="nav-dropdown-links">
+                <NuxtLink
+                  v-for="child in link.children"
+                  :key="child.to"
+                  :to="child.to"
+                  class="nav-dropdown-link"
+                  :class="{ active: isActive(child.to) }"
+                >
+                  <span class="nav-dropdown-text">{{ child.label }}</span>
+                  <span v-if="child.hint" class="nav-dropdown-hint">{{ child.hint }}</span>
+                </NuxtLink>
+              </div>
+              <NuxtLink :to="link.to" class="nav-dropdown-all">
+                View all {{ link.label }} →
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
       </div>
+
       <NuxtLink class="nav-cta" to="/contact">Request a Quote</NuxtLink>
     </div>
   </nav>

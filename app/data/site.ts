@@ -10,12 +10,79 @@ export const contactInfo = {
   display: 'sales@ceramitell.com · +86 151 9017 9780',
 }
 
-export const navLinks = [
-  { label: 'Materials', to: '/materials' },
-  { label: 'Products', to: '/products' },
-  { label: 'Applications', to: '/applications' },
-  { label: 'Capabilities', to: '/capabilities' },
-  { label: 'About', to: '/about' },
+export type NavChild = {
+  label: string
+  to: string
+  hint?: string
+}
+
+export type NavLink = {
+  label: string
+  to: string
+  children?: NavChild[]
+}
+
+export const navLinks: NavLink[] = [
+  {
+    label: 'Materials',
+    to: '/materials',
+    children: [
+      { label: 'Silicon Nitride', to: '/materials/silicon-nitride', hint: 'Si₃N₄' },
+      { label: 'Alumina', to: '/materials/alumina', hint: 'Al₂O₃' },
+      { label: 'Zirconia', to: '/materials/zirconia', hint: 'ZrO₂' },
+      { label: 'Silicon Carbide', to: '/materials/silicon-carbide', hint: 'SiC' },
+      { label: 'Aluminum Nitride', to: '/materials/aluminum-nitride', hint: 'AlN' },
+      { label: 'Boron Carbide', to: '/materials/boron-carbide', hint: 'B₄C' },
+      { label: 'Boron Nitride', to: '/materials/boron-nitride', hint: 'BN' },
+    ],
+  },
+  {
+    label: 'Products',
+    to: '/products',
+    children: [
+      { label: 'Ceramic Igniters', to: '/products/ceramic-igniters', hint: 'Flagship' },
+      { label: 'Heaters & Elements', to: '/products/ceramic-heaters', hint: '5 types' },
+      { label: 'Structural Parts', to: '/products/ceramic-structural', hint: '12 sub-types' },
+      { label: 'Custom Components', to: '/products/custom-ceramic', hint: 'DFM' },
+      { label: 'Ceramic Balls', to: '/products/ceramic-balls', hint: '0.4–100mm' },
+      { label: 'Precision Bearings', to: '/products/precision-bearings', hint: 'P0–P5' },
+      { label: 'Grinding Media', to: '/products/grinding-media', hint: 'Si₃N₄ + ZrO₂' },
+      { label: 'Ceramic Powders', to: '/products/ceramic-powder', hint: '≥99.5%' },
+    ],
+  },
+  {
+    label: 'Applications',
+    to: '/applications',
+    children: [
+      { label: 'Advanced Combustion & Ignition', to: '/applications/advanced-combustion-fixed', hint: '★ Flagship' },
+      { label: 'Semiconductor & Electronics', to: '/applications/app-semiconductor', hint: 'AlN · Al₂O₃' },
+      { label: 'Aerospace & Defense', to: '/applications/app-aerospace', hint: 'B₄C · Si₃N₄' },
+      { label: 'Clean Energy & Battery', to: '/applications/app-clean-energy', hint: 'ZrO₂' },
+      { label: 'Metallurgy & Foundry', to: '/applications/app-metallurgy', hint: '1600°C' },
+      { label: 'Chemical Processing', to: '/applications/app-chemical-processing', hint: 'SiC · Al₂O₃' },
+      { label: 'Laboratory Equipment', to: '/applications/app-laboratory', hint: 'Al₂O₃' },
+      { label: 'Biology & Medicine', to: '/applications/app-biology-medicine', hint: 'ZrO₂' },
+    ],
+  },
+  {
+    label: 'Capabilities',
+    to: '/capabilities',
+    children: [
+      { label: 'Vertical Integration', to: '/capabilities/vertical-integration', hint: 'Powder → Part' },
+      { label: 'Rapid Prototyping', to: '/capabilities/rapid-prototyping', hint: '5–20 days' },
+      { label: 'Quality Control', to: '/capabilities/quality-control', hint: 'ISO · IATF' },
+      { label: 'Manufacturing Process', to: '/capabilities/manufacturing-process', hint: '4 stages' },
+    ],
+  },
+  {
+    label: 'About',
+    to: '/about',
+    children: [
+      { label: 'About Ceramitell', to: '/about' },
+      { label: 'Engineering Resources', to: '/resources' },
+      { label: 'Contact Sales', to: '/contact' },
+    ],
+  },
 ]
 
 export const footerColumns = [
