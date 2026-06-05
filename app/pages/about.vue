@@ -120,8 +120,6 @@ useHead({
   .breadcrumb a { color: var(--navy); font-weight: 600; }
   .page-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%); color: #fff; padding: 70px 0 90px; position: relative; }
   .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--orange) 0%, var(--gold) 50%, var(--orange) 100%); }
-  .page-hero .wrap { display: block; }
-  .page-hero-content { display: flex; flex-direction: column; align-items: flex-start; }
   .ph-eyebrow { display: inline-block; background: var(--orange); color: #fff; font-family: var(--mono); font-size: 11px; letter-spacing: 0.15em; padding: 8px 14px; margin-bottom: 22px; text-transform: uppercase; }
   .page-hero h1 { font-family: var(--cond); font-size: 78px; line-height: 0.95; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 22px; }
   .page-hero h1 .accent { color: var(--gold); }

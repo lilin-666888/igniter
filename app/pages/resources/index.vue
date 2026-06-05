@@ -11,9 +11,11 @@ useHead({
 
     <section class="page-hero">
       <div class="wrap">
-        <span class="ph-eyebrow">Engineering Resources</span>
-        <h1>The reference manual<br/>our <span class="accent">engineers use</span>.</h1>
-        <p class="ph-sub">Material selection guides, application notes, technical FAQs, failure analysis, and downloadable datasheets — built from 11+ years of OEM field data. All free, no signup, no gatekeeping.</p>
+        <div class="page-hero-content">
+          <span class="ph-eyebrow">Engineering Resources</span>
+          <h1>The reference manual<br>our <span class="accent">engineers use</span>.</h1>
+          <p class="ph-sub">Material selection guides, application notes, technical FAQs, failure analysis, and downloadable datasheets — built from 11+ years of OEM field data. All free, no signup, no gatekeeping.</p>
+        </div>
       </div>
     </section>
 

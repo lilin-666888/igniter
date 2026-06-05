@@ -17,11 +17,13 @@ useHead({
 
     <section class="page-hero">
       <div class="wrap">
-        <span class="ph-eyebrow">Get in Touch · Reply Within 24h</span>
-        <h1>Let's <span class="accent">talk specs</span>.</h1>
-        <p class="ph-sub">Whether you have a part number to quote, a drawing to review, or you just want a free sample to evaluate against your current supplier — fill the form below or reach out directly. <b>We reply within 24 hours, every business day.</b></p>
+        <div class="page-hero-content">
+          <span class="ph-eyebrow">Get in Touch · Reply Within 24h</span>
+          <h1>Let's <span class="accent">talk specs</span>.</h1>
+          <p class="ph-sub">Whether you have a part number to quote, a drawing to review, or you just want a free sample to evaluate against your current supplier — fill the form below or reach out directly. <b>We reply within 24 hours, every business day.</b></p>
+        </div>
       </div>
-      <div class="page-hero-stripe"></div>
+      <div class="page-hero-stripe" />
     </section>
 
     <!-- MAIN CONTACT GRID -->

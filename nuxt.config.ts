@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint'],
-  css: ['~/assets/css/variables.css', '~/assets/css/chrome.css'],
+  css: ['~/assets/css/variables.css', '~/assets/css/chrome.css', '~/assets/css/page-hero.css'],
   app: {
     head: {
       link: [

@@ -1,0 +1,15 @@
+/* Single-column page heroes: keep eyebrow above h1.
+   Prevents grid layout from other pages bleeding in during navigation. */
+.page-hero .wrap:has(> .ph-eyebrow),
+.page-hero .wrap:has(> .page-hero-content) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
