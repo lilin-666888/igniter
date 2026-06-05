@@ -1,0 +1,277 @@
+[
+  {
+    "source": "Application/advanced-combustion-fixed.html",
+    "route": "/applications/advanced-combustion-fixed",
+    "out": "app/pages/applications/advanced-combustion-fixed.vue"
+  },
+  {
+    "source": "Application/app-aerospace.html",
+    "route": "/applications/app-aerospace",
+    "out": "app/pages/applications/app-aerospace.vue"
+  },
+  {
+    "source": "Application/app-biology-medicine.html",
+    "route": "/applications/app-biology-medicine",
+    "out": "app/pages/applications/app-biology-medicine.vue"
+  },
+  {
+    "source": "Application/app-chemical-processing.html",
+    "route": "/applications/app-chemical-processing",
+    "out": "app/pages/applications/app-chemical-processing.vue"
+  },
+  {
+    "source": "Application/app-clean-energy.html",
+    "route": "/applications/app-clean-energy",
+    "out": "app/pages/applications/app-clean-energy.vue"
+  },
+  {
+    "source": "Application/app-laboratory.html",
+    "route": "/applications/app-laboratory",
+    "out": "app/pages/applications/app-laboratory.vue"
+  },
+  {
+    "source": "Application/app-metallurgy.html",
+    "route": "/applications/app-metallurgy",
+    "out": "app/pages/applications/app-metallurgy.vue"
+  },
+  {
+    "source": "Application/app-semiconductor.html",
+    "route": "/applications/app-semiconductor",
+    "out": "app/pages/applications/app-semiconductor.vue"
+  },
+  {
+    "source": "Application/applications.html",
+    "route": "/applications",
+    "out": "app/pages/applications/index.vue"
+  },
+  {
+    "source": "Application/sub-bbq-grills.html",
+    "route": "/applications/sub-bbq-grills",
+    "out": "app/pages/applications/sub-bbq-grills.vue"
+  },
+  {
+    "source": "Application/sub-commercial-boilers.html",
+    "route": "/applications/sub-commercial-boilers",
+    "out": "app/pages/applications/sub-commercial-boilers.vue"
+  },
+  {
+    "source": "Application/sub-gas-appliances.html",
+    "route": "/applications/sub-gas-appliances",
+    "out": "app/pages/applications/sub-gas-appliances.vue"
+  },
+  {
+    "source": "Application/sub-hvac-ignition.html",
+    "route": "/applications/sub-hvac-ignition",
+    "out": "app/pages/applications/sub-hvac-ignition.vue"
+  },
+  {
+    "source": "Application/sub-hydrogen-energy.html",
+    "route": "/applications/sub-hydrogen-energy",
+    "out": "app/pages/applications/sub-hydrogen-energy.vue"
+  },
+  {
+    "source": "Application/sub-ovens-cooktops.html",
+    "route": "/applications/sub-ovens-cooktops",
+    "out": "app/pages/applications/sub-ovens-cooktops.vue"
+  },
+  {
+    "source": "Application/sub-semiconductor-aln-heaters.html",
+    "route": "/applications/sub-semiconductor-aln-heaters",
+    "out": "app/pages/applications/sub-semiconductor-aln-heaters.vue"
+  },
+  {
+    "source": "Application/sub-semiconductor-aln-substrates.html",
+    "route": "/applications/sub-semiconductor-aln-substrates",
+    "out": "app/pages/applications/sub-semiconductor-aln-substrates.vue"
+  },
+  {
+    "source": "Application/sub-semiconductor-alumina.html",
+    "route": "/applications/sub-semiconductor-alumina",
+    "out": "app/pages/applications/sub-semiconductor-alumina.vue"
+  },
+  {
+    "source": "Application/sub-water-heaters.html",
+    "route": "/applications/sub-water-heaters",
+    "out": "app/pages/applications/sub-water-heaters.vue"
+  },
+  {
+    "source": "Homepage.html",
+    "route": "/",
+    "out": "app/pages/index.vue"
+  },
+  {
+    "source": "Material/alumina.html",
+    "route": "/materials/alumina",
+    "out": "app/pages/materials/alumina.vue"
+  },
+  {
+    "source": "Material/aluminum-nitride.html",
+    "route": "/materials/aluminum-nitride",
+    "out": "app/pages/materials/aluminum-nitride.vue"
+  },
+  {
+    "source": "Material/boron-carbide.html",
+    "route": "/materials/boron-carbide",
+    "out": "app/pages/materials/boron-carbide.vue"
+  },
+  {
+    "source": "Material/boron-nitride.html",
+    "route": "/materials/boron-nitride",
+    "out": "app/pages/materials/boron-nitride.vue"
+  },
+  {
+    "source": "Material/materials.html",
+    "route": "/materials",
+    "out": "app/pages/materials/index.vue"
+  },
+  {
+    "source": "Material/silicon-carbide.html",
+    "route": "/materials/silicon-carbide",
+    "out": "app/pages/materials/silicon-carbide.vue"
+  },
+  {
+    "source": "Material/silicon-nitride.html",
+    "route": "/materials/silicon-nitride",
+    "out": "app/pages/materials/silicon-nitride.vue"
+  },
+  {
+    "source": "Material/zirconia.html",
+    "route": "/materials/zirconia",
+    "out": "app/pages/materials/zirconia.vue"
+  },
+  {
+    "source": "Product page/ceramic-balls.html",
+    "route": "/products/ceramic-balls",
+    "out": "app/pages/products/ceramic-balls.vue"
+  },
+  {
+    "source": "Product page/ceramic-heaters (1).html",
+    "route": "/products/ceramic-heaters",
+    "out": "app/pages/products/ceramic-heaters.vue"
+  },
+  {
+    "source": "Product page/ceramic-igniters (1).html",
+    "route": "/products/ceramic-igniters",
+    "out": "app/pages/products/ceramic-igniters.vue"
+  },
+  {
+    "source": "Product page/ceramic-powder.html",
+    "route": "/products/ceramic-powder",
+    "out": "app/pages/products/ceramic-powder.vue"
+  },
+  {
+    "source": "Product page/ceramic-structural.html",
+    "route": "/products/ceramic-structural",
+    "out": "app/pages/products/ceramic-structural.vue"
+  },
+  {
+    "source": "Product page/custom-ceramic.html",
+    "route": "/products/custom-ceramic",
+    "out": "app/pages/products/custom-ceramic.vue"
+  },
+  {
+    "source": "Product page/full-silicon-nitride-bearings.html",
+    "route": "/products/full-silicon-nitride-bearings",
+    "out": "app/pages/products/full-silicon-nitride-bearings.vue"
+  },
+  {
+    "source": "Product page/grinding-media.html",
+    "route": "/products/grinding-media",
+    "out": "app/pages/products/grinding-media.vue"
+  },
+  {
+    "source": "Product page/precision-bearings.html",
+    "route": "/products/precision-bearings",
+    "out": "app/pages/products/precision-bearings.vue"
+  },
+  {
+    "source": "Product page/products.html",
+    "route": "/products",
+    "out": "app/pages/products/index.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-balls.html",
+    "route": "/products/silicon-nitride-balls",
+    "out": "app/pages/products/silicon-nitride-balls.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-grinding-balls.html",
+    "route": "/products/silicon-nitride-grinding-balls",
+    "out": "app/pages/products/silicon-nitride-grinding-balls.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-heaters.html",
+    "route": "/products/silicon-nitride-heaters",
+    "out": "app/pages/products/silicon-nitride-heaters.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-igniters-final (4).html",
+    "route": "/products/silicon-nitride-igniters-final",
+    "out": "app/pages/products/silicon-nitride-igniters-final.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-powder.html",
+    "route": "/products/silicon-nitride-powder",
+    "out": "app/pages/products/silicon-nitride-powder.vue"
+  },
+  {
+    "source": "Product page/silicon-nitride-shaft-rod.html",
+    "route": "/products/silicon-nitride-shaft-rod",
+    "out": "app/pages/products/silicon-nitride-shaft-rod.vue"
+  },
+  {
+    "source": "Resources/ceramic-grade-selection-guide.html",
+    "route": "/resources/ceramic-grade-selection-guide",
+    "out": "app/pages/resources/ceramic-grade-selection-guide.vue"
+  },
+  {
+    "source": "Resources/iso-9001-certification.html",
+    "route": "/resources/iso-9001-certification",
+    "out": "app/pages/resources/iso-9001-certification.vue"
+  },
+  {
+    "source": "Resources/resources.html",
+    "route": "/resources",
+    "out": "app/pages/resources/index.vue"
+  },
+  {
+    "source": "Resources/silicon-nitride-vs-alumina.html",
+    "route": "/resources/silicon-nitride-vs-alumina",
+    "out": "app/pages/resources/silicon-nitride-vs-alumina.vue"
+  },
+  {
+    "source": "about.html",
+    "route": "/about",
+    "out": "app/pages/about.vue"
+  },
+  {
+    "source": "capabilities/capabilities.html",
+    "route": "/capabilities",
+    "out": "app/pages/capabilities/index.vue"
+  },
+  {
+    "source": "capabilities/manufacturing-process.html",
+    "route": "/capabilities/manufacturing-process",
+    "out": "app/pages/capabilities/manufacturing-process.vue"
+  },
+  {
+    "source": "capabilities/quality-control.html",
+    "route": "/capabilities/quality-control",
+    "out": "app/pages/capabilities/quality-control.vue"
+  },
+  {
+    "source": "capabilities/rapid-prototyping.html",
+    "route": "/capabilities/rapid-prototyping",
+    "out": "app/pages/capabilities/rapid-prototyping.vue"
+  },
+  {
+    "source": "capabilities/vertical-integration.html",
+    "route": "/capabilities/vertical-integration",
+    "out": "app/pages/capabilities/vertical-integration.vue"
+  },
+  {
+    "source": "contact.html",
+    "route": "/contact",
+    "out": "app/pages/contact.vue"
+  }
+]
