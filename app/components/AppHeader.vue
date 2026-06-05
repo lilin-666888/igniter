@@ -2,10 +2,31 @@
 import { contactInfo, navLinks, topbarItems } from "~/data/site";
 
 const route = useRoute();
+const activeGroupByNav = ref<Record<string, number>>({});
 
 function isActive(to: string) {
-  if (to === "/") return route.path === "/";
-  return route.path === to || route.path.startsWith(`${to}/`);
+  const path = to.split("#")[0];
+  if (path === "/") return route.path === "/";
+  return route.path === path || route.path.startsWith(`${path}/`);
+}
+
+function activeGroupIndex(navTo: string) {
+  return activeGroupByNav.value[navTo] ?? 0;
+}
+
+function setActiveGroup(navTo: string, index: number) {
+  activeGroupByNav.value[navTo] = index;
+}
+
+function onNavItemEnter(navTo: string) {
+  if (activeGroupByNav.value[navTo] === undefined) {
+    activeGroupByNav.value[navTo] = 0;
+  }
+}
+
+function activeGroup(link: (typeof navLinks)[number]) {
+  const index = activeGroupIndex(link.to);
+  return link.groups?.[index];
 }
 </script>
 
@@ -54,7 +75,8 @@ function isActive(to: string) {
           v-for="link in navLinks"
           :key="link.to"
           class="nav-item"
-          :class="{ 'has-dropdown': link.columns?.length }"
+          :class="{ 'has-dropdown': link.groups?.length }"
+          @mouseenter="onNavItemEnter(link.to)"
         >
           <NuxtLink
             :to="link.to"
@@ -63,33 +85,58 @@ function isActive(to: string) {
           >
             {{ link.label }}
             <span
-              v-if="link.columns?.length"
+              v-if="link.groups?.length"
               class="nav-caret"
               aria-hidden="true"
               >▾</span
             >
           </NuxtLink>
 
-          <div v-if="link.columns?.length" class="nav-dropdown">
+          <div v-if="link.groups?.length" class="nav-dropdown">
             <div class="nav-dropdown-panel">
-              <div class="nav-dropdown-grid">
-                <div
-                  v-for="column in link.columns"
-                  :key="column.title"
-                  class="nav-dropdown-col"
-                >
-                  <div class="nav-dropdown-col-title">{{ column.title }}</div>
-                  <ul class="nav-dropdown-list">
-                    <li v-for="child in column.links" :key="child.to">
+              <div class="wrap2 nav-dropdown-wrap">
+                <div class="nav-flyout">
+                  <ul class="nav-flyout-primary">
+                    <li
+                      v-for="(group, index) in link.groups"
+                      :key="group.label"
+                      class="nav-flyout-primary-item"
+                      :class="{ active: activeGroupIndex(link.to) === index }"
+                      @mouseenter="setActiveGroup(link.to, index)"
+                    >
                       <NuxtLink
-                        :to="child.to"
-                        class="nav-dropdown-link"
-                        :class="{ active: isActive(child.to) }"
+                        v-if="group.to"
+                        :to="group.to"
+                        class="nav-flyout-primary-link"
+                        :class="{ active: isActive(group.to!) }"
                       >
-                        {{ child.label }}
+                        {{ group.label }}
                       </NuxtLink>
+                      <span v-else class="nav-flyout-primary-link">{{
+                        group.label
+                      }}</span>
                     </li>
                   </ul>
+
+                  <div v-if="activeGroup(link)" class="nav-flyout-secondary">
+                    <div class="nav-flyout-secondary-title">
+                      {{ activeGroup(link)!.label }}
+                    </div>
+                    <ul class="nav-flyout-secondary-list">
+                      <li
+                        v-for="child in activeGroup(link)!.links"
+                        :key="child.to + child.label"
+                      >
+                        <NuxtLink
+                          :to="child.to"
+                          class="nav-dropdown-link"
+                          :class="{ active: isActive(child.to) }"
+                        >
+                          {{ child.label }}
+                        </NuxtLink>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,3 +148,15 @@ function isActive(to: string) {
     </div>
   </nav>
 </template>
+
+<style scoped>
+.wrap2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-dropdown-wrap {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+</style>
