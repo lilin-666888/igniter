@@ -28,6 +28,10 @@ function activeGroup(link: (typeof navLinks)[number]) {
   const index = activeGroupIndex(link.to)
   return link.groups?.[index]
 }
+
+function hasSecondaryGroups(link: (typeof navLinks)[number]) {
+  return link.groups?.some(group => group.links.length > 0) ?? false
+}
 </script>
 
 <template>
@@ -72,16 +76,22 @@ function activeGroup(link: (typeof navLinks)[number]) {
             <span v-if="link.groups?.length" class="nav-caret" aria-hidden="true">▾</span>
           </NuxtLink>
 
-          <div v-if="link.groups?.length" class="nav-dropdown">
+          <div
+            v-if="link.groups?.length"
+            class="nav-dropdown"
+            :class="{ 'nav-dropdown--flat': !hasSecondaryGroups(link) }"
+          >
             <div class="nav-dropdown-panel">
-              <div class="nav-flyout">
+              <div class="nav-flyout" :class="{ 'nav-flyout--flat': !hasSecondaryGroups(link) }">
                 <ul class="nav-flyout-primary">
                   <li
                     v-for="(group, index) in link.groups"
                     :key="group.label"
                     class="nav-flyout-primary-item"
-                    :class="{ active: activeGroupIndex(link.to) === index }"
-                    @mouseenter="setActiveGroup(link.to, index)"
+                    :class="{
+                      active: hasSecondaryGroups(link) && activeGroupIndex(link.to) === index,
+                    }"
+                    @mouseenter="hasSecondaryGroups(link) && setActiveGroup(link.to, index)"
                   >
                     <NuxtLink
                       v-if="group.to"
@@ -95,7 +105,10 @@ function activeGroup(link: (typeof navLinks)[number]) {
                   </li>
                 </ul>
 
-                <div v-if="activeGroup(link)" class="nav-flyout-secondary">
+                <div
+                  v-if="hasSecondaryGroups(link) && activeGroup(link)?.links.length"
+                  class="nav-flyout-secondary"
+                >
                   <div class="nav-flyout-secondary-title">
                     {{ activeGroup(link)!.label }}
                   </div>

@@ -32,89 +32,19 @@ export const navLinks: NavLink[] = [
     label: 'Materials',
     to: '/materials',
     groups: [
-      {
-        label: 'Overview',
-        to: '/materials',
-        links: [
-          { label: 'All Materials', to: '/materials' },
-          { label: 'Material Comparison Table', to: '/materials#compare' },
-          { label: 'Material Selection Guide', to: '/resources/ceramic-grade-selection-guide' },
-        ],
-      },
-      {
-        label: 'Silicon Nitride',
-        to: '/materials/silicon-nitride',
-        links: [
-          { label: 'Material Properties', to: '/materials/silicon-nitride' },
-          { label: 'Typical Applications', to: '/materials/silicon-nitride' },
-          { label: 'Related Products', to: '/products/ceramic-igniters' },
-          { label: 'Datasheet Download', to: '/materials/silicon-nitride' },
-          { label: 'Material FAQ', to: '/materials/silicon-nitride' },
-        ],
-      },
-      {
-        label: 'Alumina',
-        to: '/materials/alumina',
-        links: [
-          { label: 'Material Properties (95%–99.7%)', to: '/materials/alumina' },
-          { label: 'Typical Applications', to: '/materials/alumina' },
-          { label: 'Purity Comparison', to: '/materials/alumina#grade-99' },
-          { label: 'Related Products', to: '/products/ceramic-structural' },
-          { label: 'Datasheet Download', to: '/materials/alumina' },
-        ],
-      },
-      {
-        label: 'Zirconia',
-        to: '/materials/zirconia',
-        links: [
-          { label: 'Material Properties (Y-TZP)', to: '/materials/zirconia#variant-ytzp' },
-          { label: 'Typical Applications', to: '/materials/zirconia' },
-          { label: 'Related Products', to: '/products/precision-bearings' },
-          { label: 'Datasheet Download', to: '/materials/zirconia' },
-        ],
-      },
-      {
-        label: 'Silicon Carbide',
-        to: '/materials/silicon-carbide',
-        links: [
-          { label: 'Material Properties (RBSC/SSiC)', to: '/materials/silicon-carbide' },
-          { label: 'Typical Applications', to: '/materials/silicon-carbide' },
-          { label: 'Related Products', to: '/products/ceramic-heaters' },
-        ],
-      },
-      {
-        label: 'Boron Carbide',
-        to: '/materials/boron-carbide',
-        links: [
-          { label: 'Material Properties', to: '/materials/boron-carbide' },
-          { label: 'Typical Applications', to: '/materials/boron-carbide#form-armor' },
-        ],
-      },
-      {
-        label: 'Aluminum Nitride',
-        to: '/materials/aluminum-nitride',
-        links: [
-          { label: 'Material Properties', to: '/materials/aluminum-nitride' },
-          { label: 'Typical Applications', to: '/materials/aluminum-nitride' },
-          { label: 'Related Products', to: '/products/silicon-nitride-heaters' },
-        ],
-      },
-      {
-        label: 'Boron Nitride',
-        to: '/materials/boron-nitride',
-        links: [
-          { label: 'Material Properties', to: '/materials/boron-nitride' },
-          { label: 'Typical Applications', to: '/materials/boron-nitride' },
-        ],
-      },
-      {
-        label: 'Material Comparisons',
-        links: [
-          { label: 'Si₃N₄ vs Al₂O₃: Which to Choose', to: '/resources/silicon-nitride-vs-alumina' },
-          { label: 'Alumina vs Zirconia for Bearings', to: '/resources/ceramic-grade-selection-guide' },
-          { label: 'SiC vs Al₂O₃ for Wear Applications', to: '/materials#compare' },
-        ],
-      },
+      { label: 'All Materials', to: '/materials', links: [] },
+      { label: 'Material Comparison Table', to: '/materials#compare', links: [] },
+      { label: 'Material Selection Guide', to: '/resources/ceramic-grade-selection-guide', links: [] },
+      { label: 'Silicon Nitride', to: '/materials/silicon-nitride', links: [] },
+      { label: 'Alumina', to: '/materials/alumina', links: [] },
+      { label: 'Zirconia', to: '/materials/zirconia', links: [] },
+      { label: 'Silicon Carbide', to: '/materials/silicon-carbide', links: [] },
+      { label: 'Boron Carbide', to: '/materials/boron-carbide', links: [] },
+      { label: 'Aluminum Nitride', to: '/materials/aluminum-nitride', links: [] },
+      { label: 'Boron Nitride', to: '/materials/boron-nitride', links: [] },
+      { label: 'Si₃N₄ vs Al₂O₃', to: '/resources/silicon-nitride-vs-alumina', links: [] },
+      { label: 'Alumina vs Zirconia for Bearings', to: '/resources/ceramic-grade-selection-guide', links: [] },
+      { label: 'SiC vs Al₂O₃ for Wear', to: '/materials#compare', links: [] },
     ],
   },
   {
