@@ -267,7 +267,7 @@ useHead({
           </div>
         </div>
 
-        <div class="compare-table-wrap">
+        <div class="compare-table-wrap" tabindex="0" role="region" aria-label="Material property comparison table">
           <table class="compare">
             <thead>
               <tr>
@@ -347,6 +347,7 @@ useHead({
             </tbody>
           </table>
         </div>
+        <p class="compare-scroll-hint">Swipe horizontally to compare all materials →</p>
         <div class="compare-legend"><span>★</span> = best in class for that property. Lower thermal expansion = better thermal shock resistance.</div>
       </div>
     </section>
@@ -598,8 +599,44 @@ useHead({
   .compare-wrap .sec-num { color: var(--gold); }
   .compare-wrap .sec-lead { color: rgba(255,255,255,0.75); }
 
-  .compare-table-wrap { background: var(--navy-2); padding: 8px; margin-top: 20px; overflow-x: auto; }
-  table.compare { width: 100%; border-collapse: collapse; font-family: var(--sans); }
+  .compare-table-wrap {
+    background: var(--navy-2);
+    padding: 8px;
+    margin-top: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  table.compare {
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+    font-family: var(--sans);
+  }
+
+  table.compare th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: var(--navy-2);
+    box-shadow: 4px 0 12px rgba(10, 38, 71, 0.35);
+  }
+
+  table.compare thead th:first-child {
+    z-index: 2;
+  }
+
+  .compare-scroll-hint {
+    display: none;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
   table.compare th, table.compare td { padding: 16px 18px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 14px; }
   table.compare thead th { font-family: var(--mono); font-size: 11px; letter-spacing: 0.13em; color: var(--gold); text-transform: uppercase; font-weight: 500; padding-top: 22px; padding-bottom: 14px; border-bottom: 2px solid rgba(255,255,255,0.15); }
   table.compare tbody th { font-family: var(--cond); font-size: 19px; font-weight: 700; color: #fff; }
@@ -679,5 +716,72 @@ useHead({
     .sec-head { flex-direction: column; align-items: flex-start; }
     .guide-grid { grid-template-columns: 1fr; }
     .topbar .left, .nav-links { display: none; }
+
+    .compare-wrap {
+      padding: 60px 0;
+    }
+
+    .compare-table-wrap {
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-top: 16px;
+      padding: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    table.compare {
+      min-width: 680px;
+    }
+
+    table.compare th,
+    table.compare td {
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+
+    table.compare thead th {
+      font-size: 10px;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      white-space: nowrap;
+    }
+
+    table.compare thead th:first-child {
+      min-width: 128px;
+      white-space: normal;
+      line-height: 1.35;
+    }
+
+    table.compare tbody th {
+      min-width: 128px;
+      max-width: 148px;
+      font-size: 15px;
+      line-height: 1.25;
+      white-space: normal;
+    }
+
+    table.compare tbody td.num {
+      font-size: 17px;
+      white-space: nowrap;
+    }
+
+    table.compare th:first-child {
+      padding-left: 20px;
+    }
+
+    table.compare thead th:last-child,
+    table.compare tbody td:last-child {
+      padding-right: 20px;
+    }
+
+    .compare-scroll-hint {
+      display: block;
+    }
+
+    .compare-legend {
+      margin-top: 12px;
+      line-height: 1.5;
+    }
   }
 </style>

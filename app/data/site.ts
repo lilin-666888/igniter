@@ -314,6 +314,11 @@ export const navLinks: NavLink[] = [
   },
 ]
 
+export type FooterLink = {
+  label: string
+  to?: string
+}
+
 export const footerColumns = [
   {
     title: 'Materials',
@@ -330,11 +335,12 @@ export const footerColumns = [
   {
     title: 'Products',
     links: [
-      { label: 'Heating Elements', to: '/products#heating-elements' },
-      { label: 'Structural Parts', to: '/products#structural' },
-      { label: 'Balls & Bearings', to: '/products#balls-bearings' },
-      { label: 'Grinding Media', to: '/products#grinding-media' },
-      { label: 'Custom Parts', to: '/products#custom' },
+      { label: 'Ceramic Igniters', to: '/products/ceramic-igniters' },
+      { label: 'Heating Elements', to: '/products/ceramic-heaters' },
+      { label: 'Structural Parts', to: '/products/ceramic-structural' },
+      { label: 'Balls & Bearings', to: '/products/ceramic-balls' },
+      { label: 'Grinding Media', to: '/products/grinding-media' },
+      { label: 'Custom Parts', to: '/products/custom-ceramic' },
     ],
   },
   {
@@ -351,10 +357,14 @@ export const footerColumns = [
     links: [
       { label: 'sales@ceramitell.com', to: 'mailto:sales@ceramitell.com' },
       { label: 'engineering@ceramitell.com', to: 'mailto:engineering@ceramitell.com' },
-      { label: 'WhatsApp: +86 151 9017 9780' },
+      { label: 'WhatsApp: +86 151 9017 9780', to: 'https://wa.me/8615190179780' },
       { label: 'WeChat: ceramitell-sales' },
     ],
   },
 ]
 
-export const footerLegal = ['Privacy', 'Terms', 'Sitemap']
+export const footerLegal: FooterLink[] = [
+  { label: 'Privacy', to: '/about' },
+  { label: 'Terms', to: '/about' },
+  { label: 'Sitemap', to: '/resources' },
+]
