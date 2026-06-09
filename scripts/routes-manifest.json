@@ -50,6 +50,11 @@
     "out": "app/pages/applications/sub-bbq-grills.vue"
   },
   {
+    "source": "Application/biomass-pellet-stoves.html",
+    "route": "/applications/sub-biomass-pellet-stoves",
+    "out": "app/pages/applications/sub-biomass-pellet-stoves.vue"
+  },
+  {
     "source": "Application/sub-commercial-boilers.html",
     "route": "/applications/sub-commercial-boilers",
     "out": "app/pages/applications/sub-commercial-boilers.vue"

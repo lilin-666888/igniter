@@ -33,8 +33,7 @@ export const navLinks: NavLink[] = [
     to: '/materials',
     groups: [
       { label: 'All Materials', to: '/materials', links: [] },
-      { label: 'Material Comparison Table', to: '/materials#compare', links: [] },
-      { label: 'Material Selection Guide', to: '/resources/ceramic-grade-selection-guide', links: [] },
+      // { label: 'Material Comparison Table', to: '/materials#compare', links: [] },
       { label: 'Silicon Nitride', to: '/materials/silicon-nitride', links: [] },
       { label: 'Alumina', to: '/materials/alumina', links: [] },
       { label: 'Zirconia', to: '/materials/zirconia', links: [] },
@@ -43,8 +42,7 @@ export const navLinks: NavLink[] = [
       { label: 'Aluminum Nitride', to: '/materials/aluminum-nitride', links: [] },
       { label: 'Boron Nitride', to: '/materials/boron-nitride', links: [] },
       { label: 'Si₃N₄ vs Al₂O₃', to: '/resources/silicon-nitride-vs-alumina', links: [] },
-      { label: 'Alumina vs Zirconia for Bearings', to: '/resources/ceramic-grade-selection-guide', links: [] },
-      { label: 'SiC vs Al₂O₃ for Wear', to: '/materials#compare', links: [] },
+      // { label: 'SiC vs Al₂O₃ for Wear', to: '/materials#compare', links: [] },
     ],
   },
   {
@@ -161,7 +159,7 @@ export const navLinks: NavLink[] = [
         label: 'Advanced Combustion & Ignition',
         to: '/applications/advanced-combustion-fixed',
         links: [
-          { label: 'Biomass & Pellet Stoves', to: '/applications/advanced-combustion-fixed#biomass' },
+          { label: 'Biomass & Pellet Stoves', to: '/applications/sub-biomass-pellet-stoves' },
           { label: 'BBQ Grills', to: '/applications/sub-bbq-grills' },
           { label: 'Residential Gas Appliances', to: '/applications/sub-gas-appliances' },
           { label: 'Gas Furnaces', to: '/applications/sub-gas-appliances' },
@@ -344,11 +342,19 @@ export const footerColumns = [
     ],
   },
   {
+    title: 'Resources',
+    links: [
+      { label: 'All Resources', to: '/resources' },
+      { label: 'Si₃N₄ vs Alumina', to: '/resources/silicon-nitride-vs-alumina' },
+      { label: 'Grade Selection Guide', to: '/resources/ceramic-grade-selection-guide' },
+      { label: 'Certifications & Quality', to: '/resources/iso-9001-certification' },
+    ],
+  },
+  {
     title: 'Company',
     links: [
       { label: 'About Ceramitell', to: '/about' },
       { label: 'Capabilities', to: '/capabilities' },
-      { label: 'Engineering Resources', to: '/resources' },
       { label: 'Contact Sales', to: '/contact' },
     ],
   },

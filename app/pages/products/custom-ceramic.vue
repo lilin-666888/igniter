@@ -112,7 +112,7 @@ useHead({
     <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our CN-300 series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
     <div class="casecta-ctas">
     <a class="btn-primary" href="/contact">Request Free Samples →</a>
-    <a class="btn-ghost" href="/applications/advanced-combustion-fixed#biomass">Pellet Stove Case →</a>
+    <a class="btn-ghost" href="/applications/sub-biomass-pellet-stoves">Pellet Stove Case →</a>
     </div>
     </div>
     <div class="casecta-side">

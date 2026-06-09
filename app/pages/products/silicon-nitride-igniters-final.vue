@@ -206,7 +206,7 @@ useHead({
           <p>One of our longest-running OEM partners switched from a European competitor's alumina igniters to CN-300 series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
-            <a class="btn-ghost" href="/applications/advanced-combustion-fixed#biomass">Full Pellet Stove Case →</a>
+            <a class="btn-ghost" href="/applications/sub-biomass-pellet-stoves">Full Pellet Stove Case →</a>
           </div>
         </div>
         <div class="casecta-side">
@@ -335,7 +335,7 @@ useHead({
             <div class="rel-desc">Properties, grades, and why Si₃N₄ outperforms alumina in high-cycle thermal applications.</div>
             <div class="rel-link">View material →</div>
           </a>
-          <a href="/applications/advanced-combustion-fixed#biomass" class="rel-card">
+          <a href="/applications/sub-biomass-pellet-stoves" class="rel-card">
             <div class="rel-eyebrow">Application</div>
             <div class="rel-title">Biomass & Pellet Stoves</div>
             <div class="rel-desc">The flagship CN-300 application — Italian OEM case, 180,000 units/year, −38% warranty returns.</div>

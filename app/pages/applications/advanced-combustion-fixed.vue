@@ -204,7 +204,7 @@ useHead({
               >
               <a href="/products/ceramic-igniters">Al₂O₃ Igniter</a>
             </div>
-            <a href="#quote" class="rec-cta-sm">Request Samples →</a>
+            <a href="/applications/sub-biomass-pellet-stoves" class="rec-cta-sm">Full Application Page →</a>
           </div>
         </div>
       </div>

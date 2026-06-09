@@ -15,33 +15,33 @@ useHead({
         <span class="sep">/</span>
         <a href="/applications/advanced-combustion-fixed">Advanced Combustion</a>
         <span class="sep">/</span>
-        <span>BBQ & Outdoor Grills</span>
+        <span>Biomass &amp; Pellet Stoves</span>
       </div>
     </div>
 
     <!-- HERO -->
-    <section class="bio-hero" style="background:linear-gradient(135deg,#1a0f05 0%,#2d1a0a 50%,var(--navy) 100%);">
+    <section class="bio-hero">
       <div class="bio-hero-stripe"></div>
       <div class="wrap">
         <div>
-          <div class="bio-hero-eyebrow">Advanced Combustion · Scenario 02</div>
-          <h1>BBQ grill ignition,<br/><span class="hl">every time, first time.</span></h1>
-          <p class="bio-hero-sub">Ceramic hot surface igniters for gas BBQ grills, outdoor cooking stations, and charcoal starters. <b>Moisture-resistant, UV-stable,</b> and rated for outdoor temperature extremes from −30°C to +60°C. Drop-in replacement for major grill OEM part numbers.</p>
-          <div class="bio-statbar"><div><div class="num">100K+</div><div class="lbl">Cycle Life</div></div><div><div class="num">3 sec</div><div class="lbl">Heat-Up</div></div><div><div class="num">−30/+60°C</div><div class="lbl">Outdoor Range</div></div><div><div class="num">UL/CE</div><div class="lbl">Certified</div></div></div>
+          <div class="bio-hero-eyebrow">⭐ Flagship Application · Advanced Combustion Vertical 01</div>
+          <h1>Biomass &amp; pellet stove<br/><span class="hl">ignition systems.</span></h1>
+          <p class="bio-hero-sub">The application that demands the most from a ceramic igniter. Sub-zero cold starts, <b>up to 20,000 cycles per year</b>, and OEM accountability for every warranty return. Si₃N₄ hot surface igniters are the answer — and the data proves it.</p>
+          <div class="bio-statbar"><div><div class="num">100K+</div><div class="lbl">Cycle Life</div></div><div><div class="num">3 sec</div><div class="lbl">Heat-Up</div></div><div><div class="num">−38%</div><div class="lbl">Warranty Returns</div></div><div><div class="num">UL/CE</div><div class="lbl">Certified</div></div></div>
           <div class="bio-hero-ctas">
             <a class="btn-primary" href="#quote">Request Free Samples →</a>
             <a class="btn-ghost" style="color:#fff;border-color:rgba(255,255,255,0.4);" href="/products/silicon-nitride-igniters-final">View CN-300 Specs →</a>
           </div>
           <div class="bio-hero-nav-bottom">
-            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion</a></span>
+            <span class="nav-back">← <a href="/applications/advanced-combustion-fixed">Back to Advanced Combustion &amp; Ignition</a></span>
             <span class="nav-back">↑ <a href="/applications">All 8 Application Verticals</a></span>
           </div>
         </div>
         <div>
           <div class="bio-proof">
-            <div class="bio-proof-eyebrow">★ Why BBQ OEMs specify Si₃N₄</div>
-            <div class="bio-proof-title">Key performance advantages vs standard Al₂O₃</div>
-            <div class="bio-proof-grid"><div class="bio-proof-stat"><div class="bn">100K+</div><div class="bl">Cycle life — vs 25,000 for Al₂O₃</div></div><div class="bio-proof-stat"><div class="bn">3 sec</div><div class="bl">Heat-up to 1,100°C</div></div><div class="bio-proof-stat"><div class="bn">Sealed</div><div class="bl">Element — moisture-proof</div></div><div class="bio-proof-stat"><div class="bn">UL/CE</div><div class="bl">Both markets certified</div></div></div>
+            <div class="bio-proof-eyebrow">★ Case Study · Italian Pellet Stove OEM · 7-Year Partnership</div>
+            <div class="bio-proof-title">Switch from Al₂O₃ → Si₃N₄ CN-300 — Year 1 Results</div>
+            <div class="bio-proof-grid"><div class="bio-proof-stat"><div class="bn">−38%</div><div class="bl">Warranty returns</div></div><div class="bio-proof-stat"><div class="bn">−32%</div><div class="bl">Cold-start failures</div></div><div class="bio-proof-stat"><div class="bn">+22%</div><div class="bl">Avg igniter service life</div></div><div class="bio-proof-stat"><div class="bn">180K</div><div class="bl">Units shipped / year</div></div></div>
           </div>
         </div>
       </div>
@@ -50,92 +50,102 @@ useHead({
         <div class="cs-label">Certifications &amp; Standards</div>
         <div class="cs-badges"><span>ISO 9001</span><span>IATF 16949</span><span>CE</span><span>RoHS · REACH</span><span>UL Recognized</span></div>
       </div>
-    </section><section class="mkt-band"><div class="wrap"><div class="mkt-grid"><div class="mkt-item"><div class="mkt-num">80M+</div><div class="mkt-label">Gas BBQ grills in active use globally — replacement igniter market €400M+/yr</div></div><div class="mkt-item"><div class="mkt-num">50K</div><div class="mkt-label">Cycles per year in a commercial outdoor kitchen range — highest-duty cooking application</div></div><div class="mkt-item"><div class="mkt-num">48h</div><div class="mkt-label">Sample dispatch from stock — for OEM trial and drop-in fitment verification</div></div><div class="mkt-item"><div class="mkt-num">3–5×</div><div class="mkt-label">Longer field life of Si₃N₄ vs Al₂O₃ in outdoor moisture-exposed duty</div></div></div></div></section><section class="s" style="padding:72px 0;">
+    </section><section class="mkt-band"><div class="wrap"><div class="mkt-grid"><div class="mkt-item"><div class="mkt-num">12M<span>+</span></div><div class="mkt-label">Pellet stoves in active use in the EU — the world's largest residential biomass heating market</div></div><div class="mkt-item"><div class="mkt-num">5–8<span>×</span></div><div class="mkt-label">Ignitions per day, per stove — 5-season heating regions fire an igniter 1,500–2,000 times per year</div></div><div class="mkt-item"><div class="mkt-num">2–3<span>yr</span></div><div class="mkt-label">Typical alumina igniter service life in pellet stoves — Si₃N₄ averages 22% longer under identical duty</div></div><div class="mkt-item"><div class="mkt-num">UL<span>/CE</span></div><div class="mkt-label">Both certifications required to ship into NA and EU distribution channels — CN-300 carries both</div></div></div></div>    </section><section class="s" style="padding:72px 0;">
       <div class="wrap">
         <div class="sec-num">01 · The Application</div>
-        <h2>Why outdoor igniters <span class="accent">fail</span>.</h2>
+        <h2>Why pellet stoves <span class="accent">break igniters</span>.</h2>
         <div class="depth-grid">
           <div>
-            <div class="depth-img" style="background:linear-gradient(145deg,#1a0f05 0%,#3d1a08 40%,#6b2d0e 100%);">
+            <div class="depth-img">
               <div class="di-icon">🔥</div>
-              <div class="di-label">CN-300 igniter in gas BBQ grill burner assembly</div>
+              <div class="di-label">Pellet stove igniter — cold start in sub-zero conditions</div>
               <div class="di-replace">Replace with product photo</div>
             </div>
           </div>
           <div>
-            <p style="font-size:16px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px;">Gas BBQ grills expose igniters to moisture, UV, grease vapour, extreme cold starts, and mechanical vibration. This is a more demanding outdoor environment than any residential gas furnace — and most Al₂O₃ igniters are only rated for indoor duty.</p>
-             <p style="font-size:16px;color:var(--ink-soft);line-height:1.65;">The CN-300 sealed Si₃N₄ element is impervious to moisture ingress and handles outdoor temperature extremes from −30°C to +60°C without performance degradation.</p>
-            <div class="tech-req-label" style="margin-top:24px;">Technical Requirements</div>
-            <div class="tech-row"><span class="tech-k">Moisture resistance</span><span class="tech-v">Sealed element — no ingress</span></div><div class="tech-row"><span class="tech-k">Outdoor temp</span><span class="tech-v">−30°C to +60°C</span></div><div class="tech-row"><span class="tech-k">Cycle life target</span><span class="tech-v">50,000+ minimum</span></div><div class="tech-row"><span class="tech-k">Ignition voltage</span><span class="tech-v">120V (NA) · 230V (EU)</span></div>
+            <p style="font-size:16px;color:var(--ink-soft);line-height:1.65;margin-bottom:24px;">A pellet stove doesn't just need an igniter that gets hot — it needs one that gets hot <strong style="color:var(--navy);">at −20°C, multiple times a day, for 10 years straight</strong>. The thermal shock of going from ambient temperature to 1,100°C and back, hundreds of times per season, fractures alumina igniters from the inside out.</p>
+            <p style="font-size:16px;color:var(--ink-soft);line-height:1.65;margin-bottom:32px;">Si₃N₄'s exceptional thermal shock resistance — a property that comes from its microstructure, not just its chemistry — means the igniter survives the cycle rather than accumulating micro-cracks that eventually cause catastrophic failure at the worst possible moment: the first cold night of the heating season.</p>
+            <div class="tech-req-label">Technical Requirements · Pellet Stove Igniter</div>
+            <div class="tech-row"><span class="tech-k">Annual Duty Cycle</span><span class="tech-v">Up to <span class="hi">20,000</span><small>cycles/yr</small></span></div>
+            <div class="tech-row"><span class="tech-k">Cold-Start Ambient</span><span class="tech-v">−40<small>°C minimum</small></span></div>
+            <div class="tech-row"><span class="tech-k">Target Surface Temp</span><span class="tech-v"><span class="hi">1,100–1,300</span><small>°C</small></span></div>
+            <div class="tech-row"><span class="tech-k">Heat-Up Time</span><span class="tech-v"><span class="hi">≤ 3</span><small>seconds</small></span></div>
+            <div class="tech-row"><span class="tech-k">Voltage</span><span class="tech-v">12 / 120 / 230<small>V AC/DC</small></span></div>
+            <div class="tech-row"><span class="tech-k">Insulation Resistance</span><span class="tech-v">≥100<small>MΩ @ 500V DC</small></span></div>
+            <div class="tech-row"><span class="tech-k">Certifications Required</span><span class="tech-v">UL Recognized (NA) · CE (EU)</span></div>
+            <div class="tech-row"><span class="tech-k">Service Life Target</span><span class="tech-v"><span class="hi">100,000+</span><small>cycles</small></span></div>
           </div>
         </div>
       </div>
     </section><section class="comp-band" style="background:var(--bg-soft);">
       <div class="wrap">
         <div class="sec-num">02 · Material Selection</div>
-        <h2>Si₃N₄ vs Al₂O₃ for</h2>
-        <p class="sec-lead">outdoor grill duty</p>
+        <h2>Si₃N₄ vs Al₂O₃ for <span class="accent">pellet stoves</span>.</h2>
+        <p class="sec-lead">Both materials work. The question is total cost of ownership — field failure rate, warranty exposure, and replacement logistics at your production volume.</p>
         <div class="comp-grid">
           <div class="comp-card winner">
-            <span class="comp-badge win">★ Recommended</span>
+            <span class="comp-badge win">★ Recommended for Pellet Stoves</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
-            <div class="comp-tagline">CN-300 series · 100K+ cycles · sealed element</div>
-            <ul class="comp-list"><li><span class="ci">✓</span><div><b>Moisture-proof sealed element</b> — no ingress failure in outdoor service</div></li><li><span class="ci">✓</span><div><b>100,000+ cycle life</b> — 3–5× longer than Al₂O₃ in identical duty</div></li><li><span class="ci">✓</span><div><b>3-second heat-up</b> to 1,100°C — reliable first-attempt ignition</div></li><li><span class="ci">✓</span><div><b>−30°C cold start rated</b> — tested, not estimated</div></li><li><span class="ci">✓</span><div><b>UL Recognized + CE marked</b> — both markets from one SKU</div></li></ul>
-            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View Full Specs →</a></div>
+            <div class="comp-tagline">CN-300 series · 100K+ cycles · 3-second heat-up</div>
+            <ul class="comp-list"><li><span class="ci">✓</span><div><b>Superior thermal shock resistance</b> — survives −40°C cold-starts across the full heating season without micro-crack accumulation</div></li><li><span class="ci">✓</span><div><b>100,000+ cycle life</b> — rated; Italian OEM partner measures 22% longer average service life vs prior alumina</div></li><li><span class="ci">✓</span><div><b>3-second heat-up</b> to 1,100°C — faster ignition, lower pellet waste, better user experience</div></li><li><span class="ci">✓</span><div><b>−38% warranty returns</b> in year 1 of switch — documented at 180,000-unit production scale</div></li><li><span class="ci">✓</span><div><b>UL Recognized + CE marked</b> — ships into all NA and EU retail and wholesale channels</div></li></ul>
+            <div class="comp-cta-row"><a class="btn-primary" href="/products/silicon-nitride-igniters-final">View CN-300 Full Specs →</a></div>
           </div>
           <div class="comp-card">
             <span class="comp-badge alt">Also Available</span>
             <div class="comp-name">Alumina (Al₂O₃)</div>
-            <div class="comp-tagline">Standard duty · lower initial cost</div>
-            <ul class="comp-list"><li><span class="ci">→</span><div>Lower unit cost — 20–30% less per igniter at same volume</div></li><li><span class="ci">→</span><div>Suitable for <b>dry indoor environments</b> — not rated for outdoor</div></li><li><span class="ci" style="color:var(--orange);">⚠</span><div><b>Higher moisture failure rate</b> in outdoor/BBQ applications</div></li><li><span class="ci" style="color:var(--orange);">⚠</span><div>Shorter field life in high-humidity and thermal-shock outdoor duty</div></li></ul>
+            <div class="comp-tagline">Legacy replacement · lower initial cost</div>
+            <ul class="comp-list"><li><span class="ci">→</span><div><b>Lower unit cost</b> — typically 20–35% less than Si₃N₄ per igniter at same volume</div></li><li><span class="ci">→</span><div>Suitable for <b>lower duty-cycle</b> pellet stove applications (≤ 5,000 cycles/yr)</div></li><li><span class="ci">→</span><div>Direct <b>drop-in replacement</b> for legacy alumina igniter SKUs in older appliance platforms</div></li><li><span class="ci" style="color:var(--orange);">⚠</span><div><b>Higher field failure rate</b> in high-duty northern-climate pellet stove applications — established in our 7-year OEM data set</div></li><li><span class="ci" style="color:var(--orange);">⚠</span><div>Shorter average service life than Si₃N₄ under identical pellet stove duty</div></li></ul>
+            <div class="comp-cta-row"><a class="btn-ghost" href="/products/ceramic-igniters">View Al₂O₃ Igniter →</a></div>
           </div>
         </div>
       </div>
     </section><section class="casecta">
       <div class="wrap">
         <div>
-          <div class="casecta-eyebrow">Why leading grill OEMs switch to CN-300</div>
-          <h2>Fewer warranty returns,<br/><span style="color:var(--gold);">longer outdoor seasons.</span></h2>
+          <div class="casecta-eyebrow">★ Full Case Study · Italian Pellet Stove OEM · 2018–Present</div>
+          <h2>180,000 units/year. <span style="color:var(--orange);">7 years. One supplier.</span></h2>
+          <p>One of Italy's major pellet stove OEMs switched from a European competitor's alumina igniter to our CN-300 Si₃N₄ series in 2018. The switch was driven by a quality crisis: alumina failure rates were spiking in northern European winter conditions, generating warranty claims that were eroding their after-sales margin. In year one with CN-300, warranty returns related to ignition dropped 38%. Cold-start failures in sub-zero installations dropped 32%. They extended the igniter warranty from 12 to 18 months. They are now in year 7 of supply.</p>
           <div class="casecta-ctas">
-            <a class="casecta-primary" href="#quote">Request Free Samples →</a>
-            <a class="casecta-secondary" href="/contact">Talk to an Engineer</a>
+            <a class="btn-primary" href="#quote">Request Pellet Stove Samples →</a>
+            <a class="btn-ghost" href="/products/silicon-nitride-igniters-final">Download CN-300 Datasheet →</a>
           </div>
         </div>
         <div class="casecta-side">
-          <div class="casecta-side-tag">What OEM customers tell us</div>
-          <ul class="casecta-side-list"><li><b>Drop-in fit:</b> for Norton, White-Rodgers, Robertshaw dimensions</li><li><b>Free samples:</b> within 48 hours for fitment verification</li><li><b>Private-label:</b> laser marking free at 1,000+ units/order</li><li><b>Volume pricing:</b> tiers from 5,000 units/year</li><li><b>NDA standard:</b> before any OEM project discussion</li></ul>
+          <div class="casecta-side-tag">Switch Outcome — Running Totals</div>
+          <div class="casecta-side-title">Al₂O₃ → CN-300 Si₃N₄</div>
+          <ul class="casecta-side-list"><li><b>−38%</b> Ignition warranty returns (year 1)</li><li><b>−32%</b> Cold-start failures (sub-zero installs)</li><li><b>+22%</b> Avg igniter service life</li><li><b>+6 mo</b> Extended OEM warranty coverage</li><li><b>180K/yr</b> Current annual shipment volume</li><li><b>7 years</b> Continuous supply partnership</li></ul>
         </div>
       </div>
     </section><section class="failure-band">
       <div class="wrap">
-        <div class="sec-num" style="color:var(--gold);">03 · Why Outdoor Igniters Fail</div>
-        <h2 style="color:#fff;">The 3 outdoor failure modes.</h2>
-        <p style="color:rgba(255,255,255,0.75);font-size:16px;max-width:680px;margin-top:10px;line-height:1.6;">All three are more common in Al₂O₃ than Si₃N₄ — and all three are caused or accelerated by the outdoor environment.</p>
-        <div class="failure-grid"><div class="fail-card worst"><div class="fail-num">01</div><div class="fail-name">Moisture ingress cracking</div><div class="fail-desc">Water enters micro-cracks in the Al₂O₃ insulator, freezes overnight, and fractures the element on first ignition of the season. Si₃N₄'s dense microstructure is impervious to moisture ingress.</div><div class="fail-solution">Si₃N₄ fix → sealed element, no exposed ceramic porosity to absorb moisture.</div></div><div class="fail-card"><div class="fail-num">02</div><div class="fail-name">Grease carbonisation overheating</div><div class="fail-desc">Cooking grease deposits on the igniter surface and carbonises at ignition temperature — forming an insulating layer that causes local overheating and cracking. Si₃N₄'s higher thermal conductivity (20 W/m·K) dissipates heat faster.</div><div class="fail-solution">Si₃N₄ fix → higher thermal conductivity prevents hot-spot formation under carbon deposits.</div></div><div class="fail-card"><div class="fail-num">03</div><div class="fail-name">UV/ozone seal degradation</div><div class="fail-desc">Organic sealing compounds in standard igniters degrade under outdoor UV and ozone within 3–5 years, allowing moisture entry. CN-300's all-ceramic seal contains no organic materials.</div><div class="fail-solution">Si₃N₄ fix → no organic sealing compounds — UV/ozone immune.</div></div></div>
+        <div class="sec-num" style="color:var(--gold);">03 · Why Igniters Fail in Pellet Stoves</div>
+        <h2 style="color:#fff;">The 3 most common <span style="color:var(--orange);">ignition failures</span>.</h2>
+        <p style="color:rgba(255,255,255,0.75);font-size:16px;max-width:680px;margin-top:10px;line-height:1.6;">Understanding why an igniter fails helps you choose the right material and spec. All three are more common in alumina than in Si₃N₄ — here is why.</p>
+        <div class="failure-grid"><div class="fail-card worst"><div class="fail-num">01</div><div class="fail-name">Thermal Shock Cracking</div><div class="fail-desc">Repeated rapid temperature cycles from ambient (or sub-zero) to 1,100°C accumulate micro-cracks in the ceramic matrix. Alumina's lower fracture toughness means these grow faster. Failure is sudden, typically mid-season.</div><div class="fail-solution">Si₃N₄ fix → 4–6× higher fracture toughness. Micro-cracks don't propagate at operating stress levels.</div></div><div class="fail-card"><div class="fail-num">02</div><div class="fail-name">Electrode Oxidation &amp; Resistance Drift</div><div class="fail-desc">The heating element's cold resistance drifts above spec as electrode oxidation builds up over thermal cycles. The igniter still heats, but more slowly — missing the pellet ignition window.</div><div class="fail-solution">Si₃N₄ fix → More stable resistance characteristics across thermal cycling range. Cold resistance drift within spec at 100K cycles.</div></div><div class="fail-card"><div class="fail-num">03</div><div class="fail-name">Cold-Start Insulation Breakdown</div><div class="fail-desc">At very low ambient temperatures, absorbed moisture in the ceramic body can reduce insulation resistance below the 100 MΩ minimum, causing nuisance trips or no-fire conditions.</div><div class="fail-solution">Si₃N₄ fix → Lower moisture absorption than alumina. CN-300 insulation resistance holds ≥100 MΩ @ 500V DC down to −40°C.</div></div></div>
       </div>
     </section><section class="s" style="background:var(--bg-soft);">
       <div class="wrap">
         <div class="sec-num">04 · Engineering FAQ</div>
-        <h2>Questions from grill engineers.</h2>
-        <div class="faq-grid"><div class="faq-item"><div class="faq-q">Does CN-300 fit my existing igniter socket?</div><div class="faq-a">Send your current part number or a drawing — we match mounting flange geometry, lead wire, and connector type. Compatibility data for major North American and European grill platforms on file.</div></div><div class="faq-item"><div class="faq-q">What voltage for NA vs EU grills?</div><div class="faq-a">North America: 120V AC (CN-300/120). Europe: 230V AC (CN-300/230). 12V DC for battery-ignition portable grills (CN-300/12).</div></div><div class="faq-item"><div class="faq-q">Can you supply weatherproofed connectors?</div><div class="faq-a">Yes — weather-sealed silicone boot connector assemblies as factory-fitted option. Specify at time of order.</div></div><div class="faq-item"><div class="faq-q">What is the cold-start performance at −30°C?</div><div class="faq-a">CN-300 insulation resistance maintains ≥100 MΩ at 500V DC down to −40°C. Cold-start ignition from −30°C ambient validated per IEC 60335.</div></div><div class="faq-item"><div class="faq-q">Minimum order?</div><div class="faq-a">No MOQ on stock SKUs — 48h dispatch. Custom geometry: 500 units minimum.</div></div></div>
+        <h2>The questions <span class="accent">pellet stove engineers ask us</span>.</h2>
+        <div class="faq-grid"><div class="faq-item"><div class="faq-q">Does CN-300 fit my existing igniter socket?</div><div class="faq-a">Send us your current part number or a drawing — we match the mounting flange geometry, lead wire configuration, and connector type. We have reverse-engineered compatibility data for most major European and North American pellet stove OEM platforms.</div></div><div class="faq-item"><div class="faq-q">What voltage variant do I need for EU stoves?</div><div class="faq-a">Most EU pellet stoves run on 230V AC. The CN-300/230 is the standard variant. Some stoves with 12V auxiliary ignition circuits use CN-300/12. Send us your appliance spec and we'll confirm.</div></div><div class="faq-item"><div class="faq-q">Can you support private-label and OEM branding?</div><div class="faq-a">Yes — laser-marked branding on the metal mounting flange or housing is available at no additional cost on production orders of 1,000+ units. Mutual NDA standard before private-label projects begin.</div></div><div class="faq-item"><div class="faq-q">How quickly can I get samples?</div><div class="faq-a">Stock CN-300 samples dispatch within 48 hours from our Pingxiang warehouse. Custom mounting or voltage configurations ship in 7–14 days from drawing receipt. Sample charges credit against the first production order.</div></div><div class="faq-item"><div class="faq-q">What's the warranty on CN-300 for pellet stove applications?</div><div class="faq-a">Standard warranty is 24 months from OEM installation against manufacturing defect. OEM partners with annual volume commitments can negotiate extended 36–48 month warranties. Field failure analysis is included for all warranty claims.</div></div><div class="faq-item"><div class="faq-q">Is there a MOQ for samples vs production?</div><div class="faq-a">No MOQ for stock-SKU samples — you can order a single unit. Production MOQ for standard CN-300 SKUs is 500 units. Custom voltage or mounting configurations have a 5,000-unit production MOQ.</div></div></div>
       </div>
     </section><section class="s quote-sec" id="quote">
       <div class="wrap">
         <div>
           <div class="sec-num">Request a Quote</div>
-          <h2>Ready to spec <span class="accent">your outdoor grill igniter</span>?</h2>
-          <p class="sec-lead" style="color:rgba(255,255,255,0.8);">Tell us your grill model, voltage, and annual volume. We reply within 24h with a quote and fitment confirmation.</p>
-          <ul class="quote-why"><li><b>Free samples, 48-hour dispatch</b> — no MOQ, credited to first order.</li><li><b>Drop-in compatibility check</b> — send part number, we confirm fit.</li><li><b>CE + UL Recognized</b> — both certifications standard.</li><li><b>Private-label available</b> — laser branding free at 1,000+ units.</li></ul>
+          <h2>Ready to spec <span class="accent">your pellet stove igniter</span>?</h2>
+          <p class="sec-lead" style="color:rgba(255,255,255,0.8);">Tell us your stove model, annual volume, and current igniter part number. We reply within one business day with a quote, compatibility confirmation, and matched datasheet.</p>
+          <ul class="quote-why"><li><b>Free samples, 48-hour dispatch</b> on CN-300 stock SKUs — no MOQ, credited to first order.</li><li><b>Drop-in compatibility check</b> — send your current part number, we confirm fit.</li><li><b>Private-label available</b> — laser branding free at 1,000+ units.</li><li><b>CE + UL Recognized</b> — both certs included, scans on request.</li></ul>
         </div>
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
-          <div class="qquote-title">Request CN-300 samples for your grill</div>
-          <div class="qquote-note">Include your grill model or current igniter part number.</div>
+          <div class="qquote-title">Request a CN-300 sample for your pellet stove</div>
+          <div class="qquote-note">No MOQ on samples. Include your stove model or current igniter part number for fastest compatibility confirmation.</div>
           <div class="qq-field"><label>Name <span style="color:var(--orange)">*</span></label><input type="text" placeholder="Your name" required /></div>
           <div class="qq-field"><label>Email <span style="color:var(--orange)">*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input type="tel" placeholder="+1 / +39 / +86 ..." /></div>
-          <div class="qq-field"><label>Application / Part Number <span style="color:var(--orange)">*</span></label><textarea placeholder="Describe your application, current part number, annual volume, or upload a drawing" required></textarea></div>
-          <button class="qq-submit" onclick="alert('Demo form');return false;">Request Samples →</button>
+          <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input type="tel" placeholder="+39 000 0000000" /></div>
+          <div class="qq-field"><label>Stove Model / Current Igniter Part Number <span style="color:var(--orange)">*</span></label><textarea placeholder="e.g. Palazzetti Ecofire, 230V, replacing Norton 721 — or describe your stove type and annual volume" required></textarea></div>
+          <button class="qq-submit" onclick="alert('Demo form — connect backend before launch.');return false;">Request Samples →</button>
           <div class="qq-trust">🔒 Reply within 24h · NDA available · No spam</div>
         </div>
       </div>
@@ -143,7 +153,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">Related</div>
         <h2>Explore <span class="accent">further</span>.</h2>
-        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specs, voltage variants, and OEM compatibility data.</div><div class="rel-link">View →</div></a><a href="/applications/sub-biomass-pellet-stoves" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Biomass & Pellet Stoves</div><div class="rel-desc">The most demanding ignition application — 20,000 cycles/year.</div><div class="rel-link">View →</div></a><a href="/applications/advanced-combustion-fixed" class="rel-card"><div class="rel-eyebrow">Application</div><div class="rel-title">Advanced Combustion</div><div class="rel-desc">All 8 ignition scenarios in one overview.</div><div class="rel-link">View →</div></a></div>
+        <div class="rel-grid"><a href="/products/silicon-nitride-igniters-final" class="rel-card"><div class="rel-eyebrow">Product</div><div class="rel-title">CN-300 Si₃N₄ Igniter</div><div class="rel-desc">Full specifications, 3-voltage comparison table, datasheet download, and certification files for the CN-300 series.</div><div class="rel-link">View product specs →</div></a><a href="/materials/silicon-nitride" class="rel-card"><div class="rel-eyebrow">Material</div><div class="rel-title">Silicon Nitride (Si₃N₄)</div><div class="rel-desc">Why Si₃N₄ outperforms alumina — thermal shock resistance, fracture toughness, and how the microstructure determines igniter life.</div><div class="rel-link">View material →</div></a><a href="/applications/advanced-combustion-fixed" class="rel-card"><div class="rel-eyebrow">Application Vertical</div><div class="rel-title">Advanced Combustion &amp; Ignition</div><div class="rel-desc">BBQ grills, gas furnaces, boilers, water heaters, HVAC, and hydrogen — all 8 ignition scenarios in the combustion vertical.</div><div class="rel-link">View all 8 scenarios →</div></a></div>
       </div>
     </section>
   </div>
