@@ -53,7 +53,6 @@ export const navLinks: NavLink[] = [
         label: 'Ceramic Igniters',
         to: '/products/ceramic-igniters',
         links: [
-          { label: 'Category Overview', to: '/products/ceramic-igniters' },
           { label: 'Silicon Nitride Igniters', to: '/products/silicon-nitride-igniters-final' },
           { label: 'Hot Surface Igniters', to: '/products/ceramic-igniters#hot-surface' },
           { label: 'Alumina Ceramic Igniters', to: '/products/ceramic-igniters#alumina-igniter' },
