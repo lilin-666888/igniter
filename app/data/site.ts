@@ -64,7 +64,6 @@ export const navLinks: NavLink[] = [
         label: 'Ceramic Heaters and Elements',
         to: '/products/ceramic-heaters',
         links: [
-          { label: 'Category Overview', to: '/products/ceramic-heaters' },
           { label: 'Silicon Nitride Heaters', to: '/products/silicon-nitride-heaters' },
           { label: 'Silicon Nitride Heating Plates', to: '/products/ceramic-heaters' },
           { label: 'Silicon Carbide Heaters', to: '/products/ceramic-heaters' },
@@ -76,7 +75,6 @@ export const navLinks: NavLink[] = [
         label: 'Ceramic Structural Parts',
         to: '/products/ceramic-structural',
         links: [
-          { label: 'Category Overview', to: '/products/ceramic-structural' },
           { label: 'Silicon Nitride Shaft Rod', to: '/products/silicon-nitride-shaft-rod' },
           { label: 'Silicon Nitride Lift Tube', to: '/products/ceramic-structural' },
           { label: 'Silicon Nitride Turbine', to: '/products/ceramic-structural' },
@@ -95,7 +93,6 @@ export const navLinks: NavLink[] = [
         label: 'Custom Ceramic Components',
         to: '/products/custom-ceramic',
         links: [
-          { label: 'Category Overview', to: '/products/custom-ceramic' },
           { label: 'DFM Service', to: '/products/custom-ceramic' },
           { label: 'Drawing to Production Flow', to: '/products/custom-ceramic' },
           { label: 'Submit Drawing', to: '/contact' },
@@ -105,7 +102,6 @@ export const navLinks: NavLink[] = [
         label: 'Ceramic Balls',
         to: '/products/ceramic-balls',
         links: [
-          { label: 'Category Overview', to: '/products/ceramic-balls' },
           { label: 'Silicon Nitride Balls', to: '/products/silicon-nitride-balls' },
           { label: 'Zirconia Balls', to: '/products/ceramic-balls' },
           { label: 'Grade Guide (G3–G60)', to: '/products/ceramic-balls' },
@@ -115,7 +111,6 @@ export const navLinks: NavLink[] = [
         label: 'Precision Ceramic Bearings',
         to: '/products/precision-bearings',
         links: [
-          { label: 'Category Overview', to: '/products/precision-bearings' },
           { label: 'Full Silicon Nitride Bearings', to: '/products/full-silicon-nitride-bearings' },
           { label: 'Full Zirconia Bearings', to: '/products/precision-bearings' },
           { label: 'Si₃N₄ Hybrid Ball Bearings', to: '/products/precision-bearings' },
@@ -126,7 +121,6 @@ export const navLinks: NavLink[] = [
         label: 'Grinding Media',
         to: '/products/grinding-media',
         links: [
-          { label: 'Category Overview', to: '/products/grinding-media' },
           { label: 'Silicon Nitride Grinding Balls', to: '/products/silicon-nitride-grinding-balls' },
           { label: 'Zirconia Grinding Balls', to: '/products/grinding-media' },
         ],
@@ -135,7 +129,6 @@ export const navLinks: NavLink[] = [
         label: 'Superfine Ceramic Powder',
         to: '/products/ceramic-powder',
         links: [
-          { label: 'Category Overview', to: '/products/ceramic-powder' },
           { label: 'Silicon Nitride Powder', to: '/products/silicon-nitride-powder' },
           { label: 'Zirconia Powder', to: '/products/ceramic-powder' },
         ],
