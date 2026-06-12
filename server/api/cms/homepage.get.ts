@@ -1,4 +1,5 @@
-export default defineEventHandler(async () => {
+export default defineEventHandler(async (event) => {
+  setCmsNoCache(event)
   const supabase = useSupabasePublic()
 
   const [settingsRes, itemsRes, categoriesRes] = await Promise.all([
@@ -51,13 +52,24 @@ export default defineEventHandler(async () => {
     (c: { name?: string }) => c.name ?? '',
   )
 
+  const catalogFromCategories = (categoriesRes.data ?? []).map(row => ({
+    emoji: row.emoji,
+    title: row.title,
+    desc: row.description,
+    meta: row.meta,
+    href: row.href,
+    image_path: row.image_path,
+  }))
+
   return {
     heroStats: settings.hero_stats ?? [],
     specCardSpecs: settings.spec_card_specs ?? [],
     spotlightStats: settings.spotlight_stats ?? [],
     quoteOutcomes: settings.quote_outcomes ?? [],
     entryCards: sections.entry_cards ?? [],
-    catalogItems: sections.catalog_items ?? [],
+    catalogItems: catalogFromCategories.length > 0
+      ? catalogFromCategories
+      : (sections.catalog_items ?? []),
     testimonials: sections.testimonials ?? [],
     resourceCards: sections.resource_cards ?? [],
     techmanCards: sections.techman_cards ?? [],

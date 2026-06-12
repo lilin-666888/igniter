@@ -149,7 +149,7 @@ useHead({
             <div class="app-use-icon">📋</div>
             <div class="app-use-title">DFM for Your Part</div>
             <p class="app-use-desc">Send STEP/PDF/DWG drawing + duty profile. Our DFM team recommends the right process route within 48 hours — forming method, sintering method, finishing steps, and resulting tolerance/finish/cost outcome.</p>
-            <div class="app-use-grade"><b>Action →</b> engineering@ceramitell.com</div>
+            <div class="app-use-grade"><b>Action →</b> <CmsEmail :link="false" /></div>
           </a>
         </div>
       </div>

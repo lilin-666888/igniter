@@ -239,7 +239,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">05 · Engineering FAQ</div>
         <h2>The questions <span class="accent">power-electronics engineers ask</span>.</h2>
-        <p class="sec-lead">Direct answers from our application team. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with your power-module spec or substrate drawing.</p>
+        <p class="sec-lead">Direct answers from our application team. Email <CmsEmail /> with your power-module spec or substrate drawing.</p>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">DBC-AlN vs DBC-Al₂O₃ — when does the switch make sense?</div>

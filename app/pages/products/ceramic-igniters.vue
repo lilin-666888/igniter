@@ -66,50 +66,7 @@ useHead({
             Send your part number, drawing, or duty cycle — our application team
             replies within one business day. No MOQ for stock CN-300 samples.
           </div>
-          <div class="qq-field">
-            <label>Name <span style="color: var(--orange)">*</span></label
-            ><input placeholder="Your name" required="" type="text" />
-          </div>
-          <div class="qq-field">
-            <label>Email <span style="color: var(--orange)">*</span></label
-            ><input placeholder="you@company.com" required="" type="email" />
-          </div>
-          <div class="qq-field">
-            <label
-              >Phone
-              <span
-                style="
-                  color: var(--ink-faint);
-                  font-weight: 400;
-                  letter-spacing: 0;
-                "
-                >(optional)</span
-              ></label
-            ><input placeholder="+1 555 000 0000" type="tel" />
-          </div>
-          <div class="qq-field">
-            <label
-              >Your Question / Requirement
-              <span style="color: var(--orange)">*</span></label
-            ><textarea
-              placeholder="e.g. replace Norton 271N, 120V, 5,000 units/yr — or tell us your appliance type"
-              required=""
-            ></textarea>
-          </div>
-          <button
-            class="qq-submit"
-            onclick="
-              alert(
-                'Demo form — connect to your inquiry backend or mailto before launch.',
-              );
-              return false;
-            "
-          >
-            Request a Quote →
-          </button>
-          <div class="qq-trust">
-            🔒 We reply within 24h · NDA available · No spam
-          </div>
+          <QuoteInquiryForm variant="inline" submit-label="Request a Quote →" />
         </div>
       </div>
       <div class="prod-hero-stripe"></div>
@@ -525,11 +482,7 @@ useHead({
         <h2>The questions <span class="accent">we get most</span>.</h2>
         <p class="sec-lead">
           Direct answers from our application team. Need more? Email
-          <a
-            href="mailto:engineering@ceramitell.com"
-            style="color: var(--orange)"
-            >engineering@ceramitell.com</a
-          >
+          <CmsEmail />
           with your part number, drawing, or duty cycle.
         </p>
         <div class="faq-grid">

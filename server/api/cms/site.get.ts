@@ -1,4 +1,5 @@
-export default defineEventHandler(async () => {
+export default defineEventHandler(async (event) => {
+  setCmsNoCache(event)
   const supabase = useSupabasePublic()
   const { data, error } = await supabase.from('site_settings').select('key, value')
 

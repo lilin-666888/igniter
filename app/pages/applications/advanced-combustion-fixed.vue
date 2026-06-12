@@ -611,48 +611,7 @@ useHead({
           <div class="qquote-note">
             Tell us your appliance type, voltage, and annual volume.
           </div>
-          <div class="qq-field">
-            <label>Name <span style="color: var(--orange)">*</span></label
-            ><input type="text" placeholder="Your name" required />
-          </div>
-          <div class="qq-field">
-            <label>Email <span style="color: var(--orange)">*</span></label
-            ><input type="email" placeholder="you@company.com" required />
-          </div>
-          <div class="qq-field">
-            <label
-              >Phone
-              <span
-                style="
-                  color: var(--ink-faint);
-                  font-weight: 400;
-                  letter-spacing: 0;
-                "
-                >(optional)</span
-              ></label
-            ><input type="tel" placeholder="+1 555 000 0000" />
-          </div>
-          <div class="qq-field">
-            <label
-              >Application &amp; Requirement
-              <span style="color: var(--orange)">*</span></label
-            ><textarea
-              placeholder="e.g. 230V pellet stove, 50K units/yr — or your appliance type, voltage, duty cycle"
-              required
-            ></textarea>
-          </div>
-          <button
-            class="qq-submit"
-            onclick="
-              alert('Demo form — connect backend before launch.');
-              return false;
-            "
-          >
-            Request a Quote →
-          </button>
-          <div class="qq-trust">
-            🔒 Reply within 24h · NDA available · No spam
-          </div>
+          <QuoteInquiryForm variant="card" submit-label="Request a Quote →" />
         </div>
       </div>
     </section>

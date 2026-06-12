@@ -238,7 +238,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">05 · Engineering FAQ</div>
         <h2>The questions <span class="accent">engineers ask</span>.</h2>
-        <p class="sec-lead">Direct answers from our application engineering team. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with your drawing or spec for a deeper dive.</p>
+        <p class="sec-lead">Direct answers from our application engineering team. Email <CmsEmail /> with your drawing or spec for a deeper dive.</p>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">Why is zirconia so much tougher than other ceramics?</div>

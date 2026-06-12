@@ -238,7 +238,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">How do I get a material recommendation for my specific application?</div>
-            <div class="faq-a">Email your drawing (STEP/PDF/DWG) plus a description of duty profile (operating temperature, cycle count, mechanical load, environment) to engineering@ceramitell.com. 48-hour reply with material recommendation, DFM feedback, and prototype pricing. Mutual NDA available if your application is proprietary.</div>
+            <div class="faq-a">Email your drawing (STEP/PDF/DWG) plus a description of duty profile (operating temperature, cycle count, mechanical load, environment) to <CmsEmail :link="false" />. 48-hour reply with material recommendation, DFM feedback, and prototype pricing. Mutual NDA available if your application is proprietary.</div>
           </div>
         </div>
       </div>

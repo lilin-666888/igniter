@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint'],
-  css: ['~/assets/css/variables.css', '~/assets/css/chrome.css', '~/assets/css/page-hero.css'],
+  css: [
+    '~/assets/css/variables.css',
+    '~/assets/css/chrome.css',
+    '~/assets/css/page-hero.css',
+    '~/assets/css/quote-form.css',
+  ],
   runtimeConfig: {
     supabaseUrl: process.env.SUPABASE_URL,
     supabaseKey: process.env.SUPABASE_KEY,

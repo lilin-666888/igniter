@@ -428,7 +428,7 @@ useHead({
           <div class="sec-head-left">
             <div class="sec-num">04 · Engineering FAQ</div>
             <h2>The questions <span class="accent">we get most</span>.</h2>
-            <p class="sec-lead">Direct answers from our application engineers. Need a deeper dive? Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with your drawing or duty cycle.</p>
+            <p class="sec-lead">Direct answers from our application engineers. Need a deeper dive? Email <CmsEmail /> with your drawing or duty cycle.</p>
           </div>
         </div>
 

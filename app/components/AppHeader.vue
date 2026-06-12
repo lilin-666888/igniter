@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { contactInfo, navLinks, topbarItems } = useSiteCms()
+const { navLinks, topbarItems } = useSiteCms()
+const { topbarDisplay } = useContact()
 
 const route = useRoute()
 const activeGroupByNav = ref<Record<string, number>>({})
@@ -84,7 +85,7 @@ onBeforeUnmount(() => {
           {{ item.text }}
         </span>
       </div>
-      <div class="right">{{ contactInfo.display }}</div>
+      <div class="right">{{ topbarDisplay }}</div>
     </div>
   </div>
 

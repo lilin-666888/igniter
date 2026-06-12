@@ -9,7 +9,7 @@ defineEmits<{ save: [] }>()
 
 <template>
   <div class="bar">
-    <span v-if="message" class="msg">{{ message }}</span>
+    <span v-if="message" class="msg">{{ message }}<template v-if="message === '已保存'"> · 返回前台页面即可看到更新</template></span>
     <button type="button" :disabled="saving" @click="$emit('save')">
       {{ saving ? '保存中…' : '保存' }}
     </button>

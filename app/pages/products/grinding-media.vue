@@ -28,12 +28,7 @@ useHead({
     <div class="qquote-tag">Free Quote · Reply in 24h</div>
     <div class="qquote-title">Request a quote</div>
     <div class="qquote-note">Tell us your application, spec, or part number. Our team replies within one business day.</div>
-    <div class="qq-field"><label>Name <span style="color:var(--orange)">*</span></label><input placeholder="Your name" required="" type="text"/></div>
-    <div class="qq-field"><label>Email <span style="color:var(--orange)">*</span></label><input placeholder="you@company.com" required="" type="email"/></div>
-    <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input placeholder="+1 / +39 / +86 ..." type="tel"/></div>
-    <div class="qq-field"><label>Requirements / Notes <span style="color:var(--orange)">*</span></label><textarea placeholder="Part number, dimensions, material, annual volume, or application" required=""></textarea></div>
-    <button class="qq-submit" onclick="alert('Demo form');return false;">Request a Quote →</button>
-    <div class="qq-trust">🔒 Reply within 24h · NDA available · No spam</div>
+    <QuoteInquiryForm variant="inline" submit-label="Request a Quote →" />
     </div>
     </div>
     <div class="prod-hero-stripe"></div>

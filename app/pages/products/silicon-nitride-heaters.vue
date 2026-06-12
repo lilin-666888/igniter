@@ -82,7 +82,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">02 · Datasheet &amp; Downloads</div>
         <h2>Drawings, datasheets, <span class="accent">and certs</span>.</h2>
-        <p class="sec-lead">Everything your engineering and procurement teams need. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> for STEP/DWG files.</p>
+        <p class="sec-lead">Everything your engineering and procurement teams need. Email <CmsEmail /> for STEP/DWG files.</p>
         <div class="dl-grid">
           <a href="#quote" class="dl-card"><div class="dl-icon">📄</div><div class="dl-name">Product Datasheet</div><div class="dl-meta">PDF · full specifications</div><div class="dl-btn">Download PDF →</div></a>
           <a href="#quote" class="dl-card"><div class="dl-icon">📐</div><div class="dl-name">2D / 3D Drawings</div><div class="dl-meta">STEP · DWG · PDF · on request</div><div class="dl-btn">Request files →</div></a>
@@ -118,12 +118,7 @@ useHead({
           <div class="qquote-tag">Free Quote · Reply in 24h</div>
           <div class="qquote-title">Request a quote</div>
           <div class="qquote-note">Specify voltage, geometry (flat/plate/rod), dimensions, and annual volume.</div>
-          <div class="qq-field"><label>Name <span style="color:var(--orange)">*</span></label><input type="text" placeholder="Your name" required /></div>
-          <div class="qq-field"><label>Email <span style="color:var(--orange)">*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input type="tel" placeholder="+1 / +39 / +86 ..." /></div>
-          <div class="qq-field"><label>Requirements / Notes <span style="color:var(--orange)">*</span></label><textarea placeholder="Specify your dimensions, grade, material, annual volume, or application" required></textarea></div>
-          <button class="qq-submit" onclick="alert('Demo form — connect backend before launch.');return false;">Request a Quote →</button>
-          <div class="qq-trust">🔒 Reply within 24h · NDA available · No spam</div>
+          <QuoteInquiryForm variant="card" submit-label="Request a Quote →" />
         </div>
       </div>
     </section><section class="s" style="background:var(--bg-soft);">

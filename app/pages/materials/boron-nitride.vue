@@ -239,7 +239,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">05 · Engineering FAQ</div>
         <h2>The questions <span class="accent">engineers ask</span>.</h2>
-        <p class="sec-lead">Direct answers from our application team. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with your application or drawing for a tailored response.</p>
+        <p class="sec-lead">Direct answers from our application team. Email <CmsEmail /> with your application or drawing for a tailored response.</p>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">h-BN vs PBN — which one for my application?</div>

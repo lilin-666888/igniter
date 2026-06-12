@@ -107,7 +107,7 @@ useHead({
             <div class="app-use-bar"></div>
             <div class="app-use-icon">📐</div>
             <div class="app-use-title">Step 01 — Drawing Upload</div>
-            <p class="app-use-desc">Send a STEP file (preferred), PDF, or DWG to engineering@ceramitell.com. Include material preference if you have one, target quantity, and end application. Tip: rougher info is better than no info — we'd rather see "rough sketch + concept" than wait.</p>
+            <p class="app-use-desc">Send a STEP file (preferred), PDF, or DWG to <CmsEmail :link="false" />. Include material preference if you have one, target quantity, and end application. Tip: rougher info is better than no info — we'd rather see "rough sketch + concept" than wait.</p>
             <div class="app-use-grade"><b>Accept →</b> STEP · PDF · DWG · Hand sketch</div>
           </div>
           <div class="app-use" id="step-2">
@@ -142,7 +142,7 @@ useHead({
             <div class="app-use-bar" style="background: linear-gradient(90deg, var(--orange) 0%, var(--gold) 100%); height: 5px;"></div>
             <div class="app-use-icon">🚀</div>
             <div class="app-use-title">Start Here · Submit Drawing</div>
-            <p class="app-use-desc">Ready to submit a drawing? Email STEP/PDF/DWG to engineering@ceramitell.com, or use our quote form. We'll reply within 48 hours with DFM feedback, material recommendation, and pricing.</p>
+            <p class="app-use-desc">Ready to submit a drawing? Email STEP/PDF/DWG to <CmsEmail :link="false" />, or use our quote form. We'll reply within 48 hours with DFM feedback, material recommendation, and pricing.</p>
             <div class="app-use-grade"><b>Action →</b> Email or quote form</div>
           </a>
         </div>
@@ -179,7 +179,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">03 · Engineering FAQ</div>
         <h2>Questions about <span class="accent">our process</span>.</h2>
-        <p class="sec-lead">Direct answers about how the prototype cell works. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with anything we haven't covered.</p>
+        <p class="sec-lead">Direct answers about how the prototype cell works. Email <CmsEmail /> with anything we haven't covered.</p>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">What file formats do you accept?</div>

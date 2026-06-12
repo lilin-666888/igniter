@@ -19,26 +19,45 @@ import {
   testimonials as fallbackTestimonials,
 } from '~/data/homepage'
 
+const cmsFetchOptions = {
+  // 不使用 Nuxt payload 缓存，每次进入前台页面都拉最新数据
+  getCachedData: () => undefined,
+}
+
 export function useSiteCms() {
-  const { data, error } = useFetch<Record<string, unknown>>('/api/cms/site', {
+  const route = useRoute()
+  const { data, error, refresh, status } = useFetch<Record<string, unknown>>('/api/cms/site', {
     key: 'cms-site',
-    default: () => ({}),
+    ...cmsFetchOptions,
+    watch: [() => route.fullPath],
   })
 
+  const useFallback = computed(() => !!error.value)
+
   const contactInfo = computed(() =>
-  (data.value?.contact_info as typeof fallbackContact) ?? fallbackContact,
+    useFallback.value
+      ? fallbackContact
+      : ((data.value?.contact_info as typeof fallbackContact) ?? fallbackContact),
   )
   const topbarItems = computed(() =>
-    (data.value?.topbar_items as typeof fallbackTopbar) ?? fallbackTopbar,
+    useFallback.value
+      ? fallbackTopbar
+      : ((data.value?.topbar_items as typeof fallbackTopbar) ?? fallbackTopbar),
   )
   const navLinks = computed(() =>
-    (data.value?.nav_links as typeof fallbackNavLinks) ?? fallbackNavLinks,
+    useFallback.value
+      ? fallbackNavLinks
+      : ((data.value?.nav_links as typeof fallbackNavLinks) ?? fallbackNavLinks),
   )
   const footerColumns = computed(() =>
-    (data.value?.footer_columns as typeof fallbackFooterColumns) ?? fallbackFooterColumns,
+    useFallback.value
+      ? fallbackFooterColumns
+      : ((data.value?.footer_columns as typeof fallbackFooterColumns) ?? fallbackFooterColumns),
   )
   const footerLegal = computed(() =>
-    (data.value?.footer_legal as typeof fallbackFooterLegal) ?? fallbackFooterLegal,
+    useFallback.value
+      ? fallbackFooterLegal
+      : ((data.value?.footer_legal as typeof fallbackFooterLegal) ?? fallbackFooterLegal),
   )
 
   return {
@@ -48,27 +67,36 @@ export function useSiteCms() {
     footerColumns,
     footerLegal,
     error,
-    loaded: computed(() => !error.value && Object.keys(data.value ?? {}).length > 0),
+    status,
+    refresh,
+    loaded: computed(() => status.value === 'success' && Object.keys(data.value ?? {}).length > 0),
   }
 }
 
 export function useHomepageCms() {
-  const { data, error } = useFetch('/api/cms/homepage', {
+  const route = useRoute()
+  const { data, error, refresh, status } = useFetch('/api/cms/homepage', {
     key: 'cms-homepage',
-    default: () => null,
+    ...cmsFetchOptions,
+    watch: [() => route.fullPath],
   })
 
-  const heroStats = computed(() => data.value?.heroStats ?? fallbackHeroStats)
-  const specCardSpecs = computed(() => data.value?.specCardSpecs ?? fallbackSpecs)
-  const spotlightStats = computed(() => data.value?.spotlightStats ?? fallbackSpotlight)
-  const quoteOutcomes = computed(() => data.value?.quoteOutcomes ?? fallbackQuote)
-  const entryCards = computed(() => data.value?.entryCards ?? fallbackEntry)
-  const catalogItems = computed(() => data.value?.catalogItems ?? fallbackCatalog)
-  const testimonials = computed(() => data.value?.testimonials ?? fallbackTestimonials)
-  const resourceCards = computed(() => data.value?.resourceCards ?? fallbackResources)
-  const techmanCards = computed(() => data.value?.techmanCards ?? fallbackTechman)
-  const contactPromises = computed(() => data.value?.contactPromises ?? fallbackPromises)
-  const certifications = computed(() => data.value?.certifications ?? fallbackCerts)
+  const useFallback = computed(() => !!error.value)
+
+  const pick = <T>(key: keyof NonNullable<typeof data.value>, fallback: T) =>
+    computed(() => (useFallback.value ? fallback : ((data.value?.[key] as T) ?? fallback)))
+
+  const heroStats = pick('heroStats', fallbackHeroStats)
+  const specCardSpecs = pick('specCardSpecs', fallbackSpecs)
+  const spotlightStats = pick('spotlightStats', fallbackSpotlight)
+  const quoteOutcomes = pick('quoteOutcomes', fallbackQuote)
+  const entryCards = pick('entryCards', fallbackEntry)
+  const catalogItems = pick('catalogItems', fallbackCatalog)
+  const testimonials = pick('testimonials', fallbackTestimonials)
+  const resourceCards = pick('resourceCards', fallbackResources)
+  const techmanCards = pick('techmanCards', fallbackTechman)
+  const contactPromises = pick('contactPromises', fallbackPromises)
+  const certifications = pick('certifications', fallbackCerts)
 
   return {
     heroStats,
@@ -83,7 +111,9 @@ export function useHomepageCms() {
     contactPromises,
     certifications,
     error,
-    loaded: computed(() => !!data.value && !error.value),
+    status,
+    refresh,
+    loaded: computed(() => status.value === 'success' && !!data.value),
   }
 }
 

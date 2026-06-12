@@ -8,6 +8,12 @@ export const contactInfo = {
   email: 'sales@ceramitell.com',
   phone: '+86 151 9017 9780',
   display: 'sales@ceramitell.com · +86 151 9017 9780',
+  engineering_email: 'engineering@ceramitell.com',
+  wechat: '+86 151 9017 9780',
+  linkedin: 'Ceramitell Industrial Ceramics',
+  address: 'No.568, Tianyi Road,\nQingpu District, Shanghai 201712,\nChina',
+  factory: 'Pingxiang, Jiangxi, China\n(Visit by appointment)',
+  business_hours: 'Mon–Fri 09:00–18:00 CST (UTC+8)\nSat by appointment',
 }
 
 export type NavChild = {

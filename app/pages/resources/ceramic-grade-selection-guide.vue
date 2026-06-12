@@ -165,7 +165,7 @@ useHead({
             <div class="app-use-icon">🚀</div>
             <div class="app-use-title">Not Sure? Submit Drawing</div>
             <p class="app-use-desc">If you're not sure which grade fits — that's fine, most customers aren't. Send your drawing and a description of your duty profile (temperature, cycles, environment). We'll recommend the right grade within 48 hours, with our reasoning.</p>
-            <div class="app-use-grade"><b>Action →</b> engineering@ceramitell.com</div>
+            <div class="app-use-grade"><b>Action →</b> <CmsEmail :link="false" /></div>
           </a>
         </div>
       </div>

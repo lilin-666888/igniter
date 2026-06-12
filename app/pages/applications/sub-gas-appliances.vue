@@ -131,12 +131,7 @@ useHead({
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
           <div class="qquote-title">Request CN-300 samples</div>
           <div class="qquote-note">Include your current igniter part number for fastest compatibility confirmation.</div>
-          <div class="qq-field"><label>Name <span style="color:var(--orange)">*</span></label><input type="text" placeholder="Your name" required /></div>
-          <div class="qq-field"><label>Email <span style="color:var(--orange)">*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input type="tel" placeholder="+1 / +39 / +86 ..." /></div>
-          <div class="qq-field"><label>Application / Part Number <span style="color:var(--orange)">*</span></label><textarea placeholder="Describe your application, current part number, annual volume, or upload a drawing" required></textarea></div>
-          <button class="qq-submit" onclick="alert('Demo form');return false;">Request Samples →</button>
-          <div class="qq-trust">🔒 Reply within 24h · NDA available · No spam</div>
+          <QuoteInquiryForm variant="card" submit-label="Request Samples →" />
         </div>
       </div>
     </section><section class="s">

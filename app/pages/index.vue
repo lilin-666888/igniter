@@ -12,6 +12,7 @@ const {
   techmanCards,
   testimonials,
 } = useHomepageCms()
+const { email, phone } = useContact()
 
 useHead({
   title:
@@ -349,7 +350,7 @@ useHead({
                   letter-spacing: 0.04em;
                 "
               >
-                sales@ceramitell.com
+                {{ email }}
               </div>
               <div
                 style="
@@ -360,7 +361,7 @@ useHead({
                   margin-top: 4px;
                 "
               >
-                +86 151 9017 9780 · WhatsApp / WeChat
+                {{ phone }} · WhatsApp / WeChat
               </div>
             </div>
           </div>
@@ -369,49 +370,12 @@ useHead({
           <div class="contact-right">
             <div class="contact-eyebrow">Quick Quote Form</div>
             <h3>Tell us what you need</h3>
-            <div class="contact-fields">
-              <div class="contact-field">
-                <label
-                  >Your Name <span style="color: var(--orange)">*</span></label
-                >
-                <input type="text" placeholder="John Smith" required />
-              </div>
-              <div class="contact-field">
-                <label>Email <span style="color: var(--orange)">*</span></label>
-                <input type="email" placeholder="you@company.com" required />
-              </div>
-              <div class="contact-field">
-                <label
-                  >Phone
-                  <span
-                    style="
-                      font-family: var(--mono);
-                      font-size: 10px;
-                      color: var(--ink-faint);
-                      letter-spacing: 0.08em;
-                    "
-                    >OPTIONAL</span
-                  ></label
-                >
-                <input type="tel" placeholder="+1 555 000 0000" />
-              </div>
-              <div class="contact-field">
-                <label
-                  >Requirements / Notes
-                  <span style="color: var(--orange)">*</span></label
-                >
-                <textarea
-                  placeholder="Quantity, voltage, dimensions, certifications needed, or paste your drawing reference…"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <button class="contact-submit">
-              Request Quote + Free Sample →
-            </button>
-            <div class="contact-fine">
-              No spam. No sales scripts. Engineer reads this within 24h.
-            </div>
+            <QuoteInquiryForm
+              variant="homepage"
+              submit-label="Request Quote + Free Sample →"
+              message-label="Requirements / Notes"
+              message-placeholder="Quantity, voltage, dimensions, certifications needed, or paste your drawing reference…"
+            />
           </div>
         </div>
       </div>

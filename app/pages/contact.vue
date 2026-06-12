@@ -1,32 +1,14 @@
 <script setup lang="ts">
+const { email, phone, wechat, linkedin, address, factory, businessHours } = useContact()
+
 useHead({
   title: 'Contact Ceramitell — Quick Quote & Office Information',
-  meta: [{ name: 'description', content: 'Request a quote in 60 seconds. Free samples · 48h dispatch · 24h reply commitment. Shanghai office: No.568 Tianyi Road, Qingpu District. sales@ceramitell.com · WhatsApp/WeChat: +86 151 9017 9780.' }],
+  meta: computed(() => [{
+    name: 'description',
+    content: `Request a quote in 60 seconds. Free samples · 48h dispatch · 24h reply commitment. Shanghai office: ${address.value.replace(/\n/g, ', ')}. ${email.value} · WhatsApp/WeChat: ${phone.value}.`,
+  }]),
 })
 
-const form = reactive({ name: '', email: '', phone: '', message: '' })
-const submitting = ref(false)
-
-async function onSubmit() {
-  submitting.value = true
-  try {
-    await submitInquiry({
-      name: form.name,
-      email: form.email,
-      phone: form.phone || undefined,
-      message: form.message || undefined,
-    })
-    alert('Submitted — we will reply within 24 hours.')
-    form.name = ''
-    form.email = ''
-    form.phone = ''
-    form.message = ''
-  } catch {
-    alert('Submission failed. Please email sales@ceramitell.com directly.')
-  } finally {
-    submitting.value = false
-  }
-}
 </script>
 
 <template>
@@ -61,50 +43,14 @@ async function onSubmit() {
             <h2 class="qq-title">Get a quote in <span class="accent">24 hours</span>.</h2>
             <p class="qq-lead">Fill in four fields. We'll reply with a quote and free-sample shipping schedule within 24 hours — every business day, even Saturdays during peak season.</p>
 
-            <form class="qq-form" @submit.prevent="onSubmit">
-
-              <div class="qq-field">
-                <label>Your Name <span class="req">*</span></label>
-                <input v-model="form.name" type="text" placeholder="e.g. Marco Rossi" required />
-              </div>
-
-              <div class="qq-row">
-                <div class="qq-field">
-                  <label>Email <span class="req">*</span></label>
-                  <input v-model="form.email" type="email" placeholder="you@company.com" required />
-                </div>
-                <div class="qq-field">
-                  <label>Phone / WhatsApp</label>
-                  <input v-model="form.phone" type="tel" placeholder="+1 / +39 / +86 ..." />
-                </div>
-              </div>
-
-              <div class="qq-field">
-                <label>What do you need? <span style="color: var(--ink-faint); font-weight: 400;">(optional)</span></label>
-                <textarea v-model="form.message" placeholder="Example:&#10;'Looking for Si₃N₄ hot surface igniters, 120V, similar to Norton 271N. Need 5,000 units/year. Can you quote against the attached datasheet?'&#10;&#10;Tip: more detail = faster, more accurate quote."></textarea>
-              </div>
-
-              <button type="submit" class="qq-submit" :disabled="submitting">{{ submitting ? 'Sending…' : 'Send Quote Request →' }}</button>
-
-              <div class="qq-promise">
-                <div class="qq-promise-item">
-                  <div class="num">24h</div>
-                  <div class="lbl">Reply Time</div>
-                </div>
-                <div class="qq-promise-item">
-                  <div class="num">Free</div>
-                  <div class="lbl">Samples</div>
-                </div>
-                <div class="qq-promise-item">
-                  <div class="num">48h</div>
-                  <div class="lbl">Sample Dispatch</div>
-                </div>
-                <div class="qq-promise-item">
-                  <div class="num">NDA</div>
-                  <div class="lbl">On Request</div>
-                </div>
-              </div>
-            </form>
+            <QuoteInquiryForm
+              variant="contact"
+              submit-label="Send Quote Request →"
+              :message-required="false"
+              message-placeholder="Example:&#10;'Looking for Si₃N₄ hot surface igniters, 120V, similar to Norton 271N. Need 5,000 units/year. Can you quote against the attached datasheet?'&#10;&#10;Tip: more detail = faster, more accurate quote."
+              :show-promises="true"
+              :show-trust="false"
+            />
           </div>
 
           <!-- RIGHT: OFFICE INFORMATION -->
@@ -118,7 +64,7 @@ async function onSubmit() {
                 <div class="office-line-icon">@</div>
                 <div class="office-line-body">
                   <div class="l">Sales Email</div>
-                  <div class="v"><a href="mailto:sales@ceramitell.com">sales@ceramitell.com</a></div>
+                  <div class="v"><CmsEmail kind="sales" /></div>
                 </div>
               </div>
 
@@ -126,7 +72,7 @@ async function onSubmit() {
                 <div class="office-line-icon">W</div>
                 <div class="office-line-body">
                   <div class="l">WhatsApp</div>
-                  <div class="v">+86 151 9017 9780</div>
+                  <div class="v">{{ phone }}</div>
                 </div>
               </div>
 
@@ -134,7 +80,7 @@ async function onSubmit() {
                 <div class="office-line-icon">微</div>
                 <div class="office-line-body">
                   <div class="l">WeChat</div>
-                  <div class="v">+86 151 9017 9780</div>
+                  <div class="v">{{ wechat }}</div>
                 </div>
               </div>
 
@@ -142,7 +88,7 @@ async function onSubmit() {
                 <div class="office-line-icon">in</div>
                 <div class="office-line-body">
                   <div class="l">LinkedIn</div>
-                  <div class="v">Ceramitell Industrial Ceramics</div>
+                  <div class="v">{{ linkedin }}</div>
                 </div>
               </div>
             </div>
@@ -155,7 +101,7 @@ async function onSubmit() {
                 <div class="office-line-icon">📍</div>
                 <div class="office-line-body">
                   <div class="l">Address</div>
-                  <div class="v small">No.568, Tianyi Road,<br/>Qingpu District, Shanghai 201712,<br/>China</div>
+                  <div class="v small" style="white-space: pre-line">{{ address }}</div>
                 </div>
               </div>
 
@@ -163,7 +109,7 @@ async function onSubmit() {
                 <div class="office-line-icon">🏭</div>
                 <div class="office-line-body">
                   <div class="l">Factory Location</div>
-                  <div class="v small">Pingxiang, Jiangxi, China<br/>(Visit by appointment)</div>
+                  <div class="v small" style="white-space: pre-line">{{ factory }}</div>
                 </div>
               </div>
 
@@ -171,7 +117,7 @@ async function onSubmit() {
                 <div class="office-line-icon">🕐</div>
                 <div class="office-line-body">
                   <div class="l">Business Hours</div>
-                  <div class="v small">Mon–Fri 09:00–18:00 CST (UTC+8)<br/>Sat by appointment</div>
+                  <div class="v small" style="white-space: pre-line">{{ businessHours }}</div>
                 </div>
               </div>
             </div>

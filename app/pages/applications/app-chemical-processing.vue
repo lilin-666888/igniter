@@ -200,12 +200,7 @@ useHead({
         <div class="quote-form-card">
           <div class="qquote-tag">Free Quote · Reply in 24h</div>
           <div class="qquote-title">Request a quote</div>
-          <div class="qq-field"><label>Name <span style="color:var(--orange)">*</span></label><input type="text" placeholder="Your name" required /></div>
-          <div class="qq-field"><label>Email <span style="color:var(--orange)">*</span></label><input type="email" placeholder="you@company.com" required /></div>
-          <div class="qq-field"><label>Phone <span style="color:var(--ink-faint);font-weight:400;letter-spacing:0">(optional)</span></label><input type="tel" placeholder="+1 / +39 / +86 ..." /></div>
-          <div class="qq-field"><label>Requirements / Notes <span style="color:var(--orange)">*</span></label><textarea placeholder="Application, material, dimensions, annual volume" required></textarea></div>
-          <button class="qq-submit" onclick="alert('Demo form');return false;">Request a Quote →</button>
-          <div class="qq-trust">🔒 Reply within 24h · NDA available · No spam</div>
+          <QuoteInquiryForm variant="card" submit-label="Request a Quote →" />
         </div>
       </div>
     </section><section class="s" style="background:var(--bg-soft);">

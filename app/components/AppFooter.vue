@@ -1,5 +1,23 @@
 <script setup lang="ts">
 const { footerColumns, footerLegal } = useSiteCms()
+const { email, phone, engineeringEmail, wechat, whatsappUrl } = useContact()
+
+const columns = computed(() =>
+  footerColumns.value.map((col) => {
+    if (col.title !== 'Reach Us') return col
+    const links: { label: string; to: string }[] = [
+      { label: email.value, to: `mailto:${email.value}` },
+      { label: engineeringEmail.value, to: `mailto:${engineeringEmail.value}` },
+    ]
+    if (whatsappUrl.value) {
+      links.push({ label: `WhatsApp: ${phone.value}`, to: whatsappUrl.value })
+    }
+    if (wechat.value) {
+      links.push({ label: `WeChat: ${wechat.value}`, to: '' })
+    }
+    return { ...col, links }
+  }),
+)
 
 function isExternal(to: string) {
   return /^(https?:|mailto:|tel:)/.test(to);
@@ -46,7 +64,7 @@ function isExternal(to: string) {
           </div>
         </div>
         <div
-          v-for="col in footerColumns"
+          v-for="col in columns"
           :key="col.title"
           class="foot-col foot-links-col"
         >

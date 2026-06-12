@@ -1,0 +1,215 @@
+/* Shared quote / inquiry form styles (QuoteInquiryForm) */
+.quote-inquiry-form.qq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quote-inquiry-form .qq-field,
+.quote-inquiry-form .contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.quote-inquiry-form .qq-field label,
+.quote-inquiry-form .contact-field label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+}
+
+.quote-inquiry-form--contact .qq-field label {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.quote-inquiry-form .qq-field input,
+.quote-inquiry-form .qq-field textarea,
+.quote-inquiry-form .contact-field input,
+.quote-inquiry-form .contact-field textarea {
+  width: 100%;
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  padding: 11px 13px;
+  background: var(--bg-soft);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.quote-inquiry-form--contact .qq-field input,
+.quote-inquiry-form--contact .qq-field textarea {
+  padding: 14px 16px;
+  background: #fff;
+  font-size: 14.5px;
+}
+
+.quote-inquiry-form--homepage .contact-field input,
+.quote-inquiry-form--homepage .contact-field textarea {
+  background: #fff;
+  border: 1.5px solid var(--line-strong);
+  padding: 11px 14px;
+  font-size: 14.5px;
+}
+
+.quote-inquiry-form .qq-field input:focus,
+.quote-inquiry-form .qq-field textarea:focus,
+.quote-inquiry-form .contact-field input:focus,
+.quote-inquiry-form .contact-field textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+  background: #fff;
+}
+
+.quote-inquiry-form .qq-field textarea,
+.quote-inquiry-form .contact-field textarea {
+  resize: vertical;
+  min-height: 64px;
+}
+
+.quote-inquiry-form--contact .qq-field textarea {
+  min-height: 130px;
+  line-height: 1.5;
+}
+
+.quote-inquiry-form--homepage .contact-field textarea {
+  min-height: 80px;
+}
+
+.quote-inquiry-form .qq-row,
+.quote-inquiry-form .contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.quote-inquiry-form--contact .qq-row {
+  gap: 16px;
+}
+
+.quote-inquiry-form .qq-submit,
+.quote-inquiry-form .contact-submit {
+  width: 100%;
+  background: var(--orange);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 14.5px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 6px;
+}
+
+.quote-inquiry-form--contact .qq-submit {
+  padding: 18px 30px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-inquiry-form--homepage .contact-submit {
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}
+
+.quote-inquiry-form .qq-submit:hover:not(:disabled),
+.quote-inquiry-form .contact-submit:hover:not(:disabled) {
+  background: var(--orange-deep);
+}
+
+.quote-inquiry-form .qq-submit:disabled,
+.quote-inquiry-form .contact-submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.quote-inquiry-form .qq-trust {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+  text-align: center;
+  margin-top: 12px;
+  letter-spacing: 0.03em;
+}
+
+.quote-inquiry-form .qq-promise {
+  display: flex;
+  gap: 18px;
+  padding-top: 20px;
+  margin-top: 6px;
+  border-top: 1px solid var(--line);
+}
+
+.quote-inquiry-form .qq-promise-item {
+  flex: 1;
+}
+
+.quote-inquiry-form .qq-promise-item .num {
+  font-family: var(--cond);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: -0.01em;
+}
+
+.quote-inquiry-form .qq-promise-item .lbl {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.quote-inquiry-form .contact-fine {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.quote-inquiry-form .contact-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quote-inquiry-form .quote-inquiry-status {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+}
+
+.quote-inquiry-form .quote-inquiry-status--error {
+  color: #b42318;
+}
+
+.quote-inquiry-form .quote-inquiry-status--success {
+  color: var(--ok);
+}
+
+@media (max-width: 600px) {
+  .quote-inquiry-form .qq-row,
+  .quote-inquiry-form .contact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-inquiry-form .qq-promise {
+    flex-wrap: wrap;
+  }
+}

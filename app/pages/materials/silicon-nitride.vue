@@ -250,7 +250,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">05 · Engineering FAQ</div>
         <h2>The questions <span class="accent">engineers ask</span>.</h2>
-        <p class="sec-lead">Direct answers from our application team. Email <a href="mailto:engineering@ceramitell.com" style="color:var(--orange);">engineering@ceramitell.com</a> with your drawing or duty cycle for a deeper dive.</p>
+        <p class="sec-lead">Direct answers from our application team. Email <CmsEmail /> with your drawing or duty cycle for a deeper dive.</p>
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">Why does Si₃N₄ outperform alumina in hot surface igniters?</div>
