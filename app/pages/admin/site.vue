@@ -54,7 +54,7 @@ async function save() {
     <div class="panel">
       <h2>联系方式</h2>
       <div class="fields">
-        <label>销售邮箱 <input v-model="contactInfo.email" /></label>
+        <label>销售邮箱（询盘通知将发送到此地址）<input v-model="contactInfo.email" type="email" /></label>
         <label>工程邮箱 <input v-model="contactInfo.engineering_email" /></label>
         <label>电话 / WhatsApp <input v-model="contactInfo.phone" /></label>
         <label>微信 <input v-model="contactInfo.wechat" /></label>
