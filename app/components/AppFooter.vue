@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { footerColumns, footerLegal } from "~/data/site";
+const { footerColumns, footerLegal } = useSiteCms()
 
 function isExternal(to: string) {
   return /^(https?:|mailto:|tel:)/.test(to);

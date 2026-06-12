@@ -7,7 +7,11 @@
     "dev": "TMPDIR=/tmp nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:setup": "node --env-file=.env scripts/setup-database.mjs",
+    "db:generate-seed": "node --import tsx scripts/generate-seed-sql.ts",
+    "db:bundle": "npm run db:generate-seed && cat supabase/schema.sql supabase/seed.sql > supabase/full-setup.sql",
+    "db:seed": "node --env-file=.env --import tsx scripts/seed-database.ts"
   },
   "dependencies": {
     "@nuxt/eslint": "1.15.2",
@@ -16,5 +20,10 @@
     "nuxt": "^4.4.7",
     "vue": "^3.5.35",
     "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "pg": "^8.21.0",
+    "supabase": "^2.106.0",
+    "tsx": "^4.22.4"
   }
 }

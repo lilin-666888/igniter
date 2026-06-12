@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { contactInfo, navLinks, topbarItems } from '~/data/site'
+const { contactInfo, navLinks, topbarItems } = useSiteCms()
 
 const route = useRoute()
 const activeGroupByNav = ref<Record<string, number>>({})
@@ -26,12 +26,12 @@ function onNavItemEnter(navTo: string) {
   }
 }
 
-function activeGroup(link: (typeof navLinks)[number]) {
+function activeGroup(link: (typeof navLinks.value)[number]) {
   const index = activeGroupIndex(link.to)
   return link.groups?.[index]
 }
 
-function hasSecondaryGroups(link: (typeof navLinks)[number]) {
+function hasSecondaryGroups(link: (typeof navLinks.value)[number]) {
   return link.groups?.some(group => group.links.length > 0) ?? false
 }
 

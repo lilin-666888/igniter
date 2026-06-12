@@ -3,6 +3,30 @@ useHead({
   title: 'Contact Ceramitell — Quick Quote & Office Information',
   meta: [{ name: 'description', content: 'Request a quote in 60 seconds. Free samples · 48h dispatch · 24h reply commitment. Shanghai office: No.568 Tianyi Road, Qingpu District. sales@ceramitell.com · WhatsApp/WeChat: +86 151 9017 9780.' }],
 })
+
+const form = reactive({ name: '', email: '', phone: '', message: '' })
+const submitting = ref(false)
+
+async function onSubmit() {
+  submitting.value = true
+  try {
+    await submitInquiry({
+      name: form.name,
+      email: form.email,
+      phone: form.phone || undefined,
+      message: form.message || undefined,
+    })
+    alert('Submitted — we will reply within 24 hours.')
+    form.name = ''
+    form.email = ''
+    form.phone = ''
+    form.message = ''
+  } catch {
+    alert('Submission failed. Please email sales@ceramitell.com directly.')
+  } finally {
+    submitting.value = false
+  }
+}
 </script>
 
 <template>
@@ -37,30 +61,30 @@ useHead({
             <h2 class="qq-title">Get a quote in <span class="accent">24 hours</span>.</h2>
             <p class="qq-lead">Fill in four fields. We'll reply with a quote and free-sample shipping schedule within 24 hours — every business day, even Saturdays during peak season.</p>
 
-            <form class="qq-form" onsubmit="event.preventDefault(); alert('Form submitted — we will reply within 24 hours.');">
+            <form class="qq-form" @submit.prevent="onSubmit">
 
               <div class="qq-field">
                 <label>Your Name <span class="req">*</span></label>
-                <input type="text" placeholder="e.g. Marco Rossi" required />
+                <input v-model="form.name" type="text" placeholder="e.g. Marco Rossi" required />
               </div>
 
               <div class="qq-row">
                 <div class="qq-field">
                   <label>Email <span class="req">*</span></label>
-                  <input type="email" placeholder="you@company.com" required />
+                  <input v-model="form.email" type="email" placeholder="you@company.com" required />
                 </div>
                 <div class="qq-field">
                   <label>Phone / WhatsApp</label>
-                  <input type="tel" placeholder="+1 / +39 / +86 ..." />
+                  <input v-model="form.phone" type="tel" placeholder="+1 / +39 / +86 ..." />
                 </div>
               </div>
 
               <div class="qq-field">
                 <label>What do you need? <span style="color: var(--ink-faint); font-weight: 400;">(optional)</span></label>
-                <textarea placeholder="Example:&#10;'Looking for Si₃N₄ hot surface igniters, 120V, similar to Norton 271N. Need 5,000 units/year. Can you quote against the attached datasheet?'&#10;&#10;Tip: more detail = faster, more accurate quote."></textarea>
+                <textarea v-model="form.message" placeholder="Example:&#10;'Looking for Si₃N₄ hot surface igniters, 120V, similar to Norton 271N. Need 5,000 units/year. Can you quote against the attached datasheet?'&#10;&#10;Tip: more detail = faster, more accurate quote."></textarea>
               </div>
 
-              <button type="submit" class="qq-submit">Send Quote Request →</button>
+              <button type="submit" class="qq-submit" :disabled="submitting">{{ submitting ? 'Sending…' : 'Send Quote Request →' }}</button>
 
               <div class="qq-promise">
                 <div class="qq-promise-item">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {
+const {
   catalogItems,
   certifications,
   contactPromises,
@@ -11,7 +11,7 @@ import {
   spotlightStats,
   techmanCards,
   testimonials,
-} from "~/data/homepage";
+} = useHomepageCms()
 
 useHead({
   title:
