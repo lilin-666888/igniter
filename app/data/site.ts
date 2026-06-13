@@ -38,8 +38,7 @@ export const navLinks: NavLink[] = [
     label: 'Materials',
     to: '/materials',
     groups: [
-      { label: 'All Materials', to: '/materials', links: [] },
-      // { label: 'Material Comparison Table', to: '/materials#compare', links: [] },
+      { label: 'Overview', to: '/materials', links: [] },
       { label: 'Silicon Nitride', to: '/materials/silicon-nitride', links: [] },
       { label: 'Alumina', to: '/materials/alumina', links: [] },
       { label: 'Zirconia', to: '/materials/zirconia', links: [] },
@@ -47,23 +46,22 @@ export const navLinks: NavLink[] = [
       { label: 'Boron Carbide', to: '/materials/boron-carbide', links: [] },
       { label: 'Aluminum Nitride', to: '/materials/aluminum-nitride', links: [] },
       { label: 'Boron Nitride', to: '/materials/boron-nitride', links: [] },
-      { label: 'Si₃N₄ vs Al₂O₃', to: '/resources/silicon-nitride-vs-alumina', links: [] },
-      // { label: 'SiC vs Al₂O₃ for Wear', to: '/materials#compare', links: [] },
     ],
   },
   {
     label: 'Products',
     to: '/products',
     groups: [
+      { label: 'Overview', to: '/products', links: [] },
       {
         label: 'Ceramic Igniters',
         to: '/products/ceramic-igniters',
         links: [
           { label: 'Silicon Nitride Igniters', to: '/products/silicon-nitride-igniters-final' },
           { label: 'Hot Surface Igniters', to: '/products/ceramic-igniters#hot-surface' },
-          { label: 'Alumina Ceramic Igniters', to: '/products/ceramic-igniters#alumina-igniter' },
-          { label: 'Silicon Carbide Igniters', to: '/products/ceramic-igniters#sic-igniter' },
-          { label: 'Silicon Nitride Glow Plugs', to: '/products/ceramic-igniters#glow-plug' },
+          // { label: 'Alumina Ceramic Igniters', to: '/products/ceramic-igniters#alumina-igniter' },
+          // { label: 'Silicon Carbide Igniters', to: '/products/ceramic-igniters#sic-igniter' },
+          // { label: 'Silicon Nitride Glow Plugs', to: '/products/ceramic-igniters#glow-plug' },
         ],
       },
       {
@@ -72,9 +70,9 @@ export const navLinks: NavLink[] = [
         links: [
           { label: 'Silicon Nitride Heaters', to: '/products/silicon-nitride-heaters' },
           { label: 'Silicon Nitride Heating Plates', to: '/products/ceramic-heaters' },
-          { label: 'Silicon Carbide Heaters', to: '/products/ceramic-heaters' },
-          { label: 'Alumina Ceramic Heaters', to: '/products/ceramic-heaters' },
-          { label: 'Aluminum Nitride Heaters', to: '/products/ceramic-heaters' },
+          // { label: 'Silicon Carbide Heaters', to: '/products/ceramic-heaters' },
+          // { label: 'Alumina Ceramic Heaters', to: '/products/ceramic-heaters' },
+          // { label: 'Aluminum Nitride Heaters', to: '/products/ceramic-heaters' },
         ],
       },
       {
@@ -82,17 +80,17 @@ export const navLinks: NavLink[] = [
         to: '/products/ceramic-structural',
         links: [
           { label: 'Silicon Nitride Shaft Rod', to: '/products/silicon-nitride-shaft-rod' },
-          { label: 'Silicon Nitride Lift Tube', to: '/products/ceramic-structural' },
-          { label: 'Silicon Nitride Turbine', to: '/products/ceramic-structural' },
-          { label: 'Silicon Nitride Cutting Blade', to: '/products/ceramic-structural' },
-          { label: 'Tubes, Rods & Plungers', to: '/products/ceramic-structural' },
-          { label: 'Spherical & Rotators', to: '/products/ceramic-structural' },
-          { label: 'Custom Machined Parts', to: '/products/ceramic-structural' },
-          { label: 'Fluid Control & Seals', to: '/products/ceramic-structural' },
-          { label: 'Plates, Discs & Substrates', to: '/products/ceramic-structural' },
-          { label: 'Wear-Resistant Parts', to: '/products/ceramic-structural' },
-          { label: 'Corrosion-Resistant Parts', to: '/products/ceramic-structural' },
-          { label: 'High-Temperature Parts', to: '/products/ceramic-structural' },
+          // { label: 'Silicon Nitride Lift Tube', to: '/products/ceramic-structural' },
+          // { label: 'Silicon Nitride Turbine', to: '/products/ceramic-structural' },
+          // { label: 'Silicon Nitride Cutting Blade', to: '/products/ceramic-structural' },
+          // { label: 'Tubes, Rods & Plungers', to: '/products/ceramic-structural' },
+          // { label: 'Spherical & Rotators', to: '/products/ceramic-structural' },
+          // { label: 'Custom Machined Parts', to: '/products/ceramic-structural' },
+          // { label: 'Fluid Control & Seals', to: '/products/ceramic-structural' },
+          // { label: 'Plates, Discs & Substrates', to: '/products/ceramic-structural' },
+          // { label: 'Wear-Resistant Parts', to: '/products/ceramic-structural' },
+          // { label: 'Corrosion-Resistant Parts', to: '/products/ceramic-structural' },
+          // { label: 'High-Temperature Parts', to: '/products/ceramic-structural' },
         ],
       },
       {
@@ -108,9 +106,9 @@ export const navLinks: NavLink[] = [
         label: 'Ceramic Balls',
         to: '/products/ceramic-balls',
         links: [
+          { label: 'Grade Guide (G3–G60)', to: '/products/ceramic-balls' },
           { label: 'Silicon Nitride Balls', to: '/products/silicon-nitride-balls' },
           { label: 'Zirconia Balls', to: '/products/ceramic-balls' },
-          { label: 'Grade Guide (G3–G60)', to: '/products/ceramic-balls' },
         ],
       },
       {
@@ -119,8 +117,8 @@ export const navLinks: NavLink[] = [
         links: [
           { label: 'Full Silicon Nitride Bearings', to: '/products/full-silicon-nitride-bearings' },
           { label: 'Full Zirconia Bearings', to: '/products/precision-bearings' },
-          { label: 'Si₃N₄ Hybrid Ball Bearings', to: '/products/precision-bearings' },
-          { label: 'Zirconia Hybrid Ball Bearings', to: '/products/precision-bearings' },
+          // { label: 'Si₃N₄ Hybrid Ball Bearings', to: '/products/precision-bearings' },
+          // { label: 'Zirconia Hybrid Ball Bearings', to: '/products/precision-bearings' },
         ],
       },
       {
@@ -149,8 +147,6 @@ export const navLinks: NavLink[] = [
         label: 'Overview',
         to: '/applications',
         links: [
-          { label: 'All Applications', to: '/applications' },
-          { label: '8 Industry Verticals', to: '/applications' },
         ],
       },
       {
@@ -160,14 +156,11 @@ export const navLinks: NavLink[] = [
           { label: 'Biomass & Pellet Stoves', to: '/applications/sub-biomass-pellet-stoves' },
           { label: 'BBQ Grills', to: '/applications/sub-bbq-grills' },
           { label: 'Residential Gas Appliances', to: '/applications/sub-gas-appliances' },
-          { label: 'Gas Furnaces', to: '/applications/sub-gas-appliances' },
-          { label: 'Gas Burners', to: '/applications/sub-gas-appliances' },
           { label: 'Commercial & Industrial Boilers', to: '/applications/sub-commercial-boilers' },
           { label: 'Water Heaters', to: '/applications/sub-water-heaters' },
           { label: 'HVAC', to: '/applications/sub-hvac-ignition' },
           { label: 'Ovens and Cooktops', to: '/applications/sub-ovens-cooktops' },
           { label: 'Hydrogen Energy', to: '/applications/sub-hydrogen-energy' },
-          { label: 'Request Samples', to: '/contact' },
         ],
       },
       {
@@ -200,7 +193,7 @@ export const navLinks: NavLink[] = [
         to: '/applications/app-metallurgy',
         links: [
           { label: 'High-Temperature Melting', to: '/applications/app-metallurgy' },
-          { label: '1600°C Operation', to: '/applications/app-metallurgy' },
+          // { label: '1600°C Operation', to: '/applications/app-metallurgy' },
           { label: 'Structural Parts', to: '/products/ceramic-structural' },
         ],
       },
@@ -234,41 +227,26 @@ export const navLinks: NavLink[] = [
     label: 'Capabilities',
     to: '/capabilities',
     groups: [
+      { label: 'Overview', to: '/capabilities', links: [] },
       {
         label: 'Vertical Integration',
         to: '/capabilities/vertical-integration',
-        links: [
-          { label: 'Powder to Finished Assembly', to: '/capabilities/vertical-integration' },
-          { label: 'Full Process Traceability', to: '/capabilities/vertical-integration' },
-        ],
+        links: [],
       },
       {
         label: 'Rapid Prototyping',
         to: '/capabilities/rapid-prototyping',
-        links: [
-          { label: '1–3 Day Stock Sample Dispatch', to: '/capabilities/rapid-prototyping' },
-          { label: '5–20 Day Custom Sample Delivery', to: '/capabilities/rapid-prototyping' },
-          { label: 'DFM Engineering Support', to: '/capabilities/rapid-prototyping#step-1' },
-        ],
+        links: [],
       },
       {
         label: 'Quality Control',
         to: '/capabilities/quality-control',
-        links: [
-          { label: 'ISO 9001 / IATF 16949', to: '/capabilities/quality-control' },
-          { label: 'Full-Process Inspection', to: '/capabilities/quality-control' },
-          { label: 'Failure Mode Analysis', to: '/capabilities/quality-control' },
-        ],
+        links: [],
       },
       {
         label: 'Manufacturing Process',
         to: '/capabilities/manufacturing-process',
-        links: [
-          { label: 'Powder Preparation', to: '/capabilities/manufacturing-process#stage-powder' },
-          { label: 'Forming Process', to: '/capabilities/manufacturing-process#stage-forming' },
-          { label: 'Sintering Process', to: '/capabilities/manufacturing-process#stage-sintering' },
-          { label: 'Finishing & Grinding', to: '/capabilities/manufacturing-process#stage-grinding' },
-        ],
+        links: [],
       },
     ],
   },
@@ -276,36 +254,18 @@ export const navLinks: NavLink[] = [
     label: 'About',
     to: '/about',
     groups: [
-      {
-        label: 'Company Story',
-        to: '/about',
-        links: [
-          { label: 'Founded in 2014', to: '/about' },
-          { label: 'Team', to: '/about' },
-          { label: 'Location: China', to: '/about' },
-          { label: '11+ Years OEM Experience', to: '/about' },
-          { label: 'Contact Sales', to: '/contact' },
-        ],
-      },
+      { label: 'Overview', to: '/about', links: [] },
       {
         label: 'Manufacturing',
-        to: '/capabilities/vertical-integration',
-        links: [
-          { label: 'Factory Overview', to: '/capabilities/vertical-integration' },
-          { label: 'Production Lines', to: '/capabilities/manufacturing-process' },
-          { label: 'Testing Equipment', to: '/capabilities/quality-control' },
-        ],
+        to: '/about/manufacturing',
+        links: [],
       },
       {
         label: 'Quality & Certifications',
-        to: '/about',
-        links: [
-          { label: 'ISO 9001:2015', to: '/resources/iso-9001-certification' },
-          { label: 'IATF 16949', to: '/resources/iso-9001-certification' },
-          { label: 'CE Marking', to: '/about' },
-          { label: 'RoHS · REACH', to: '/about' },
-        ],
+        to: '/resources/iso-9001-certification',
+        links: [],
       },
+      { label: 'Blog', to: '/blog', links: [] },
     ],
   },
 ]
@@ -352,8 +312,10 @@ export const footerColumns = [
     title: 'Company',
     links: [
       { label: 'About Ceramitell', to: '/about' },
+      { label: 'Manufacturing', to: '/about/manufacturing' },
       { label: 'Capabilities', to: '/capabilities' },
       { label: 'Contact Sales', to: '/contact' },
+      { label: 'Blog', to: '/blog' }
     ],
   },
   {

@@ -44,21 +44,11 @@ export function useSiteCms() {
       ? fallbackTopbar
       : ((data.value?.topbar_items as typeof fallbackTopbar) ?? fallbackTopbar),
   )
-  const navLinks = computed(() =>
-    useFallback.value
-      ? fallbackNavLinks
-      : ((data.value?.nav_links as typeof fallbackNavLinks) ?? fallbackNavLinks),
-  )
-  const footerColumns = computed(() =>
-    useFallback.value
-      ? fallbackFooterColumns
-      : ((data.value?.footer_columns as typeof fallbackFooterColumns) ?? fallbackFooterColumns),
-  )
-  const footerLegal = computed(() =>
-    useFallback.value
-      ? fallbackFooterLegal
-      : ((data.value?.footer_legal as typeof fallbackFooterLegal) ?? fallbackFooterLegal),
-  )
+  // Nav menu temporarily uses site.ts only (not CMS API)
+  const navLinks = computed(() => fallbackNavLinks)
+  // Footer temporarily uses site.ts only (not CMS API)
+  const footerColumns = computed(() => fallbackFooterColumns)
+  const footerLegal = computed(() => fallbackFooterLegal)
 
   return {
     contactInfo,

@@ -1,79 +1,79 @@
 <script setup lang="ts">
-const { navLinks, topbarItems } = useSiteCms()
-const { topbarDisplay } = useContact()
+const { navLinks, topbarItems } = useSiteCms();
+const { topbarDisplay } = useContact();
 
-const route = useRoute()
-const activeGroupByNav = ref<Record<string, number>>({})
-const mobileOpen = ref(false)
-const mobileExpanded = ref<Record<string, boolean>>({})
+const route = useRoute();
+const activeGroupByNav = ref<Record<string, number>>({});
+const mobileOpen = ref(false);
+const mobileExpanded = ref<Record<string, boolean>>({});
 
 function isActive(to: string) {
-  const path = to.split('#')[0]
-  if (path === '/') return route.path === '/'
-  return route.path === path || route.path.startsWith(`${path}/`)
+  const path = to.split("#")[0];
+  if (path === "/") return route.path === "/";
+  return route.path === path || route.path.startsWith(`${path}/`);
 }
 
 function activeGroupIndex(navTo: string) {
-  return activeGroupByNav.value[navTo] ?? 0
+  return activeGroupByNav.value[navTo] ?? 0;
 }
 
 function setActiveGroup(navTo: string, index: number) {
-  activeGroupByNav.value[navTo] = index
+  activeGroupByNav.value[navTo] = index;
 }
 
 function onNavItemEnter(navTo: string) {
   if (activeGroupByNav.value[navTo] === undefined) {
-    activeGroupByNav.value[navTo] = 0
+    activeGroupByNav.value[navTo] = 0;
   }
 }
 
 function activeGroup(link: (typeof navLinks.value)[number]) {
-  const index = activeGroupIndex(link.to)
-  return link.groups?.[index]
+  const index = activeGroupIndex(link.to);
+  return link.groups?.[index];
 }
 
 function hasSecondaryGroups(link: (typeof navLinks.value)[number]) {
-  return link.groups?.some(group => group.links.length > 0) ?? false
+  return link.groups?.some((group) => group.links.length > 0) ?? false;
 }
 
 function toggleMobile() {
-  mobileOpen.value = !mobileOpen.value
+  mobileOpen.value = !mobileOpen.value;
 }
 
 function toggleMobileSection(navTo: string) {
-  mobileExpanded.value[navTo] = !mobileExpanded.value[navTo]
+  mobileExpanded.value[navTo] = !mobileExpanded.value[navTo];
 }
 
 function isMobileSectionOpen(navTo: string) {
-  return mobileExpanded.value[navTo] ?? false
+  return mobileExpanded.value[navTo] ?? false;
 }
 
 function closeMobile() {
-  mobileOpen.value = false
+  mobileOpen.value = false;
 }
 
-watch(() => route.fullPath, closeMobile)
+watch(() => route.fullPath, closeMobile);
 
 function onEscape(event: KeyboardEvent) {
-  if (event.key === 'Escape') closeMobile()
+  if (event.key === "Escape") closeMobile();
 }
 
 watch(mobileOpen, (open) => {
-  if (!import.meta.client) return
-  document.body.style.overflow = open ? 'hidden' : ''
+  if (!import.meta.client) return;
+  document.body.style.overflow = open ? "hidden" : "";
   if (open) {
-    window.addEventListener('keydown', onEscape)
+    window.addEventListener("keydown", onEscape);
   } else {
-    window.removeEventListener('keydown', onEscape)
+    window.removeEventListener("keydown", onEscape);
   }
-})
+});
 
 onBeforeUnmount(() => {
   if (import.meta.client) {
-    document.body.style.overflow = ''
-    window.removeEventListener('keydown', onEscape)
+    document.body.style.overflow = "";
+    window.removeEventListener("keydown", onEscape);
   }
-})
+});
 </script>
 
 <template>
@@ -94,11 +94,26 @@ onBeforeUnmount(() => {
       <NuxtLink to="/" class="logo" @click="closeMobile">
         <div class="logo-mark">
           <svg viewBox="0 0 42 42" fill="none">
-            <rect x="1" y="1" width="40" height="40" stroke="#0A2647" stroke-width="2" />
-            <path d="M21 12 L21 30 M14 23 L21 30 L28 23" stroke="#F26419" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" />
+            <rect
+              x="1"
+              y="1"
+              width="40"
+              height="40"
+              stroke="#0A2647"
+              stroke-width="2"
+            />
+            <path
+              d="M21 12 L21 30 M14 23 L21 30 L28 23"
+              stroke="#F26419"
+              stroke-width="3"
+              stroke-linecap="square"
+              stroke-linejoin="miter"
+            />
           </svg>
         </div>
-        <div class="logo-text">CERAMI<b>TELL</b><small>Advanced Industrial Ceramics</small></div>
+        <div class="logo-text">
+          CERAMI<b>TELL</b><small>Advanced Industrial Ceramics</small>
+        </div>
       </NuxtLink>
 
       <div class="nav-links">
@@ -109,14 +124,15 @@ onBeforeUnmount(() => {
           :class="{ 'has-dropdown': link.groups?.length }"
           @mouseenter="onNavItemEnter(link.to)"
         >
-          <NuxtLink
-            :to="link.to"
-            class="nav-link"
-            :class="{ active: isActive(link.to) }"
-          >
+          <div class="nav-link" :class="{ active: isActive(link.to) }">
             {{ link.label }}
-            <span v-if="link.groups?.length" class="nav-caret" aria-hidden="true">▾</span>
-          </NuxtLink>
+            <span
+              v-if="link.groups?.length"
+              class="nav-caret"
+              aria-hidden="true"
+              >▾</span
+            >
+          </div>
 
           <div
             v-if="link.groups?.length"
@@ -124,16 +140,23 @@ onBeforeUnmount(() => {
             :class="{ 'nav-dropdown--flat': !hasSecondaryGroups(link) }"
           >
             <div class="nav-dropdown-panel">
-              <div class="nav-flyout" :class="{ 'nav-flyout--flat': !hasSecondaryGroups(link) }">
+              <div
+                class="nav-flyout"
+                :class="{ 'nav-flyout--flat': !hasSecondaryGroups(link) }"
+              >
                 <ul class="nav-flyout-primary">
                   <li
                     v-for="(group, index) in link.groups"
                     :key="group.label"
                     class="nav-flyout-primary-item"
                     :class="{
-                      active: hasSecondaryGroups(link) && activeGroupIndex(link.to) === index,
+                      active:
+                        hasSecondaryGroups(link) &&
+                        activeGroupIndex(link.to) === index,
                     }"
-                    @mouseenter="hasSecondaryGroups(link) && setActiveGroup(link.to, index)"
+                    @mouseenter="
+                      hasSecondaryGroups(link) && setActiveGroup(link.to, index)
+                    "
                   >
                     <NuxtLink
                       v-if="group.to"
@@ -143,12 +166,16 @@ onBeforeUnmount(() => {
                     >
                       {{ group.label }}
                     </NuxtLink>
-                    <span v-else class="nav-flyout-primary-link">{{ group.label }}</span>
+                    <span v-else class="nav-flyout-primary-link">{{
+                      group.label
+                    }}</span>
                   </li>
                 </ul>
 
                 <div
-                  v-if="hasSecondaryGroups(link) && activeGroup(link)?.links.length"
+                  v-if="
+                    hasSecondaryGroups(link) && activeGroup(link)?.links.length
+                  "
                   class="nav-flyout-secondary"
                 >
                   <div class="nav-flyout-secondary-title">
@@ -245,7 +272,10 @@ onBeforeUnmount(() => {
             </button>
           </div>
 
-          <div v-if="link.groups?.length && isMobileSectionOpen(link.to)" class="nav-mobile-panel">
+          <div
+            v-if="link.groups?.length && isMobileSectionOpen(link.to)"
+            class="nav-mobile-panel"
+          >
             <template v-for="group in link.groups" :key="group.label">
               <NuxtLink
                 v-if="group.to"
@@ -270,8 +300,16 @@ onBeforeUnmount(() => {
           </div>
         </div>
 
-        <NuxtLink class="nav-mobile-cta" to="/contact" @click="closeMobile">Request a Quote</NuxtLink>
+        <NuxtLink class="nav-mobile-cta" to="/contact" @click="closeMobile"
+          >Request a Quote</NuxtLink
+        >
       </div>
     </aside>
   </Teleport>
 </template>
+
+<style scoped>
+.nav-link {
+  cursor: pointer;
+}
+</style>
