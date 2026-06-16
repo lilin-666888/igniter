@@ -58,10 +58,10 @@ export const navLinks: NavLink[] = [
         to: '/products/ceramic-igniters',
         links: [
           { label: 'Silicon Nitride Igniters', to: '/products/silicon-nitride-igniters-final' },
-          { label: 'Hot Surface Igniters', to: '/products/ceramic-igniters#hot-surface' },
-          // { label: 'Alumina Ceramic Igniters', to: '/products/ceramic-igniters#alumina-igniter' },
-          // { label: 'Silicon Carbide Igniters', to: '/products/ceramic-igniters#sic-igniter' },
-          // { label: 'Silicon Nitride Glow Plugs', to: '/products/ceramic-igniters#glow-plug' },
+          { label: 'Hot Surface Igniters', to: '/products/hot-surface-igniters' },
+          // { label: 'Alumina Ceramic Igniters', to: '' },
+          // { label: 'Silicon Carbide Igniters', to: '' },
+          // { label: 'Silicon Nitride Glow Plugs', to: '' },
         ],
       },
       {
@@ -69,10 +69,10 @@ export const navLinks: NavLink[] = [
         to: '/products/ceramic-heaters',
         links: [
           { label: 'Silicon Nitride Heaters', to: '/products/silicon-nitride-heaters' },
-          { label: 'Silicon Nitride Heating Plates', to: '/products/ceramic-heaters' },
-          // { label: 'Silicon Carbide Heaters', to: '/products/ceramic-heaters' },
-          // { label: 'Alumina Ceramic Heaters', to: '/products/ceramic-heaters' },
-          // { label: 'Aluminum Nitride Heaters', to: '/products/ceramic-heaters' },
+          // { label: 'Silicon Nitride Heating Plates', to: '' },
+          // { label: 'Silicon Carbide Heaters', to: '' },
+          // { label: 'Alumina Ceramic Heaters', to: '' },
+          // { label: 'Aluminum Nitride Heaters', to: '' },
         ],
       },
       {
@@ -80,35 +80,36 @@ export const navLinks: NavLink[] = [
         to: '/products/ceramic-structural',
         links: [
           { label: 'Silicon Nitride Shaft Rod', to: '/products/silicon-nitride-shaft-rod' },
-          // { label: 'Silicon Nitride Lift Tube', to: '/products/ceramic-structural' },
-          // { label: 'Silicon Nitride Turbine', to: '/products/ceramic-structural' },
-          // { label: 'Silicon Nitride Cutting Blade', to: '/products/ceramic-structural' },
-          // { label: 'Tubes, Rods & Plungers', to: '/products/ceramic-structural' },
-          // { label: 'Spherical & Rotators', to: '/products/ceramic-structural' },
-          // { label: 'Custom Machined Parts', to: '/products/ceramic-structural' },
-          // { label: 'Fluid Control & Seals', to: '/products/ceramic-structural' },
-          // { label: 'Plates, Discs & Substrates', to: '/products/ceramic-structural' },
-          // { label: 'Wear-Resistant Parts', to: '/products/ceramic-structural' },
-          // { label: 'Corrosion-Resistant Parts', to: '/products/ceramic-structural' },
-          // { label: 'High-Temperature Parts', to: '/products/ceramic-structural' },
+          // { label: 'Silicon Nitride Lift Tube', to: '' },
+          // { label: 'Silicon Nitride Turbine', to: '' },
+          // { label: 'Silicon Nitride Cutting Blade', to: '' },
+          // { label: 'Tubes, Rods & Plungers', to: '' },
+          // { label: 'Spherical & Rotators', to: '' },
+          // { label: 'Custom Machined Parts', to: '' },
+          // { label: 'Fluid Control & Seals', to: '' },
+          // { label: 'Plates, Discs & Substrates', to: '' },
+          // { label: 'Wear-Resistant Parts', to: '' },
+          // { label: 'Corrosion-Resistant Parts', to: '' },
+          // { label: 'High-Temperature Parts', to: '' },
         ],
       },
       {
         label: 'Custom Ceramic Components',
         to: '/products/custom-ceramic',
         links: [
-          { label: 'DFM Service', to: '/products/custom-ceramic' },
-          { label: 'Drawing to Production Flow', to: '/products/custom-ceramic' },
+          // { label: 'DFM Service', to: '' },
+          // { label: 'Drawing to Production Flow', to: '' },
           { label: 'Submit Drawing', to: '/contact' },
+          // { label: 'Historical Cases', to: '' },
         ],
       },
       {
         label: 'Ceramic Balls',
         to: '/products/ceramic-balls',
         links: [
-          { label: 'Grade Guide (G3–G60)', to: '/products/ceramic-balls' },
           { label: 'Silicon Nitride Balls', to: '/products/silicon-nitride-balls' },
-          { label: 'Zirconia Balls', to: '/products/ceramic-balls' },
+          // { label: 'Zirconia Balls', to: '' },
+          // { label: 'Grade Guide (G3–G60)', to: '' }, // 内容在 /products/ceramic-balls 页面内，无独立路由
         ],
       },
       {
@@ -116,9 +117,10 @@ export const navLinks: NavLink[] = [
         to: '/products/precision-bearings',
         links: [
           { label: 'Full Silicon Nitride Bearings', to: '/products/full-silicon-nitride-bearings' },
-          { label: 'Full Zirconia Bearings', to: '/products/precision-bearings' },
-          // { label: 'Si₃N₄ Hybrid Ball Bearings', to: '/products/precision-bearings' },
-          // { label: 'Zirconia Hybrid Ball Bearings', to: '/products/precision-bearings' },
+          // { label: 'Full Zirconia Bearings', to: '' },
+          // { label: 'Silicon Nitride Hybrid Ceramic Ball Bearings', to: '' },
+          // { label: 'Zirconia Hybrid Ball Bearings', to: '' },
+          // { label: 'Applications', to: '' }, // 应用场景
         ],
       },
       {
@@ -126,15 +128,17 @@ export const navLinks: NavLink[] = [
         to: '/products/grinding-media',
         links: [
           { label: 'Silicon Nitride Grinding Balls', to: '/products/silicon-nitride-grinding-balls' },
-          { label: 'Zirconia Grinding Balls', to: '/products/grinding-media' },
+          // { label: 'Zirconia Grinding Balls', to: '' },
+          // { label: 'Applications', to: '' },
         ],
       },
       {
         label: 'Superfine Ceramic Powder',
         to: '/products/ceramic-powder',
         links: [
-          { label: 'Silicon Nitride Powder', to: '/products/silicon-nitride-powder' },
-          { label: 'Zirconia Powder', to: '/products/ceramic-powder' },
+          { label: 'Silicon Nitride (Si₃N₄) Powder', to: '/products/silicon-nitride-powder' },
+          // { label: 'Zirconia (ZrO₂) Powder', to: '' },
+          // { label: 'Purity ≥99.5%', to: '' },
         ],
       },
     ],
@@ -184,41 +188,35 @@ export const navLinks: NavLink[] = [
         label: 'Clean Energy & Battery',
         to: '/applications/app-clean-energy',
         links: [
-          { label: 'Battery Manufacturing', to: '/applications/app-clean-energy' },
-          { label: 'Grinding Media', to: '/products/grinding-media' },
+
         ],
       },
       {
         label: 'Metallurgy & Foundry',
         to: '/applications/app-metallurgy',
         links: [
-          { label: 'High-Temperature Melting', to: '/applications/app-metallurgy' },
-          // { label: '1600°C Operation', to: '/applications/app-metallurgy' },
-          { label: 'Structural Parts', to: '/products/ceramic-structural' },
+
         ],
       },
       {
         label: 'Chemical Processing',
         to: '/applications/app-chemical-processing',
         links: [
-          { label: 'Fluid Control', to: '/applications/app-chemical-processing' },
-          { label: 'Pump Seals & Valves', to: '/products/ceramic-structural' },
+
         ],
       },
       {
         label: 'Laboratory Equipment',
         to: '/applications/app-laboratory',
         links: [
-          { label: 'Analytical Instruments', to: '/applications/app-laboratory' },
-          { label: 'Crucibles & Tubes', to: '/products/ceramic-structural' },
+
         ],
       },
       {
         label: 'Biology & Medicine',
         to: '/applications/app-biology-medicine',
         links: [
-          { label: 'Biocompatible Components', to: '/applications/app-biology-medicine' },
-          { label: 'Precision Bearings', to: '/products/precision-bearings' },
+
         ],
       },
     ],
@@ -265,7 +263,6 @@ export const navLinks: NavLink[] = [
         to: '/resources/iso-9001-certification',
         links: [],
       },
-      { label: 'Blog', to: '/blog', links: [] },
     ],
   },
 ]
@@ -279,6 +276,7 @@ export const footerColumns = [
   {
     title: 'Materials',
     links: [
+      { label: 'All Materials', to: '/materials' },
       { label: 'Silicon Nitride', to: '/materials/silicon-nitride' },
       { label: 'Alumina', to: '/materials/alumina' },
       { label: 'Zirconia', to: '/materials/zirconia' },
@@ -291,12 +289,29 @@ export const footerColumns = [
   {
     title: 'Products',
     links: [
+      { label: 'All Products', to: '/products' },
       { label: 'Ceramic Igniters', to: '/products/ceramic-igniters' },
-      { label: 'Heating Elements', to: '/products/ceramic-heaters' },
+      { label: 'Ceramic Heaters & Elements', to: '/products/ceramic-heaters' },
       { label: 'Structural Parts', to: '/products/ceramic-structural' },
-      { label: 'Balls & Bearings', to: '/products/ceramic-balls' },
+      { label: 'Custom Components', to: '/products/custom-ceramic' },
+      { label: 'Ceramic Balls', to: '/products/ceramic-balls' },
+      { label: 'Precision Bearings', to: '/products/precision-bearings' },
       { label: 'Grinding Media', to: '/products/grinding-media' },
-      { label: 'Custom Parts', to: '/products/custom-ceramic' },
+      { label: 'Ceramic Powder', to: '/products/ceramic-powder' },
+    ],
+  },
+  {
+    title: 'Applications',
+    links: [
+      { label: 'All Applications', to: '/applications' },
+      { label: 'Advanced Combustion & Ignition', to: '/applications/advanced-combustion-fixed' },
+      { label: 'Semiconductor & Electronics', to: '/applications/app-semiconductor' },
+      { label: 'Aerospace & Precision Machinery', to: '/applications/app-aerospace' },
+      { label: 'Clean Energy & Battery', to: '/applications/app-clean-energy' },
+      { label: 'Metallurgy & Foundry', to: '/applications/app-metallurgy' },
+      { label: 'Chemical Processing', to: '/applications/app-chemical-processing' },
+      { label: 'Laboratory Equipment', to: '/applications/app-laboratory' },
+      { label: 'Biology & Medicine', to: '/applications/app-biology-medicine' },
     ],
   },
   {
@@ -314,8 +329,12 @@ export const footerColumns = [
       { label: 'About Ceramitell', to: '/about' },
       { label: 'Manufacturing', to: '/about/manufacturing' },
       { label: 'Capabilities', to: '/capabilities' },
+      { label: 'Vertical Integration', to: '/capabilities/vertical-integration' },
+      { label: 'Rapid Prototyping', to: '/capabilities/rapid-prototyping' },
+      { label: 'Quality Control', to: '/capabilities/quality-control' },
+      { label: 'Manufacturing Process', to: '/capabilities/manufacturing-process' },
       { label: 'Contact Sales', to: '/contact' },
-      { label: 'Blog', to: '/blog' }
+      { label: 'Blog', to: '/blog' },
     ],
   },
   {
