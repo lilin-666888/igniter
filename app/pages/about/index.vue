@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: 'About Ceramitell — OEM Ceramic Manufacturer Since 2014',
-  meta: [{ name: 'description', content: 'Ceramitell — direct manufacturer of industrial ceramic components based in Shanghai and Pingxiang, Jiangxi. Founded 2014, 11+ years OEM experience across heating, semiconductor, and precision industries.' }],
+  meta: [{ name: 'description', content: 'Ceramitell — direct manufacturer of industrial ceramic components based in Shanghai and Hangzhou, Zhejiang. Founded 2014, 11+ years OEM experience across heating, semiconductor, and precision industries.' }],
 })
 </script>
 
@@ -20,7 +20,7 @@ useHead({
         <div class="page-hero-content">
           <span class="ph-eyebrow">Founded 2014 · 11+ Years OEM Experience</span>
           <h1>Direct ceramic <span class="accent">manufacturer</span>,<br>not a trader.</h1>
-          <p class="ph-sub">Ceramitell is an advanced industrial ceramic manufacturer based in Shanghai and Pingxiang, Jiangxi. We synthesize our own ceramic powders, sinter on our own lines, and ship to OEM customers in 42 countries. No subcontracting. No surprises.</p>
+          <p class="ph-sub">Ceramitell is an advanced industrial ceramic manufacturer based in Shanghai and Hangzhou, Zhejiang. We synthesize our own ceramic powders, sinter on our own lines, and ship to OEM customers in 42 countries. No subcontracting. No surprises.</p>
         </div>
       </div>
     </section>
@@ -31,18 +31,18 @@ useHead({
           <div>
             <div class="sec-num">01 · Company Story</div>
             <h2>From a single powder line to <span class="accent">42 export markets</span>.</h2>
-            <p class="body-p">Founded in <b>2014</b> in Pingxiang, Jiangxi — a region with deep ceramic manufacturing heritage going back centuries. We started with a single silicon nitride powder synthesis line and a focus on hot surface igniters for Chinese appliance OEMs.</p>
+            <p class="body-p">Founded in <b>2014</b> in Hangzhou, Zhejiang — with a production base covering about 13 acres and more than 6,000 m² of building area. We started with a single silicon nitride powder synthesis line and a focus on hot surface igniters for Chinese appliance OEMs.</p>
             <p class="body-p">In <b>2018</b>, we shipped our first 50,000-unit run to an Italian pellet stove OEM — a partnership that grew to 180,000 units/year by 2023 and remains one of our largest accounts. Today we ship to <b>42 countries</b> across heating, semiconductor, aerospace, and precision-machinery verticals.</p>
             <p class="body-p">In <b>2024</b>, we opened our Shanghai office in Qingpu District to better serve European and North American clients — bringing engineering, sales, and customer-success staff closer to international time zones.</p>
           </div>
           <div class="stats-box">
             <div class="stats-box-tag">★ Ceramitell at a glance</div>
             <ul>
-              <li><span class="num">2014</span><span class="desc">Founded in Pingxiang, Jiangxi — China's ceramic heartland</span></li>
+              <li><span class="num">2014</span><span class="desc">Founded in Hangzhou, Zhejiang — fine ceramics production base</span></li>
               <li><span class="num">11+ yrs</span><span class="desc">OEM manufacturing experience across heating, electronics, precision</span></li>
               <li><span class="num">42</span><span class="desc">Export countries — EU, North America, SE Asia, Middle East</span></li>
               <li><span class="num">180K</span><span class="desc">Largest single OEM annual run (Italian pellet stove partner)</span></li>
-              <li><span class="num">5K m²</span><span class="desc">Manufacturing floor space — Pingxiang factory</span></li>
+              <li><span class="num">6,000+ m²</span><span class="desc">Building area · ~13-acre Hangzhou production base</span></li>
             </ul>
           </div>
         </div>

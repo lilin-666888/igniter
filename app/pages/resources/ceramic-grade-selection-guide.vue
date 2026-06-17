@@ -91,7 +91,7 @@ useHead({
               </tr>
             </thead>
             <tbody>
-              <tr><th>Silicon Nitride (Si₃N₄)</th><td class="unit">grades</td><td>4</td><td>1× to 3×</td><td>Igniter Grade (CN-300)</td></tr>
+              <tr><th>Silicon Nitride (Si₃N₄)</th><td class="unit">grades</td><td>4</td><td>1× to 3×</td><td>Igniter Grade (BLK)</td></tr>
               <tr><th>Alumina (Al₂O₃)</th><td class="unit">purity</td><td>3</td><td>1× to 4×</td><td>99% Engineering</td></tr>
               <tr><th>Zirconia (ZrO₂)</th><td class="unit">variants</td><td>3</td><td>1× to 1.5×</td><td>Y-TZP (default)</td></tr>
               <tr><th>Silicon Carbide (SiC)</th><td class="unit">routes</td><td>3</td><td>1× to 10×</td><td>SSiC (default)</td></tr>
@@ -115,8 +115,8 @@ useHead({
             <div class="app-use-bar"></div>
             <div class="app-use-icon">🔥</div>
             <div class="app-use-title">Si₃N₄ — 4 Grades</div>
-            <p class="app-use-desc"><b>Standard:</b> general structural. <b>HIP-Processed:</b> precision balls G3–G5. <b>Igniter Grade (CN-300):</b> 100K+ thermal cycle. <b>Cutting Grade:</b> high-speed machining inserts. Most customers want Standard or Igniter Grade — HIP is reserved for aerospace bearings.</p>
-            <div class="app-use-grade"><b>Decision →</b> Cycling? CN-300 / Bearing? HIP / Otherwise? Standard</div>
+            <p class="app-use-desc"><b>Standard:</b> general structural. <b>HIP-Processed:</b> precision balls G3–G5. <b>Igniter Grade (BLK):</b> 100K+ thermal cycle. <b>Cutting Grade:</b> high-speed machining inserts. Most customers want Standard or Igniter Grade — HIP is reserved for aerospace bearings.</p>
+            <div class="app-use-grade"><b>Decision →</b> Cycling? BLK / Bearing? HIP / Otherwise? Standard</div>
           </a>
           <a id="al2o3-grades" href="/materials/alumina" class="app-use">
             <div class="app-use-bar"></div>

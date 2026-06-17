@@ -103,7 +103,7 @@ function postLink(postSlug: string) {
 
         <div class="sidebar-cta">
           <div class="sidebar-cta-eyebrow">Ready to switch?</div>
-          <h4>Request CN-300 samples for your application</h4>
+          <h4>Request BLK samples for your application</h4>
           <p>Free samples dispatched within 48 hours. Include your current igniter part number for fitment verification.</p>
           <NuxtLink to="/contact">Request Free Samples →</NuxtLink>
         </div>
@@ -144,10 +144,10 @@ function postLink(postSlug: string) {
     <section class="article-cta">
       <div class="wrap">
         <h2>Ready to <span>test it yourself</span>?</h2>
-        <p>Free CN-300 samples dispatched within 48 hours. Tell us your current igniter part number and we confirm fit before shipping.</p>
+        <p>Free BLK samples dispatched within 48 hours. Tell us your current igniter part number and we confirm fit before shipping.</p>
         <div class="cta-row">
           <NuxtLink to="/contact" class="btn-primary">Request Free Samples →</NuxtLink>
-          <NuxtLink to="/products/silicon-nitride-igniters-final" class="btn-ghost-light">View CN-300 Full Specs</NuxtLink>
+          <NuxtLink to="/products/silicon-nitride-igniters-final" class="btn-ghost-light">View BLK Full Specs</NuxtLink>
         </div>
       </div>
     </section>

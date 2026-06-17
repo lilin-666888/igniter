@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -80,7 +80,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -108,7 +108,7 @@ useHead({
               </div>
               <div class="bio-proof-stat">
                 <div class="bn">5+ yr</div>
-                <div class="bl">Tankless field life, CN-300</div>
+                <div class="bl">Tankless field life, BLK</div>
               </div>
               <div class="bio-proof-stat">
                 <div class="bn">1–2 yr</div>
@@ -152,7 +152,7 @@ useHead({
           <div class="mkt-item">
             <div class="mkt-num">5yr+</div>
             <div class="mkt-label">
-              Typical CN-300 Si₃N₄ life in tankless service vs 1–2yr for Al₂O₃
+              Typical BLK Si₃N₄ life in tankless service vs 1–2yr for Al₂O₃
             </div>
           </div>
           <div class="mkt-item">
@@ -187,7 +187,7 @@ useHead({
             >
               <div class="di-icon">🚿</div>
               <div class="di-label">
-                CN-300 igniter in tankless water heater burner
+                BLK igniter in tankless water heater burner
               </div>
               <div class="di-replace">Replace with product photo</div>
             </div>
@@ -211,7 +211,7 @@ useHead({
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The CN-300 series is compatible with Rinnai, Navien, Noritz,
+              The BLK series is compatible with Rinnai, Navien, Noritz,
               Bosch, and Vaillant platform geometries. Condensate-resistant
               sealed element — no moisture ingress failure mode.
             </p>
@@ -248,7 +248,7 @@ useHead({
             <span class="comp-badge win">★ Recommended</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 · 100K+ cycles · 5-year tankless life
+              BLK · 100K+ cycles · 5-year tankless life
             </div>
             <ul class="comp-list">
               <li>
@@ -417,7 +417,7 @@ useHead({
         <h2>Questions from water heater engineers.</h2>
         <div class="faq-grid">
           <div class="faq-item">
-            <div class="faq-q">Does CN-300 work in condensing tankless?</div>
+            <div class="faq-q">Does BLK work in condensing tankless?</div>
             <div class="faq-a">
               Yes — sealed Si₃N₄ element is unaffected by condensate. Tested per
               IEC 60335-1 moisture ingress standards.
@@ -477,7 +477,7 @@ useHead({
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
           <div class="qquote-title">
-            Request CN-300 tankless water heater samples
+            Request BLK tankless water heater samples
           </div>
           <div class="qquote-note">
             Include your heater model or current igniter part number.
@@ -493,7 +493,7 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Specs, voltage variants, and compatibility data.
             </div>
@@ -1776,7 +1776,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

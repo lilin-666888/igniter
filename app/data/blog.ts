@@ -64,12 +64,12 @@ export const blogPosts: BlogPost[] = [
     breadcrumbTitle: 'Si₃N₄ vs Al₂O₃ Igniters',
     author: {
       name: 'Ceramitell Engineering Team',
-      title: 'Technical Applications · Pingxiang, China',
+      title: 'Technical Applications · Hangzhou, China',
       avatar: '👷',
     },
     heroIcon: '🔥',
-    heroLabel: 'Si₃N₄ CN-300 and Al₂O₃ igniters side-by-side — Replace with comparison product photo',
-    heroCaption: 'Figure 1 — CN-300 Si₃N₄ igniter (left) and standard Al₂O₃ hot surface igniter (right). Same flange geometry, different element material. The difference in field life is 3–5×.',
+    heroLabel: 'Si₃N₄ BLK and Al₂O₃ igniters side-by-side — Replace with comparison product photo',
+    heroCaption: 'Figure 1 — BLK Si₃N₄ igniter (left) and standard Al₂O₃ hot surface igniter (right). Same flange geometry, different element material. The difference in field life is 3–5×.',
     toc: [
       { id: 'overview', num: '01', label: 'The Short Answer' },
       { id: 'material-properties', num: '02', label: 'Material Properties' },
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
       'hydrogen-appliance-ignition',
     ],
     productLink: {
-      name: 'CN-300 Si₃N₄ Igniter',
+      name: 'BLK Si₃N₄ Igniter',
       desc: 'Hot surface igniter for pellet stoves, gas furnaces, and boilers. 12V, 120V, 230V variants. 100,000+ cycle life. UL/CE certified.',
       to: '/products/silicon-nitride-igniters-final',
       icon: '🔥',

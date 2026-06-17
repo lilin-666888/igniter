@@ -6,7 +6,7 @@ useHead({
     {
       name: "description",
       content:
-        "CN-300 silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
     },
   ],
 });
@@ -1875,7 +1875,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

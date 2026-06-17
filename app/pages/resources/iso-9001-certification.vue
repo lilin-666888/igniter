@@ -114,7 +114,7 @@ useHead({
           <div class="app-use">
             <div class="app-use-bar"></div>
             <div class="app-use-icon">🔥</div>
-            <div class="app-use-title">Hot Surface Igniters (CN-300)</div>
+            <div class="app-use-title">Hot Surface Igniters (BLK)</div>
             <p class="app-use-desc">UL Recognition E327654 + CE marking + electrical resistance per unit (cold resistance, insulation resistance) + dimensional inspection + cycle life qualification report for the lot.</p>
             <div class="app-use-grade"><b>Certificate →</b> Electrical + dimensional + UL/CE</div>
           </div>
@@ -196,7 +196,7 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Quality Outcome · Italian Pellet Stove OEM</div>
           <h2>7 years of supply — <span style="color:var(--orange);">zero recall events</span>, lot tracing intact.</h2>
-          <p>Our Italian pellet stove OEM partner has received 7 years of CN-300 igniter supply (180,000 units/year) with zero recall events and complete lot traceability for every shipment. Field failure rate stays below 0.3% per year — meeting their UL Recognition spec. Quality complaints, when they occur, are investigated with full root-cause analysis returned within 5 business days. This is the operational expression of the ISO 9001 + IATF 16949 + UL Recognition certification stack — not the paper, but the everyday work behind it.</p>
+          <p>Our Italian pellet stove OEM partner has received 7 years of BLK igniter supply (180,000 units/year) with zero recall events and complete lot traceability for every shipment. Field failure rate stays below 0.3% per year — meeting their UL Recognition spec. Quality complaints, when they occur, are investigated with full root-cause analysis returned within 5 business days. This is the operational expression of the ISO 9001 + IATF 16949 + UL Recognition certification stack — not the paper, but the everyday work behind it.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request Certification Scans →</a>
             <a class="btn-ghost" href="/about">About Ceramitell →</a>
@@ -230,7 +230,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">Can you handle factory audits from customer quality teams?</div>
-            <div class="faq-a">Yes — we welcome customer factory audits with 2–3 weeks advance scheduling. About 20% of our OEM customers conduct annual quality audits of our Pingxiang facility. Audit support team is bilingual (Mandarin + English). Some customers also request supplier audits by third-party assessors.</div>
+            <div class="faq-a">Yes — we welcome customer factory audits with 2–3 weeks advance scheduling. About 20% of our OEM customers conduct annual quality audits of our Hangzhou facility. Audit support team is bilingual (Mandarin + English). Some customers also request supplier audits by third-party assessors.</div>
           </div>
           <div class="faq-item">
             <div class="faq-q">What's your typical response time on quality complaints?</div>

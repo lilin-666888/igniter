@@ -156,7 +156,7 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Engineering Case · Italian Pellet Stove OEM</div>
           <h2>From <span style="color:var(--orange);">−38%</span> warranty returns to a 7-year supply partnership.</h2>
-          <p>One of our longest-running OEM partners switched from a European competitor's alumina igniters to our Si₃N₄ CN-300 series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months on the new substrate.</p>
+          <p>One of our longest-running OEM partners switched from a European competitor's alumina igniters to our Si₃N₄ BLK series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months on the new substrate.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request your samples →</a>
             <a class="btn-ghost" href="/materials#silicon-nitride">See Si₃N₄ datasheet →</a>

@@ -191,7 +191,7 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Real-World Example · Italian Pellet Stove OEM</div>
           <h2>Switching from Al₂O₃ to Si₃N₄ —<br/><span style="color:var(--orange);">−38% warranty returns</span> in year 1.</h2>
-          <p>Our Italian pellet stove OEM partner was buying alumina hot surface igniters from a European supplier in 2018. Field returns were running 8–12% at year 2 due to cracked igniters in cold Northern Italian climates — classic thermal-shock failure on Al₂O₃ substrate. Switching their full production line to Si₃N₄ CN-300 series dropped warranty returns 38% in year 1, cold-start failures 32%. They're now in year 7 of supply.</p>
+          <p>Our Italian pellet stove OEM partner was buying alumina hot surface igniters from a European supplier in 2018. Field returns were running 8–12% at year 2 due to cracked igniters in cold Northern Italian climates — classic thermal-shock failure on Al₂O₃ substrate. Switching their full production line to Si₃N₄ BLK series dropped warranty returns 38% in year 1, cold-start failures 32%. They're now in year 7 of supply.</p>
           <p style="margin-top:12px;"><b>The takeaway:</b> when your application thermal-cycles, Si₃N₄ pays for its higher unit cost many times over in reduced field failure rate.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request DFM Review →</a>
@@ -234,7 +234,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">Can you supply both materials from the same factory?</div>
-            <div class="faq-a">Yes — both Si₃N₄ and Al₂O₃ are core production materials at Ceramitell, manufactured in the same Pingxiang facility. Customers regularly buy both materials for different product lines. Combined-material supply agreements simplify procurement and provide consolidated freight savings.</div>
+            <div class="faq-a">Yes — both Si₃N₄ and Al₂O₃ are core production materials at Ceramitell, manufactured in the same Hangzhou facility. Customers regularly buy both materials for different product lines. Combined-material supply agreements simplify procurement and provide consolidated freight savings.</div>
           </div>
           <div class="faq-item">
             <div class="faq-q">How do I get a material recommendation for my specific application?</div>

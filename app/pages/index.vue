@@ -64,12 +64,12 @@ useHead({
         <div>
           <div class="spec-card">
             <div class="sc-img">
-              <div class="sc-tag">CN-300 SERIES</div>
+              <div class="sc-tag">BLK SERIES</div>
               <div class="sc-live">FACTORY TEST</div>
               <div class="sc-rod"></div>
             </div>
             <div class="sc-title">Silicon Nitride Igniter</div>
-            <div class="sc-sku">MODEL · CN-300 · HSI</div>
+            <div class="sc-sku">MODEL · BLK · HSI</div>
             <div class="sc-specs">
               <div
                 v-for="spec in specCardSpecs"

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -1799,7 +1799,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

@@ -144,7 +144,7 @@ useHead({
           </div>
           <div class="why-item">
             <div class="num">100K+</div>
-            <div class="lbl">CN-300 Cycle Life</div>
+            <div class="lbl">BLK Cycle Life</div>
             <div class="desc">Field-proven Si₃N₄ igniters in 180K-unit OEM runs.</div>
           </div>
           <div class="why-item">

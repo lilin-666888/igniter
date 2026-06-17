@@ -16,7 +16,7 @@
     <div class="data-table">
       <table>
         <thead>
-          <tr><th>Property</th><th>Si₃N₄ (CN-300)</th><th>Al₂O₃ (standard)</th><th>Why it matters</th></tr>
+          <tr><th>Property</th><th>Si₃N₄ (BLK)</th><th>Al₂O₃ (standard)</th><th>Why it matters</th></tr>
         </thead>
         <tbody>
           <tr class="winner"><td><strong>Fracture Toughness KIC</strong></td><td class="highlight">6–7 MPa·m½</td><td>3–4 MPa·m½</td><td>Resistance to thermal shock crack propagation</td></tr>
@@ -45,7 +45,7 @@
     </div>
 
     <h2 id="field-data">Field Data: What 7 Years of OEM Data Shows</h2>
-    <p>In 2018, one of our Italian pellet stove OEM partners switched from Al₂O₃ to CN-300 Si₃N₄ igniters across a 180,000-unit/year production run. After three heating seasons, the data was unambiguous:</p>
+    <p>In 2018, one of our Italian pellet stove OEM partners switched from Al₂O₃ to BLK Si₃N₄ igniters across a 180,000-unit/year production run. After three heating seasons, the data was unambiguous:</p>
 
     <div class="pullquote">
       <p>"We expected longer life. We did not expect a −38% reduction in warranty returns in the first year. That number changed how we think about igniter procurement."</p>
@@ -55,7 +55,7 @@
     <div class="data-table">
       <table>
         <thead>
-          <tr><th>Metric</th><th>Al₂O₃ (prior spec)</th><th>Si₃N₄ CN-300 (year 1)</th><th>Change</th></tr>
+          <tr><th>Metric</th><th>Al₂O₃ (prior spec)</th><th>Si₃N₄ BLK (year 1)</th><th>Change</th></tr>
         </thead>
         <tbody>
           <tr><td>Warranty returns (igniter)</td><td>3.8% of units</td><td class="highlight">2.4% of units</td><td class="highlight">−38%</td></tr>
@@ -98,18 +98,18 @@
     <h2 id="practical-guidance">Practical Guidance for Engineers</h2>
 
     <h3>Matching the voltage variant to your application</h3>
-    <p>CN-300 is available in three voltage variants. The heating element is identical across all three — only the resistance winding changes to match the rated voltage. Choosing the wrong voltage variant is the most common specification error, producing resistive overheating (too low resistance) or undershooting ignition temperature (too high resistance).</p>
+    <p>BLK is available in three voltage variants. The heating element is identical across all three — only the resistance winding changes to match the rated voltage. Choosing the wrong voltage variant is the most common specification error, producing resistive overheating (too low resistance) or undershooting ignition temperature (too high resistance).</p>
 
     <ul>
-      <li><strong>CN-300/12:</strong> 12V DC at 50W. Battery-ignition applications, 12V auxiliary circuits.</li>
-      <li><strong>CN-300/120:</strong> 120V AC at 300W. North American residential gas appliances, UL Recognized.</li>
-      <li><strong>CN-300/230:</strong> 230V AC at 300W. European residential appliances, CE marked.</li>
+      <li><strong>BLK-HS1-24 S:</strong> 12V DC at 50W. Battery-ignition applications, 12V auxiliary circuits.</li>
+      <li><strong>BLK-HS5-120 S:</strong> 120V AC at 300W. North American residential gas appliances, UL Recognized.</li>
+      <li><strong>BLK-HS5-220 S:</strong> 230V AC at 300W. European residential appliances, CE marked.</li>
     </ul>
 
     <p>Custom voltage variants (277V, 480V for commercial systems; 24V for HVAC controls) are available with a minimum order of 500 units and 6-week lead time.</p>
 
     <h3>Drop-in compatibility with existing Al₂O₃ igniters</h3>
-    <p>CN-300 is dimensionally matched to the most common North American and European Al₂O₃ igniter platforms. In the majority of gas furnace, pellet stove, and water heater applications, CN-300 is a direct mechanical drop-in with no mounting or wiring modification.</p>
+    <p>BLK is dimensionally matched to the most common North American and European Al₂O₃ igniter platforms. In the majority of gas furnace, pellet stove, and water heater applications, BLK is a direct mechanical drop-in with no mounting or wiring modification.</p>
     <p>For applications where compatibility is uncertain, we recommend requesting a sample for fitment verification before committing to a production switch. Sample dispatch is 48 hours from receipt of a compatibility request.</p>
 
     <div class="article-footnote">

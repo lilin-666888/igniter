@@ -23,7 +23,7 @@ useHead({
           <span class="ph-eyebrow">Forming · Sintering · Grinding · Lapping</span>
           <div class="formula-display" style="font-size: 56px;">Process</div>
           <h1>Manufacturing process —<br/>how we make every ceramic part.</h1>
-          <p class="ph-sub">Ceramic component manufacturing is a <b>sequential process with no shortcuts</b>. Raw powder → forming → sintering → grinding → finishing. Each stage has multiple route options optimized for different geometries and materials. Below is the full process map — what runs in our Pingxiang facility and how the choices shape your finished part's properties and cost.</p>
+          <p class="ph-sub">Ceramic component manufacturing is a <b>sequential process with no shortcuts</b>. Raw powder → forming → sintering → grinding → finishing. Each stage has multiple route options optimized for different geometries and materials. Below is the full process map — what runs in our Hangzhou facility and how the choices shape your finished part's properties and cost.</p>
           <div class="ph-quickstats">
             <div class="ph-stat"><div class="num">5</div><div class="lbl">Process Stages</div></div>
             <div class="ph-stat"><div class="num">4</div><div class="lbl">Forming Routes</div></div>
@@ -91,7 +91,7 @@ useHead({
               </tr>
             </thead>
             <tbody>
-              <tr><th>Hot Surface Igniters</th><td class="unit">CN-300</td><td>Injection molding</td><td>Pressureless</td><td>Grind + electrical test</td></tr>
+              <tr><th>Hot Surface Igniters</th><td class="unit">BLK</td><td>Injection molding</td><td>Pressureless</td><td>Grind + electrical test</td></tr>
               <tr><th>Precision Balls (G3–G10)</th><td class="unit">balls</td><td>Dry press</td><td>HIP</td><td>Lap + Talyrond</td></tr>
               <tr><th>Grinding Media (G40+)</th><td class="unit">balls</td><td>Dry press</td><td>Pressureless</td><td>Tumble + screen</td></tr>
               <tr><th>Structural Parts</th><td class="unit">custom</td><td>CIP or slip</td><td>Pressureless</td><td>Diamond grind + CMM</td></tr>

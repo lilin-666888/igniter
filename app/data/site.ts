@@ -12,7 +12,7 @@ export const contactInfo = {
   wechat: '+86 151 9017 9780',
   linkedin: 'Ceramitell Industrial Ceramics',
   address: 'No.568, Tianyi Road,\nQingpu District, Shanghai 201712,\nChina',
-  factory: 'Pingxiang, Jiangxi, China\n(Visit by appointment)',
+  factory: 'Hangzhou, Zhejiang, China\n(~13 acres · 6,000+ m² building area · Visit by appointment)',
   business_hours: 'Mon–Fri 09:00–18:00 CST (UTC+8)\nSat by appointment',
 }
 
@@ -82,7 +82,7 @@ export const navLinks: NavLink[] = [
           { label: 'Silicon Nitride Shaft Rod', to: '/products/silicon-nitride-shaft-rod' },
           // { label: 'Silicon Nitride Lift Tube', to: '' },
           // { label: 'Silicon Nitride Turbine', to: '' },
-          // { label: 'Silicon Nitride Cutting Blade', to: '' },
+          { label: 'Silicon Nitride Cutting Blade', to: '/products/ceramic-structural#cutting-blade' },
           // { label: 'Tubes, Rods & Plungers', to: '' },
           // { label: 'Spherical & Rotators', to: '' },
           // { label: 'Custom Machined Parts', to: '' },

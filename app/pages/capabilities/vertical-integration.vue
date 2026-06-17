@@ -23,12 +23,12 @@ useHead({
           <span class="ph-eyebrow">Powder Synthesis → Sintering → Finishing — One Roof</span>
           <div class="formula-display" style="font-size: 56px;">Vertical</div>
           <h1>From silicon powder to finished part —<br/>everything under one roof.</h1>
-          <p class="ph-sub">Most ceramic component makers buy powder from trading companies, then sinter and finish. We <b>synthesize our own Si₃N₄ and ZrO₂ powders</b>, then sinter and machine in the same Pingxiang facility. The vertical integration delivers <b>30–50% lower material cost</b>, <b>complete lot traceability from raw silicon</b>, and <b>shorter lead times</b> — particularly valuable on production-volume OEM programs.</p>
+          <p class="ph-sub">Most ceramic component makers buy powder from trading companies, then sinter and finish. We <b>synthesize our own Si₃N₄ and ZrO₂ powders</b>, then sinter and machine in the same Hangzhou facility. The vertical integration delivers <b>30–50% lower material cost</b>, <b>complete lot traceability from raw silicon</b>, and <b>shorter lead times</b> — particularly valuable on production-volume OEM programs.</p>
           <div class="ph-quickstats">
             <div class="ph-stat"><div class="num">3</div><div class="lbl">In-House Stages</div></div>
             <div class="ph-stat"><div class="num">−30 to −50%</div><div class="lbl">vs Trader-Sourced</div></div>
             <div class="ph-stat"><div class="num">100%</div><div class="lbl">Lot Traceability</div></div>
-            <div class="ph-stat"><div class="num">10+ yr</div><div class="lbl">Pingxiang Operations</div></div>
+            <div class="ph-stat"><div class="num">10+ yr</div><div class="lbl">Hangzhou Operations</div></div>
           </div>
         </div>
         <div class="ph-side">

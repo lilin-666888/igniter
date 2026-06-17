@@ -86,7 +86,7 @@ useHead({
               </div>
               <span class="mat-tag flag">★ Flagship Material</span>
             </div>
-            <p class="mat-desc">Our most-shipped material. Engineered for thermal shock and cyclic loading — proven across 10+ million ignition cycles in Italian pellet stove field deployments. CN-300 series igniters reach service temperature in 3 seconds.</p>
+            <p class="mat-desc">Our most-shipped material. Engineered for thermal shock and cyclic loading — proven across 10+ million ignition cycles in Italian pellet stove field deployments. BLK series igniters reach service temperature in 3 seconds.</p>
             <div class="mat-props">
               <div class="mat-prop"><div class="l">Density</div><div class="v">3.2 g/cm³</div></div>
               <div class="mat-prop"><div class="l">Fracture Toughness</div><div class="v">7.5 MPa·m½</div></div>
@@ -402,7 +402,7 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Engineering Case · Italian Pellet Stove OEM</div>
           <h2>From <span style="color:var(--orange);">−38%</span> warranty returns to a 7-year supply partnership.</h2>
-          <p>One of our longest-running OEM partners switched from a European competitor's alumina igniters to our Si₃N₄ CN-300 series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months on the new substrate.</p>
+          <p>One of our longest-running OEM partners switched from a European competitor's alumina igniters to our Si₃N₄ BLK series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months on the new substrate.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/applications#pellet-stove">Read the full case study →</a>
             <a class="btn-ghost" href="/contact">Request your samples →</a>
@@ -445,7 +445,7 @@ useHead({
 
           <div class="faq-item">
             <div class="faq-q">How fast can I get samples?</div>
-            <div class="faq-a">Stock items ship within 48 hours from Pingxiang, Jiangxi. Custom prototypes ship 7–14 days depending on geometry — DFM review included. Sample charges are credited against your first production order.</div>
+            <div class="faq-a">Stock items ship within 48 hours from Hangzhou, Zhejiang. Custom prototypes ship 7–14 days depending on geometry — DFM review included. Sample charges are credited against your first production order.</div>
           </div>
 
           <div class="faq-item">
@@ -455,7 +455,7 @@ useHead({
 
           <div class="faq-item">
             <div class="faq-q">Which material is "best" for igniters?</div>
-            <div class="faq-a">For modern hot surface igniters, Si₃N₄ is the engineering default — its thermal shock resistance and cyclic fatigue performance both beat alumina. Alumina is acceptable for low-duty-cycle, lower-cost designs. Our CN-300 series is Si₃N₄.</div>
+            <div class="faq-a">For modern hot surface igniters, Si₃N₄ is the engineering default — its thermal shock resistance and cyclic fatigue performance both beat alumina. Alumina is acceptable for low-duty-cycle, lower-cost designs. Our BLK series is Si₃N₄.</div>
           </div>
 
           <div class="faq-item">

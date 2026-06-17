@@ -72,7 +72,7 @@ export const spotlightStats = [
 
 export const testimonials = [
   {
-    quote: 'Their CN-300 igniters cut our warranty returns 38% in year one. Engineering replies within 12 hours from China — faster than two of our European suppliers.',
+    quote: 'Their BLK igniters cut our warranty returns 38% in year one. Engineering replies within 12 hours from China — faster than two of our European suppliers.',
     avatar: 'MR',
     name: 'M. Rossi',
     role: 'Engineering Director',

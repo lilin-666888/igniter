@@ -185,7 +185,7 @@ useHead({
             <div class="rapid-card-num">1–3</div>
             <div class="rapid-card-unit">Working Days</div>
             <h3>Stock Sample Dispatch</h3>
-            <p>For any geometry already in our SKU catalog — igniters, balls, rods, plates, standard bearings — we dispatch from Pingxiang warehouse within 1–3 working days of order confirmation.</p>
+            <p>For any geometry already in our SKU catalog — igniters, balls, rods, plates, standard bearings — we dispatch from Hangzhou warehouse within 1–3 working days of order confirmation.</p>
           </div>
 
           <div class="rapid-card">

@@ -294,7 +294,7 @@ useHead({
 
           <div class="faq-item">
             <div class="faq-q">How fast can I get alumina samples?</div>
-            <div class="faq-a">Stock-geometry samples (rods 5–50mm diameter, plates 1–10mm thickness) dispatch within 48 hours from our Pingxiang warehouse. Custom prototypes typically ship in 7–14 days from drawing receipt — DFM review included.</div>
+            <div class="faq-a">Stock-geometry samples (rods 5–50mm diameter, plates 1–10mm thickness) dispatch within 48 hours from our Hangzhou warehouse. Custom prototypes typically ship in 7–14 days from drawing receipt — DFM review included.</div>
           </div>
 
           <div class="faq-item">

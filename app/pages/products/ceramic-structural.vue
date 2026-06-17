@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: 'Ceramic Structural Parts — Si₃N₄ Shafts, Bearings, Wear Parts | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ CN-300 series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  meta: [{ name: 'description', content: 'Si₃N₄ structural parts: shaft rods, lift tubes, turbines, and high-speed cutting blades for lithium battery film, tin foil, and precision thin-film applications. Custom geometries to ±0.01mm.' }],
 })
 </script>
 
@@ -67,11 +67,11 @@ useHead({
     <p class="lineup-desc">Si₃N₄ turbocharger rotors, turbine wheels, and high-temperature blade assemblies. 30% lighter than Inconel, faster spool-up, no lubrication thermal limit.</p>
     <div class="lineup-specs"><span class="spec-chip">30% lighter</span><span class="spec-chip">No lube limit</span><span class="spec-chip">High-temp</span></div>
     <div class="lineup-foot"><span class="lineup-mat"><b>Material:</b> <a href="/materials/silicon-nitride">Si₃N₄</a></span><a class="lineup-link" href="/contact">Get a quote →</a></div>
-    </div> <div class="lineup-card">
-    <div class="lineup-head"><div class="lineup-icon">⚔️</div><div><div class="lineup-name">Si₃N₄ Cutting Blades &amp; Inserts</div></div></div><div class="lineup-img-slot"><div class="lineup-img-ph"><div class="ph-icon">⚔️</div><div class="ph-lbl">Photo Placeholder</div></div></div>
+    </div> <div class="lineup-card" id="cutting-blade">
+    <div class="lineup-head"><div class="lineup-icon">⚔️</div><div><div class="lineup-name">Si₃N₄ High-Speed Cutting Blades</div></div></div><div class="lineup-img-slot"><div class="lineup-img-ph"><div class="ph-icon">⚔️</div><div class="ph-lbl">Photo Placeholder</div></div></div>
 
-    <p class="lineup-desc">Silicon nitride cutting blades and inserts for high-speed machining of cast iron, hardened steel, and superalloys. Higher edge retention than alumina at cutting speeds above 800 m/min.</p>
-    <div class="lineup-specs"><span class="spec-chip">800+ m/min</span><span class="spec-chip">Hard steel</span><span class="spec-chip">Edge retention</span></div>
+    <p class="lineup-desc">Ultra-thin silicon nitride high-speed blades for lithium battery film, cigarette tin foil, and other precision thin-material cutting. Fast cutting speed, clean edges without material damage, high hardness, wear resistance, and low friction coefficient.</p>
+    <div class="lineup-specs"><span class="spec-chip">Micron-level film</span><span class="spec-chip">3.9mm thick</span><span class="spec-chip">16.9×80mm</span><span class="spec-chip">Ultra-thin available</span></div>
     <div class="lineup-foot"><span class="lineup-mat"><b>Material:</b> <a href="/materials/silicon-nitride">Si₃N₄</a></span><a class="lineup-link" href="/contact">Get a quote →</a></div>
     </div> <div class="lineup-card">
     <div class="lineup-head"><div class="lineup-icon">🧪</div><div><div class="lineup-name">Tubes, Rods &amp; Plungers</div></div></div><div class="lineup-img-slot"><div class="lineup-img-ph"><div class="ph-icon">🧪</div><div class="ph-lbl">Photo Placeholder</div></div></div>
@@ -124,6 +124,26 @@ useHead({
     </div>
     </div>
     </div>
+    </section><section class="s" id="cutting-blade-specs">
+    <div class="wrap">
+    <div class="sec-num">01b · Cutting Blade Specifications</div>
+    <h2>Si₃N₄ high-speed cutting blades — <span class="accent">reference dimensions</span>.</h2>
+    <p class="sec-lead">Ultra-thin silicon nitride ceramic blades for lithium battery film, cigarette tin foil, and other precision thin-material cutting. Dimensions below are reference values — actual parameters are adjusted per application.</p>
+    <div class="benefits" style="margin-bottom:2rem;">
+    <div class="benefit"><div class="benefit-ico"></div><div class="benefit-body"><h4>Applications</h4><p>High-speed cutting of lithium battery films, cigarette tin foil, and other thin materials. Suitable for micron-level film cutting and precision thin-film applications.</p></div></div>
+    <div class="benefit"><div class="benefit-ico"></div><div class="benefit-body"><h4>Performance</h4><p>Fast cutting speed, clean cutting without damaging the material, high-temperature resistance, long service life, high hardness, wear resistance, good chemical stability, and low friction coefficient.</p></div></div>
+    </div>
+    <table style="width:100%;border-collapse:collapse;font-size:0.9rem;">
+    <thead><tr style="background:#eaf1f8;"><th style="padding:10px 12px;text-align:left;border:1px solid #cbd6e2;">Parameter</th><th style="padding:10px 12px;text-align:left;border:1px solid #cbd6e2;">Typical Value</th><th style="padding:10px 12px;text-align:left;border:1px solid #cbd6e2;">Notes</th></tr></thead>
+    <tbody>
+    <tr><td style="padding:10px 12px;border:1px solid #cbd6e2;">Material</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Silicon Nitride (Si₃N₄)</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Ultra-thin ceramic construction</td></tr>
+    <tr style="background:#f7f9fc;"><td style="padding:10px 12px;border:1px solid #cbd6e2;">Thickness</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">3.9 mm</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Reference dimension</td></tr>
+    <tr><td style="padding:10px 12px;border:1px solid #cbd6e2;">Width × Length</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">16.9 × 80 mm</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Also available: 17 × 92.5 mm</td></tr>
+    <tr style="background:#f7f9fc;"><td style="padding:10px 12px;border:1px solid #cbd6e2;">Custom sizes</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Per drawing</td><td style="padding:10px 12px;border:1px solid #cbd6e2;">Ultra-thin variants available on request</td></tr>
+    </tbody>
+    </table>
+    <p style="margin-top:1rem;font-size:0.85rem;color:#5a5a5a;">Note: Data is for reference only and cannot be used as the basis for product ordering and inspection. Actual parameters will be adjusted based on your specific application.</p>
+    </div>
     </section><section class="s" style="background:var(--bg-soft);">
     <div class="wrap">
     <div class="sec-num">02 · Why Ceramitell for Structural Parts</div>
@@ -170,7 +190,7 @@ useHead({
     <div>
     <div class="casecta-eyebrow">★ Engineering Case · Italian Pellet Stove OEM</div>
     <h2>180,000 units/year, <span style="color:var(--orange);">−38% warranty returns</span>, 7-year partnership.</h2>
-    <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our CN-300 series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
+    <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our BLK series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
     <div class="casecta-ctas">
     <a class="btn-primary" href="/contact">Request Free Samples →</a>
     <a class="btn-ghost" href="/applications/sub-biomass-pellet-stoves">Pellet Stove Case →</a>

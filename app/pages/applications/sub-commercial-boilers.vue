@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -81,7 +81,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -249,7 +249,7 @@ useHead({
             <span class="comp-badge win">★ Recommended</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 · 100K+ cycles · highest cycle life
+              BLK · 100K+ cycles · highest cycle life
             </div>
             <ul class="comp-list">
               <li>
@@ -498,7 +498,7 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Standard 120V/230V — highest-volume commercial heating igniter.
             </div>
@@ -1781,7 +1781,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

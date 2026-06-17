@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -79,7 +79,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -100,7 +100,7 @@ useHead({
               ★ Key performance — residential gas furnace
             </div>
             <div class="bio-proof-title">
-              CN-300 vs standard Al₂O₃ igniter field data
+              BLK vs standard Al₂O₃ igniter field data
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -153,7 +153,7 @@ useHead({
           <div class="mkt-item">
             <div class="mkt-num">10yr+</div>
             <div class="mkt-label">
-              Typical CN-300 field life in standard gas furnace duty — vs 3–7yr
+              Typical BLK field life in standard gas furnace duty — vs 3–7yr
               for Al₂O₃
             </div>
           </div>
@@ -189,7 +189,7 @@ useHead({
             >
               <div class="di-icon">🏠</div>
               <div class="di-label">
-                CN-300 installed in residential gas furnace
+                BLK installed in residential gas furnace
               </div>
               <div class="di-replace">Replace with product photo</div>
             </div>
@@ -212,7 +212,7 @@ useHead({
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              CN-300 is a certified drop-in for all major NA and EU gas furnace
+              BLK is a certified drop-in for all major NA and EU gas furnace
               platforms. No wiring modification required in the vast majority of
               installations.
             </p>
@@ -253,7 +253,7 @@ useHead({
             <span class="comp-badge win">★ Recommended</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 series · 100K+ cycles · 10-year field life
+              BLK series · 100K+ cycles · 10-year field life
             </div>
             <ul class="comp-list">
               <li>
@@ -437,13 +437,13 @@ useHead({
               What is the field life improvement vs Al₂O₃?
             </div>
             <div class="faq-a">
-              Typical Al₂O₃ life in residential gas furnace: 3–7 years. CN-300
+              Typical Al₂O₃ life in residential gas furnace: 3–7 years. BLK
               Si₃N₄: 10–15 years under identical conditions. The longer life
               supports premium positioning in replacement parts channels.
             </div>
           </div>
           <div class="faq-item">
-            <div class="faq-q">Does CN-300 pass UL 60730?</div>
+            <div class="faq-q">Does BLK pass UL 60730?</div>
             <div class="faq-a">
               Yes — UL Recognized under UL 60730-1. Documentation available for
               OEM qualification. CE Declaration of Conformity for EU export also
@@ -495,7 +495,7 @@ useHead({
         </div>
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
-          <div class="qquote-title">Request CN-300 samples</div>
+          <div class="qquote-title">Request BLK samples</div>
           <div class="qquote-note">
             Include your current igniter part number for fastest compatibility
             confirmation.
@@ -511,7 +511,7 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Specs, voltage variants, and OEM compatibility.
             </div>
@@ -1794,7 +1794,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

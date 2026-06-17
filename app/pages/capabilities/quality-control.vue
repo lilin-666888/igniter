@@ -193,7 +193,7 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Quality Outcome · 7-Year Italian Partnership</div>
           <h2>180K units/year, <span style="color:var(--orange);">&lt;0.3% field failure</span>, zero recalls.</h2>
-          <p>Our Italian pellet stove OEM partner has received 7 years of CN-300 igniter supply — 180,000 units/year, zero recall events, field failure rate consistently below 0.3% per year. When quality concerns arise (always less than 10 units in any given batch), root cause analysis is delivered within 5 business days. This is the operational expression of our ISO 9001 + IATF 16949 + UL Recognition certification stack — not paper, but daily work.</p>
+          <p>Our Italian pellet stove OEM partner has received 7 years of BLK igniter supply — 180,000 units/year, zero recall events, field failure rate consistently below 0.3% per year. When quality concerns arise (always less than 10 units in any given batch), root cause analysis is delivered within 5 business days. This is the operational expression of our ISO 9001 + IATF 16949 + UL Recognition certification stack — not paper, but daily work.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request Quality Audit →</a>
             <a class="btn-ghost" href="/resources/iso-9001-certification">Certifications →</a>

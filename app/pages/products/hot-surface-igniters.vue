@@ -6,12 +6,12 @@ useHead({
     {
       name: "description",
       content:
-        "CN-300 silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
     },
     {
       name: "keywords",
       content:
-        "silicon nitride igniter, Si3N4 igniter, CN-300 igniter, silicon nitride hot surface igniter, ceramic hot surface igniter, Norton igniter replacement, pellet stove igniter",
+        "silicon nitride igniter, Si3N4 igniter, BLK igniter, silicon nitride hot surface igniter, ceramic hot surface igniter, Norton igniter replacement, pellet stove igniter",
     },
   ],
 });
@@ -495,7 +495,7 @@ useHead({
             <a
               class="btn-ghost"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Full Data →</a
+              >View BLK Full Data →</a
             >
           </div>
         </div>
@@ -681,9 +681,9 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product · Flagship Detail</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
-              Full specs, all 6 CN-300 voltage variants, OEM compatibility data,
+              Full specs, all 6 BLK voltage variants, OEM compatibility data,
               and datasheet download for our flagship Si₃N₄ igniter.
             </div>
             <div class="rel-link">View →</div></a
@@ -2144,7 +2144,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

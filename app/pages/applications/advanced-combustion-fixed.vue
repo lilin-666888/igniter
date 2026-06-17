@@ -125,7 +125,7 @@ useHead({
           <div class="scen-img-placeholder si-biomass">
             <div class="img-icon">🔥</div>
             <div class="img-label">
-              Biomass &amp; Pellet Stove with CN-300 Igniter
+              Biomass &amp; Pellet Stove with BLK Igniter
             </div>
             <div class="img-replace">Replace with product photo</div>
           </div>
@@ -200,7 +200,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Si₃N₄ Igniter</a
+                >BLK Si₃N₄ Igniter</a
               >
               <a href="/products/ceramic-igniters">Al₂O₃ Igniter</a>
             </div>
@@ -253,7 +253,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Si₃N₄</a
+                >BLK Si₃N₄</a
               >
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
@@ -309,10 +309,10 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300/120 (NA)</a
+                >BLK-HS5-120 S (NA)</a
               >
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300/230 (EU)</a
+                >BLK-HS5-220 S (EU)</a
               >
             </div>
             <a href="#quote" class="rec-cta-sm">Match My Part →</a>
@@ -367,7 +367,7 @@ useHead({
               <span class="rl">Products →</span>
               <a href="/products/ceramic-igniters">SiC Hot Rod</a>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Commercial</a
+                >BLK Commercial</a
               >
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -417,7 +417,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300/120 · CN-300/230</a
+                >BLK-HS5-120 S · BLK-HS5-220 S</a
               >
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -468,7 +468,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Igniter</a
+                >BLK Igniter</a
               >
               <a href="/products/ceramic-heaters">Ceramic Heaters</a>
             </div>
@@ -517,7 +517,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Igniter</a
+                >BLK Igniter</a
               >
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
@@ -569,7 +569,7 @@ useHead({
             <div class="rec-links">
               <span class="rl">Products →</span>
               <a href="/products/silicon-nitride-igniters-final"
-                >CN-300 Si₃N₄</a
+                >BLK Si₃N₄</a
               >
               <a href="/products/ceramic-igniters">Custom to Drawing</a>
             </div>
@@ -592,7 +592,7 @@ useHead({
           </p>
           <ul class="quote-why">
             <li>
-              <b>Free samples, 48-hour dispatch</b> on stock CN-300 SKUs — no
+              <b>Free samples, 48-hour dispatch</b> on stock BLK SKUs — no
               MOQ.
             </li>
             <li>
@@ -633,7 +633,7 @@ useHead({
             <div class="rel-eyebrow">Product Category</div>
             <div class="rel-title">All Ceramic Igniters</div>
             <div class="rel-desc">
-              Five igniter types — Si₃N₄ CN-300, Universal Hot Surface, Alumina,
+              Five igniter types — Si₃N₄ BLK, Universal Hot Surface, Alumina,
               SiC Hot Rod, and Glow Plug.
             </div>
             <div class="rel-link">View products →</div>
@@ -1919,7 +1919,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

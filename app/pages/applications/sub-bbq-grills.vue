@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -80,7 +80,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -185,7 +185,7 @@ useHead({
             >
               <div class="di-icon">🔥</div>
               <div class="di-label">
-                CN-300 igniter in gas BBQ grill burner assembly
+                BLK igniter in gas BBQ grill burner assembly
               </div>
               <div class="di-replace">Replace with product photo</div>
             </div>
@@ -207,7 +207,7 @@ useHead({
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The CN-300 sealed Si₃N₄ element is impervious to moisture ingress
+              The BLK sealed Si₃N₄ element is impervious to moisture ingress
               and handles outdoor temperature extremes from −30°C to +60°C
               without performance degradation.
             </p>
@@ -244,7 +244,7 @@ useHead({
             <span class="comp-badge win">★ Recommended</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 series · 100K+ cycles · sealed element
+              BLK series · 100K+ cycles · sealed element
             </div>
             <ul class="comp-list">
               <li>
@@ -328,7 +328,7 @@ useHead({
       <div class="wrap">
         <div>
           <div class="casecta-eyebrow">
-            Why leading grill OEMs switch to CN-300
+            Why leading grill OEMs switch to BLK
           </div>
           <h2>
             Fewer warranty returns,<br /><span style="color: var(--gold)"
@@ -412,7 +412,7 @@ useHead({
             <div class="fail-desc">
               Organic sealing compounds in standard igniters degrade under
               outdoor UV and ozone within 3–5 years, allowing moisture entry.
-              CN-300's all-ceramic seal contains no organic materials.
+              BLK's all-ceramic seal contains no organic materials.
             </div>
             <div class="fail-solution">
               Si₃N₄ fix → no organic sealing compounds — UV/ozone immune.
@@ -427,7 +427,7 @@ useHead({
         <h2>Questions from grill engineers.</h2>
         <div class="faq-grid">
           <div class="faq-item">
-            <div class="faq-q">Does CN-300 fit my existing igniter socket?</div>
+            <div class="faq-q">Does BLK fit my existing igniter socket?</div>
             <div class="faq-a">
               Send your current part number or a drawing — we match mounting
               flange geometry, lead wire, and connector type. Compatibility data
@@ -437,8 +437,8 @@ useHead({
           <div class="faq-item">
             <div class="faq-q">What voltage for NA vs EU grills?</div>
             <div class="faq-a">
-              North America: 120V AC (CN-300/120). Europe: 230V AC (CN-300/230).
-              12V DC for battery-ignition portable grills (CN-300/12).
+              North America: 120V AC (BLK-HS5-120 S). Europe: 230V AC (BLK-HS5-220 S).
+              12V DC for battery-ignition portable grills (BLK-HS1-24 S).
             </div>
           </div>
           <div class="faq-item">
@@ -453,7 +453,7 @@ useHead({
               What is the cold-start performance at −30°C?
             </div>
             <div class="faq-a">
-              CN-300 insulation resistance maintains ≥100 MΩ at 500V DC down to
+              BLK insulation resistance maintains ≥100 MΩ at 500V DC down to
               −40°C. Cold-start ignition from −30°C ambient validated per IEC
               60335.
             </div>
@@ -498,7 +498,7 @@ useHead({
         </div>
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
-          <div class="qquote-title">Request CN-300 samples for your grill</div>
+          <div class="qquote-title">Request BLK samples for your grill</div>
           <div class="qquote-note">
             Include your grill model or current igniter part number.
           </div>
@@ -513,7 +513,7 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Full specs, voltage variants, and OEM compatibility data.
             </div>
@@ -1796,7 +1796,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

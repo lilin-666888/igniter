@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: 'Silicon Nitride (Si₃N₄) — Hot Surface Igniters, Precision Balls, Bearings | Ceramitell',
-  meta: [{ name: 'description', content: 'Silicon nitride from a direct China manufacturer. Si₃N₄ CN-300 hot surface igniters, HIP-processed precision balls (G3-G60), hybrid bearings up to 60,000 RPM, custom structural parts. 100K+ cycle life, UL/CE certified.' }],
+  meta: [{ name: 'description', content: 'Silicon nitride from a direct China manufacturer. Si₃N₄ BLK hot surface igniters, HIP-processed precision balls (G3-G60), hybrid bearings up to 60,000 RPM, custom structural parts. 100K+ cycle life, UL/CE certified.' }],
 })
 </script>
 
@@ -20,10 +20,10 @@ useHead({
     <section class="page-hero">
       <div class="wrap">
         <div>
-          <span class="ph-eyebrow">★ Flagship Material · CN-300 Series</span>
+          <span class="ph-eyebrow">★ Flagship Material · BLK Series</span>
           <div class="formula-display">Si<sub>3</sub>N<sub>4</sub></div>
           <h1>Our most-shipped ceramic —<br/>built for thermal shock and cyclic loading.</h1>
-          <p class="ph-sub">Silicon nitride is Ceramitell's flagship material. The <b>CN-300 series Si₃N₄ hot surface igniter</b> reaches service temperature in <b>3 seconds</b> and survives <b>100,000+ ignition cycles</b> — proven across our 180,000-unit/year Italian pellet stove OEM partnership. Industry-default substrate for thermal cycling applications.</p>
+          <p class="ph-sub">Silicon nitride is Ceramitell's flagship material. The <b>BLK series Si₃N₄ hot surface igniter</b> reaches service temperature in <b>3 seconds</b> and survives <b>100,000+ ignition cycles</b> — proven across our 180,000-unit/year Italian pellet stove OEM partnership. Industry-default substrate for thermal cycling applications.</p>
           <div class="ph-quickstats">
             <div class="ph-stat"><div class="num">100K+</div><div class="lbl">Cycle Life</div></div>
             <div class="ph-stat"><div class="num">3 sec</div><div class="lbl">Heat-Up Time</div></div>
@@ -35,7 +35,7 @@ useHead({
           <div style="font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.18em; color: var(--gold); text-transform: uppercase; margin-bottom: 14px; font-weight: 600;">4 Production Grades</div>
           <div class="grade-cards">
             <a href="#grade-igniter" class="grade-card">
-              <div class="grade-label">Grade · Igniter (CN-300)</div>
+              <div class="grade-label">Grade · Igniter (BLK)</div>
               <div class="grade-title">Hot Surface Igniter</div>
               <div class="grade-use">100K+ cycles · UL/CE certified</div>
             </a>
@@ -111,7 +111,7 @@ useHead({
           <div class="app-use">
             <div class="app-use-bar"></div>
             <div class="app-use-icon">🔥</div>
-            <div class="app-use-title">Igniter Grade — CN-300 Series</div>
+            <div class="app-use-title">Igniter Grade — BLK Series</div>
             <p class="app-use-desc">Optimized for 100,000+ thermal cycles. Used in pellet stove, BBQ, gas furnace, and HVAC hot surface igniters. UL/CE certified across 12V–230V. Heat-up to service temperature in 3 seconds.</p>
             <div class="app-use-grade"><b>Best for →</b> Hot surface igniters · glow plugs</div>
           </div>
@@ -150,8 +150,8 @@ useHead({
             <div class="app-use-bar"></div>
             <div class="app-use-icon">🔥</div>
             <div class="app-use-title">Hot Surface Igniters ★ Flagship</div>
-            <p class="app-use-desc">CN-300 series Si₃N₄ igniters for pellet stoves, BBQ grills, gas furnaces, water heaters, and HVAC. 100K+ cycle life, 3-sec heat-up, UL/CE certified.</p>
-            <div class="app-use-grade"><b>Grade →</b> CN-300 Igniter</div>
+            <p class="app-use-desc">BLK series Si₃N₄ igniters for pellet stoves, BBQ grills, gas furnaces, water heaters, and HVAC. 100K+ cycle life, 3-sec heat-up, UL/CE certified.</p>
+            <div class="app-use-grade"><b>Grade →</b> BLK Igniter</div>
           </a>
           <a href="/products#balls" class="app-use">
             <div class="app-use-bar"></div>
@@ -227,10 +227,10 @@ useHead({
         <div>
           <div class="casecta-eyebrow">★ Engineering Case · Italian Pellet Stove OEM</div>
           <h2>From <span style="color:var(--orange);">−38%</span> warranty returns to a 7-year supply partnership.</h2>
-          <p>Our longest-running OEM partner switched from a European competitor's alumina igniters to our Si₃N₄ CN-300 series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months. Now in year 7 of supply.</p>
+          <p>Our longest-running OEM partner switched from a European competitor's alumina igniters to our Si₃N₄ BLK series in 2018. They ship 180,000 units/year, and warranty returns dropped 38% in the first 12 months. Now in year 7 of supply.</p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="/contact">Request Free Samples →</a>
-            <a class="btn-ghost" href="/products/ceramic-igniters">CN-300 Series →</a>
+            <a class="btn-ghost" href="/products/ceramic-igniters">BLK Series →</a>
           </div>
         </div>
         <div class="casecta-side">
@@ -254,7 +254,7 @@ useHead({
         <div class="faq-grid">
           <div class="faq-item">
             <div class="faq-q">Why does Si₃N₄ outperform alumina in hot surface igniters?</div>
-            <div class="faq-a">Thermal shock resistance. Alumina's thermal expansion (8 × 10⁻⁶/K) is 2.5× higher than Si₃N₄'s (3.2). Over 100K+ heating/cooling cycles, alumina develops microcracks; Si₃N₄ doesn't. Our CN-300 series has 7+ years of OEM field data confirming this.</div>
+            <div class="faq-a">Thermal shock resistance. Alumina's thermal expansion (8 × 10⁻⁶/K) is 2.5× higher than Si₃N₄'s (3.2). Over 100K+ heating/cooling cycles, alumina develops microcracks; Si₃N₄ doesn't. Our BLK series has 7+ years of OEM field data confirming this.</div>
           </div>
           <div class="faq-item">
             <div class="faq-q">What's HIP-processing and when do I need it?</div>
@@ -262,7 +262,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">Can your Si₃N₄ igniters match Norton/Coorstek part numbers?</div>
-            <div class="faq-a">Yes — our CN-300 series is designed for drop-in replacement of legacy alumina and Si₃N₄ igniters from major Western suppliers. Send the part number or drawing, we'll reply within 48 hours with DFM feedback and quote. UL/CE certified.</div>
+            <div class="faq-a">Yes — our BLK series is designed for drop-in replacement of legacy alumina and Si₃N₄ igniters from major Western suppliers. Send the part number or drawing, we'll reply within 48 hours with DFM feedback and quote. UL/CE certified.</div>
           </div>
           <div class="faq-item">
             <div class="faq-q">What's the max RPM for Si₃N₄ ball bearings?</div>

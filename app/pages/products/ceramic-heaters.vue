@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title: 'Ceramic Heaters &amp; Elements — Si₃N₄, SiC, Al₂O₃, AlN | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ CN-300 series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
 })
 </script>
 
@@ -116,7 +116,7 @@ useHead({
     <div>
     <div class="casecta-eyebrow">★ Engineering Case · Italian Pellet Stove OEM</div>
     <h2>180,000 units/year, <span style="color:var(--orange);">−38% warranty returns</span>, 7-year partnership.</h2>
-    <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our CN-300 series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
+    <p>One of our longest-running OEM partners — switched from a European competitor's alumina igniters to our BLK series Si₃N₄ in 2018. Warranty returns dropped 38% in the first 12 months; cold-start failures (sub-zero installs) dropped 32%. Now in year 7 of supply.</p>
     <div class="casecta-ctas">
     <a class="btn-primary" href="/contact">Request Free Samples →</a>
     <a class="btn-ghost" href="/applications/sub-biomass-pellet-stoves">Pellet Stove Case →</a>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -71,7 +71,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -92,7 +92,7 @@ useHead({
               ★ Case Study · Italian Pellet Stove OEM · 7-Year Partnership
             </div>
             <div class="bio-proof-title">
-              Switch from Al₂O₃ → Si₃N₄ CN-300 — Year 1 Results
+              Switch from Al₂O₃ → Si₃N₄ BLK — Year 1 Results
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -153,7 +153,7 @@ useHead({
             <div class="mkt-num">UL<span>/CE</span></div>
             <div class="mkt-label">
               Both certifications required to ship into NA and EU distribution
-              channels — CN-300 carries both
+              channels — BLK carries both
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ useHead({
             <span class="comp-badge win">★ Recommended for Pellet Stoves</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 series · 100K+ cycles · 3-second heat-up
+              BLK series · 100K+ cycles · 3-second heat-up
             </div>
             <ul class="comp-list">
               <li>
@@ -310,7 +310,7 @@ useHead({
               <a
                 class="btn-primary"
                 href="/products/silicon-nitride-igniters-final"
-                >View CN-300 Full Specs →</a
+                >View BLK Full Specs →</a
               >
             </div>
           </div>
@@ -379,11 +379,11 @@ useHead({
           </h2>
           <p>
             One of Italy's major pellet stove OEMs switched from a European
-            competitor's alumina igniter to our CN-300 Si₃N₄ series in 2018. The
+            competitor's alumina igniter to our BLK Si₃N₄ series in 2018. The
             switch was driven by a quality crisis: alumina failure rates were
             spiking in northern European winter conditions, generating warranty
             claims that were eroding their after-sales margin. In year one with
-            CN-300, warranty returns related to ignition dropped 38%. Cold-start
+            BLK, warranty returns related to ignition dropped 38%. Cold-start
             failures in sub-zero installations dropped 32%. They extended the
             igniter warranty from 12 to 18 months. They are now in year 7 of
             supply.
@@ -393,13 +393,13 @@ useHead({
               >Request Pellet Stove Samples →</a
             >
             <a class="btn-ghost" href="/products/silicon-nitride-igniters-final"
-              >Download CN-300 Datasheet →</a
+              >Download BLK Datasheet →</a
             >
           </div>
         </div>
         <div class="casecta-side">
           <div class="casecta-side-tag">Switch Outcome — Running Totals</div>
-          <div class="casecta-side-title">Al₂O₃ → CN-300 Si₃N₄</div>
+          <div class="casecta-side-title">Al₂O₃ → BLK Si₃N₄</div>
           <ul class="casecta-side-list">
             <li><b>−38%</b> Ignition warranty returns (year 1)</li>
             <li><b>−32%</b> Cold-start failures (sub-zero installs)</li>
@@ -472,7 +472,7 @@ useHead({
               causing nuisance trips or no-fire conditions.
             </div>
             <div class="fail-solution">
-              Si₃N₄ fix → Lower moisture absorption than alumina. CN-300
+              Si₃N₄ fix → Lower moisture absorption than alumina. BLK
               insulation resistance holds ≥100 MΩ @ 500V DC down to −40°C.
             </div>
           </div>
@@ -488,7 +488,7 @@ useHead({
         </h2>
         <div class="faq-grid">
           <div class="faq-item">
-            <div class="faq-q">Does CN-300 fit my existing igniter socket?</div>
+            <div class="faq-q">Does BLK fit my existing igniter socket?</div>
             <div class="faq-a">
               Send us your current part number or a drawing — we match the
               mounting flange geometry, lead wire configuration, and connector
@@ -501,9 +501,9 @@ useHead({
               What voltage variant do I need for EU stoves?
             </div>
             <div class="faq-a">
-              Most EU pellet stoves run on 230V AC. The CN-300/230 is the
+              Most EU pellet stoves run on 230V AC. The BLK-HS5-220 S is the
               standard variant. Some stoves with 12V auxiliary ignition circuits
-              use CN-300/12. Send us your appliance spec and we'll confirm.
+              use BLK-HS1-24 S. Send us your appliance spec and we'll confirm.
             </div>
           </div>
           <div class="faq-item">
@@ -520,7 +520,7 @@ useHead({
           <div class="faq-item">
             <div class="faq-q">How quickly can I get samples?</div>
             <div class="faq-a">
-              Stock CN-300 samples dispatch within 48 hours from our Pingxiang
+              Stock BLK samples dispatch within 48 hours from our Hangzhou
               warehouse. Custom mounting or voltage configurations ship in 7–14
               days from drawing receipt. Sample charges credit against the first
               production order.
@@ -528,7 +528,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">
-              What's the warranty on CN-300 for pellet stove applications?
+              What's the warranty on BLK for pellet stove applications?
             </div>
             <div class="faq-a">
               Standard warranty is 24 months from OEM installation against
@@ -541,7 +541,7 @@ useHead({
             <div class="faq-q">Is there a MOQ for samples vs production?</div>
             <div class="faq-a">
               No MOQ for stock-SKU samples — you can order a single unit.
-              Production MOQ for standard CN-300 SKUs is 500 units. Custom
+              Production MOQ for standard BLK SKUs is 500 units. Custom
               voltage or mounting configurations have a 5,000-unit production
               MOQ.
             </div>
@@ -563,7 +563,7 @@ useHead({
           </p>
           <ul class="quote-why">
             <li>
-              <b>Free samples, 48-hour dispatch</b> on CN-300 stock SKUs — no
+              <b>Free samples, 48-hour dispatch</b> on BLK stock SKUs — no
               MOQ, credited to first order.
             </li>
             <li>
@@ -582,7 +582,7 @@ useHead({
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
           <div class="qquote-title">
-            Request a CN-300 sample for your pellet stove
+            Request a BLK sample for your pellet stove
           </div>
           <div class="qquote-note">
             No MOQ on samples. Include your stove model or current igniter part
@@ -599,10 +599,10 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Full specifications, 3-voltage comparison table, datasheet
-              download, and certification files for the CN-300 series.
+              download, and certification files for the BLK series.
             </div>
             <div class="rel-link">View product specs →</div></a
           ><a href="/materials/silicon-nitride" class="rel-card"
@@ -1885,7 +1885,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

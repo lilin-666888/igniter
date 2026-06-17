@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
   title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ CN-300 for High-Cycle Ignition | Ceramitell",
+    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
   meta: [
     {
       name: "description",
@@ -79,7 +79,7 @@ useHead({
               class="btn-ghost"
               style="color: #fff; border-color: rgba(255, 255, 255, 0.4)"
               href="/products/silicon-nitride-igniters-final"
-              >View CN-300 Specs →</a
+              >View BLK Specs →</a
             >
           </div>
           <div class="bio-hero-nav-bottom">
@@ -100,7 +100,7 @@ useHead({
               ★ Cooking appliance igniter performance
             </div>
             <div class="bio-proof-title">
-              CN-300 in cooking vs standard Al₂O₃
+              BLK in cooking vs standard Al₂O₃
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -109,7 +109,7 @@ useHead({
               </div>
               <div class="bio-proof-stat">
                 <div class="bn">8–10yr</div>
-                <div class="bl">CN-300 life in cooking duty</div>
+                <div class="bl">BLK life in cooking duty</div>
               </div>
               <div class="bio-proof-stat">
                 <div class="bn">2–4yr</div>
@@ -153,7 +153,7 @@ useHead({
           <div class="mkt-item">
             <div class="mkt-num">8–10yr</div>
             <div class="mkt-label">
-              CN-300 Si₃N₄ life in residential cooking duty vs 2–4yr for Al₂O₃
+              BLK Si₃N₄ life in residential cooking duty vs 2–4yr for Al₂O₃
             </div>
           </div>
           <div class="mkt-item">
@@ -188,7 +188,7 @@ useHead({
             >
               <div class="di-icon">🍳</div>
               <div class="di-label">
-                CN-300 compact igniter in gas cooktop burner
+                BLK compact igniter in gas cooktop burner
               </div>
               <div class="di-replace">Replace with product photo</div>
             </div>
@@ -211,7 +211,7 @@ useHead({
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The CN-300 compact series features a sealed Si₃N₄ element with a
+              The BLK compact series features a sealed Si₃N₄ element with a
               smaller profile optimised for cooktop burner geometry, maintaining
               100,000+ cycle life in this demanding environment.
             </p>
@@ -250,7 +250,7 @@ useHead({
             <span class="comp-badge win">★ Recommended</span>
             <div class="comp-name">Silicon Nitride (Si₃N₄)</div>
             <div class="comp-tagline">
-              CN-300 compact · 100K+ cycles · grease-resistant
+              BLK compact · 100K+ cycles · grease-resistant
             </div>
             <ul class="comp-list">
               <li>
@@ -487,7 +487,7 @@ useHead({
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
           <div class="qquote-title">
-            Request CN-300 cooking appliance samples
+            Request BLK cooking appliance samples
           </div>
           <div class="qquote-note">
             Include your appliance model or current igniter part number.
@@ -503,7 +503,7 @@ useHead({
         <div class="rel-grid">
           <a href="/products/silicon-nitride-igniters-final" class="rel-card"
             ><div class="rel-eyebrow">Product</div>
-            <div class="rel-title">CN-300 Si₃N₄ Igniter</div>
+            <div class="rel-title">BLK Si₃N₄ Igniter</div>
             <div class="rel-desc">
               Full specifications and OEM compatibility.
             </div>
@@ -1784,7 +1784,7 @@ footer {
 }
 
 /* ============================================================
-     PRODUCT DETAIL PAGE (CN-300 Si3N4) — extends product template
+     PRODUCT DETAIL PAGE (BLK Si3N4) — extends product template
      ============================================================ */
 
 /* HERO SPOTLIGHT CARD (right column on detail hero) */

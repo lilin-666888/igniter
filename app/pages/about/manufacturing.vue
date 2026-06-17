@@ -3,7 +3,7 @@ useHead({
   title: 'Manufacturing — Ceramitell Advanced Industrial Ceramics Factory',
   meta: [{
     name: 'description',
-    content: "Ceramitell's ISO 9001-certified ceramics manufacturing facility in Pingxiang, China. 12,000m² production floor, 8 firing kilns, CMM inspection, and in-house powder synthesis.",
+    content: "Ceramitell's ISO 9001-certified ceramics manufacturing facility in Hangzhou, China. 6,000+m² production floor, 8 firing kilns, CMM inspection, and in-house powder synthesis.",
   }],
 })
 </script>
@@ -26,9 +26,10 @@ useHead({
         <div>
           <div class="mfg-hero-eyebrow">About Ceramitell · Manufacturing</div>
           <h1>Built in-house,<br><span class="hl">certified to ship.</span></h1>
-          <p class="mfg-hero-sub">Ceramitell's <b>12,000 m² production facility</b> in Pingxiang, Jiangxi handles the full ceramic manufacturing chain — from raw Si₃N₄ powder to inspected, packaged finished goods. No subcontracting, no quality surprises.</p>
+          <p class="mfg-hero-sub">Ceramitell's <b>6,000+ m² production base</b> in Hangzhou, Zhejiang (~13 acres) handles the full ceramic manufacturing chain — from raw Si₃N₄ powder to inspected, packaged finished goods. No subcontracting, no quality surprises.</p>
           <div class="mfg-statbar">
-            <div><div class="num">12,000</div><div class="lbl">m² Production Floor</div></div>
+            <div><div class="num">13</div><div class="lbl">Acres Site Area</div></div>
+            <div><div class="num">6,000+</div><div class="lbl">m² Building Area</div></div>
             <div><div class="num">8</div><div class="lbl">High-Temp Kilns</div></div>
             <div><div class="num">200+</div><div class="lbl">Employees</div></div>
             <div><div class="num">ISO 9001</div><div class="lbl">Certified</div></div>
@@ -37,14 +38,14 @@ useHead({
         <div class="mfg-hero-img">
           <div class="mfg-hero-img-ph">
             <div class="ph-icon">🏭</div>
-            <div class="ph-lbl">Ceramitell main production building — Pingxiang, Jiangxi</div>
+            <div class="ph-lbl">Ceramitell main production building — Hangzhou, Zhejiang</div>
           </div>
           <div class="mfg-hero-img-caption">
             <div>
-              <div class="cap-title">Pingxiang Manufacturing Base</div>
-              <div class="cap-sub">Established 2014 · Jiangxi, China</div>
+              <div class="cap-title">Hangzhou Manufacturing Base</div>
+              <div class="cap-sub">Established 2014 · Zhejiang, China</div>
             </div>
-            <div class="cap-sub" style="text-align: right;">12,000 m² · ISO 9001<br>Full in-house production</div>
+            <div class="cap-sub" style="text-align: right;">6,000+ m² · ISO 9001<br>Full in-house production</div>
           </div>
         </div>
       </div>
@@ -69,9 +70,9 @@ useHead({
         <h2>Numbers that <span class="accent">matter to OEMs</span>.</h2>
         <div class="cap-grid">
           <div class="cap-item">
-            <div class="cap-num">12,000<span>m²</span></div>
+            <div class="cap-num">6,000+<span>m²</span></div>
             <div class="cap-unit">Production Floor</div>
-            <div class="cap-desc">Total manufacturing footprint covering powder preparation, pressing, sintering, machining, and inspection.</div>
+            <div class="cap-desc">~13-acre site with 6,000+ m² building area covering powder preparation, pressing, sintering, machining, and inspection.</div>
           </div>
           <div class="cap-item">
             <div class="cap-num">8<span>+</span></div>
@@ -109,7 +110,7 @@ useHead({
           <div class="ph-caption ph-caption-dark">
             <div class="cap-num">Overview</div>
             <div class="cap-title">Main Production Hall — Sintering &amp; Precision Machining</div>
-            <div class="cap-desc">12,000 m² facility housing Si₃N₄, SiC, Al₂O₃, and ZrO₂ production lines. All operations in-house — no subcontracting.</div>
+            <div class="cap-desc">6,000+ m² facility housing Si₃N₄, SiC, Al₂O₃, and ZrO₂ production lines. All operations in-house — no subcontracting.</div>
           </div>
         </div>
       </div>
@@ -249,7 +250,7 @@ useHead({
             <div class="pl-body">
               <div class="pl-step">Production Line 01</div>
               <div class="pl-title">Ceramic Igniter &amp; Heater Line</div>
-              <div class="pl-desc">Dedicated production line for Si₃N₄ and Al₂O₃ hot surface igniters and heating elements. Continuous sintering schedule with 48-hour stock replenishment cycle. CN-300 series produced here.</div>
+              <div class="pl-desc">Dedicated production line for Si₃N₄ and Al₂O₃ hot surface igniters and heating elements. Continuous sintering schedule with 48-hour stock replenishment cycle. BLK series produced here.</div>
               <div class="pl-specs">
                 <span class="pl-spec">Capacity: 500K+ units/yr</span>
                 <span class="pl-spec">Si₃N₄ &amp; Al₂O₃</span>

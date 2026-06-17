@@ -59,7 +59,7 @@ function isExternal(to: string) {
               nitride, alumina, zirconia, silicon carbide, aluminum nitride.
             </p>
             <p>
-              <b>Pingxiang, Jiangxi, China</b><br />OEM Manufacturer Since 2014
+              <b>Hangzhou, Zhejiang, China</b><br />OEM Manufacturer Since 2014
             </p>
           </div>
         </div>
