@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Industrial Ceramic Materials — Silicon Nitride, Alumina, Zirconia, SiC, AlN | Ceramitell',
-  meta: [{ name: 'description', content: 'Compare 5 advanced ceramic materials: Si₃N₄, Al₂O₃, ZrO₂, SiC, AlN. Properties, applications, and selection guide from a direct China manufacturer with 11+ years OEM experience.' }],
+  title: 'Ceramic Material Selection Guide | Alumina, Zirconia & More',
+  meta: [
+    { name: 'description', content: 'Explore Alumina, Zirconia, Silicon Nitride, and more ceramic materials in terms of toughness, insulating properties, wear resistance, and thermal performance.' },
+    { name: 'keywords', content: 'technical ceramics, technical ceramic, technical ceramics manufacturers, ceramic technics, ceramic tech, superior technical ceramics' },
+  ],
 })
 </script>
 

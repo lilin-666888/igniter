@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Technical Ceramics for Aerospace & Defense Applications",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Si₃N₄ bearings, B₄C armor tiles, and turbine ceramics for aerospace, defense, navigation, and high-performance systems. Non-magnetic and rated to 1400°C.",
+    },
+  ],
 });
 </script>
 

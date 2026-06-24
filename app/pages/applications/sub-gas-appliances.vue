@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "Residential Gas Appliance Igniters | Gas furnaces & Burners",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "Hot surface igniters for residential gas appliances, offering 10+ yr field life, 3-sec heat-up, 120V/230V options, and UL/CE-certified performance.",
     },
   ],
 });

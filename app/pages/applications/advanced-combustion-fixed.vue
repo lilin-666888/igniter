@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Advanced Combustion, HVAC & Appliance Ignition Solutions",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic igniters for pellet stoves, furnaces, boilers, water heaters, BBQ grills, and HVAC systems. UL/CE certified with proven OEM performance.",
+    },
+  ],
 });
 </script>
 

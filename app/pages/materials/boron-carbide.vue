@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Boron Carbide (B₄C) — Armor Tiles, Blast Nozzles, Neutron Absorbers | Ceramitell',
-  meta: [{ name: 'description', content: 'Boron carbide ceramic from a direct China manufacturer. Hot-pressed B₄C armor tiles, abrasive blast nozzles (5-10× life vs tungsten carbide), nuclear neutron absorbers. Hardness HV 3000+, density 2.52 g/cm³ — lightest hard ceramic.' }],
+  title: 'Boron Carbide (B₄C) Ceramic | Extreme Hardness, Low Weight',
+  meta: [{ name: 'description', content: 'Ultra-hard boron carbide ceramic for armor systems, blast nozzles, neutron absorption components, wear components, and other demanding industrial applications.' }],
 })
 </script>
 

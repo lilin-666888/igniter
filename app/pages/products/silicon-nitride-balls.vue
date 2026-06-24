@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Balls — Si₃N₄ Bearing Balls G3–G60, Ø 0.4–100mm | Ceramitell",
+  title: "Silicon Nitride Balls | Precision Si₃N₄ Ceramic Balls",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "Precision Si₃N₄ ceramic balls from G3–G60 and Ø0.4–100mm. Up to 60% lighter than steel for high-speed precision bearings, ball screws, and valve seats.",
     },
   ],
 });

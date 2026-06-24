@@ -15,13 +15,12 @@ const {
 const { email, phone } = useContact()
 
 useHead({
-  title:
-    "Ceramitell — OEM Ceramic Igniters & Industrial Ceramics from China Manufacturer",
+  title: "Ceramic Igniters & Industrial Ceramics | Ceramitell",
   meta: [
     {
       name: "description",
       content:
-        "Direct manufacturer of silicon nitride igniters, alumina heating rods, ceramic balls and bearings. CE/UL certified, 100K+ cycle life, free samples, 11+ years OEM experience.",
+        "OEM manufacturer of ceramic igniters and ceramic components. Silicon nitride, alumina, zirconia, and AlN solutions for rapid prototyping and production.",
     },
   ],
 });

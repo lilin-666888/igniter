@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Rapid Prototyping for Ceramic Parts — 7-14 Day Custom Prototypes | Ceramitell',
-  meta: [{ name: 'description', content: 'Rapid turn-around ceramic parts manufacturing. STEP/PDF/DWG drawing to prototype in 7–14 days. 48-hour DFM review by dedicated engineers. Stock geometries dispatch in 48 hours. NDA available, lot certs included.' }],
+  title: 'Rapid Ceramic Prototyping | 7–14 Day Custom Parts',
+  meta: [{ name: 'description', content: 'Custom ceramic prototypes in 7–14 days with 48-hour DFM review. STEP, PDF, and DWG drawings accepted, with lot certificates included.' }],
 })
 </script>
 

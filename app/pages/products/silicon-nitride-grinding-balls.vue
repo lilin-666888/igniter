@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Grinding Balls — Si₃N₄ Milling Media, Ø 0.4–100mm | Ceramitell",
+  title: "Silicon Nitride Grinding Balls | Clean & Efficient Milling",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "Si₃N₄ grinding balls offer higher milling efficiency, reduced wear, and zero contamination in battery slurries and ultra-high-purity ceramic powder production.",
     },
   ],
 });

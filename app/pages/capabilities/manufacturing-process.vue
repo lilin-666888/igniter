@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Ceramic Manufacturing Process — Forming, Sintering, Grinding, Lapping | Ceramitell',
-  meta: [{ name: 'description', content: 'Ceramitell' }],
+  title: 'Ceramic Manufacturing Process | Forming to Finishing',
+  meta: [{ name: 'description', content: '4 forming routes, 3 sintering methods, diamond grinding to ±0.005 mm, and precision finishing for advanced ceramic components.' }],
 })
 </script>
 

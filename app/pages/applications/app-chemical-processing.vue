@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Advanced Ceramics for Chemical Processing & Fluid Systems",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic components for corrosive chemical environments, acid and alkali handling, pump seals, valves, and slurry processing. Rated to 1600°C and wear-resistant.",
+    },
+  ],
 });
 </script>
 

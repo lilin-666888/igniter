@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Full Silicon Nitride Bearings — Si₃N₄ Ceramic Bearings P0–P5 | Ceramitell",
+  title: "Full Silicon Nitride Bearings | Extreme Environment Use",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "Full Si₃N₄ ceramic bearings with P0–P5 precision and Ø3–200mm bores for high-temperature, corrosive, magnetically sensitive, and lubrication-free applications.",
     },
   ],
 });

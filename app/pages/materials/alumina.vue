@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Alumina Ceramic (Al₂O₃) — 95% / 99% / 99.7% Purity Grades | Ceramitell',
-  meta: [{ name: 'description', content: 'High-purity alumina ceramic from a direct China manufacturer. 95%, 99%, and 99.7% Al₂O₃ grades — heating rods, electrical insulators, wear-resistant linings, lab crucibles, spectral analysis tubes. ISO 9001 certified.' }],
+  title: 'Alumina Ceramic (Al₂O₃) Materials | 95%, 99% & 99.7% Grades',
+  meta: [{ name: 'description', content: 'Alumina ceramic 95%, 99%, and 99.7% high purity for heating elements, electrical insulators, semiconductor components, wear parts, and lab applications.' }],
 })
 </script>
 

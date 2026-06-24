@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Aluminum Nitride (AlN) — DBC/DBA Substrates, Wafer Heaters, Submounts | Ceramitell',
-  meta: [{ name: 'description', content: 'Aluminum nitride ceramic for power electronics from a direct China manufacturer. AlN substrates (170 W/m·K), DBC and DBA metallized substrates for IGBT/SiC power modules, AlN wafer heaters for semiconductor fabs, laser diode submounts.' }],
+  title: 'Aluminum Nitride (AlN) Ceramic | Thermal Management Material',
+  meta: [{ name: 'description', content: 'Aluminum nitride ceramic features excellent thermal conductivity for power electronics, DBC substrates, wafer heaters, and semiconductor equipment.' }],
 })
 </script>
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Certifications & Quality System — ISO 9001, IATF 16949, CE, UL, RoHS | Ceramitell',
-  meta: [{ name: 'description', content: 'Ceramitell' }],
+  title: 'ISO 9001 Certification & Quality Management System',
+  meta: [{ name: 'description', content: 'ISO 9001 certified quality management system with UL, CE, IATF 16949, RoHS, and REACH compliance. 100% lot certification and full traceability.' }],
 })
 </script>
 

@@ -1,8 +1,18 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Industrial Ceramic Products — Igniters, Heaters, Balls, Bearings | Ceramitell",
-  meta: [{ name: "description", content: "Browse Ceramitell" }],
+  title: "Industrial Ceramic Products — Igniters, Heaters and More",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Industrial ceramic products, including ceramic igniters, heating elements, structural ceramics, ceramic balls, and bearings, are built for harsh environments.",
+    },
+    {
+      name: "keywords",
+      content:
+        "industrial ceramics, ceramic industry, ceramic industries, industrial ceramic, industry ceramic, ceramics industry news",
+    },
+  ],
 });
 </script>
 

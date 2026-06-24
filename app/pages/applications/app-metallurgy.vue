@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Advanced Ceramic Solutions for Metal Casting & Furnaces",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic components for aluminum casting, molten metal handling, protection tubes, furnaces, and heat treatment to 1600°C. Non-wetting to molten aluminum.",
+    },
+  ],
 });
 </script>
 

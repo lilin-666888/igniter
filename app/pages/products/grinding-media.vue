@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Ceramic Grinding Media — Si₃N₄ and ZrO₂ Grinding Balls | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  title: 'Ceramic Grinding Media | Silicon Nitride & Zirconia Balls',
+  meta: [
+    { name: 'description', content: 'High-density ceramic grinding media in Si₃N₄ or ZrO₂ type for wet and dry milling, zero metal contamination, battery materials, and high-purity powders.' },
+    { name: 'keywords', content: 'ceramic grinding media' },
+  ],
 })
 </script>
 

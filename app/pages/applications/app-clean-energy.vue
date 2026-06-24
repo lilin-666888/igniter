@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Ceramic Components for Clean Energy & Battery Applications",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic components for battery materials, fuel cells, solar manufacturing, and clean energy systems require zero metal contamination and a purity of≥99.5%.",
+    },
+  ],
 });
 </script>
 

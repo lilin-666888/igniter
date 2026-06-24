@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'About Ceramitell — OEM Ceramic Manufacturer Since 2014',
-  meta: [{ name: 'description', content: 'Ceramitell — direct manufacturer of industrial ceramic components based in Shanghai and Hangzhou, Zhejiang. Founded 2014, 11+ years OEM experience across heating, semiconductor, and precision industries.' }],
+  title: 'OEM Ceramic Manufacturer Since 2014 | Ceramitell',
+  meta: [{ name: 'description', content: 'Direct manufacturer of industrial ceramic components with in-house powder synthesis, integrated production, and certified quality systems. No subcontracting.' }],
 })
 </script>
 

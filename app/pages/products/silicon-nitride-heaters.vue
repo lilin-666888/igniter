@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Heaters — Si₃N₄ Flat, Plate & Rod Heating Elements | Ceramitell",
+  title: "Silicon Nitride Heaters | Fast Heat Transfer & Long Life",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "Silicon nitride heaters deliver rapid thermal response, reaching 1100°C in 3 seconds, with excellent thermal shock resistance and long service life.",
     },
   ],
 });

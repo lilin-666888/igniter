@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Boron Nitride (BN) — h-BN, PBN Crucibles, Plasma Insulators, Release | Ceramitell',
-  meta: [{ name: 'description', content: 'Boron nitride ceramic from a direct China manufacturer. h-BN and PBN crucibles for molten metal evaporation, machinable BN parts for plasma insulators and CZ break rings, BN release coatings for glass and aluminum forming. 2000°C inert service.' }],
+  title: 'Boron Nitride (BN) Materials for High-Temperature Use',
+  meta: [{ name: 'description', content: 'Boron Nitride (BN) ceramic is widely used in crucibles, plasma insulators, semiconductor processing applications, and high-temperature release coatings.' }],
 })
 </script>
 

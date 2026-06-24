@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Precision Ceramic Bearings — Full Si₃N₄, Zirconia, Hybrid | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  title: 'Precision Ceramic Bearings | Full Ceramic & Hybrid Bearings',
+  meta: [
+    { name: 'description', content: 'Precision ceramic bearings in full ceramic and hybrid for motors, pumps, and high-speed equipment requiring corrosion resistance and electrical insulation.' },
+    { name: 'keywords', content: 'ceramic bearings, ceramic bearing, hybrid ceramic bearings, bearing ceramic hybrid, ceramic vs steel bearings, ceramic skateboard bearings, ceramic skate bearings, ceramic wheel bearings, bones ceramic bearings' },
+  ],
 })
 </script>
 

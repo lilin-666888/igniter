@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Vertical Integration — Powder Synthesis to Finished Ceramic Components | Ceramitell',
-  meta: [{ name: 'description', content: 'Ceramitell' }],
+  title: 'Vertical Ceramic Manufacturing | Powder to Finished Parts',
+  meta: [{ name: 'description', content: 'In-house Si₃N₄ and ZrO₂ powder synthesis, sintering, grinding, and inspection under one roof. 30–50% lower material costs with full lot traceability.' }],
 })
 </script>
 

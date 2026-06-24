@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Superfine Ceramic Powder — Si₃N₄ and ZrO₂, Purity ≥99.5% | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  title: 'Superfine Ceramic Powder | High-Purity Si₃N₄ & ZrO₂ Powders',
+  meta: [
+    { name: 'description', content: 'High-purity ceramic powders with ≥99.5% purity and custom D50 distributions for advanced ceramics manufacturing, thermal spray coatings, and research.' },
+    { name: 'keywords', content: 'ceramic powder' },
+  ],
 })
 </script>
 

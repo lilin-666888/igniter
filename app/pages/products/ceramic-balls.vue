@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Precision Ceramic Balls — Si₃N₄ and ZrO₂, G3 to G60 | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  title: 'Precision Ceramic Balls | G3–G60 Bearing Ball Solutions',
+  meta: [
+    { name: 'description', content: 'Precision ceramic balls in silicon nitride and zirconia grades, available from G3–G60 and Ø0.4–100mm for bearings, aerospace, and industrial applications.' },
+    { name: 'keywords', content: 'ceramic balls, ceramic ball, ceramic ball bearings, ceramic ball bearing, bearing ceramic ball, china ceramic ball, chinese ceramic balls' },
+  ],
 })
 </script>
 

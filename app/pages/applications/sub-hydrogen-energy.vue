@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "Hydrogen Burner Igniters | Ceramic Ignition Systems",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "Ceramic igniters for hydrogen burners, H₂-blended gas appliances, and combustion systems. Fast heat-up, safe first-attempt ignition, and proven reliability.",
     },
   ],
 });

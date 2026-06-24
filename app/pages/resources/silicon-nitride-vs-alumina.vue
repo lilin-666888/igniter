@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Silicon Nitride vs Alumina — Which Ceramic Should You Spec? | Ceramitell',
-  meta: [{ name: 'description', content: 'Engineering comparison of silicon nitride (Si₃N₄) vs alumina (Al₂O₃) for industrial applications. Property comparison table, decision matrix, 5 common spec mistakes, real-world case study. Thermal cycling, high temp, cost, RPM trade-offs.' }],
+  title: 'Silicon Nitride vs Alumina | Material Selection Guide',
+  meta: [{ name: 'description', content: 'Compare Si₃N₄ and Al₂O₃ in terms of thermal cycling, high temperatures, wear, bearing performance, and cost. Make the right material choice for your application.' }],
 })
 </script>
 

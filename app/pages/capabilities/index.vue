@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Manufacturing Capabilities — Rapid Prototyping, Quality Control, Vertical Integration | Ceramitell',
-  meta: [{ name: 'description', content: 'Vertically integrated ceramic manufacturer: in-house powder synthesis, forming, sintering, machining. Rapid prototyping in 5–20 days, ISO 9001 / IATF 16949 quality systems, lot-specific certs included.' }],
+  title: 'Ceramic Manufacturing | Rapid Prototyping & Production',
+  meta: [{ name: 'description', content: 'Rapid ceramic prototyping in 7–14 days with 48-hour DFM review, backed by vertical integration, quality control, and in-house OEM manufacturing expertise.' }],
 })
 </script>
 

@@ -1,12 +1,15 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Ceramic Igniters — Si₃N₄ BLK Hot Surface, Glow Plugs, UL/CE | Ceramitell",
+  title: "Ceramic Igniters | Hot Surface Ignition for OEM Appliances",
   meta: [
     {
       name: "description",
       content:
-        "Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.",
+        "Explore ceramic igniters for pellet stoves, BBQ grills, gas furnaces, water heaters, and HVAC systems. UL/CE certified, OEM-ready, and long service life.",
+    },
+    {
+      name: "keywords",
+      content: "ceramic igniter, pellet ceramic igniter",
     },
   ],
 });

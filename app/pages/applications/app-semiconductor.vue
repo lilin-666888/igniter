@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Semiconductor Ceramics | AlN, Alumina & Si₃N₄ Components",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic components for wafer processing, CVD/PVD chambers, and plasma etch systems requiring zero particle generation, ultra-high purity, and tight tolerances.",
+    },
+  ],
 });
 </script>
 

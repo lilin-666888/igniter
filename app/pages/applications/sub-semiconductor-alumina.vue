@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "99.99% High Purity Alumina for Semiconductor Processes",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "99.99% alumina ceramic components for semiconductor diffusion furnaces, oxidation systems, and analytical instruments. Na contamination below 5 ppm.",
     },
   ],
 });

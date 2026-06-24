@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "AlN Ceramic Heaters for Wafer Chucks & Semiconductor Tools",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "AlN ceramic heaters for wafer chucks, CVD/PVD systems, and ALD chambers. 170–220 W/m·K conductivity, 8× higher than Al₂O₃, with ±1°C temperature uniformity.",
     },
   ],
 });

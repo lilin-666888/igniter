@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Igniters — BLK Si₃N₄ Hot Surface Igniter, 100K+ Cycles, UL/CE | Ceramitell",
+  title: "Silicon Nitride Hot Surface Igniters | CN-300 Si₃N₄ Series",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "CN-300 silicon nitride hot surface igniters with 100K+ cycle life, 3-second heat-up, and OEM replacements for pellet stoves, furnaces, and gas appliances.",
     },
   ],
 });

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Industrial Ceramic Applications — 8 Industries: Ignition, Semiconductor, Aerospace, Energy | Ceramitell',
-  meta: [{ name: 'description', content: 'From pellet stove and BBQ ignition to semiconductor wafer chucks, aerospace structures, and lab equipment — Ceramitell' }],
+  title: 'Industrial Ceramic Applications | Ignition & Semiconductor',
+  meta: [{ name: 'description', content: 'Advanced ceramic solutions for pellet stoves, HVAC ignition, semiconductor equipment, clean energy systems, metallurgy, laboratory, and chemical processing.' }],
 })
 </script>
 

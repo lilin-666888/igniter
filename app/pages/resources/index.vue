@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Engineering Resources — Selection Guides, Application Notes, Technical FAQ | Ceramitell',
-  meta: [{ name: 'description', content: 'Engineering resources for ceramic component selection: material selection guides, application notes, failure analysis, technical FAQ, and downloadable datasheets.' }],
+  title: 'Ceramic Engineering Guides, Resources & Technical Data',
+  meta: [{ name: 'description', content: 'Engineering guides for ceramic material selection, application design, failure analysis, and technical troubleshooting, plus datasheets and certification files.' }],
 })
 </script>
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Silicon Carbide (SiC) — SSiC, RBSiC, CVD-SiC for Seals, Pumps, Wafer | Ceramitell',
-  meta: [{ name: 'description', content: 'Silicon carbide ceramic from a direct China manufacturer. SSiC, RBSiC, and CVD-SiC grades for mechanical seal faces, pump components, kiln furniture, high-temp heating elements, semiconductor wafer processing. Hardness HV 2800.' }],
+  title: 'Silicon Carbide (SiC) Ceramic | Hardness & Heat Resistance',
+  meta: [{ name: 'description', content: 'Ultra-hard silicon carbide ceramic provides abrasion and corrosion protection for 1600 °C services, mechanical seals, heating elements, and wear parts.' }],
 })
 </script>
 

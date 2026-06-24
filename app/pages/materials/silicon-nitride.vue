@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Silicon Nitride (Si₃N₄) — Hot Surface Igniters, Precision Balls, Bearings | Ceramitell',
-  meta: [{ name: 'description', content: 'Silicon nitride from a direct China manufacturer. Si₃N₄ BLK hot surface igniters, HIP-processed precision balls (G3-G60), hybrid bearings up to 60,000 RPM, custom structural parts. 100K+ cycle life, UL/CE certified.' }],
+  title: 'Silicon Nitride (Si₃N₄) Ceramic | Thermal Shock Resistance',
+  meta: [{ name: 'description', content: 'Silicon nitride ceramic for hot surface igniters offers rapid heating, exceptional thermal shock resistance, and long service life under cyclic loading.' }],
 })
 </script>
 

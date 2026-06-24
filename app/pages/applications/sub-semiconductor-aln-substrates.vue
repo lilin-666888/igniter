@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "AlN Ceramic Substrates for Power Modules & RF Packaging",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "AlN ceramic substrates for power modules, RF packaging, and high-frequency electronics. 170 W/m·K conductivity, 8× Al₂O₃, and CTE matched to SiC and GaN.",
     },
   ],
 });

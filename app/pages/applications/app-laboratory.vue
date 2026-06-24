@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "High-Purity Ceramics for Laboratory Equipment & Research",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Ceramic components for analytical chemistry, spectroscopy, electron microscopy, and research equipment requiring high purity and dimensional consistency.",
+    },
+  ],
 });
 </script>
 

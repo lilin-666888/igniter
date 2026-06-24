@@ -1,8 +1,13 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Advanced Combustion, HVAC & Appliance Ignition — Si₃N₄ & SiC Ceramic Igniters | Ceramitell",
-  meta: [{ name: "description", content: "Ceramitell" }],
+  title: "Advanced Ceramics for Medical Devices & Life Sciences",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Biocompatible ceramic components for orthopedic implants, dental prosthetics, surgical instruments, and diagnostics equipment. MRI-safe and sterilizable.",
+    },
+  ],
 });
 </script>
 

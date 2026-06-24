@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Biomass & Pellet Stove Igniters — Si₃N₄ BLK for High-Cycle Ignition | Ceramitell",
+  title: "HVAC Hot Surface Igniters | Rooftop Unit Ignition Solutions",
   meta: [
     {
       name: "description",
       content:
-        "Silicon nitride (Si₃N₄) hot surface igniters for biomass and pellet stoves. 100K+ cycle life, 3-second heat-up, UL/CE certified. Italian OEM case: 180,000 units/year, −38% warranty returns. Free samples, 48h dispatch.",
+        "Si₃N₄ hot surface igniters for rooftop HVAC units, packaged systems, and gas backup heating. 100K+ cycle life, fast ignition, and reliable −40°C cold starts.",
     },
   ],
 });

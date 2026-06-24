@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Zirconia Ceramic (ZrO₂) — Y-TZP, Mg-PSZ, Ce-TZP Grades | Ceramitell',
-  meta: [{ name: 'description', content: 'High-toughness zirconia ceramic from a direct China manufacturer. Y-TZP, Mg-PSZ, and Ce-TZP stabilization variants for precision balls, bearings, biomedical, cutting tools, and grinding media. ISO 9001 certified.' }],
+  title: 'Zirconia (ZrO₂) Ceramic Materials | Y-TZP & Toughness',
+  meta: [{ name: 'description', content: 'High-strength zirconia ceramic features superior toughness and wear resistance for use in bearings, grinding media, biomedical components, and wear parts.' }],
 })
 </script>
 

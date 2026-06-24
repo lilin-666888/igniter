@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Powder — Si₃N₄ Powder Purity ≥99.5%, Custom D50 | Ceramitell",
+  title: "Silicon Nitride Powder | ≥99.5% Purity & Custom D50",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "High-purity α/β-phase Si₃N₄ powder with custom D50 from 0.3–5µm, low oxygen content, for advanced ceramic manufacturing and composite reinforcement.",
     },
   ],
 });

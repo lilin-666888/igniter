@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Ceramic Structural Parts — Si₃N₄ Shafts, Bearings, Wear Parts | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ structural parts: shaft rods, lift tubes, turbines, and high-speed cutting blades for lithium battery film, tin foil, and precision thin-film applications. Custom geometries to ±0.01mm.' }],
+  title: 'Ceramic Structural Components | Shafts, Turbines & Seals',
+  meta: [
+    { name: 'description', content: 'Precision ceramic structural components, including shafts, wear parts, turbines, and custom-engineered solutions, from stock or custom-built within 14 days.' },
+    { name: 'keywords', content: 'structural ceramics' },
+  ],
 })
 </script>
 

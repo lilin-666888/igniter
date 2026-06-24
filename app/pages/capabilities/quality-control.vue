@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Quality Control & Inspection — 8 Gates, CMM, SEM, XRF, XRD | Ceramitell',
-  meta: [{ name: 'description', content: 'Ceramitell' }],
+  title: 'Ceramic Quality Assurance | Inspection & Traceability',
+  meta: [{ name: 'description', content: '8 inspection gates, advanced metrology, and 100% lot certification from raw material to finished component. Full traceability and 5-day RCA response.' }],
 })
 </script>
 

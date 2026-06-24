@@ -1,7 +1,10 @@
 <script setup lang="ts">
 useHead({
-  title: 'Custom Ceramic Components — DFM, Prototyping &amp; Production | Ceramitell',
-  meta: [{ name: 'description', content: 'Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.' }],
+  title: 'Custom Ceramic Components | DFM, Prototyping & Production',
+  meta: [
+    { name: 'description', content: 'Custom ceramic components to your drawing, with DFM review in 48 hours, prototypes in 14 days, and across six ceramic materials. No geometry is too complex.' },
+    { name: 'keywords', content: 'custom ceramic parts' },
+  ],
 })
 </script>
 

@@ -1,12 +1,11 @@
 <script setup lang="ts">
 useHead({
-  title:
-    "Silicon Nitride Shaft Rods — Precision Si₃N₄ Ceramic Shafts | Ceramitell",
+  title: "Silicon Nitride Shaft Rods | High Precision & Lightweight",
   meta: [
     {
       name: "description",
       content:
-        "BLK silicon nitride (Si₃N₄) hot surface igniters: 100K+ cycle life, 3-second heat-up, 12V/120V/230V variants. UL Recognized, CE marked. Drop-in replacement for Norton, White-Rodgers, Robertshaw. Free samples, 48h dispatch, datasheet download.",
+        "High-precision Si₃N₄ ceramic shaft rods for CNC spindles, pump shafts, and turbo-machinery, offering low weight, high hardness, and non-magnetic performance.",
     },
   ],
 });

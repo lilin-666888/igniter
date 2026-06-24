@@ -2,11 +2,11 @@
 const { email, phone, wechat, linkedin, address, factory, businessHours } = useContact()
 
 useHead({
-  title: 'Contact Ceramitell — Quick Quote & Office Information',
-  meta: computed(() => [{
+  title: 'Request a Ceramic Quote | OEM Support & Engineering',
+  meta: [{
     name: 'description',
-    content: `Request a quote in 60 seconds. Free samples · 48h dispatch · 24h reply commitment. Shanghai office: ${address.value.replace(/\n/g, ', ')}. ${email.value} · WhatsApp/WeChat: ${phone.value}.`,
-  }]),
+    content: 'Request a ceramic quote, free samples, drawing review, or OEM manufacturing support. Our engineering team replies within 24 hours.',
+  }],
 })
 
 </script>

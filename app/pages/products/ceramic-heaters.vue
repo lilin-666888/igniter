@@ -1,11 +1,16 @@
 <script setup lang="ts">
 useHead({
-  title: "Ceramic Heaters &amp; Elements — Si₃N₄, SiC, Al₂O₃, AlN | Ceramitell",
+  title: "Ceramic Heaters & Heating Elements | OEM Heating Solutions",
   meta: [
     {
       name: "description",
       content:
-        "Si₃N₄ BLK series hot surface igniters with 100K+ cycle life and 3-second heat-up. UL/CE certified for pellet stoves, BBQ, gas furnaces, water heaters, HVAC. 180,000 units/year shipped to Italian OEM.",
+        "Ceramic heaters and heating elements for industrial heating systems requiring rapid heat-up, efficient thermal performance, and temperatures up to 1600°C.",
+    },
+    {
+      name: "keywords",
+      content:
+        "ceramic heaters, ceramic heating element, ceramic heating elements, ceramic heater element, ceramic heater elements, ptc ceramic heater, ptc heater ceramic, ptc ceramic heating, ceramic ptc heating",
     },
   ],
 });

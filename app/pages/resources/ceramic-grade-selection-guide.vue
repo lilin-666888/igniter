@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useHead({
-  title: 'Ceramic Grade Selection Guide — Si₃N₄, Al₂O₃, ZrO₂, SiC, AlN, B₄C, BN | Ceramitell',
-  meta: [{ name: 'description', content: 'Engineering guide to ceramic grade selection across 7 materials and 25+ production grades. Decision trees for Si₃N₄, alumina purity grades, zirconia variants, SiC sintering routes, AlN substrate forms. Avoid over-spec' }],
+  title: 'Ceramic Grade Selection Guide | Materials & Grades',
+  meta: [{ name: 'description', content: 'Compare 7 ceramic materials and 25+ production grades, including Si₃N₄, Al₂O₃, ZrO₂, SiC, and AlN. Discover what each grade is optimized for and when to use it.' }],
 })
 </script>
 
