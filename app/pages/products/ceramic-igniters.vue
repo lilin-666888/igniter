@@ -32,20 +32,21 @@ useHead({
           <span class="ph-eyebrow">★ Flagship Product Category</span>
           <h1>
             Ceramic hot surface igniters,<br /><span class="hl"
-              >built to OEM drawings.</span
+              >built for OEM appliance platforms.</span
             >
           </h1>
           <p class="ph-sub">
-            Si₃N₄, SiC, and Al₂O₃ igniters for
+            Si₃N₄, SiC, and Al₂O₃ ceramic igniters for
             <b
               >pellet stoves, BBQ grills, gas furnaces, water heaters, boilers,
               and HVAC platforms</b
-            >. Drop-in replacements for major Western OEM part numbers. UL/CE
-            certified, free samples, 48-hour dispatch from stock.
+            >. Our flagship CN-300 silicon nitride hot-surface igniter supports
+            high-cycle ignition and OEM fitment, and is UL/CE certified for
+            optimal performance.
           </p>
           <div class="ph-statbar">
             <div>
-              <div class="num">6</div>
+              <div class="num">5</div>
               <div class="lbl">Igniter Types</div>
             </div>
             <div>
@@ -64,7 +65,7 @@ useHead({
         </div>
         <div class="qquote">
           <div class="qquote-tag">Free Quote · Reply in 24h</div>
-          <div class="qquote-title">Get a quote for your igniter</div>
+          <div class="qquote-title">Get a quote for your ceramic igniter</div>
           <div class="qquote-note">
             Send your part number, drawing, or duty cycle — our application team
             replies within one business day. No MOQ for stock BLK samples.
@@ -86,7 +87,7 @@ useHead({
     <section class="s">
       <div class="wrap">
         <div class="sec-num">01 · The Igniter Lineup</div>
-        <h2>Five igniter types, <span class="accent">one supplier</span>.</h2>
+        <h2>Five hot surface igniter types, <span class="accent">one supplier</span>.</h2>
         <p class="sec-lead">
           Pick by appliance and duty cycle. Each type has its own spec sheet and
           stock SKUs — open a product page for full specs and drawings, or send
@@ -103,7 +104,7 @@ useHead({
             <div class="lineup-head">
               <div class="lineup-icon">🔥</div>
               <div>
-                <div class="lineup-name">Si₃N₄ Hot Surface · BLK</div>
+                <div class="lineup-name">Si₃N₄ Hot Surface Igniter · CN-300</div>
               </div>
             </div>
             <div class="lineup-img-slot">
@@ -114,9 +115,10 @@ useHead({
             </div>
 
             <p class="lineup-desc">
-              Our best-seller. Best-in-class thermal cycling life for pellet
-              stoves, BBQ grills, gas furnaces, and water heaters. Three voltage
-              variants share one Si₃N₄ heating core.
+              Our flagship silicon nitride hot surface igniter for pellet
+              stoves, BBQ grills, gas furnaces, and water heaters. Designed for
+              high-cycle thermal duty, with 12V, 120V, and 230V variants built
+              around a Si₃N₄ heating core.
             </p>
             <div class="lineup-specs">
               <span class="spec-chip">Cycle life <b>100K+</b></span>
@@ -145,7 +147,7 @@ useHead({
             <div class="lineup-head">
               <div class="lineup-icon">♨️</div>
               <div>
-                <div class="lineup-name">Universal Hot Surface</div>
+                <div class="lineup-name">Universal Hot Surface Igniter</div>
               </div>
             </div>
             <div class="lineup-img-slot">
@@ -519,11 +521,14 @@ useHead({
             </div>
           </div>
           <div class="faq-item">
-            <div class="faq-q">Do you do private-label / OEM branding?</div>
+            <div class="faq-q">What is a ceramic hot surface igniter?</div>
             <div class="faq-a">
-              Yes — laser-marked private branding on the metal mounting flange
-              or housing is available at no additional cost on production orders
-              1,000+ units. Mutual NDA standard before private-label projects.
+              Ceramic hot-surface igniters are electrically heated ceramic
+              components designed to reach an ignition temperature to ignite
+              gas, biomass pellets, or liquid-fuel appliances. Ceramitell
+              provides Si₃N₄, SiC, and Al₂O₃ hot surface igniters for OEM
+              appliance platforms, replacement programs, and custom ignition
+              assemblies.
             </div>
           </div>
           <div class="faq-item">

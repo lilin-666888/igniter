@@ -49,12 +49,13 @@ useHead({
             >
           </h1>
           <p class="bio-hero-sub">
-            Si₃N₄ hot surface igniters for
+            Si₃N₄ HVAC igniters for
             <b
               >rooftop units, packaged HVAC systems, and heat pumps with gas
               backup</b
-            >. Seasonal storage, harsh outdoor installation, and 10-year
-            equipment life targets make Si₃N₄ the only sensible specification.
+            >. Seasonal storage, harsh outdoor installation conditions, and
+            10-year equipment lifetime targets make Si₃N₄ the preferred
+            hot-surface igniter material.
           </p>
           <div class="bio-statbar">
             <div>
@@ -101,7 +102,7 @@ useHead({
               ★ HVAC rooftop unit — 10yr ROI case
             </div>
             <div class="bio-proof-title">
-              Why igniter longevity has measurable ROI in HVAC
+              Why HVAC igniter longevity has measurable ROI
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -203,18 +204,19 @@ useHead({
                 margin-bottom: 24px;
               "
             >
-              Rooftop HVAC units sit unused through summer, exposed to UV,
-              moisture, and extreme temperatures. On first autumn start-up, the
-              igniter must perform perfectly after months of thermal cycling and
-              potential condensate. Only Si₃N₄ reliably delivers this cold-start
-              reliability after seasonal storage.
+              Rooftop HVAC units often sit dormant during the summer, exposed to
+              UV light, moisture, and temperature fluctuations. At their initial
+              autumn startup, HVAC igniters must perform after months of thermal
+              cycling and potential exposure to condensate. Si₃N₄ igniters make
+              an ideal cold-start solution after seasonal storage.
             </p>
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              Rooftop access is expensive. An igniter failure costs $400–800+ in
-              labour alone — making 10-year igniter life a quantifiable ROI
-              argument for building managers and facilities engineers.
+              Rooftop access can be expensive. An HVAC igniter failure could
+              cost between $400 and $800 in labor charges alone, making a
+              10-year lifespan for these igniters an attractive ROI case for
+              building managers and facilities engineers.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -243,7 +245,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">02 · Material Selection</div>
         <h2>Si₃N₄ vs Al₂O₃ for</h2>
-        <p class="sec-lead">HVAC rooftop duty</p>
+        <p class="sec-lead">HVAC Igniters</p>
         <div class="comp-grid">
           <div class="comp-card winner">
             <span class="comp-badge win">★ Recommended</span>
@@ -434,10 +436,15 @@ useHead({
         <h2>Questions from HVAC design engineers.</h2>
         <div class="faq-grid">
           <div class="faq-item">
-            <div class="faq-q">Does BLK meet AHRI requirements?</div>
+            <div class="faq-q">
+              Is CN-300 compatible with HVAC ignition modules and control
+              boards?
+            </div>
             <div class="faq-a">
-              AHRI 1500 and AHRI 210/240 testing data available on request. UL
-              60730 Recognition documentation for controls qualification.
+              CN-300 can be configured for HVAC ignition systems that use
+              resistance-based pre-ignition checks. Standard 120V and 230V
+              versions are available, with custom resistance values for OEM
+              control boards or ignition modules.
             </div>
           </div>
           <div class="faq-item">
@@ -474,8 +481,9 @@ useHead({
           <div class="sec-num">Request a Quote</div>
           <h2>Ready to spec <span class="accent">your HVAC igniter</span>?</h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
-            Specify your HVAC unit model, voltage, and annual volume. We reply
-            within 24h with compatibility confirmation and ROI data.
+            Specify your HVAC unit model, voltage, current igniter part number,
+            and annual volume. We reply within 24h with compatibility
+            confirmation and ROI data.
           </p>
           <ul class="quote-why">
             <li><b>Free samples, 48-hour dispatch</b> — stock SKUs, no MOQ.</li>

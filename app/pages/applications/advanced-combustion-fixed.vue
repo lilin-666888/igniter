@@ -28,7 +28,7 @@ useHead({
       <div class="app-hero-stripe"></div>
       <div class="wrap">
         <span class="app-hero-eyebrow"
-          >Application Vertical 01 · Largest Revenue</span
+          >Application Vertical 01 · Flagship Ignition Market</span
         >
         <h1>
           Advanced Combustion,<br /><span class="hl"
@@ -37,10 +37,11 @@ useHead({
         </h1>
         <p class="app-hero-sub">
           Our largest and longest-running application vertical. Si₃N₄ and SiC
-          ceramic igniters and heaters serve <b>eight ignition scenarios</b> —
-          from residential pellet stoves and BBQ grills to commercial boilers,
-          water heaters, and hydrogen energy systems. UL/CE certified, shipping
-          in OEM volume to 42 markets.
+          ceramic igniters serve <b>eight ignition scenarios</b> — led by
+          high-cycle pellet stove igniters, and extending to BBQ grills, gas
+          furnaces, boilers, water heaters, HVAC systems, ovens, and hydrogen
+          energy applications. UL/CE certified, with OEM-volume supply to global
+          appliance and heating manufacturers.
         </p>
         <div class="app-hero-stats">
           <div>
@@ -139,7 +140,8 @@ useHead({
           <div class="scen-eyebrow">01 · Biomass &amp; Pellet Stoves</div>
           <span class="scen-flag">★ Flagship Application</span>
           <h2 class="scen-h2">
-            High-cycle ignition for <span class="accent">biomass stoves</span>.
+            High-cycle pellet stove ignition for
+            <span class="accent">biomass heating</span>.
           </h2>
           <p class="scen-intro">
             Pellet stoves fire multiple times per day in sub-zero conditions

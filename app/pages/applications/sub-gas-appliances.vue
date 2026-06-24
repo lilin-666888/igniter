@@ -51,8 +51,8 @@ useHead({
           <p class="bio-hero-sub">
             Si₃N₄ and Al₂O₃ hot surface igniters for
             <b>gas furnaces, gas burners, and residential gas appliances</b>. UL
-            Recognized (NA) and CE marked (EU). Drop-in replacement for Norton,
-            White-Rodgers, and Robertshaw part numbers.
+            Recognized and CE marked. Drop-in gas furnace igniter replacement
+            for Norton, White-Rodgers, and Robertshaw part numbers.
           </p>
           <div class="bio-statbar">
             <div>
@@ -203,7 +203,7 @@ useHead({
               "
             >
               Gas furnaces fire 5–15 times per day during heating season — a
-              controlled indoor environment with predictable duty cycle. This is
+              controlled indoor environment with a predictable duty cycle. This is
               the most established ceramic igniter application, with
               well-documented OEM replacement dimensions and a large
               aftermarket.
@@ -211,9 +211,9 @@ useHead({
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              BLK is a certified drop-in for all major NA and EU gas furnace
-              platforms. No wiring modification required in the vast majority of
-              installations.
+              CN-300 is a certified drop-in igniter for gas furnace platforms
+              across North America and Europe. No wiring modification is
+              required in most installations.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -246,7 +246,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">02 · Material Selection</div>
         <h2>Si₃N₄ vs Al₂O₃ for</h2>
-        <p class="sec-lead">gas furnace duty</p>
+        <p class="sec-lead">gas furnace igniters</p>
         <div class="comp-grid">
           <div class="comp-card winner">
             <span class="comp-badge win">★ Recommended</span>
@@ -451,7 +451,7 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">
-              Can you match my existing part number dimensions?
+              Can you match the dimensions of my existing part number?
             </div>
             <div class="faq-a">
               Yes — send part number or 2D drawing. Compatibility data on file
@@ -476,7 +476,7 @@ useHead({
           <div class="sec-num">Request a Quote</div>
           <h2>
             Ready to spec
-            <span class="accent">your gas appliance igniter</span>?
+            <span class="accent">your gas furnace igniter</span>?
           </h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
             Tell us your appliance model, current part number, and annual

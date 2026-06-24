@@ -49,7 +49,7 @@ useHead({
             >
           </h1>
           <p class="bio-hero-sub">
-            Si₃N₄ and SiC ceramic igniters for
+            Si₃N₄ and SiC boiler igniters for
             <b
               >commercial boilers, district heating systems, and industrial
               process heaters</b
@@ -101,7 +101,7 @@ useHead({
               ★ Commercial vs residential duty
             </div>
             <div class="bio-proof-title">
-              Why commercial boilers need Si₃N₄ or SiC
+              Why commercial boiler igniters need Si₃N₄ or SiC
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -392,8 +392,8 @@ useHead({
             </div>
             <div class="fail-desc">
               Commercial electrical systems have more severe transient
-              overvoltage than residential. Standard-resistance igniters see
-              sustained overvoltage during switching events, causing thermal
+              overvoltage than residential. Standard-resistance igniters can see
+              sustained overvoltage during switching events, leading to thermal
               runaway.
             </div>
             <div class="fail-solution">
@@ -448,10 +448,16 @@ useHead({
             </div>
           </div>
           <div class="faq-item">
-            <div class="faq-q">Can you match our existing mounting?</div>
+            <div class="faq-q">
+              Can you supply a boiler igniter replacement for our existing
+              burner?
+            </div>
             <div class="faq-a">
-              Custom flange and bracket geometries to 2D drawing, 6-week lead
-              time. First article inspection report included.
+              Yes. Please submit the details of your current igniter drawing,
+              such as voltage, power rating, mounting geometry, and connector
+              specifications. We can match existing boiler igniter replacement
+              requirements with Si₃N₄ or SiC designs and provide first article
+              inspection for OEM approval.
             </div>
           </div>
         </div>
@@ -466,8 +472,8 @@ useHead({
             <span class="accent">your commercial boiler igniter</span>?
           </h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
-            Specify voltage, geometry, annual volume, and application. We reply
-            within 24h with a quote.
+            Specify voltage, geometry, annual volume, and boiler application. We
+            reply within 24h with a quote and material recommendation.
           </p>
           <ul class="quote-why">
             <li>

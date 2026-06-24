@@ -41,10 +41,12 @@ useHead({
             >
           </h1>
           <p class="bio-hero-sub">
-            The application that demands the most from a ceramic igniter.
-            Sub-zero cold starts, <b>up to 20,000 cycles per year</b>, and OEM
-            accountability for every warranty return. Si₃N₄ hot surface igniters
-            are the answer — and the data proves it.
+            Pellet stove ignition is one of the most demanding applications for
+            ceramic igniters, requiring sub-zero cold starts,
+            <b>high seasonal cycling rates</b>, OEM accountability for every
+            warranty return, and material selection that meets these stringent
+            criteria. Si₃N₄ pellet stove igniters were specifically engineered
+            to perform in this capacity — as proven by field data.
           </p>
           <div class="bio-statbar">
             <div>
@@ -197,11 +199,11 @@ useHead({
                 margin-bottom: 32px;
               "
             >
-              Si₃N₄'s exceptional thermal shock resistance — a property that
-              comes from its microstructure, not just its chemistry — means the
-              igniter survives the cycle rather than accumulating micro-cracks
-              that eventually cause catastrophic failure at the worst possible
-              moment: the first cold night of the heating season.
+              Si₃N₄ offers high thermal shock resistance, which allows the
+              igniter to stand up to repeated heating and cooling cycles without
+              a high risk of crack growth. This can result in fewer seasonal
+              start-up failures and improved long-term reliability when lighting
+              a pellet stove.
             </p>
             <div class="tech-req-label">
               Technical Requirements · Pellet Stove Igniter
@@ -389,7 +391,7 @@ useHead({
           </p>
           <div class="casecta-ctas">
             <a class="btn-primary" href="#quote"
-              >Request Pellet Stove Samples →</a
+              >Request Pellet Stove Igniter Samples →</a
             >
             <a class="btn-ghost" href="/products/silicon-nitride-igniters-final"
               >Download BLK Datasheet →</a
@@ -416,7 +418,7 @@ useHead({
           03 · Why Igniters Fail in Pellet Stoves
         </div>
         <h2 style="color: #fff">
-          The 3 most common
+          The 3 most common pellet stove
           <span style="color: var(--orange)">ignition failures</span>.
         </h2>
         <p
@@ -507,13 +509,14 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">
-              Can you support private-label and OEM branding?
+              Can CN-300 be used as a pellet stove igniter replacement?
             </div>
             <div class="faq-a">
-              Yes — laser-marked branding on the metal mounting flange or
-              housing is available at no additional cost on production orders of
-              1,000+ units. Mutual NDA standard before private-label projects
-              begin.
+              Yes. Our CN-300 igniter can serve as an OEM replacement part for
+              compatible pellet stoves, biomass stoves, and certain biomass
+              boiler ignition systems. Send us your part number, voltage, and
+              mounting size. Also, please include the lead wire type and
+              connector type.
             </div>
           </div>
           <div class="faq-item">

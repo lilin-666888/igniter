@@ -49,11 +49,11 @@ useHead({
             >
           </h1>
           <p class="bio-hero-sub">
-            Ceramic igniters for
+            Ceramic water heater igniters for
             <b>tankless (on-demand) and tank-type gas water heaters</b>.
-            Tankless heaters fire 30–50 times per day — the highest residential
-            ignition frequency of any gas appliance. Si₃N₄ is the only reliable
-            specification.
+            Tankless units can fire 30–50 times per day, making Si₃N₄ the
+            preferred specification for high-cycle gas water heater igniter
+            applications.
           </p>
           <div class="bio-statbar">
             <div>
@@ -144,8 +144,8 @@ useHead({
           <div class="mkt-item">
             <div class="mkt-num">30–50</div>
             <div class="mkt-label">
-              Daily ignitions in a tankless heater — 10–30× a tank heater or
-              furnace
+              Daily ignitions in a tankless water heater — 10–30× a tank-type
+              heater or gas furnace
             </div>
           </div>
           <div class="mkt-item">
@@ -201,18 +201,19 @@ useHead({
               "
             >
               Tankless (on-demand) water heaters fire the burner on every hot
-              water draw — up to 50 times per day in a busy household. This is
-              10–30× the ignition frequency of a tank heater and 5–10× a gas
-              furnace. Combined with condensate exposure from the previous
-              cycle, this is the most demanding residential gas appliance
-              application.
+              water draw — up to 50 times per day in a busy household. That
+              cycle frequency is 10–30× higher than that of a tank-type water
+              heater and 5–10× higher than that of a gas furnace. Combined with
+              condensate exposure from the previous cycle, this is one of the
+              toughest residential applications for a water heater igniter.
             </p>
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The BLK series is compatible with Rinnai, Navien, Noritz,
-              Bosch, and Vaillant platform geometries. Condensate-resistant
-              sealed element — no moisture ingress failure mode.
+              The CN-300 series supports water heater igniter replacement
+              programs for Rinnai, Navien, Noritz, Bosch, and Vaillant platform
+              geometries. The sealed Si₃N₄ element resists exposure to
+              condensate and helps prevent moisture ingress.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -329,7 +330,7 @@ useHead({
           <div class="casecta-eyebrow">Tankless OEM compatibility program</div>
           <h2>
             Verified fit for major<br /><span style="color: var(--gold)"
-              >tankless OEM platforms.</span
+              >tankless water heater OEM platforms.</span
             >
           </h2>
           <div class="casecta-ctas">
@@ -354,7 +355,7 @@ useHead({
         <div class="sec-num" style="color: var(--gold)">
           03 · Tankless Igniter Failure Modes
         </div>
-        <h2 style="color: #fff">Why high-cycle igniters fail.</h2>
+        <h2 style="color: #fff">Why high-cycle water heater igniters fail.</h2>
         <p
           style="
             color: rgba(255, 255, 255, 0.75);
@@ -399,8 +400,9 @@ useHead({
             <div class="fail-num">03</div>
             <div class="fail-name">Grease and scale contamination</div>
             <div class="fail-desc">
-              In combi boiler installations, cooking vapour and scale build up
-              on the igniter surface over years, requiring periodic cleaning.
+              Scale, dust, and combustion by-products can accumulate over time
+              on igniter surfaces in small utility rooms with poor ventilation,
+              necessitating periodic inspection or cleaning.
             </div>
             <div class="fail-solution">
               Si₃N₄ fix → higher surface hardness resists scale adhesion.
@@ -441,10 +443,14 @@ useHead({
             </div>
           </div>
           <div class="faq-item">
-            <div class="faq-q">CGA certification for Canada?</div>
+            <div class="faq-q">
+              Can CN-300 be used as a water heater igniter replacement?
+            </div>
             <div class="faq-a">
-              Yes — CGA variant available with 8–12 week lead time. Specify at
-              time of order.
+              Yes. CN-300 is available as a replacement gas water heater ignition
+              for compatible tankless or tank-type platforms. Send us your part
+              number, voltage, and mounting size. Also, please include the
+              connector type and lead wire.
             </div>
           </div>
         </div>
@@ -458,8 +464,9 @@ useHead({
             Ready to spec <span class="accent">your water heater igniter</span>?
           </h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
-            Specify your heater model, voltage, and annual volume. We reply
-            within 24h with compatibility confirmation.
+            Specify your water heater model, voltage, current igniter part
+            number, and annual volume. We reply within 24h with compatibility
+            confirmation.
           </p>
           <ul class="quote-why">
             <li>

@@ -51,9 +51,9 @@ useHead({
           <p class="bio-hero-sub">
             Ceramic hot surface igniters for gas BBQ grills, outdoor cooking
             stations, and charcoal starters.
-            <b>Moisture-resistant, UV-stable,</b> and rated for outdoor
-            temperature extremes from −30°C to +60°C. Drop-in replacement for
-            major grill OEM part numbers.
+            <b>Moisture-resistant, UV-stable,</b> and rated for −30°C to +60°C
+            outdoor use. Drop-in BBQ grill igniter replacement for major grill
+            OEM part numbers.
           </p>
           <div class="bio-statbar">
             <div>
@@ -168,7 +168,7 @@ useHead({
     <section class="s" style="padding: 72px 0">
       <div class="wrap">
         <div class="sec-num">01 · The Application</div>
-        <h2>Why outdoor igniters <span class="accent">fail</span>.</h2>
+        <h2>Why BBQ grill igniters <span class="accent">fail outdoors</span>.</h2>
         <div class="depth-grid">
           <div>
             <div
@@ -198,8 +198,8 @@ useHead({
                 margin-bottom: 24px;
               "
             >
-              Gas BBQ grills expose igniters to moisture, UV, grease vapour,
-              extreme cold starts, and mechanical vibration. This is a more
+              A BBQ grill igniter has to survive moisture, UV, grease vapor,
+              cold starts, and mechanical vibration. This is a more
               demanding outdoor environment than any residential gas furnace —
               and most Al₂O₃ igniters are only rated for indoor duty.
             </p>
@@ -426,6 +426,18 @@ useHead({
         <h2>Questions from grill engineers.</h2>
         <div class="faq-grid">
           <div class="faq-item">
+            <div class="faq-q">
+              Can CN-300 be used as an igniter for BBQ grill replacement
+              projects?
+            </div>
+            <div class="faq-a">
+              Yes. The CN-300 can be supplied as either an igniter for gas BBQ
+              grills or a direct drop-in replacement, depending on voltage,
+              mounting flange thickness, lead wire type, and connector type
+              requirements.
+            </div>
+          </div>
+          <div class="faq-item">
             <div class="faq-q">Does BLK fit my existing igniter socket?</div>
             <div class="faq-a">
               Send your current part number or a drawing — we match mounting
@@ -473,7 +485,7 @@ useHead({
           <div class="sec-num">Request a Quote</div>
           <h2>
             Ready to spec
-            <span class="accent">your outdoor grill igniter</span>?
+            <span class="accent">your BBQ grill igniter</span>?
           </h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
             Tell us your grill model, voltage, and annual volume. We reply

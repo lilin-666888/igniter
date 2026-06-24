@@ -47,12 +47,13 @@ useHead({
             Hydrogen combustion<br /><span class="hl">ignition systems.</span>
           </h1>
           <p class="bio-hero-sub">
-            Ceramic igniters for
+            Ceramic hydrogen igniters are ideal for use with
             <b
-              >hydrogen burners, H₂-blended gas appliances, and hydrogen fuel
-              cells with combustion backup</b
-            >. H₂ flames are invisible — reliable first-attempt ignition is a
-            critical safety requirement, not just a performance metric.
+              >hydrogen burners, H₂-blended gas appliances, and fuel cell
+              combustion backup systems</b
+            >. Because H₂ flames can be difficult to see, reliable first attempt
+            ignition is an important safety requirement, not simply a
+            performance measure.
           </p>
           <div class="bio-statbar">
             <div>
@@ -152,10 +153,10 @@ useHead({
             </div>
           </div>
           <div class="mkt-item">
-            <div class="mkt-num">50–100×</div>
+            <div class="mkt-num">Wider range</div>
             <div class="mkt-label">
-              Wider flammability range of H₂ vs natural gas — demanding faster,
-              more reliable ignition
+              Wider flammability range and lower ignition energy than methane —
+              requiring reliable first-attempt ignition.
             </div>
           </div>
           <div class="mkt-item">
@@ -203,19 +204,20 @@ useHead({
                 margin-bottom: 24px;
               "
             >
-              Hydrogen has different combustion properties to natural gas:
-              invisible flame, wider flammability range, 3× faster flame speed,
-              and lower minimum ignition energy. These properties demand
-              igniters that fire reliably on every attempt — missed ignitions
-              allow H₂ to accumulate, creating explosion risk.
+              Hydrogen differs significantly from natural gas in several
+              characteristics: a low-visibility flame, a wider flammability
+              range, a faster flame speed, and a lower minimum ignition energy.
+              These properties require hydrogen burner igniters capable of
+              reaching ignition temperature rapidly while firing reliably upon
+              first try.
             </p>
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              As EU gas grids increase H₂ blending from 0% to 20% (and
-              potentially 100% in some grids by 2035), all gas appliances must
-              verify igniter compatibility. First-attempt ignition reliability
-              is the critical parameter.
+              As OEMs explore hydrogen blending and dedicated hydrogen
+              platforms, each igniter compatible with these platforms must be
+              thoroughly evaluated to verify timing, surface temperature,
+              control board sequencing, and first attempt ignition reliability.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -245,8 +247,8 @@ useHead({
     <section class="comp-band" style="background: var(--bg-soft)">
       <div class="wrap">
         <div class="sec-num">02 · Igniter Technology Selection</div>
-        <h2>Hot surface vs spark for</h2>
-        <p class="sec-lead">hydrogen ignition</p>
+        <h2>Hot surface vs spark ignition for</h2>
+        <p class="sec-lead">hydrogen burners</p>
         <div class="comp-grid">
           <div class="comp-card winner">
             <span class="comp-badge win">★ Recommended</span>
@@ -258,8 +260,9 @@ useHead({
               <li>
                 <span class="ci">✓</span>
                 <div>
-                  <b>Large surface ignition zone</b> — vs point spark, ensures
-                  H₂ ignition across wider stoichiometric range
+                  <b>Large surface ignition zone</b> — compared with point
+                  spark, supports ignition across a wider air-fuel operating
+                  window.
                 </div>
               </li>
               <li>
@@ -412,8 +415,8 @@ useHead({
               operation.
             </div>
             <div class="fail-solution">
-              Si₃N₄ fix → 3-second heat-up ensures ignition temperature before
-              gas valve opens with standard control board timing.
+              Si₃N₄ fix → fast heat-up helps the igniter reach target
+              temperature within standard control-board timing windows.
             </div>
           </div>
           <div class="fail-card">
@@ -468,11 +471,12 @@ useHead({
           </div>
           <div class="faq-item">
             <div class="faq-q">
-              When will H2Ready certification data be available?
+              Can CN-300 be used as a hydrogen burner igniter?
             </div>
             <div class="faq-a">
-              Target Q3 2026. Contact us for the engineering data pack currently
-              available for appliance design review.
+              Yes. The CN-300 is designed to serve as a hot-surface hydrogen
+              burner igniter for H₂-blended gas appliances, dedicated hydrogen
+              burners, and fuel cell combustion backup systems.
             </div>
           </div>
         </div>

@@ -49,10 +49,11 @@ useHead({
             >
           </h1>
           <p class="bio-hero-sub">
-            Compact Si₃N₄ hot surface igniters for
-            <b>gas ovens, cooktops, and commercial kitchen ranges</b>.
-            Grease-resistant sealed element, 3-second heat-up, and OEM
-            dimensions for major appliance brands worldwide.
+            Compact Si₃N₄ oven igniters and gas cooktop igniters for
+            <b>gas ovens, cooktops, and commercial kitchen ranges</b> feature
+            grease-resistant, sealed elements with 3-second heating capability
+            and are OEM-compatible. OEM dimensions make these igniters suitable
+            for most major appliance brands worldwide.
           </p>
           <div class="bio-statbar">
             <div>
@@ -99,7 +100,7 @@ useHead({
               ★ Cooking appliance igniter performance
             </div>
             <div class="bio-proof-title">
-              BLK in cooking vs standard Al₂O₃
+              CN-300 oven igniter vs standard Al₂O₃
             </div>
             <div class="bio-proof-grid">
               <div class="bio-proof-stat">
@@ -169,8 +170,8 @@ useHead({
       <div class="wrap">
         <div class="sec-num">01 · The Application</div>
         <h2>
-          Cooking combines
-          <span class="accent">grease with high frequency</span>.
+          Why gas oven igniters fail in
+          <span class="accent">high-grease, high-cycle duty</span>.
         </h2>
         <div class="depth-grid">
           <div>
@@ -201,18 +202,18 @@ useHead({
                 margin-bottom: 24px;
               "
             >
-              Gas cooking appliances expose igniters to the harshest combination
-              of grease vapour, food acids, and high-frequency thermal cycling
-              in any residential application. Commercial kitchen ranges add even
-              higher duty cycles — up to 200+ ignitions per day — and direct
-              grease splash exposure.
+              Gas ovens and cooktops expose igniters to grease vapour, food
+              acids, and high-frequency thermal cycling conditions, which may
+              damage them over time. Commercial kitchen ranges have even higher
+              duty cycle — up to 200+ activations per day — as well as direct
+              grease splash.
             </p>
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The BLK compact series features a sealed Si₃N₄ element with a
-              smaller profile optimised for cooktop burner geometry, maintaining
-              100,000+ cycle life in this demanding environment.
+              The CN-300 compact series uses a sealed Si₃N₄ element and a
+              smaller profile optimized for gas cooktop igniter geometry,
+              maintaining 100,000+ cycle life in demanding cooking environments.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -243,7 +244,7 @@ useHead({
       <div class="wrap">
         <div class="sec-num">02 · Material Selection</div>
         <h2>Si₃N₄ vs Al₂O₃ for</h2>
-        <p class="sec-lead">cooking appliance duty</p>
+        <p class="sec-lead">oven and cooktop igniters</p>
         <div class="comp-grid">
           <div class="comp-card winner">
             <span class="comp-badge win">★ Recommended</span>
@@ -336,7 +337,8 @@ useHead({
             Gas cooking appliance OEM applications
           </div>
           <h2>
-            Grease-proof ignition for<br /><span style="color: var(--gold)"
+            Grease-resistant oven and cooktop ignition for<br /><span
+              style="color: var(--gold)"
               >residential and commercial kitchens.</span
             >
           </h2>
@@ -444,11 +446,14 @@ useHead({
             </div>
           </div>
           <div class="faq-item">
-            <div class="faq-q">Safe cleaning methods?</div>
+            <div class="faq-q">
+              Can CN-300 be used as a gas oven igniter replacement?
+            </div>
             <div class="faq-a">
-              Surface cleaning with damp cloth or mild detergent is safe. Avoid:
-              oven cleaner spray on element, abrasive pads, direct water jet on
-              terminal connections.
+              Yes. CN-300 can be configured for use as a gas oven or gas cooktop
+              igniter replacement. Send us your current part number and other
+              information, such as voltage, mounting size, active length, lead
+              wire type, and connector type.
             </div>
           </div>
           <div class="faq-item">
@@ -471,8 +476,8 @@ useHead({
             <span class="accent">your cooking appliance igniter</span>?
           </h2>
           <p class="sec-lead" style="color: rgba(255, 255, 255, 0.8)">
-            Specify your appliance model, current part number, and annual
-            volume. We confirm compatibility within 24h.
+            Specify your oven or cooktop model, current igniter part number,
+            voltage, and annual volume. We confirm compatibility within 24h.
           </p>
           <ul class="quote-why">
             <li><b>Free samples, 48-hour dispatch</b> — stock SKUs, no MOQ.</li>
