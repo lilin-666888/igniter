@@ -1,0 +1,12 @@
+[
+  {"category": "Application Guides", "date": "June 2025", "read_time": "11 min read", "featured": true, "card_icon": "🏭", "card_label": "Metallurgy ceramics buyer guide", "card_img_class": "card-img-dark", "tags": ["Metallurgy", "Si₃N₄", "Al₂O₃", "Molten Metal"]},
+  {"category": "Material Guide", "date": "June 2025", "read_time": "10 min read", "card_icon": "📋", "card_label": "Industry ceramic selection guide", "card_img_class": ""},
+  {"category": "Material Science", "date": "May 2025", "read_time": "9 min read", "card_icon": "💻", "card_label": "Si₃N₄ vs Al₂O₃ semiconductor comparison", "card_img_class": "card-img-dark", "tags": ["Si₃N₄", "Al₂O₃", "Semiconductor"]},
+  {"category": "Application Guides", "date": "May 2025", "read_time": "8 min read", "card_icon": "🔥", "card_label": "Ceramic igniter service life factors", "card_img_class": "card-img-warm", "tags": ["Igniters", "Service Life"]},
+  {"category": "Engineering FAQs", "date": "May 2025", "read_time": "12 min read", "card_icon": "⚠️", "card_label": "Industrial ceramic failure modes", "card_img_class": ""},
+  {"category": "Application Guides", "date": "Apr 2025", "read_time": "11 min read", "card_icon": "🔧", "card_label": "Custom ceramic parts specification", "card_img_class": ""},
+  {"category": "Material Guide", "date": "Apr 2025", "read_time": "10 min read", "card_icon": "⚙️", "card_label": "Ceramic balls material comparison", "card_img_class": ""},
+  {"category": "Engineering FAQs", "date": "Mar 2025", "read_time": "9 min read", "card_icon": "⚙️", "card_label": "High-speed ceramic bearings guide", "card_img_class": "card-img-dark"},
+  {"category": "Material Guide", "date": "Mar 2025", "read_time": "10 min read", "card_icon": "🔥", "card_label": "Si₃N₄ vs SiC igniter comparison", "card_img_class": "card-img-dark", "tags": ["Si₃N₄", "SiC", "Igniters"]},
+  {"category": "Application Guides", "date": "Mar 2025", "read_time": "11 min read", "card_icon": "🔥", "card_label": "Biomass pellet stove igniter selection", "card_img_class": "card-img-warm", "tags": ["Pellet Stoves", "Igniters", "Biomass"]}
+]

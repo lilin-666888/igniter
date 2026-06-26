@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import {
+import type { BlogCategory } from '~/data/blog'
+
+const {
   blogCategories,
   blogPosts,
-  getFeaturedPost,
-  type BlogCategory,
-} from '~/data/blog'
+  featuredPost,
+} = useBlogList()
 
 useHead({
   title: 'Engineering Blog — Ceramitell Advanced Industrial Ceramics',
@@ -17,11 +18,9 @@ useHead({
 const activeCategory = ref<BlogCategory>('All Articles')
 const searchQuery = ref('')
 
-const featuredPost = getFeaturedPost()
-
 const filteredPosts = computed(() => {
   const query = searchQuery.value.trim().toLowerCase()
-  return blogPosts.filter((post) => {
+  return blogPosts.value.filter((post) => {
     if (post.featured) return false
     const matchesCategory = activeCategory.value === 'All Articles' || post.category === activeCategory.value
     const matchesSearch = !query
@@ -33,17 +32,18 @@ const filteredPosts = computed(() => {
 })
 
 const gridCount = computed(() => {
-  const count = filteredPosts.value.length + (featuredPost && matchesFeatured.value ? 1 : 0)
+  const count = filteredPosts.value.length + (featuredPost.value && matchesFeatured.value ? 1 : 0)
   return `${count} article${count === 1 ? '' : 's'} · sorted by date`
 })
 
 const matchesFeatured = computed(() => {
-  if (!featuredPost) return false
+  const featured = featuredPost.value
+  if (!featured) return false
   const query = searchQuery.value.trim().toLowerCase()
-  const matchesCategory = activeCategory.value === 'All Articles' || featuredPost.category === activeCategory.value
+  const matchesCategory = activeCategory.value === 'All Articles' || featured.category === activeCategory.value
   const matchesSearch = !query
-    || featuredPost.title.toLowerCase().includes(query)
-    || featuredPost.excerpt.toLowerCase().includes(query)
+    || featured.title.toLowerCase().includes(query)
+    || featured.excerpt.toLowerCase().includes(query)
   return matchesCategory && matchesSearch
 })
 

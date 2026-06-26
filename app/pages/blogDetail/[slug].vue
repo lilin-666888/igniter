@@ -1,28 +1,22 @@
 <script setup lang="ts">
-import ArticleSi3n4VsAlumina from '~/components/blog/ArticleSi3n4VsAlumina.vue'
-import { getBlogPost, getRelatedPosts } from '~/data/blog'
-
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
-const post = computed(() => getBlogPost(slug.value))
-
-if (!post.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Article not found' })
-}
+const { post, status, error } = useBlogPost(slug)
+const { getRelatedPosts } = useBlogList()
 
 const relatedPosts = computed(() => getRelatedPosts(post.value?.relatedSlugs ?? []))
 
-const articleComponents: Record<string, typeof ArticleSi3n4VsAlumina> = {
-  'si3n4-vs-alumina-igniter-guide': ArticleSi3n4VsAlumina,
-}
-
-const ArticleBody = computed(() => articleComponents[slug.value])
+watchEffect(() => {
+  if (error.value || (status.value === 'success' && !post.value)) {
+    throw createError({ statusCode: 404, statusMessage: 'Article not found' })
+  }
+})
 
 useHead({
-  title: `${post.value.title} | Ceramitell`,
+  title: () => `${post.value?.title ?? 'Blog'} | Ceramitell`,
   meta: [{
     name: 'description',
-    content: post.value.excerpt,
+    content: () => post.value?.excerpt ?? '',
   }],
 })
 
@@ -80,8 +74,8 @@ function postLink(postSlug: string) {
 
     <div class="article-layout">
       <article class="article-body">
-        <component :is="ArticleBody" v-if="ArticleBody" />
-        <template v-else>
+        <div v-if="post?.contentHtml" class="article-html" v-html="post.contentHtml" />
+        <template v-else-if="post">
           <p>{{ post.excerpt }}</p>
           <div class="article-footnote">
             Full article content coming soon. <NuxtLink to="/contact">Contact our engineering team</NuxtLink> for technical guidance on this topic.
