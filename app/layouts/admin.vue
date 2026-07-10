@@ -9,6 +9,7 @@
         <NuxtLink to="/admin/footer">页脚</NuxtLink>
         <NuxtLink to="/admin/homepage">首页内容</NuxtLink>
         <NuxtLink to="/admin/products">产品分类</NuxtLink>
+        <NuxtLink to="/admin/product-pages">产品页面</NuxtLink>
         <NuxtLink to="/admin/inquiries">询盘</NuxtLink>
       </nav>
       <button class="admin-logout" type="button" @click="logout">

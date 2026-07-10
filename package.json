@@ -12,7 +12,8 @@
     "db:generate-seed": "node --import tsx scripts/generate-seed-sql.ts",
     "db:bundle": "npm run db:generate-seed && cat supabase/schema.sql supabase/seed.sql > supabase/full-setup.sql",
     "db:seed": "node --env-file=.env --import tsx scripts/seed-database.ts",
-    "db:seed-blog": "node --env-file=.env scripts/seed-blog-posts.mjs"
+    "db:seed-blog": "node --env-file=.env scripts/seed-blog-posts.mjs",
+    "db:seed-products": "node --env-file=.env --import tsx scripts/seed-product-pages.ts"
   },
   "dependencies": {
     "@nuxt/eslint": "1.15.2",

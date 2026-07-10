@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '~/assets/css/chrome.css',
     '~/assets/css/page-hero.css',
     '~/assets/css/quote-form.css',
+    '~/assets/css/product-pages.css',
   ],
   runtimeConfig: {
     supabaseUrl: process.env.SUPABASE_URL,

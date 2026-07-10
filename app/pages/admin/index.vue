@@ -6,7 +6,8 @@ const links = [
   { to: '/admin/navigation', title: '导航菜单', desc: '主导航结构' },
   { to: '/admin/footer', title: '页脚', desc: '页脚链接与法律信息' },
   { to: '/admin/homepage', title: '首页内容', desc: '统计、证言、资源卡片等' },
-  { to: '/admin/products', title: '产品分类', desc: '首页产品目录卡片' },
+  { to: '/admin/products', title: '产品分类', desc: 'Products 下的分类管理' },
+  { to: '/admin/product-pages', title: '产品页面', desc: '分类页与 SKU 详情页' },
   { to: '/admin/inquiries', title: '询盘', desc: '客户报价请求' },
 ]
 </script>
