@@ -38,7 +38,6 @@ export const navLinks: NavLink[] = [
     label: 'Materials',
     to: '/materials',
     groups: [
-      { label: 'Overview', to: '/materials', links: [] },
       { label: 'Silicon Nitride', to: '/materials/silicon-nitride', links: [] },
       { label: 'Alumina', to: '/materials/alumina', links: [] },
       { label: 'Zirconia', to: '/materials/zirconia', links: [] },
@@ -52,7 +51,6 @@ export const navLinks: NavLink[] = [
     label: 'Products',
     to: '/products',
     groups: [
-      { label: 'Overview', to: '/products', links: [] },
       {
         label: 'Ceramic Igniters',
         to: '/products/ceramic-igniters',
@@ -148,12 +146,6 @@ export const navLinks: NavLink[] = [
     to: '/applications',
     groups: [
       {
-        label: 'Overview',
-        to: '/applications',
-        links: [
-        ],
-      },
-      {
         label: 'Advanced Combustion & Ignition',
         to: '/applications/advanced-combustion-fixed',
         links: [
@@ -225,7 +217,6 @@ export const navLinks: NavLink[] = [
     label: 'Capabilities',
     to: '/capabilities',
     groups: [
-      { label: 'Overview', to: '/capabilities', links: [] },
       {
         label: 'Vertical Integration',
         to: '/capabilities/vertical-integration',
@@ -252,7 +243,6 @@ export const navLinks: NavLink[] = [
     label: 'About',
     to: '/about',
     groups: [
-      { label: 'Overview', to: '/about', links: [] },
       {
         label: 'Manufacturing',
         to: '/about/manufacturing',
@@ -303,7 +293,6 @@ export const footerColumns = [
   {
     title: 'Applications',
     links: [
-      { label: 'All Applications', to: '/applications' },
       { label: 'Advanced Combustion & Ignition', to: '/applications/advanced-combustion-fixed' },
       { label: 'Semiconductor & Electronics', to: '/applications/app-semiconductor' },
       { label: 'Aerospace & Precision Machinery', to: '/applications/app-aerospace' },

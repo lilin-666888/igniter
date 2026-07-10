@@ -3,7 +3,6 @@ const { navLinks, topbarItems } = useSiteCms();
 const { topbarDisplay } = useContact();
 
 const route = useRoute();
-const activeGroupByNav = ref<Record<string, number>>({});
 const mobileOpen = ref(false);
 const mobileExpanded = ref<Record<string, boolean>>({});
 
@@ -13,26 +12,7 @@ function isActive(to: string) {
   return route.path === path || route.path.startsWith(`${path}/`);
 }
 
-function activeGroupIndex(navTo: string) {
-  return activeGroupByNav.value[navTo] ?? 0;
-}
-
-function setActiveGroup(navTo: string, index: number) {
-  activeGroupByNav.value[navTo] = index;
-}
-
-function onNavItemEnter(navTo: string) {
-  if (activeGroupByNav.value[navTo] === undefined) {
-    activeGroupByNav.value[navTo] = 0;
-  }
-}
-
-function activeGroup(link: (typeof navLinks.value)[number]) {
-  const index = activeGroupIndex(link.to);
-  return link.groups?.[index];
-}
-
-function hasSecondaryGroups(link: (typeof navLinks.value)[number]) {
+function hasGroupChildren(link: (typeof navLinks.value)[number]) {
   return link.groups?.some((group) => group.links.length > 0) ?? false;
 }
 
@@ -122,9 +102,12 @@ onBeforeUnmount(() => {
           :key="link.to"
           class="nav-item"
           :class="{ 'has-dropdown': link.groups?.length }"
-          @mouseenter="onNavItemEnter(link.to)"
         >
-          <div class="nav-link" :class="{ active: isActive(link.to) }">
+          <NuxtLink
+            :to="link.to"
+            class="nav-link"
+            :class="{ active: isActive(link.to) }"
+          >
             {{ link.label }}
             <span
               v-if="link.groups?.length"
@@ -132,63 +115,40 @@ onBeforeUnmount(() => {
               aria-hidden="true"
               >▾</span
             >
-          </div>
+          </NuxtLink>
 
           <div
             v-if="link.groups?.length"
             class="nav-dropdown"
-            :class="{ 'nav-dropdown--flat': !hasSecondaryGroups(link) }"
+            :class="{ 'nav-dropdown--flat': !hasGroupChildren(link) }"
           >
             <div class="nav-dropdown-panel">
               <div
-                class="nav-flyout"
-                :class="{ 'nav-flyout--flat': !hasSecondaryGroups(link) }"
+                v-if="hasGroupChildren(link)"
+                class="nav-mega nav-mega--columns"
               >
-                <ul class="nav-flyout-primary">
-                  <li
-                    v-for="(group, index) in link.groups"
-                    :key="group.label"
-                    class="nav-flyout-primary-item"
-                    :class="{
-                      active:
-                        hasSecondaryGroups(link) &&
-                        activeGroupIndex(link.to) === index,
-                    }"
-                    @mouseenter="
-                      hasSecondaryGroups(link) && setActiveGroup(link.to, index)
-                    "
-                  >
-                    <NuxtLink
-                      v-if="group.to"
-                      :to="group.to"
-                      class="nav-flyout-primary-link"
-                      :class="{ active: isActive(group.to) }"
-                    >
-                      {{ group.label }}
-                    </NuxtLink>
-                    <span v-else class="nav-flyout-primary-link">{{
-                      group.label
-                    }}</span>
-                  </li>
-                </ul>
-
                 <div
-                  v-if="
-                    hasSecondaryGroups(link) && activeGroup(link)?.links.length
-                  "
-                  class="nav-flyout-secondary"
+                  v-for="group in link.groups"
+                  :key="group.label"
+                  class="nav-mega-column"
                 >
-                  <div class="nav-flyout-secondary-title">
-                    {{ activeGroup(link)!.label }}
-                  </div>
-                  <ul class="nav-flyout-secondary-list">
+                  <NuxtLink
+                    v-if="group.to"
+                    :to="group.to"
+                    class="nav-mega-heading"
+                    :class="{ active: isActive(group.to) }"
+                  >
+                    {{ group.label }}
+                  </NuxtLink>
+                  <span v-else class="nav-mega-heading">{{ group.label }}</span>
+                  <ul v-if="group.links.length" class="nav-mega-list">
                     <li
-                      v-for="child in activeGroup(link)!.links"
+                      v-for="child in group.links"
                       :key="child.to + child.label"
                     >
                       <NuxtLink
                         :to="child.to"
-                        class="nav-dropdown-link"
+                        class="nav-mega-link"
                         :class="{ active: isActive(child.to) }"
                       >
                         {{ child.label }}
@@ -197,6 +157,20 @@ onBeforeUnmount(() => {
                   </ul>
                 </div>
               </div>
+
+              <ul v-else class="nav-mega-list nav-mega-list--flat">
+                <li v-for="group in link.groups" :key="group.label">
+                  <NuxtLink
+                    v-if="group.to"
+                    :to="group.to"
+                    class="nav-mega-link"
+                    :class="{ active: isActive(group.to) }"
+                  >
+                    {{ group.label }}
+                  </NuxtLink>
+                  <span v-else class="nav-mega-link">{{ group.label }}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -307,9 +281,3 @@ onBeforeUnmount(() => {
     </aside>
   </Teleport>
 </template>
-
-<style scoped>
-.nav-link {
-  cursor: pointer;
-}
-</style>
