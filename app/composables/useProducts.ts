@@ -4,15 +4,11 @@ const cmsFetchOptions = {
   getCachedData: () => undefined,
 }
 
-export type ProductCategory = {
+export type ProductMenuGroup = {
   id: string
   slug: string
-  title: string
-  description: string
-  meta: string
-  emoji: string
-  href: string
-  imagePath?: string | null
+  label: string
+  path: string
   sortOrder: number
 }
 
@@ -35,21 +31,24 @@ export type Paginated<T> = {
   totalPages: number
 }
 
-export function useProductCategories(options?: { page?: number; limit?: number }) {
+export function useProductMenu(options?: { page?: number; limit?: number }) {
   const page = options?.page ?? 1
   const limit = options?.limit ?? 50
 
-  const { data, error, refresh, status } = useFetch<Paginated<ProductCategory>>(
-    () => `/api/cms/product-categories?page=${page}&limit=${limit}`,
+  const { data, error, refresh, status } = useFetch<{
+    groups: ProductMenuGroup[]
+    navGroups: Array<{ label: string; to: string; links: Array<{ label: string; to: string }> }>
+  }>(
+    () => `/api/cms/product-menu?page=${page}&limit=${limit}`,
     {
-      key: `cms-product-categories-${page}-${limit}`,
+      key: `cms-product-menu-${page}-${limit}`,
       ...cmsFetchOptions,
     },
   )
 
   return {
-    categories: computed(() => data.value?.items ?? []),
-    pagination: computed(() => data.value),
+    groups: computed(() => data.value?.groups ?? []),
+    navGroups: computed(() => data.value?.navGroups ?? []),
     error,
     status,
     refresh,

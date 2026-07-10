@@ -84,26 +84,45 @@ async function seedCertifications() {
   )
 }
 
-async function seedProductCategories() {
-  const { error: delError } = await supabase
-    .from('product_categories')
-    .delete()
-    .neq('slug', '__none__')
-  if (delError) throw new Error(`delete categories: ${delError.message}`)
+async function seedProductMenu() {
+  const productsNav = navLinks.find(n => n.to === '/products')
+  if (!productsNav?.groups?.length) return
 
-  const rows = catalogItems.map((item, index) => ({
-    slug: item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
-    title: item.title,
-    description: item.desc,
-    meta: item.meta,
-    emoji: item.emoji,
-    href: '/products',
-    sort_order: index,
-    published: true,
-  }))
+  for (const [index, group] of productsNav.groups.entries()) {
+    if (!group.to) continue
+    const slug = group.to.replace(/^\/products\//, '').replace(/#.*$/, '')
 
-  const { error } = await supabase.from('product_categories').insert(rows)
-  if (error) throw new Error(`insert categories: ${error.message}`)
+    const { data: row, error } = await supabase
+      .from('product_menu_groups')
+      .upsert({
+        slug,
+        label: group.label,
+        path: group.to,
+        sort_order: index,
+        published: true,
+      }, { onConflict: 'slug' })
+      .select('id')
+      .single()
+
+    if (error) throw new Error(`menu group ${slug}: ${error.message}`)
+
+    await supabase.from('product_menu_items').delete().eq('group_id', row.id)
+
+    const items = group.links
+      .filter(link => link.to)
+      .map((link, itemIndex) => ({
+        group_id: row.id,
+        label: link.label,
+        path: link.to,
+        sort_order: itemIndex,
+        published: true,
+      }))
+
+    if (items.length) {
+      const { error: itemError } = await supabase.from('product_menu_items').insert(items)
+      if (itemError) throw new Error(`menu items ${slug}: ${itemError.message}`)
+    }
+  }
 }
 
 async function main() {
@@ -116,7 +135,7 @@ async function main() {
   await seedContentItems('techman_cards', techmanCards)
   await seedContentItems('contact_promises', contactPromises)
   await seedCertifications()
-  await seedProductCategories()
+  await seedProductMenu()
   console.log('Seed complete.')
 }
 

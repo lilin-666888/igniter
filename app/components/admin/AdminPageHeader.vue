@@ -6,15 +6,19 @@ defineProps<{
 </script>
 
 <template>
-  <div class="header">
-    <h1>{{ title }}</h1>
-    <p v-if="description">{{ description }}</p>
+  <div class="admin-page-header">
+    <a-typography-title :level="3" style="margin: 0">
+      {{ title }}
+    </a-typography-title>
+    <a-typography-paragraph v-if="description" type="secondary" style="margin: 8px 0 0">
+      {{ description }}
+    </a-typography-paragraph>
     <slot />
   </div>
 </template>
 
 <style scoped>
-.header { margin-bottom: 24px; }
-h1 { margin: 0 0 8px; font-size: 24px; }
-p { margin: 0; color: #667; font-size: 14px; }
+.admin-page-header {
+  margin-bottom: 24px;
+}
 </style>

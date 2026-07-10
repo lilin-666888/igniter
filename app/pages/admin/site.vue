@@ -51,30 +51,63 @@ async function save() {
 <template>
   <div>
     <AdminPageHeader title="站点设置" description="联系方式与顶栏滚动文案" />
-    <div class="panel">
-      <h2>联系方式</h2>
-      <div class="fields">
-        <label>销售邮箱（询盘通知将发送到此地址）<input v-model="contactInfo.email" type="email" /></label>
-        <label>工程邮箱 <input v-model="contactInfo.engineering_email" /></label>
-        <label>电话 / WhatsApp <input v-model="contactInfo.phone" /></label>
-        <label>微信 <input v-model="contactInfo.wechat" /></label>
-        <label>顶栏展示文案（保存时自动根据邮箱+电话生成）<input v-model="contactInfo.display" readonly /></label>
-        <label>LinkedIn <input v-model="contactInfo.linkedin" /></label>
-        <label>办公地址 <textarea v-model="contactInfo.address" rows="3" /></label>
-        <label>工厂地址 <textarea v-model="contactInfo.factory" rows="2" /></label>
-        <label>营业时间 <textarea v-model="contactInfo.business_hours" rows="2" /></label>
-      </div>
-      <h2>顶栏</h2>
+
+    <a-card title="联系方式" style="margin-bottom: 16px">
+      <a-form layout="vertical">
+        <a-row :gutter="16">
+          <a-col :xs="24" :md="12">
+            <a-form-item label="销售邮箱（询盘通知将发送到此地址）">
+              <a-input v-model:value="contactInfo.email" type="email" />
+            </a-form-item>
+          </a-col>
+          <a-col :xs="24" :md="12">
+            <a-form-item label="工程邮箱">
+              <a-input v-model:value="contactInfo.engineering_email" />
+            </a-form-item>
+          </a-col>
+          <a-col :xs="24" :md="12">
+            <a-form-item label="电话 / WhatsApp">
+              <a-input v-model:value="contactInfo.phone" />
+            </a-form-item>
+          </a-col>
+          <a-col :xs="24" :md="12">
+            <a-form-item label="微信">
+              <a-input v-model:value="contactInfo.wechat" />
+            </a-form-item>
+          </a-col>
+          <a-col :span="24">
+            <a-form-item label="顶栏展示文案（保存时自动根据邮箱+电话生成）">
+              <a-input v-model:value="contactInfo.display" readonly />
+            </a-form-item>
+          </a-col>
+          <a-col :span="24">
+            <a-form-item label="LinkedIn">
+              <a-input v-model:value="contactInfo.linkedin" />
+            </a-form-item>
+          </a-col>
+          <a-col :span="24">
+            <a-form-item label="办公地址">
+              <a-textarea v-model:value="contactInfo.address" :rows="3" />
+            </a-form-item>
+          </a-col>
+          <a-col :span="24">
+            <a-form-item label="工厂地址">
+              <a-textarea v-model:value="contactInfo.factory" :rows="2" />
+            </a-form-item>
+          </a-col>
+          <a-col :span="24">
+            <a-form-item label="营业时间">
+              <a-textarea v-model:value="contactInfo.business_hours" :rows="2" />
+            </a-form-item>
+          </a-col>
+        </a-row>
+      </a-form>
+    </a-card>
+
+    <a-card title="顶栏">
       <AdminJsonEditor v-model="topbarItems" />
-      <AdminSaveBar :saving="saving" :message="message" @save="save" />
-    </div>
+    </a-card>
+
+    <AdminSaveBar :saving="saving" :message="message" @save="save" />
   </div>
 </template>
-
-<style scoped>
-.panel { background: #fff; border: 1px solid #dde3ea; padding: 24px; }
-h2 { font-size: 16px; margin: 0 0 12px; }
-.fields { display: grid; gap: 12px; margin-bottom: 24px; }
-label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; font-weight: 600; }
-input, textarea { padding: 8px 10px; border: 1px solid #ccd3dc; font: inherit; }
-</style>

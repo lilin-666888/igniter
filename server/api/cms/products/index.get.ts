@@ -21,7 +21,7 @@ export default defineEventHandler(async (event) => {
 
   if (query.category_slug && typeof query.category_slug === 'string') {
     const { data: cat } = await supabase
-      .from('product_categories')
+      .from('product_menu_groups')
       .select('id')
       .eq('slug', query.category_slug)
       .eq('published', true)

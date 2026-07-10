@@ -30,23 +30,24 @@ function onInput() {
 </script>
 
 <template>
-  <div class="editor">
-    <label v-if="label">{{ label }}</label>
-    <textarea v-model="text" rows="16" @input="onInput" />
-    <p v-if="parseError" class="error">{{ parseError }}</p>
-  </div>
+  <a-form-item
+    :label="label"
+    :validate-status="parseError ? 'error' : undefined"
+    :help="parseError || undefined"
+    style="margin-bottom: 0"
+  >
+    <a-textarea
+      v-model:value="text"
+      :rows="16"
+      class="admin-json-editor"
+      @input="onInput"
+    />
+  </a-form-item>
 </template>
 
 <style scoped>
-.editor { display: flex; flex-direction: column; gap: 8px; }
-label { font-size: 12px; font-weight: 600; color: #445; }
-textarea {
-  font-family: ui-monospace, monospace;
+.admin-json-editor :deep(textarea) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 13px;
-  padding: 12px;
-  border: 1px solid #ccd3dc;
-  width: 100%;
-  box-sizing: border-box;
 }
-.error { color: #c0392b; font-size: 13px; margin: 0; }
 </style>

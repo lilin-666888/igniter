@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+
 definePageMeta({ layout: false })
 
 const route = useRoute()
@@ -17,7 +19,6 @@ async function onSubmit() {
       password: password.value,
     })
     if (error) throw error
-    // 从服务端拉取最新 app_metadata（避免 JWT 里 role 未刷新）
     await $supabase.auth.refreshSession()
     const { data: { user } } = await $supabase.auth.getUser()
     if (user?.app_metadata?.role !== 'admin') {
@@ -35,18 +36,51 @@ async function onSubmit() {
 </script>
 
 <template>
-  <div class="login-page">
-    <form class="login-card" @submit.prevent="onSubmit">
-      <h1>Ceramitell 后台</h1>
-      <p class="sub">使用 Supabase 管理员账号登录</p>
-      <label>邮箱</label>
-      <input v-model="email" type="email" required autocomplete="username" />
-      <label>密码</label>
-      <input v-model="password" type="password" required autocomplete="current-password" />
-      <p v-if="errorMsg" class="error">{{ errorMsg }}</p>
-      <button type="submit" :disabled="loading">{{ loading ? '登录中…' : '登录' }}</button>
-    </form>
-  </div>
+  <a-config-provider :locale="zhCN">
+    <div class="login-page">
+      <a-card class="login-card" :bordered="false">
+        <a-typography-title :level="3" style="margin-top: 0">
+          Ceramitell 后台
+        </a-typography-title>
+        <a-typography-paragraph type="secondary">
+          使用 Supabase 管理员账号登录
+        </a-typography-paragraph>
+
+        <a-alert
+          v-if="errorMsg"
+          type="error"
+          :message="errorMsg"
+          show-icon
+          style="margin-bottom: 16px"
+        />
+
+        <a-form layout="vertical" @submit.prevent="onSubmit">
+          <a-form-item label="邮箱">
+            <a-input
+              v-model:value="email"
+              type="email"
+              autocomplete="username"
+              placeholder="admin@example.com"
+              required
+            />
+          </a-form-item>
+          <a-form-item label="密码">
+            <a-input-password
+              v-model:value="password"
+              autocomplete="current-password"
+              placeholder="请输入密码"
+              required
+            />
+          </a-form-item>
+          <a-form-item style="margin-bottom: 0">
+            <a-button type="primary" html-type="submit" block :loading="loading">
+              登录
+            </a-button>
+          </a-form-item>
+        </a-form>
+      </a-card>
+    </div>
+  </a-config-provider>
 </template>
 
 <style scoped>
@@ -54,53 +88,13 @@ async function onSubmit() {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: #0a2647;
+  background: linear-gradient(135deg, #001529 0%, #0a2647 100%);
   padding: 24px;
 }
+
 .login-card {
   width: 100%;
   max-width: 400px;
-  background: #fff;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-h1 {
-  margin: 0;
-  font-size: 22px;
-  color: #0a2647;
-}
-.sub {
-  margin: 0 0 12px;
-  color: #667;
-  font-size: 14px;
-}
-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: #445;
-}
-input {
-  padding: 10px 12px;
-  border: 1px solid #ccd3dc;
-  margin-bottom: 8px;
-}
-button {
-  margin-top: 8px;
-  background: #f26419;
-  color: #fff;
-  border: none;
-  padding: 12px;
-  font-weight: 700;
-  cursor: pointer;
-}
-button:disabled {
-  opacity: 0.6;
-}
-.error {
-  color: #c0392b;
-  font-size: 13px;
-  margin: 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 </style>

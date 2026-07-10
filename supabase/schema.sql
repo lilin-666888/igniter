@@ -42,21 +42,31 @@ create table if not exists public.content_items (
 
 create index if not exists content_items_section_idx on public.content_items (section, sort_order);
 
--- Product catalog categories (homepage + products index)
-create table if not exists public.product_categories (
+-- Product nav menu (Products 二级/三级导航)
+create table if not exists public.product_menu_groups (
   id uuid primary key default gen_random_uuid(),
   slug text not null unique,
-  title text not null,
-  description text not null default '',
-  meta text not null default '',
-  emoji text not null default '',
-  href text not null default '/products',
-  image_path text,
+  label text not null,
+  path text not null,
   sort_order integer not null default 0,
   published boolean not null default true,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
+
+create table if not exists public.product_menu_items (
+  id uuid primary key default gen_random_uuid(),
+  group_id uuid not null references public.product_menu_groups(id) on delete cascade,
+  label text not null,
+  path text not null,
+  sort_order integer not null default 0,
+  published boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists product_menu_groups_sort_idx on public.product_menu_groups (sort_order);
+create index if not exists product_menu_items_group_sort_idx on public.product_menu_items (group_id, sort_order);
 
 -- Customer inquiries from contact forms
 create table if not exists public.inquiries (
@@ -77,7 +87,7 @@ create index if not exists inquiries_status_idx on public.inquiries (status, cre
 -- Product landing pages (category + SKU), content as JSON
 create table if not exists public.product_pages (
   id uuid primary key default gen_random_uuid(),
-  category_id uuid references public.product_categories(id) on delete set null,
+  category_id uuid references public.product_menu_groups(id) on delete set null,
   slug text not null unique,
   page_type text not null check (page_type in ('category', 'sku')),
   parent_slug text,
@@ -121,9 +131,14 @@ create trigger content_items_updated_at
   before update on public.content_items
   for each row execute function public.set_updated_at();
 
-drop trigger if exists product_categories_updated_at on public.product_categories;
-create trigger product_categories_updated_at
-  before update on public.product_categories
+drop trigger if exists product_menu_groups_updated_at on public.product_menu_groups;
+create trigger product_menu_groups_updated_at
+  before update on public.product_menu_groups
+  for each row execute function public.set_updated_at();
+
+drop trigger if exists product_menu_items_updated_at on public.product_menu_items;
+create trigger product_menu_items_updated_at
+  before update on public.product_menu_items
   for each row execute function public.set_updated_at();
 
 drop trigger if exists inquiries_updated_at on public.inquiries;
@@ -139,20 +154,23 @@ create trigger product_pages_updated_at
 -- RLS
 alter table public.site_settings enable row level security;
 alter table public.content_items enable row level security;
-alter table public.product_categories enable row level security;
+alter table public.product_menu_groups enable row level security;
+alter table public.product_menu_items enable row level security;
 alter table public.product_pages enable row level security;
 alter table public.inquiries enable row level security;
 
 -- Grants
 grant select on public.site_settings to anon, authenticated;
 grant select on public.content_items to anon, authenticated;
-grant select on public.product_categories to anon, authenticated;
+grant select on public.product_menu_groups to anon, authenticated;
+grant select on public.product_menu_items to anon, authenticated;
 grant select on public.product_pages to anon, authenticated;
 grant insert on public.inquiries to anon, authenticated;
 
 grant insert, update, delete on public.site_settings to authenticated;
 grant insert, update, delete on public.content_items to authenticated;
-grant insert, update, delete on public.product_categories to authenticated;
+grant insert, update, delete on public.product_menu_groups to authenticated;
+grant insert, update, delete on public.product_menu_items to authenticated;
 grant insert, update, delete on public.product_pages to authenticated;
 grant select, update on public.inquiries to authenticated;
 
@@ -167,9 +185,14 @@ create policy "public read content_items"
   on public.content_items for select to anon, authenticated
   using (published = true);
 
-drop policy if exists "public read product_categories" on public.product_categories;
-create policy "public read product_categories"
-  on public.product_categories for select to anon, authenticated
+drop policy if exists "public read product_menu_groups" on public.product_menu_groups;
+create policy "public read product_menu_groups"
+  on public.product_menu_groups for select to anon, authenticated
+  using (published = true);
+
+drop policy if exists "public read product_menu_items" on public.product_menu_items;
+create policy "public read product_menu_items"
+  on public.product_menu_items for select to anon, authenticated
   using (published = true);
 
 drop policy if exists "public read product_pages" on public.product_pages;
@@ -212,26 +235,46 @@ create policy "admin delete content_items"
   on public.content_items for delete to authenticated
   using ((select public.is_admin()));
 
-drop policy if exists "admin manage product_categories" on public.product_categories;
-drop policy if exists "admin read all product_categories" on public.product_categories;
-drop policy if exists "admin write product_categories" on public.product_categories;
-drop policy if exists "admin update product_categories" on public.product_categories;
-drop policy if exists "admin delete product_categories" on public.product_categories;
-create policy "admin read all product_categories"
-  on public.product_categories for select to authenticated
+drop policy if exists "admin read all product_menu_groups" on public.product_menu_groups;
+drop policy if exists "admin write product_menu_groups" on public.product_menu_groups;
+drop policy if exists "admin update product_menu_groups" on public.product_menu_groups;
+drop policy if exists "admin delete product_menu_groups" on public.product_menu_groups;
+create policy "admin read all product_menu_groups"
+  on public.product_menu_groups for select to authenticated
   using ((select public.is_admin()));
 
-create policy "admin write product_categories"
-  on public.product_categories for insert to authenticated
+create policy "admin write product_menu_groups"
+  on public.product_menu_groups for insert to authenticated
   with check ((select public.is_admin()));
 
-create policy "admin update product_categories"
-  on public.product_categories for update to authenticated
+create policy "admin update product_menu_groups"
+  on public.product_menu_groups for update to authenticated
   using ((select public.is_admin()))
   with check ((select public.is_admin()));
 
-create policy "admin delete product_categories"
-  on public.product_categories for delete to authenticated
+create policy "admin delete product_menu_groups"
+  on public.product_menu_groups for delete to authenticated
+  using ((select public.is_admin()));
+
+drop policy if exists "admin read all product_menu_items" on public.product_menu_items;
+drop policy if exists "admin write product_menu_items" on public.product_menu_items;
+drop policy if exists "admin update product_menu_items" on public.product_menu_items;
+drop policy if exists "admin delete product_menu_items" on public.product_menu_items;
+create policy "admin read all product_menu_items"
+  on public.product_menu_items for select to authenticated
+  using ((select public.is_admin()));
+
+create policy "admin write product_menu_items"
+  on public.product_menu_items for insert to authenticated
+  with check ((select public.is_admin()));
+
+create policy "admin update product_menu_items"
+  on public.product_menu_items for update to authenticated
+  using ((select public.is_admin()))
+  with check ((select public.is_admin()));
+
+create policy "admin delete product_menu_items"
+  on public.product_menu_items for delete to authenticated
   using ((select public.is_admin()));
 
 drop policy if exists "admin read all product_pages" on public.product_pages;

@@ -1,104 +1,119 @@
-<template>
-  <div class="admin-shell">
-    <aside class="admin-sidebar">
-      <div class="admin-brand">Ceramitell <span>Admin</span></div>
-      <nav class="admin-nav">
-        <NuxtLink to="/admin">概览</NuxtLink>
-        <NuxtLink to="/admin/site">站点设置</NuxtLink>
-        <NuxtLink to="/admin/navigation">导航菜单</NuxtLink>
-        <NuxtLink to="/admin/footer">页脚</NuxtLink>
-        <NuxtLink to="/admin/homepage">首页内容</NuxtLink>
-        <NuxtLink to="/admin/products">产品分类</NuxtLink>
-        <NuxtLink to="/admin/product-pages">产品页面</NuxtLink>
-        <NuxtLink to="/admin/inquiries">询盘</NuxtLink>
-      </nav>
-      <button class="admin-logout" type="button" @click="logout">
-        退出登录
-      </button>
-    </aside>
-    <main class="admin-main">
-      <slot />
-    </main>
-  </div>
-</template>
-
 <script setup lang="ts">
-const { $supabase } = useNuxtApp();
-const router = useRouter();
+import {
+  AppstoreOutlined,
+  DashboardOutlined,
+  LogoutOutlined,
+  MailOutlined,
+  SettingOutlined,
+} from '@ant-design/icons-vue'
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+
+const route = useRoute()
+const router = useRouter()
+const { $supabase } = useNuxtApp()
+
+const selectedKeys = computed(() => {
+  const path = route.path
+  if (path.startsWith('/admin/products')) return ['/admin/products']
+  return [path]
+})
+
+const menuItems = [
+  { key: '/admin', icon: () => h(DashboardOutlined), label: '概览' },
+  { key: '/admin/site', icon: () => h(SettingOutlined), label: '站点设置' },
+  { key: '/admin/products', icon: () => h(AppstoreOutlined), label: '产品分类' },
+  { key: '/admin/inquiries', icon: () => h(MailOutlined), label: '询盘' },
+]
+
+function onMenuClick({ key }: { key: string }) {
+  router.push(key)
+}
 
 async function logout() {
-  await $supabase.auth.signOut();
-  router.push("/admin/login");
+  await $supabase.auth.signOut()
+  router.push('/admin/login')
 }
 </script>
 
+<template>
+  <a-config-provider :locale="zhCN">
+    <a-layout class="admin-layout">
+      <a-layout-sider
+        :width="220"
+        theme="dark"
+        breakpoint="lg"
+        collapsible
+      >
+        <div class="admin-logo">
+          Ceramitell <span>Admin</span>
+        </div>
+        <a-menu
+          theme="dark"
+          mode="inline"
+          :selected-keys="selectedKeys"
+          :items="menuItems"
+          @click="onMenuClick"
+        />
+        <div class="admin-logout-wrap">
+          <a-button type="text" block class="admin-logout-btn" @click="logout">
+            <template #icon>
+              <LogoutOutlined />
+            </template>
+            退出登录
+          </a-button>
+        </div>
+      </a-layout-sider>
+      <a-layout>
+        <a-layout-content class="admin-content">
+          <slot />
+        </a-layout-content>
+      </a-layout>
+    </a-layout>
+  </a-config-provider>
+</template>
+
 <style scoped>
-.admin-shell {
-  display: grid;
-  grid-template-columns: 240px 1fr;
+.admin-layout {
   min-height: 100vh;
-  background: #f4f6f9;
-  font-family: var(--sans, system-ui, sans-serif);
-  color: #0a2647;
 }
-.admin-sidebar {
-  background: #0a2647;
+
+.admin-logo {
   color: #fff;
-  padding: 24px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 20px 16px 12px;
+  letter-spacing: 0.02em;
 }
-.admin-brand {
-  font-weight: 800;
-  font-size: 18px;
-  letter-spacing: 0.04em;
-}
-.admin-brand span {
+
+.admin-logo span {
   color: #f26419;
 }
-.admin-nav {
+
+.admin-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  min-height: calc(100vh - 48px);
+}
+
+.admin-logout-wrap {
+  padding: 12px;
+  margin-top: auto;
+}
+
+.admin-logout-btn {
+  color: rgba(255, 255, 255, 0.85) !important;
+  text-align: left;
+}
+
+.admin-logout-btn:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+:deep(.ant-layout-sider-children) {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  flex: 1;
-}
-.admin-nav a {
-  color: #000;
-  text-decoration: none;
-  padding: 10px 12px;
-  border-radius: 4px;
-  font-size: 14px;
-}
-.admin-nav a:hover,
-.admin-nav a.router-link-active {
-  background: rgba(242, 100, 25, 0.2);
-  color: #fff;
-}
-.admin-logout {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-.admin-main {
-  padding: 32px;
-  overflow: auto;
-}
-@media (max-width: 900px) {
-  .admin-shell {
-    grid-template-columns: 1fr;
-  }
-  .admin-sidebar {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .admin-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
 }
 </style>

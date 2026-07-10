@@ -8,31 +8,23 @@ defineEmits<{ save: [] }>()
 </script>
 
 <template>
-  <div class="bar">
-    <span v-if="message" class="msg">{{ message }}<template v-if="message === '已保存'"> · 返回前台页面即可看到更新</template></span>
-    <button type="button" :disabled="saving" @click="$emit('save')">
-      {{ saving ? '保存中…' : '保存' }}
-    </button>
+  <div class="admin-save-bar">
+    <a-space>
+      <a-typography-text v-if="message" :type="message.includes('失败') ? 'danger' : 'success'">
+        {{ message }}
+        <template v-if="message === '已保存'"> · 返回前台页面即可看到更新</template>
+      </a-typography-text>
+      <a-button type="primary" :loading="saving" @click="$emit('save')">
+        保存
+      </a-button>
+    </a-space>
   </div>
 </template>
 
 <style scoped>
-.bar {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 16px;
+.admin-save-bar {
+  margin-top: 24px;
   padding-top: 16px;
-  border-top: 1px solid #dde3ea;
+  border-top: 1px solid #f0f0f0;
 }
-button {
-  background: #f26419;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-weight: 700;
-  cursor: pointer;
-}
-button:disabled { opacity: 0.6; }
-.msg { color: #2d8a4e; font-size: 14px; }
 </style>

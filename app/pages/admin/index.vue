@@ -1,47 +1,55 @@
 <script setup lang="ts">
+import {
+  AppstoreOutlined,
+  MailOutlined,
+  SettingOutlined,
+} from '@ant-design/icons-vue'
+
 definePageMeta({ layout: 'admin', middleware: 'admin' })
 
 const links = [
-  { to: '/admin/site', title: '站点设置', desc: '联系方式、顶栏文案' },
-  { to: '/admin/navigation', title: '导航菜单', desc: '主导航结构' },
-  { to: '/admin/footer', title: '页脚', desc: '页脚链接与法律信息' },
-  { to: '/admin/homepage', title: '首页内容', desc: '统计、证言、资源卡片等' },
-  { to: '/admin/products', title: '产品分类', desc: 'Products 下的分类管理' },
-  { to: '/admin/product-pages', title: '产品页面', desc: '分类页与 SKU 详情页' },
-  { to: '/admin/inquiries', title: '询盘', desc: '客户报价请求' },
+  { to: '/admin/site', title: '站点设置', desc: '联系方式、顶栏文案', icon: SettingOutlined },
+  { to: '/admin/products', title: '产品分类', desc: 'Products 下的分类管理', icon: AppstoreOutlined },
+  { to: '/admin/inquiries', title: '询盘', desc: '客户报价请求', icon: MailOutlined },
 ]
 </script>
 
 <template>
   <div>
-    <h1 class="page-title">后台概览</h1>
-    <p class="page-desc">管理网站动态内容。图片上传后保存相对路径（如 /uploads/xxx.jpg）。</p>
-    <div class="card-grid">
-      <NuxtLink v-for="item in links" :key="item.to" :to="item.to" class="card">
-        <h2>{{ item.title }}</h2>
-        <p>{{ item.desc }}</p>
-      </NuxtLink>
-    </div>
+    <AdminPageHeader
+      title="后台概览"
+      description="管理网站动态内容。图片上传后保存相对路径（如 /uploads/xxx.jpg）。"
+    />
+    <a-row :gutter="[16, 16]">
+      <a-col
+        v-for="item in links"
+        :key="item.to"
+        :xs="24"
+        :sm="12"
+        :lg="6"
+      >
+        <NuxtLink :to="item.to" class="overview-link">
+          <a-card hoverable>
+            <a-space direction="vertical" :size="8">
+              <component :is="item.icon" style="font-size: 24px; color: #1677ff" />
+              <a-typography-title :level="5" style="margin: 0">
+                {{ item.title }}
+              </a-typography-title>
+              <a-typography-text type="secondary">
+                {{ item.desc }}
+              </a-typography-text>
+            </a-space>
+          </a-card>
+        </NuxtLink>
+      </a-col>
+    </a-row>
   </div>
 </template>
 
 <style scoped>
-.page-title { margin: 0 0 8px; font-size: 28px; }
-.page-desc { color: #667; margin: 0 0 24px; }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 16px;
-}
-.card {
-  background: #fff;
-  border: 1px solid #dde3ea;
-  padding: 20px;
-  text-decoration: none;
+.overview-link {
+  display: block;
   color: inherit;
-  transition: border-color 0.15s;
+  text-decoration: none;
 }
-.card:hover { border-color: #f26419; }
-.card h2 { margin: 0 0 8px; font-size: 18px; }
-.card p { margin: 0; color: #667; font-size: 14px; }
 </style>

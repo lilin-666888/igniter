@@ -68,10 +68,18 @@ const lines: string[] = [
     ),
   ),
   '',
-  'delete from public.product_categories;',
-  ...catalogItems.map((item, i) => {
-    const slug = item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-    return `insert into public.product_categories (slug, title, description, meta, emoji, href, sort_order, published) values (${sqlText(slug)}, ${sqlText(item.title)}, ${sqlText(item.desc)}, ${sqlText(item.meta)}, ${sqlText(item.emoji)}, '/products', ${i}, true);`
+  'delete from public.product_menu_items;',
+  'delete from public.product_menu_groups;',
+  ...(navLinks.find(n => n.to === '/products')?.groups ?? []).flatMap((group, gi) => {
+    if (!group.to) return []
+    const slug = group.to.replace(/^\/products\//, '').replace(/#.*$/, '')
+    const groupSql = `insert into public.product_menu_groups (slug, label, path, sort_order, published) values (${sqlText(slug)}, ${sqlText(group.label)}, ${sqlText(group.to)}, ${gi}, true);`
+    const itemSql = group.links
+      .filter(link => link.to)
+      .map((link, ii) =>
+        `insert into public.product_menu_items (group_id, label, path, sort_order, published) select id, ${sqlText(link.label)}, ${sqlText(link.to)}, ${ii}, true from public.product_menu_groups where slug = ${sqlText(slug)};`,
+      )
+    return [groupSql, ...itemSql]
   }),
   '',
 ]

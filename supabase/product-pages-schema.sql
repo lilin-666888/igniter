@@ -3,7 +3,7 @@
 
 create table if not exists public.product_pages (
   id uuid primary key default gen_random_uuid(),
-  category_id uuid references public.product_categories(id) on delete set null,
+  category_id uuid references public.product_menu_groups(id) on delete set null,
   slug text not null unique,
   page_type text not null check (page_type in ('category', 'sku')),
   parent_slug text,

@@ -1,10 +1,19 @@
 <script setup lang="ts">
+import { Modal } from 'ant-design-vue'
+import { PlusOutlined } from '@ant-design/icons-vue'
+
 definePageMeta({ layout: 'admin', middleware: 'admin' })
 
 type Category = {
   id: string
   slug: string
   title: string
+}
+
+type MenuGroup = {
+  id: string
+  slug: string
+  label: string
 }
 
 type ProductPageItem = {
@@ -35,18 +44,16 @@ const page = ref(1)
 const pageSize = 10
 const total = ref(0)
 const totalPages = ref(1)
-const categoryId = ref('')
-const pageType = ref('')
+const categoryId = ref<string | undefined>(undefined)
+const pageType = ref<string | undefined>(undefined)
 const search = ref('')
 
 async function loadCategories() {
-  const res = await adminFetch<Paginated<Category>>(
-    '/api/admin/product-categories?page=1&limit=100',
-  )
-  categories.value = res.items.map(c => ({
-    id: c.id!,
-    slug: c.slug,
-    title: c.title,
+  const res = await adminFetch<MenuGroup[]>('/api/admin/product-menu')
+  categories.value = res.map(g => ({
+    id: g.id,
+    slug: g.slug,
+    title: g.label,
   }))
 }
 
@@ -92,11 +99,27 @@ function editPage(id: string) {
   router.push(`/admin/product-pages/${id}`)
 }
 
-async function removePage(item: ProductPageItem) {
-  if (!confirm(`确定删除「${item.slug}」？`)) return
-  await adminFetch(`/api/admin/product-pages/${item.id}`, { method: 'DELETE' })
-  await loadPages()
+function removePage(item: ProductPageItem) {
+  Modal.confirm({
+    title: `确定删除「${item.slug}」？`,
+    okText: '删除',
+    okType: 'danger',
+    cancelText: '取消',
+    onOk: async () => {
+      await adminFetch(`/api/admin/product-pages/${item.id}`, { method: 'DELETE' })
+      await loadPages()
+    },
+  })
 }
+
+const columns = [
+  { title: 'Slug', dataIndex: 'slug', key: 'slug' },
+  { title: '标题', dataIndex: 'title', key: 'title' },
+  { title: '类型', key: 'pageType', width: 110 },
+  { title: '排序', dataIndex: 'sortOrder', key: 'sortOrder', width: 80 },
+  { title: '状态', key: 'published', width: 100 },
+  { title: '操作', key: 'actions', width: 200 },
+]
 </script>
 
 <template>
@@ -106,129 +129,98 @@ async function removePage(item: ProductPageItem) {
       description="管理 Products 下的分类页与 SKU 详情页，按分类筛选并分页"
     />
 
-    <div class="toolbar">
-      <select v-model="categoryId" @change="onFilter">
-        <option value="">全部分类</option>
-        <option v-for="cat in categories" :key="cat.id" :value="cat.id">
+    <a-space wrap style="margin-bottom: 16px">
+      <a-select
+        v-model:value="categoryId"
+        placeholder="全部分类"
+        allow-clear
+        style="width: 180px"
+        @change="onFilter"
+      >
+        <a-select-option
+          v-for="cat in categories"
+          :key="cat.id"
+          :value="cat.id"
+        >
           {{ cat.title }}
-        </option>
-      </select>
-      <select v-model="pageType" @change="onFilter">
-        <option value="">全部类型</option>
-        <option value="category">二级分类页</option>
-        <option value="sku">三级 SKU 页</option>
-      </select>
-      <input
-        v-model="search"
-        type="search"
+        </a-select-option>
+      </a-select>
+      <a-select
+        v-model:value="pageType"
+        placeholder="全部类型"
+        allow-clear
+        style="width: 160px"
+        @change="onFilter"
+      >
+        <a-select-option value="category">
+          二级分类页
+        </a-select-option>
+        <a-select-option value="sku">
+          三级 SKU 页
+        </a-select-option>
+      </a-select>
+      <a-input-search
+        v-model:value="search"
         placeholder="搜索 slug…"
-        @keyup.enter="onFilter"
+        style="width: 200px"
+        allow-clear
+        @search="onFilter"
       />
-      <button type="button" @click="onFilter">筛选</button>
-      <button type="button" class="primary" @click="createPage">+ 新增页面</button>
-      <NuxtLink to="/admin/products" class="link">管理分类 →</NuxtLink>
-    </div>
+      <a-button type="primary" @click="createPage">
+        <template #icon>
+          <PlusOutlined />
+        </template>
+        新增页面
+      </a-button>
+      <NuxtLink to="/admin/products">
+        <a-button>管理分类</a-button>
+      </NuxtLink>
+    </a-space>
 
-    <p v-if="loading">加载中…</p>
-    <p v-else-if="items.length === 0" class="empty">暂无产品页面</p>
+    <a-spin :spinning="loading">
+      <a-table
+        :columns="columns"
+        :data-source="items"
+        :pagination="false"
+        row-key="id"
+      >
+        <template #bodyCell="{ column, record }">
+          <template v-if="column.key === 'slug'">
+            <a-typography-text code>{{ record.slug }}</a-typography-text>
+          </template>
+          <template v-else-if="column.key === 'pageType'">
+            {{ record.pageType === 'category' ? '分类页' : 'SKU' }}
+          </template>
+          <template v-else-if="column.key === 'published'">
+            <a-tag :color="record.published ? 'success' : 'default'">
+              {{ record.published ? '已发布' : '草稿' }}
+            </a-tag>
+          </template>
+          <template v-else-if="column.key === 'actions'">
+            <a-space>
+              <a-button size="small" @click="editPage(record.id)">
+                编辑
+              </a-button>
+              <a :href="`/products/${record.slug}`" target="_blank" rel="noopener">
+                <a-button size="small">预览</a-button>
+              </a>
+              <a-button size="small" danger @click="removePage(record)">
+                删除
+              </a-button>
+            </a-space>
+          </template>
+        </template>
+      </a-table>
 
-    <table v-else class="table">
-      <thead>
-        <tr>
-          <th>Slug</th>
-          <th>标题</th>
-          <th>类型</th>
-          <th>排序</th>
-          <th>状态</th>
-          <th>操作</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in items" :key="item.id">
-          <td>
-            <code>{{ item.slug }}</code>
-          </td>
-          <td>{{ item.title }}</td>
-          <td>{{ item.pageType === 'category' ? '分类页' : 'SKU' }}</td>
-          <td>{{ item.sortOrder }}</td>
-          <td>
-            <span :class="item.published ? 'on' : 'off'">
-              {{ item.published ? '已发布' : '草稿' }}
-            </span>
-          </td>
-          <td class="actions">
-            <button type="button" @click="editPage(item.id)">编辑</button>
-            <a :href="`/products/${item.slug}`" target="_blank" rel="noopener">预览</a>
-            <button type="button" class="danger" @click="removePage(item)">删除</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <a-empty v-if="!loading && items.length === 0" description="暂无产品页面" />
+    </a-spin>
 
     <AdminPagination
       :page="page"
       :total-pages="totalPages"
       :total="total"
+      :page-size="pageSize"
       @change="(p) => (page = p)"
     />
   </div>
 </template>
-
-<style scoped>
-.toolbar {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-  align-items: center;
-}
-.toolbar select,
-.toolbar input {
-  padding: 8px;
-  border: 1px solid #ccd3dc;
-}
-.toolbar button,
-.link {
-  padding: 8px 14px;
-  border: 1px solid #ccd3dc;
-  background: #fff;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  font-size: 14px;
-}
-.toolbar .primary {
-  background: #0a2647;
-  color: #fff;
-  border-color: #0a2647;
-}
-.link { margin-left: auto; }
-.empty { color: #667; }
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  background: #fff;
-  font-size: 14px;
-}
-.table th,
-.table td {
-  border: 1px solid #dde3ea;
-  padding: 10px 12px;
-  text-align: left;
-}
-.table th { background: #f5f7fa; font-weight: 600; }
-.on { color: #1a7f37; }
-.off { color: #999; }
-.actions { display: flex; gap: 8px; align-items: center; }
-.actions button,
-.actions a {
-  font-size: 13px;
-  padding: 4px 8px;
-  border: 1px solid #ccd3dc;
-  background: #fff;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-}
-.danger { color: #c0392b; border-color: #c0392b !important; }
-</style>

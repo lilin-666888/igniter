@@ -16,8 +16,11 @@
     "db:seed-products": "node --env-file=.env --import tsx scripts/seed-product-pages.ts"
   },
   "dependencies": {
+    "@ant-design-vue/nuxt": "^1.4.6",
+    "@ant-design/icons-vue": "^7.0.1",
     "@nuxt/eslint": "1.15.2",
     "@supabase/supabase-js": "^2.108.1",
+    "ant-design-vue": "^4.2.6",
     "eslint": "^10.4.1",
     "nuxt": "^4.4.7",
     "resend": "^6.12.4",

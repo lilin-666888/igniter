@@ -2,8 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint'],
+  modules: ['@nuxt/eslint', '@ant-design-vue/nuxt'],
+  antd: {
+    extractStyle: true,
+  },
   css: [
+    'ant-design-vue/dist/reset.css',
     '~/assets/css/variables.css',
     '~/assets/css/chrome.css',
     '~/assets/css/page-hero.css',

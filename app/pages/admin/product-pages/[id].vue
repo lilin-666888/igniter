@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ArrowLeftOutlined } from '@ant-design/icons-vue'
 import type { ProductPage } from '~/data/products/types'
 
 definePageMeta({ layout: 'admin', middleware: 'admin' })
@@ -41,10 +42,8 @@ const form = ref({
 })
 
 async function loadCategories() {
-  const res = await adminFetch<{ items: { id: string; slug: string; title: string }[] }>(
-    '/api/admin/product-categories?page=1&limit=100',
-  )
-  categories.value = res.items.map(c => ({ id: c.id, slug: c.slug, title: c.title }))
+  const res = await adminFetch<MenuGroup[]>('/api/admin/product-menu')
+  categories.value = res.map(g => ({ id: g.id, slug: g.slug, title: g.label }))
 }
 
 async function loadPage() {
@@ -144,107 +143,123 @@ async function save() {
       description="页面内容由 JSON 配置，与前台 ProductPageRenderer 一致"
     />
 
-    <p v-if="loading">加载中…</p>
+    <a-spin :spinning="loading">
+      <NuxtLink to="/admin/product-pages">
+        <a-button type="link" style="padding-left: 0; margin-bottom: 16px">
+          <template #icon>
+            <ArrowLeftOutlined />
+          </template>
+          返回列表
+        </a-button>
+      </NuxtLink>
 
-    <template v-else>
-      <div class="back">
-        <NuxtLink to="/admin/product-pages">← 返回列表</NuxtLink>
-      </div>
+      <template v-if="!loading">
+        <a-card title="基本信息" style="margin-bottom: 16px">
+          <a-form layout="vertical">
+            <a-row :gutter="16">
+              <a-col :xs="24" :md="8">
+                <a-form-item label="Slug" required>
+                  <a-input v-model:value="form.slug" />
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="类型">
+                  <a-select v-model:value="form.page_type">
+                    <a-select-option value="category">
+                      二级分类页
+                    </a-select-option>
+                    <a-select-option value="sku">
+                      三级 SKU 页
+                    </a-select-option>
+                  </a-select>
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="所属分类">
+                  <a-select v-model:value="form.category_id" allow-clear placeholder="无">
+                    <a-select-option
+                      v-for="cat in categories"
+                      :key="cat.id"
+                      :value="cat.id"
+                    >
+                      {{ cat.title }}
+                    </a-select-option>
+                  </a-select>
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="排序">
+                  <a-input-number v-model:value="form.sort_order" style="width: 100%" />
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="已发布">
+                  <a-switch v-model:checked="form.published" />
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="父级 Slug">
+                  <a-input v-model:value="form.parent_slug" />
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="父级名称">
+                  <a-input v-model:value="form.parent_label" />
+                </a-form-item>
+              </a-col>
+              <a-col :xs="24" :md="8">
+                <a-form-item label="Hero 侧栏">
+                  <a-select v-model:value="form.hero_side">
+                    <a-select-option value="quote">
+                      报价表单
+                    </a-select-option>
+                    <a-select-option value="spotlight">
+                      参数速览
+                    </a-select-option>
+                  </a-select>
+                </a-form-item>
+              </a-col>
+            </a-row>
+          </a-form>
+        </a-card>
 
-      <section class="card">
-        <h3>基本信息</h3>
-        <div class="grid">
-          <label>Slug <input v-model="form.slug" required /></label>
-          <label>
-            类型
-            <select v-model="form.page_type">
-              <option value="category">二级分类页</option>
-              <option value="sku">三级 SKU 页</option>
-            </select>
-          </label>
-          <label>
-            所属分类
-            <select v-model="form.category_id">
-              <option value="">无</option>
-              <option v-for="cat in categories" :key="cat.id" :value="cat.id">
-                {{ cat.title }}
-              </option>
-            </select>
-          </label>
-          <label>排序 <input v-model.number="form.sort_order" type="number" /></label>
-          <label class="check">
-            <input v-model="form.published" type="checkbox" /> 已发布
-          </label>
-        </div>
-        <div class="grid">
-          <label>父级 Slug <input v-model="form.parent_slug" /></label>
-          <label>父级名称 <input v-model="form.parent_label" /></label>
-          <label>
-            Hero 侧栏
-            <select v-model="form.hero_side">
-              <option value="quote">报价表单</option>
-              <option value="spotlight">参数速览</option>
-            </select>
-          </label>
-        </div>
-      </section>
+        <a-card title="SEO" style="margin-bottom: 16px">
+          <a-form layout="vertical">
+            <a-form-item label="Title">
+              <a-input v-model:value="form.seo.title" />
+            </a-form-item>
+            <a-form-item label="Description">
+              <a-textarea v-model:value="form.seo.description" :rows="2" />
+            </a-form-item>
+            <a-form-item label="Keywords">
+              <a-input v-model:value="form.seo.keywords" />
+            </a-form-item>
+          </a-form>
+        </a-card>
 
-      <section class="card">
-        <h3>SEO</h3>
-        <label>Title <input v-model="form.seo.title" /></label>
-        <label>Description <textarea v-model="form.seo.description" rows="2" /></label>
-        <label>Keywords <input v-model="form.seo.keywords" /></label>
-      </section>
+        <a-card title="Hero" style="margin-bottom: 16px">
+          <AdminJsonEditor v-model="form.hero" />
+        </a-card>
 
-      <section class="card">
-        <AdminJsonEditor v-model="form.hero" label="Hero (JSON)" />
-      </section>
+        <a-card title="面包屑" style="margin-bottom: 16px">
+          <AdminJsonEditor v-model="form.breadcrumb" />
+        </a-card>
 
-      <section class="card">
-        <AdminJsonEditor v-model="form.breadcrumb" label="面包屑 (JSON)" />
-      </section>
+        <template v-if="form.hero_side === 'spotlight'">
+          <a-card title="Spotlight" style="margin-bottom: 16px">
+            <AdminJsonEditor v-model="form.spotlight" />
+          </a-card>
+          <a-card title="Hero CTAs" style="margin-bottom: 16px">
+            <AdminJsonEditor v-model="form.hero_ctas" />
+          </a-card>
+        </template>
 
-      <section v-if="form.hero_side === 'spotlight'" class="card">
-        <AdminJsonEditor v-model="form.spotlight" label="Spotlight (JSON)" />
-        <AdminJsonEditor v-model="form.hero_ctas" label="Hero CTAs (JSON)" />
-      </section>
+        <a-card title="页面模块 sections" style="margin-bottom: 16px">
+          <AdminJsonEditor v-model="form.sections" />
+        </a-card>
 
-      <section class="card">
-        <AdminJsonEditor v-model="form.sections" label="页面模块 sections (JSON)" />
-      </section>
-
-      <AdminSaveBar :saving="saving" :message="message" @save="save" />
-    </template>
+        <AdminSaveBar :saving="saving" :message="message" @save="save" />
+      </template>
+    </a-spin>
   </div>
 </template>
-
-<style scoped>
-.back { margin-bottom: 16px; }
-.back a { color: #0a2647; font-weight: 600; }
-.card {
-  background: #fff;
-  border: 1px solid #dde3ea;
-  padding: 20px;
-  margin-bottom: 16px;
-}
-.card h3 { margin: 0 0 14px; font-size: 16px; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 12px;
-  margin-bottom: 12px;
-}
-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-label.check { flex-direction: row; align-items: center; }
-input, textarea, select {
-  padding: 8px;
-  border: 1px solid #ccd3dc;
-  font-size: 14px;
-}
-</style>

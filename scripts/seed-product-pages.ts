@@ -33,17 +33,14 @@ async function seedNavCategories() {
 
     const row = {
       slug,
-      title: group.label,
-      description: group.label,
-      meta: 'EXPLORE →',
-      emoji: '📦',
-      href: group.to,
+      label: group.label,
+      path: group.to,
       sort_order: index,
       published: true,
     }
 
     const { data, error } = await supabase
-      .from('product_categories')
+      .from('product_menu_groups')
       .upsert(row, { onConflict: 'slug' })
       .select('id, slug')
       .single()

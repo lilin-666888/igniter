@@ -44,8 +44,24 @@ export function useSiteCms() {
       ? fallbackTopbar
       : ((data.value?.topbar_items as typeof fallbackTopbar) ?? fallbackTopbar),
   )
-  // Nav menu temporarily uses site.ts only (not CMS API)
-  const navLinks = computed(() => fallbackNavLinks)
+  const { data: productMenuData } = useFetch<{ navGroups: Array<{ label: string; to: string; links: Array<{ label: string; to: string }> }> }>(
+    '/api/cms/product-menu',
+    {
+      key: 'cms-product-menu',
+      ...cmsFetchOptions,
+      watch: [() => route.fullPath],
+    },
+  )
+
+  const navLinks = computed(() => {
+    const cmsGroups = productMenuData.value?.navGroups
+    if (!cmsGroups?.length) return fallbackNavLinks
+
+    return fallbackNavLinks.map((link) => {
+      if (link.to !== '/products') return link
+      return { ...link, groups: cmsGroups }
+    })
+  })
   // Footer temporarily uses site.ts only (not CMS API)
   const footerColumns = computed(() => fallbackFooterColumns)
   const footerLegal = computed(() => fallbackFooterLegal)
