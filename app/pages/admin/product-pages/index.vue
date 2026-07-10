@@ -10,12 +10,6 @@ type Category = {
   title: string
 }
 
-type MenuGroup = {
-  id: string
-  slug: string
-  label: string
-}
-
 type ProductPageItem = {
   id: string
   categoryId: string | null
@@ -49,7 +43,7 @@ const pageType = ref<string | undefined>(undefined)
 const search = ref('')
 
 async function loadCategories() {
-  const res = await adminFetch<MenuGroup[]>('/api/admin/product-menu')
+  const res = await adminFetch<Array<{ id: string; slug: string; label: string }>>('/api/admin/product-menu')
   categories.value = res.map(g => ({
     id: g.id,
     slug: g.slug,
@@ -91,8 +85,8 @@ async function onFilter() {
   await loadPages()
 }
 
-function createPage() {
-  router.push('/admin/product-pages/new')
+function createPage(type: 'category' | 'sku') {
+  router.push({ path: '/admin/product-pages/new', query: { type } })
 }
 
 function editPage(id: string) {
@@ -102,6 +96,7 @@ function editPage(id: string) {
 function removePage(item: ProductPageItem) {
   Modal.confirm({
     title: `确定删除「${item.slug}」？`,
+    content: '分类页下的产品列表也会一并删除。',
     okText: '删除',
     okType: 'danger',
     cancelText: '取消',
@@ -112,12 +107,18 @@ function removePage(item: ProductPageItem) {
   })
 }
 
+function categoryLabel(id: string | null) {
+  if (!id) return '—'
+  return categories.value.find(c => c.id === id)?.title ?? '—'
+}
+
 const columns = [
-  { title: 'Slug', dataIndex: 'slug', key: 'slug' },
-  { title: '标题', dataIndex: 'title', key: 'title' },
+  { title: 'Slug', dataIndex: 'slug', key: 'slug', width: 200 },
+  { title: '标题', dataIndex: 'title', key: 'title', ellipsis: true },
   { title: '类型', key: 'pageType', width: 110 },
-  { title: '排序', dataIndex: 'sortOrder', key: 'sortOrder', width: 80 },
-  { title: '状态', key: 'published', width: 100 },
+  { title: '所属分类', key: 'category', width: 160 },
+  { title: '排序', dataIndex: 'sortOrder', key: 'sortOrder', width: 72 },
+  { title: '状态', key: 'published', width: 88 },
   { title: '操作', key: 'actions', width: 200 },
 ]
 </script>
@@ -125,8 +126,8 @@ const columns = [
 <template>
   <div>
     <AdminPageHeader
-      title="产品页面"
-      description="管理 Products 下的分类页与 SKU 详情页，按分类筛选并分页"
+      title="产品管理"
+      description="管理二级分类页与三级 SKU 详情页的内容，替代前端静态写死数据"
     />
 
     <a-space wrap style="margin-bottom: 16px">
@@ -137,11 +138,7 @@ const columns = [
         style="width: 180px"
         @change="onFilter"
       >
-        <a-select-option
-          v-for="cat in categories"
-          :key="cat.id"
-          :value="cat.id"
-        >
+        <a-select-option v-for="cat in categories" :key="cat.id" :value="cat.id">
           {{ cat.title }}
         </a-select-option>
       </a-select>
@@ -166,15 +163,18 @@ const columns = [
         allow-clear
         @search="onFilter"
       />
-      <a-button type="primary" @click="createPage">
+      <a-button type="primary" @click="createPage('category')">
         <template #icon>
           <PlusOutlined />
         </template>
-        新增页面
+        新增分类页
       </a-button>
-      <NuxtLink to="/admin/products">
-        <a-button>管理分类</a-button>
-      </NuxtLink>
+      <a-button @click="createPage('sku')">
+        <template #icon>
+          <PlusOutlined />
+        </template>
+        新增 SKU 页
+      </a-button>
     </a-space>
 
     <a-spin :spinning="loading">
@@ -189,7 +189,12 @@ const columns = [
             <a-typography-text code>{{ record.slug }}</a-typography-text>
           </template>
           <template v-else-if="column.key === 'pageType'">
-            {{ record.pageType === 'category' ? '分类页' : 'SKU' }}
+            <a-tag :color="record.pageType === 'category' ? 'blue' : 'purple'">
+              {{ record.pageType === 'category' ? '二级' : '三级' }}
+            </a-tag>
+          </template>
+          <template v-else-if="column.key === 'category'">
+            {{ categoryLabel(record.categoryId) }}
           </template>
           <template v-else-if="column.key === 'published'">
             <a-tag :color="record.published ? 'success' : 'default'">
@@ -210,9 +215,10 @@ const columns = [
             </a-space>
           </template>
         </template>
+        <template #emptyText>
+          暂无产品页，请先从静态数据 seed 或手动新增
+        </template>
       </a-table>
-
-      <a-empty v-if="!loading && items.length === 0" description="暂无产品页面" />
     </a-spin>
 
     <AdminPagination

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {
   AppstoreOutlined,
+  FileTextOutlined,
   MailOutlined,
   SettingOutlined,
 } from '@ant-design/icons-vue'
@@ -9,7 +10,8 @@ definePageMeta({ layout: 'admin', middleware: 'admin' })
 
 const links = [
   { to: '/admin/site', title: '站点设置', desc: '联系方式、顶栏文案', icon: SettingOutlined },
-  { to: '/admin/products', title: '产品分类', desc: 'Products 下的分类管理', icon: AppstoreOutlined },
+  { to: '/admin/products', title: '产品分类', desc: 'Products 导航二级/三级菜单', icon: AppstoreOutlined },
+  { to: '/admin/product-pages', title: '产品管理', desc: '分类页与 SKU 详情页内容', icon: FileTextOutlined },
   { to: '/admin/inquiries', title: '询盘', desc: '客户报价请求', icon: MailOutlined },
 ]
 </script>

@@ -108,6 +108,30 @@ create table if not exists public.product_pages (
 create index if not exists product_pages_category_idx on public.product_pages (category_id, sort_order);
 create index if not exists product_pages_published_slug_idx on public.product_pages (published, slug);
 
+-- Product cards on category pages (lineup section)
+create table if not exists public.product_lineup_items (
+  id uuid primary key default gen_random_uuid(),
+  page_id uuid not null references public.product_pages(id) on delete cascade,
+  name text not null,
+  icon text not null default '📦',
+  description text not null default '',
+  chips text[] not null default '{}',
+  material_label text,
+  material_path text,
+  link_path text,
+  link_page_id uuid references public.product_pages(id) on delete set null,
+  link_label text not null default 'View Details →',
+  flagship boolean not null default false,
+  badge text,
+  sort_order integer not null default 0,
+  published boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists product_lineup_items_page_sort_idx
+  on public.product_lineup_items (page_id, sort_order);
+
 -- Updated_at trigger
 create or replace function public.set_updated_at()
 returns trigger
@@ -141,6 +165,11 @@ create trigger product_menu_items_updated_at
   before update on public.product_menu_items
   for each row execute function public.set_updated_at();
 
+drop trigger if exists product_lineup_items_updated_at on public.product_lineup_items;
+create trigger product_lineup_items_updated_at
+  before update on public.product_lineup_items
+  for each row execute function public.set_updated_at();
+
 drop trigger if exists inquiries_updated_at on public.inquiries;
 create trigger inquiries_updated_at
   before update on public.inquiries
@@ -157,6 +186,7 @@ alter table public.content_items enable row level security;
 alter table public.product_menu_groups enable row level security;
 alter table public.product_menu_items enable row level security;
 alter table public.product_pages enable row level security;
+alter table public.product_lineup_items enable row level security;
 alter table public.inquiries enable row level security;
 
 -- Grants
@@ -165,6 +195,7 @@ grant select on public.content_items to anon, authenticated;
 grant select on public.product_menu_groups to anon, authenticated;
 grant select on public.product_menu_items to anon, authenticated;
 grant select on public.product_pages to anon, authenticated;
+grant select on public.product_lineup_items to anon, authenticated;
 grant insert on public.inquiries to anon, authenticated;
 
 grant insert, update, delete on public.site_settings to authenticated;
@@ -172,6 +203,7 @@ grant insert, update, delete on public.content_items to authenticated;
 grant insert, update, delete on public.product_menu_groups to authenticated;
 grant insert, update, delete on public.product_menu_items to authenticated;
 grant insert, update, delete on public.product_pages to authenticated;
+grant insert, update, delete on public.product_lineup_items to authenticated;
 grant select, update on public.inquiries to authenticated;
 
 -- Policies: public read
@@ -198,6 +230,11 @@ create policy "public read product_menu_items"
 drop policy if exists "public read product_pages" on public.product_pages;
 create policy "public read product_pages"
   on public.product_pages for select to anon, authenticated
+  using (published = true);
+
+drop policy if exists "public read product_lineup_items" on public.product_lineup_items;
+create policy "public read product_lineup_items"
+  on public.product_lineup_items for select to anon, authenticated
   using (published = true);
 
 -- Policies: anyone can submit inquiries
@@ -297,6 +334,28 @@ create policy "admin update product_pages"
 
 create policy "admin delete product_pages"
   on public.product_pages for delete to authenticated
+  using ((select public.is_admin()));
+
+drop policy if exists "admin read all product_lineup_items" on public.product_lineup_items;
+drop policy if exists "admin write product_lineup_items" on public.product_lineup_items;
+drop policy if exists "admin update product_lineup_items" on public.product_lineup_items;
+drop policy if exists "admin delete product_lineup_items" on public.product_lineup_items;
+
+create policy "admin read all product_lineup_items"
+  on public.product_lineup_items for select to authenticated
+  using ((select public.is_admin()));
+
+create policy "admin write product_lineup_items"
+  on public.product_lineup_items for insert to authenticated
+  with check ((select public.is_admin()));
+
+create policy "admin update product_lineup_items"
+  on public.product_lineup_items for update to authenticated
+  using ((select public.is_admin()))
+  with check ((select public.is_admin()));
+
+create policy "admin delete product_lineup_items"
+  on public.product_lineup_items for delete to authenticated
   using ((select public.is_admin()));
 
 drop policy if exists "admin read inquiries" on public.inquiries;

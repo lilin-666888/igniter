@@ -1,4 +1,40 @@
-import type { ProductPage, ProductPageType } from '~/data/products/types'
+import type { LineupItem, ProductPage, ProductPageType } from '~/data/products/types'
+
+export type ProductLineupItemRow = {
+  id: string
+  page_id: string
+  name: string
+  icon: string
+  description: string
+  chips: string[]
+  material_label: string | null
+  material_path: string | null
+  link_path: string | null
+  link_page_id: string | null
+  link_label: string
+  flagship: boolean
+  badge: string | null
+  sort_order: number
+  published: boolean
+}
+
+export type ProductLineupItemAdmin = {
+  id: string
+  pageId: string
+  name: string
+  icon: string
+  description: string
+  chips: string[]
+  materialLabel?: string | null
+  materialPath?: string | null
+  linkPath?: string | null
+  linkPageId?: string | null
+  linkLabel: string
+  flagship: boolean
+  badge?: string | null
+  sortOrder: number
+  published: boolean
+}
 
 export type ProductPageRow = {
   id: string
@@ -29,6 +65,93 @@ export type ProductPageListItem = {
   sortOrder: number
   published: boolean
   updatedAt?: string
+}
+
+export function rowToLineupItem(row: ProductLineupItemRow): LineupItem {
+  return {
+    name: row.name,
+    icon: row.icon,
+    desc: row.description,
+    chips: row.chips ?? [],
+    materialLabel: row.material_label ?? undefined,
+    materialTo: row.material_path ?? undefined,
+    linkTo: row.link_path ?? undefined,
+    linkLabel: row.link_label,
+    flagship: row.flagship,
+    badge: row.badge ?? undefined,
+  }
+}
+
+export function rowToLineupItemAdmin(row: ProductLineupItemRow): ProductLineupItemAdmin {
+  return {
+    id: row.id,
+    pageId: row.page_id,
+    name: row.name,
+    icon: row.icon,
+    description: row.description,
+    chips: row.chips ?? [],
+    materialLabel: row.material_label,
+    materialPath: row.material_path,
+    linkPath: row.link_path,
+    linkPageId: row.link_page_id,
+    linkLabel: row.link_label,
+    flagship: row.flagship,
+    badge: row.badge,
+    sortOrder: row.sort_order,
+    published: row.published,
+  }
+}
+
+export function lineupItemAdminToRow(
+  item: Partial<ProductLineupItemAdmin> & { pageId: string; name: string },
+) {
+  return {
+    page_id: item.pageId,
+    name: item.name,
+    icon: item.icon ?? '📦',
+    description: item.description ?? '',
+    chips: item.chips ?? [],
+    material_label: item.materialLabel ?? null,
+    material_path: item.materialPath ?? null,
+    link_path: item.linkPath ?? null,
+    link_page_id: item.linkPageId ?? null,
+    link_label: item.linkLabel ?? 'View Details →',
+    flagship: item.flagship ?? false,
+    badge: item.badge ?? null,
+    sort_order: item.sortOrder ?? 0,
+    published: item.published !== false,
+  }
+}
+
+export function injectLineupIntoPage(page: ProductPage, lineupRows: ProductLineupItemRow[]): ProductPage {
+  if (!lineupRows.length) return page
+
+  const items = lineupRows.map(rowToLineupItem)
+  const existing = page.sections.find(section => section.type === 'lineup')
+  const lineupSection = existing && existing.type === 'lineup'
+    ? { ...existing, items }
+    : {
+        type: 'lineup' as const,
+        num: '01 · Lineup',
+        headingHtml: 'Product <span class="accent">lineup</span>',
+        lead: '',
+        items,
+      }
+
+  const sections = page.sections.some(section => section.type === 'lineup')
+    ? page.sections.map(section => (section.type === 'lineup' ? lineupSection : section))
+    : [lineupSection, ...page.sections]
+
+  return { ...page, sections }
+}
+
+export function extractLineupFromSections(sections: ProductPage['sections']): LineupItem[] {
+  const lineup = sections.find(section => section.type === 'lineup')
+  return lineup && lineup.type === 'lineup' ? lineup.items : []
+}
+
+export function sectionsWithoutLineup(sections: ProductPage['sections']) {
+  return sections.filter(section => section.type !== 'lineup')
 }
 
 export function rowToProductPage(row: ProductPageRow): ProductPage {
@@ -74,6 +197,7 @@ export function rowToListItem(row: ProductPageRow): ProductPageListItem {
 }
 
 export function bodyToProductPageRow(body: Record<string, unknown>) {
+  const sections = Array.isArray(body.sections) ? body.sections : []
   return {
     category_id: (body.category_id as string | null) ?? null,
     slug: body.slug as string,
@@ -86,7 +210,7 @@ export function bodyToProductPageRow(body: Record<string, unknown>) {
     hero_side: (body.hero_side as ProductPage['heroSide']) ?? 'quote',
     hero_ctas: body.hero_ctas ?? null,
     spotlight: body.spotlight ?? null,
-    sections: body.sections ?? [],
+    sections: sectionsWithoutLineup(sections as ProductPage['sections']),
     sort_order: Number(body.sort_order ?? 0),
     published: body.published !== false,
   }

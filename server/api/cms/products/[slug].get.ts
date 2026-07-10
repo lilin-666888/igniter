@@ -1,5 +1,5 @@
+import { fetchProductPageWithLineup } from '../../../utils/product-lineup'
 import type { ProductPageRow } from '../../../utils/product-page'
-import { rowToProductPage } from '../../../utils/product-page'
 
 export default defineEventHandler(async (event) => {
   setCmsNoCache(event)
@@ -18,5 +18,9 @@ export default defineEventHandler(async (event) => {
   if (error) throw createError({ statusCode: 500, message: error.message })
   if (!data) throw createError({ statusCode: 404, message: 'Product not found' })
 
-  return { page: rowToProductPage(data as ProductPageRow) }
+  const page = await fetchProductPageWithLineup(supabase, data as ProductPageRow, {
+    publishedOnly: true,
+  })
+
+  return { page }
 })

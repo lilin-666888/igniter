@@ -1,5 +1,5 @@
-import type { ProductPageRow } from '../../../utils/product-page'
-import { rowToProductPage } from '../../../utils/product-page'
+import { fetchLineupItemsForAdmin } from '../../../utils/product-lineup'
+import { rowToProductPage, sectionsWithoutLineup, type ProductPageRow } from '../../../utils/product-page'
 
 export default defineEventHandler(async (event) => {
   const { supabase } = await requireAdmin(event)
@@ -15,11 +15,20 @@ export default defineEventHandler(async (event) => {
   if (error) throw createError({ statusCode: 500, message: error.message })
   if (!data) throw createError({ statusCode: 404, message: '页面不存在' })
 
+  const page = rowToProductPage(data as ProductPageRow)
+  page.sections = sectionsWithoutLineup(page.sections)
+
+  const lineupItems =
+    data.page_type === 'category'
+      ? await fetchLineupItemsForAdmin(supabase, id)
+      : []
+
   return {
     id: data.id,
     category_id: data.category_id,
     sort_order: data.sort_order,
     published: data.published,
-    page: rowToProductPage(data as ProductPageRow),
+    page,
+    lineupItems,
   }
 })

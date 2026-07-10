@@ -2,6 +2,7 @@
 import {
   AppstoreOutlined,
   DashboardOutlined,
+  FileTextOutlined,
   LogoutOutlined,
   MailOutlined,
   SettingOutlined,
@@ -14,6 +15,7 @@ const { $supabase } = useNuxtApp()
 
 const selectedKeys = computed(() => {
   const path = route.path
+  if (path.startsWith('/admin/product-pages')) return ['/admin/product-pages']
   if (path.startsWith('/admin/products')) return ['/admin/products']
   return [path]
 })
@@ -22,6 +24,7 @@ const menuItems = [
   { key: '/admin', icon: () => h(DashboardOutlined), label: '概览' },
   { key: '/admin/site', icon: () => h(SettingOutlined), label: '站点设置' },
   { key: '/admin/products', icon: () => h(AppstoreOutlined), label: '产品分类' },
+  { key: '/admin/product-pages', icon: () => h(FileTextOutlined), label: '产品管理' },
   { key: '/admin/inquiries', icon: () => h(MailOutlined), label: '询盘' },
 ]
 
