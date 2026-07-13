@@ -2,11 +2,16 @@
 const route = useRoute()
 const slug = computed(() => String(route.params.slug))
 
-const { page, error } = await useProductPage(slug)
+const { page, error, status } = await useProductPage(slug)
 
-if (error.value || !page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Product not found' })
-}
+watchEffect(() => {
+  if (!slug.value || slug.value === 'undefined') return
+  if (status.value === 'pending') return
+  if (page.value) return
+  if (error.value || status.value === 'success') {
+    throw createError({ statusCode: 404, statusMessage: 'Product not found' })
+  }
+})
 
 useHead({
   title: () => page.value?.seo.title ?? 'Product',

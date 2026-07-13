@@ -99,15 +99,23 @@ export function useProductList(options: {
 }
 
 export async function useProductPage(slug: MaybeRefOrGetter<string>) {
+  const route = useRoute()
   const slugRef = computed(() => toValue(slug))
 
   const { data, error, refresh, status } = await useFetch<{ page: ProductPage }>(
-    () => `/api/cms/products/${slugRef.value}`,
+    () => (slugRef.value ? `/api/cms/products/${slugRef.value}` : null),
     {
       key: () => `cms-product-${slugRef.value}`,
-      ...cmsFetchOptions,
+      watch: [() => route.fullPath, slugRef],
     },
   )
+
+  // Hydration 后静默刷新，拿到最新 CMS 数据，同时避免忽略 SSR payload 导致误 404
+  if (import.meta.client) {
+    onMounted(() => {
+      if (slugRef.value) refresh()
+    })
+  }
 
   const page = computed(() => data.value?.page)
 
