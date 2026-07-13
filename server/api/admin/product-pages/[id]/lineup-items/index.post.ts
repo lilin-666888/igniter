@@ -18,6 +18,7 @@ export default defineEventHandler(async (event) => {
     linkPath: body.link_path ?? body.linkPath,
     linkPageId: body.link_page_id ?? body.linkPageId,
     linkLabel: body.link_label ?? body.linkLabel,
+    imageSrc: body.image_src ?? body.imageSrc,
     flagship: body.flagship,
     badge: body.badge,
     sortOrder: body.sort_order ?? body.sortOrder,

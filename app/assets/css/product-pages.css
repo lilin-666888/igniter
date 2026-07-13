@@ -377,7 +377,6 @@ section.s h2 .accent {
 }
 
 .lineup-img-slot {
-  height: 160px;
   overflow: hidden;
   margin: 14px -30px;
   border-top: 1px solid var(--line);
@@ -386,12 +385,8 @@ section.s h2 .accent {
 }
 
 .lineup-img-slot img {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 25%;
+  height: auto;
   display: block;
   transition: transform 0.35s ease;
 }
@@ -401,8 +396,7 @@ section.s h2 .accent {
 }
 
 .lineup-img-ph {
-  position: absolute;
-  inset: 0;
+  min-height: 160px;
   background: linear-gradient(145deg, #f1f5fa 0%, #e6eef7 100%);
   display: flex;
   flex-direction: column;
@@ -914,7 +908,6 @@ section.s h2 .accent {
 }
 
 .b-img-slot {
-  height: 200px;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
   background: #f4f5f7;
@@ -923,11 +916,193 @@ section.s h2 .accent {
 
 .b-img-slot img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
+  height: auto;
   display: block;
   transition: transform 0.35s ease;
+}
+
+.spec-img-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.spec-img-frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.spec-img-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.35s ease;
+}
+
+.spec-img-slide-wrap {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.spec-img-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.b-card:hover .spec-img-slide {
+  transform: scale(1.06);
+}
+
+.spec-img-zoom-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 13px;
+  line-height: 28px;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.spec-img-frame:hover .spec-img-zoom-hint {
+  opacity: 1;
+}
+
+.spec-img-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.spec-img-nav--prev {
+  left: 8px;
+}
+
+.spec-img-nav--next {
+  right: 8px;
+}
+
+.spec-img-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.spec-img-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+}
+
+.spec-img-dot.active {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+.spec-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(8, 12, 20, 0.88);
+}
+
+.spec-lightbox-figure {
+  margin: 0;
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.spec-lightbox-img {
+  max-width: 100%;
+  max-height: calc(88vh - 40px);
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.spec-lightbox-caption {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.spec-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.spec-lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.spec-lightbox-nav--prev {
+  left: 24px;
+}
+
+.spec-lightbox-nav--next {
+  right: 24px;
 }
 
 .b-card:hover .b-img-slot img {
@@ -935,8 +1110,7 @@ section.s h2 .accent {
 }
 
 .b-img-ph {
-  position: absolute;
-  inset: 0;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;

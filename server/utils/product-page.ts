@@ -12,6 +12,7 @@ export type ProductLineupItemRow = {
   link_path: string | null
   link_page_id: string | null
   link_label: string
+  image_src: string | null
   flagship: boolean
   badge: string | null
   sort_order: number
@@ -30,6 +31,7 @@ export type ProductLineupItemAdmin = {
   linkPath?: string | null
   linkPageId?: string | null
   linkLabel: string
+  imageSrc?: string | null
   flagship: boolean
   badge?: string | null
   sortOrder: number
@@ -77,6 +79,7 @@ export function rowToLineupItem(row: ProductLineupItemRow): LineupItem {
     materialTo: row.material_path ?? undefined,
     linkTo: row.link_path ?? undefined,
     linkLabel: row.link_label,
+    imageSrc: row.image_src ?? undefined,
     flagship: row.flagship,
     badge: row.badge ?? undefined,
   }
@@ -95,6 +98,7 @@ export function rowToLineupItemAdmin(row: ProductLineupItemRow): ProductLineupIt
     linkPath: row.link_path,
     linkPageId: row.link_page_id,
     linkLabel: row.link_label,
+    imageSrc: row.image_src,
     flagship: row.flagship,
     badge: row.badge,
     sortOrder: row.sort_order,
@@ -116,6 +120,7 @@ export function lineupItemAdminToRow(
     link_path: item.linkPath ?? null,
     link_page_id: item.linkPageId ?? null,
     link_label: item.linkLabel ?? 'View Details →',
+    image_src: item.imageSrc ?? null,
     flagship: item.flagship ?? false,
     badge: item.badge ?? null,
     sort_order: item.sortOrder ?? 0,
@@ -124,7 +129,12 @@ export function lineupItemAdminToRow(
 }
 
 export function injectLineupIntoPage(page: ProductPage, lineupRows: ProductLineupItemRow[]): ProductPage {
-  if (!lineupRows.length) return page
+  if (!lineupRows.length) {
+    return {
+      ...page,
+      sections: page.sections.filter(section => section.type !== 'lineup'),
+    }
+  }
 
   const items = lineupRows.map(rowToLineupItem)
   const existing = page.sections.find(section => section.type === 'lineup')
@@ -152,6 +162,21 @@ export function extractLineupFromSections(sections: ProductPage['sections']): Li
 
 export function sectionsWithoutLineup(sections: ProductPage['sections']) {
   return sections.filter(section => section.type !== 'lineup')
+}
+
+function hasSpecGridContent(section: Extract<ProductPage['sections'][number], { type: 'spec-grid' }>) {
+  if (section.items?.length) return true
+  return section.groups?.some(group => group.items.length > 0) ?? false
+}
+
+/** Drop lineup / spec-grid sections when API has no list data to show. */
+export function sanitizeProductPageSections(page: ProductPage): ProductPage {
+  const sections = page.sections.filter((section) => {
+    if (section.type === 'lineup') return section.items.length > 0
+    if (section.type === 'spec-grid') return hasSpecGridContent(section)
+    return true
+  })
+  return { ...page, sections }
 }
 
 export function rowToProductPage(row: ProductPageRow): ProductPage {

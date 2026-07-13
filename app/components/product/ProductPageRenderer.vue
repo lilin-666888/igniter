@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ProductPage, ProductSection } from '~/data/products/types'
+import { visibleProductSections } from '~/utils/product-page-sections'
 import ProductAnchorSpecsSection from '~/components/product/sections/ProductAnchorSpecsSection.vue'
 import ProductAppUsesSection from '~/components/product/sections/ProductAppUsesSection.vue'
 import ProductBenefitsSection from '~/components/product/sections/ProductBenefitsSection.vue'
@@ -12,9 +13,11 @@ import ProductQuoteSection from '~/components/product/sections/ProductQuoteSecti
 import ProductRelatedSection from '~/components/product/sections/ProductRelatedSection.vue'
 import ProductSpecGridSection from '~/components/product/sections/ProductSpecGridSection.vue'
 
-defineProps<{
+const props = defineProps<{
   page: ProductPage
 }>()
+
+const sections = computed(() => visibleProductSections(props.page.sections))
 
 function sectionKey(section: ProductSection, index: number) {
   return `${section.type}-${index}`
@@ -27,9 +30,9 @@ function sectionKey(section: ProductSection, index: number) {
     <ProductHero :page="page" />
     <ProductCertStrip />
 
-    <template v-for="(section, index) in page.sections" :key="sectionKey(section, index)">
+    <template v-for="(section, index) in sections" :key="sectionKey(section, index)">
       <ProductLineupSection
-        v-if="section.type === 'lineup'"
+        v-if="section.type === 'lineup' && section.items.length"
         :num="section.num"
         :heading-html="section.headingHtml"
         :lead="section.lead"
@@ -64,7 +67,7 @@ function sectionKey(section: ProductSection, index: number) {
       <ProductCasectaSection v-else-if="section.type === 'casecta'" />
 
       <ProductSpecGridSection
-        v-else-if="section.type === 'spec-grid'"
+        v-else-if="section.type === 'spec-grid' && ((section.items?.length ?? 0) > 0 || section.groups?.some(g => g.items.length))"
         :num="section.num"
         :heading-html="section.headingHtml"
         :lead="section.lead"

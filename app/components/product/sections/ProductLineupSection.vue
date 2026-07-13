@@ -26,7 +26,8 @@ defineProps<{
           </div>
         </div>
         <div class="lineup-img-slot">
-          <div class="lineup-img-ph">
+          <img v-if="item.imageSrc" :src="item.imageSrc" :alt="item.name">
+          <div v-else class="lineup-img-ph">
             <div class="ph-icon">{{ item.icon || '◉' }}</div>
             <div class="ph-lbl">Photo Placeholder</div>
           </div>

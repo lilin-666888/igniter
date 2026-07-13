@@ -2,6 +2,7 @@ import {
   injectLineupIntoPage,
   rowToLineupItemAdmin,
   rowToProductPage,
+  sanitizeProductPageSections,
   type ProductLineupItemRow,
   type ProductPageRow,
 } from './product-page'
@@ -13,26 +14,24 @@ export async function fetchProductPageWithLineup(
 ) {
   let page = rowToProductPage(row)
 
-  if (row.page_type !== 'category') {
-    return page
+  if (row.page_type === 'category') {
+    let query = supabase
+      .from('product_lineup_items')
+      .select('*')
+      .eq('page_id', row.id)
+      .order('sort_order')
+
+    if (options?.publishedOnly) {
+      query = query.eq('published', true)
+    }
+
+    const { data: lineupRows, error } = await query
+
+    if (error) throw createError({ statusCode: 500, message: error.message })
+    page = injectLineupIntoPage(page, (lineupRows ?? []) as ProductLineupItemRow[])
   }
 
-  let query = supabase
-    .from('product_lineup_items')
-    .select('*')
-    .eq('page_id', row.id)
-    .order('sort_order')
-
-  if (options?.publishedOnly) {
-    query = query.eq('published', true)
-  }
-
-  const { data: lineupRows, error } = await query
-
-  if (error) throw createError({ statusCode: 500, message: error.message })
-  if (!lineupRows?.length) return page
-
-  return injectLineupIntoPage(page, lineupRows as ProductLineupItemRow[])
+  return sanitizeProductPageSections(page)
 }
 
 export async function fetchLineupItemsForAdmin(

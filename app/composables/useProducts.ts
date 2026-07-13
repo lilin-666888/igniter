@@ -98,16 +98,14 @@ export function useProductList(options: {
   }
 }
 
-export function useProductPage(slug: MaybeRefOrGetter<string>) {
+export async function useProductPage(slug: MaybeRefOrGetter<string>) {
   const slugRef = computed(() => toValue(slug))
-  const route = useRoute()
 
-  const { data, error, refresh, status } = useFetch<{ page: ProductPage }>(
+  const { data, error, refresh, status } = await useFetch<{ page: ProductPage }>(
     () => `/api/cms/products/${slugRef.value}`,
     {
       key: () => `cms-product-${slugRef.value}`,
       ...cmsFetchOptions,
-      watch: [() => route.fullPath, slugRef],
     },
   )
 

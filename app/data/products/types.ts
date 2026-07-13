@@ -24,6 +24,7 @@ export type LineupItem = {
   materialTo?: string
   linkTo?: string
   linkLabel?: string
+  imageSrc?: string
   flagship?: boolean
   badge?: string
 }
@@ -62,6 +63,7 @@ export type SpecCard = {
   imageIcon?: string
   imageLabel?: string
   imageSrc?: string
+  imageSrcs?: string[]
   rows: SpecRow[]
   foot: string
 }

@@ -13,7 +13,8 @@
     "db:bundle": "npm run db:generate-seed && cat supabase/schema.sql supabase/seed.sql > supabase/full-setup.sql",
     "db:seed": "node --env-file=.env --import tsx scripts/seed-database.ts",
     "db:seed-blog": "node --env-file=.env scripts/seed-blog-posts.mjs",
-    "db:seed-products": "node --env-file=.env --import tsx scripts/seed-product-pages.ts"
+    "db:seed-products": "node --env-file=.env --import tsx scripts/seed-product-pages.ts",
+    "db:sync-spec-models": "node --env-file=.env --import tsx scripts/sync-spec-models-from-newimage.ts"
   },
   "dependencies": {
     "@ant-design-vue/nuxt": "^1.4.6",

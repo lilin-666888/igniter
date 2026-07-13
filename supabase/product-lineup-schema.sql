@@ -13,6 +13,7 @@ create table if not exists public.product_lineup_items (
   link_path text,
   link_page_id uuid references public.product_pages(id) on delete set null,
   link_label text not null default 'View Details →',
+  image_src text,
   flagship boolean not null default false,
   badge text,
   sort_order integer not null default 0,

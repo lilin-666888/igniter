@@ -75,6 +75,7 @@ async function loadLineup() {
     linkPath: item.linkPath ?? '',
     linkPageId: item.linkPageId,
     linkLabel: item.linkLabel,
+    imageSrc: item.imageSrc ?? '',
     flagship: item.flagship,
     badge: item.badge ?? '',
     sortOrder: item.sortOrder,
@@ -127,6 +128,7 @@ async function loadPage() {
       linkPath: item.linkPath ?? '',
       linkPageId: item.linkPageId,
       linkLabel: item.linkLabel,
+      imageSrc: item.imageSrc ?? '',
       flagship: item.flagship,
       badge: item.badge ?? '',
       sortOrder: item.sortOrder,
@@ -400,10 +402,10 @@ async function save() {
               {{
                 form.page_type === 'category'
                   ? 'Benefits、FAQ、应用场景等模块。产品列表请在「产品列表」Tab 管理。'
-                  : 'Spec Grid、FAQ、Downloads 等详情页模块。'
+                  : '产品规格（Spec Grid）支持表格编辑与图片上传；FAQ、Downloads 等模块仍用 JSON 编辑。'
               }}
             </a-typography-paragraph>
-            <AdminJsonEditor v-model="form.sections" />
+            <AdminSectionsEditor v-model="form.sections" />
           </a-tab-pane>
         </a-tabs>
 

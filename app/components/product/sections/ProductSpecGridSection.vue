@@ -1,23 +1,25 @@
 <script setup lang="ts">
-import type { SpecCard, SpecGridGroup } from '~/data/products/types'
+import type { SpecCard, SpecGridGroup } from "~/data/products/types";
+import SpecCardImageGallery from "~/components/product/SpecCardImageGallery.vue";
+import { getSpecCardImages } from "~/utils/spec-card-images";
 
 const props = defineProps<{
-  num: string
-  headingHtml: string
-  lead?: string
-  columns?: 2 | 3
-  items?: SpecCard[]
-  groups?: SpecGridGroup[]
-  footnote?: string
-}>()
+  num: string;
+  headingHtml: string;
+  lead?: string;
+  columns?: 2 | 3;
+  items?: SpecCard[];
+  groups?: SpecGridGroup[];
+  footnote?: string;
+}>();
 
 const gridClass = computed(() => {
-  if (props.columns === 2) return 'b-grid b-grid--cols-2'
-  return 'b-grid'
-})
+  if (props.columns === 2) return "b-grid b-grid--cols-2";
+  return "b-grid";
+});
 
 function headClass(card: SpecCard) {
-  return card.headGradient ? 'b-head b-head--gradient' : 'b-head'
+  return card.headGradient ? "b-head b-head--gradient" : "b-head";
 }
 </script>
 
@@ -36,7 +38,9 @@ function headClass(card: SpecCard) {
           >
             {{ group.label }}
           </div>
-          <span v-if="group.note" class="spec-group-note">{{ group.note }}</span>
+          <span v-if="group.note" class="spec-group-note">{{
+            group.note
+          }}</span>
         </div>
         <div :class="gridClass">
           <div
@@ -51,17 +55,19 @@ function headClass(card: SpecCard) {
               <div class="b-volt">{{ card.subtitle }}</div>
             </div>
             <div class="b-img-slot">
-              <img v-if="card.imageSrc" :src="card.imageSrc" :alt="card.model" />
-              <div v-else class="b-img-ph">
-                <div class="bph-icon">{{ card.imageIcon || '◉' }}</div>
-                <div class="bph-lbl">{{ card.imageLabel || 'Photo' }}</div>
-              </div>
+              <SpecCardImageGallery
+                :images="getSpecCardImages(card)"
+                :alt="card.model"
+                :image-icon="card.imageIcon"
+                :image-label="card.imageLabel"
+              />
             </div>
             <div class="b-body">
               <div v-for="row in card.rows" :key="row.k" class="b-row">
                 <span class="b-k">{{ row.k }}</span>
                 <span class="b-v" :class="{ hot: row.hot }"
-                  >{{ row.v }}<small v-if="row.unit">{{ row.unit }}</small></span
+                  >{{ row.v
+                  }}<small v-if="row.unit">{{ row.unit }}</small></span
                 >
               </div>
             </div>
@@ -84,11 +90,12 @@ function headClass(card: SpecCard) {
           <div class="b-volt">{{ card.subtitle }}</div>
         </div>
         <div class="b-img-slot">
-          <img v-if="card.imageSrc" :src="card.imageSrc" :alt="card.model" />
-          <div v-else class="b-img-ph">
-            <div class="bph-icon">{{ card.imageIcon || '◉' }}</div>
-            <div class="bph-lbl">{{ card.imageLabel || 'Photo' }}</div>
-          </div>
+          <SpecCardImageGallery
+            :images="getSpecCardImages(card)"
+            :alt="card.model"
+            :image-icon="card.imageIcon"
+            :image-label="card.imageLabel"
+          />
         </div>
         <div class="b-body">
           <div v-for="row in card.rows" :key="row.k" class="b-row">

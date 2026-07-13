@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Modal, message } from 'ant-design-vue'
-import { PlusOutlined } from '@ant-design/icons-vue'
+import { PlusOutlined, UploadOutlined } from '@ant-design/icons-vue'
 
 export type LineupItemForm = {
   id?: string
@@ -13,6 +13,7 @@ export type LineupItemForm = {
   linkPath: string
   linkPageId?: string
   linkLabel: string
+  imageSrc: string
   flagship: boolean
   badge: string
   sortOrder: number
@@ -29,13 +30,15 @@ const emit = defineEmits<{
   refresh: []
 }>()
 
-const { adminFetch } = useAdminApi()
+const { adminFetch, uploadImage } = useAdminApi()
 const saving = ref(false)
+const uploading = ref(false)
 const modalOpen = ref(false)
 const editing = ref<LineupItemForm | null>(null)
 
 const columns = [
   { title: '产品名称', dataIndex: 'name', key: 'name' },
+  { title: '图片', key: 'image', width: 72 },
   { title: '跳转', key: 'link', ellipsis: true },
   { title: '排序', dataIndex: 'sortOrder', key: 'sortOrder', width: 72 },
   { title: '状态', key: 'published', width: 88 },
@@ -52,6 +55,7 @@ function openCreate() {
     materialPath: '',
     linkPath: '',
     linkLabel: 'View Details →',
+    imageSrc: '',
     flagship: false,
     badge: '',
     sortOrder: props.items.length,
@@ -93,6 +97,7 @@ async function saveItem() {
       link_path: editing.value.linkPath || null,
       link_page_id: editing.value.linkPageId || null,
       link_label: editing.value.linkLabel,
+      image_src: editing.value.imageSrc || null,
       flagship: editing.value.flagship,
       badge: editing.value.badge || null,
       sort_order: editing.value.sortOrder,
@@ -144,6 +149,32 @@ const chipsInput = computed({
     editing.value.chips = val.split(',').map(s => s.trim()).filter(Boolean)
   },
 })
+
+async function handleUpload(options: {
+  file: File | Blob | string
+  onSuccess?: (body: unknown) => void
+  onError?: (err: Error) => void
+}) {
+  const file = options.file
+  if (!(file instanceof File)) return
+  uploading.value = true
+  try {
+    const { path } = await uploadImage(file)
+    if (editing.value) editing.value.imageSrc = path
+    options.onSuccess?.({ path })
+    message.success('图片已上传')
+  } catch (e: unknown) {
+    const err = e instanceof Error ? e : new Error('上传失败')
+    options.onError?.(err)
+    message.error(err.message)
+  } finally {
+    uploading.value = false
+  }
+}
+
+function clearImage() {
+  if (editing.value) editing.value.imageSrc = ''
+}
 </script>
 
 <template>
@@ -165,7 +196,16 @@ const chipsInput = computed({
       size="small"
     >
       <template #bodyCell="{ column, record }">
-        <template v-if="column.key === 'link'">
+        <template v-if="column.key === 'image'">
+          <img
+            v-if="record.imageSrc"
+            :src="record.imageSrc"
+            alt=""
+            class="lineup-thumb"
+          >
+          <span v-else class="lineup-thumb-placeholder">{{ record.icon || '—' }}</span>
+        </template>
+        <template v-else-if="column.key === 'link'">
           <a-typography-text code>{{ record.linkPath || '—' }}</a-typography-text>
         </template>
         <template v-else-if="column.key === 'published'">
@@ -213,6 +253,30 @@ const chipsInput = computed({
         </a-row>
         <a-form-item label="描述">
           <a-textarea v-model:value="editing.description" :rows="3" />
+        </a-form-item>
+        <a-form-item label="列表图片（单张，显示在前台产品卡片）">
+          <a-space align="start" wrap>
+            <a-upload
+              :show-upload-list="false"
+              accept="image/*"
+              :custom-request="handleUpload"
+            >
+              <a-button :loading="uploading">
+                <template #icon><UploadOutlined /></template>
+                上传图片
+              </a-button>
+            </a-upload>
+            <a-button v-if="editing.imageSrc" @click="clearImage">
+              清除图片
+            </a-button>
+          </a-space>
+          <div v-if="editing.imageSrc" class="lineup-image-preview">
+            <img :src="editing.imageSrc" alt="预览">
+            <a-typography-text code>{{ editing.imageSrc }}</a-typography-text>
+          </div>
+          <a-typography-text v-else type="secondary" style="display: block; margin-top: 8px">
+            未上传时前台显示占位图标
+          </a-typography-text>
         </a-form-item>
         <a-form-item label="标签（逗号分隔）">
           <a-input v-model:value="chipsInput" placeholder="Cycle life 100K+, Heat-up 3 s" />
@@ -279,3 +343,39 @@ const chipsInput = computed({
     </a-modal>
   </div>
 </template>
+
+<style scoped>
+.lineup-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #f0f0f0;
+}
+
+.lineup-thumb-placeholder {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.lineup-image-preview {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lineup-image-preview img {
+  max-width: 240px;
+  max-height: 140px;
+  object-fit: contain;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+</style>
