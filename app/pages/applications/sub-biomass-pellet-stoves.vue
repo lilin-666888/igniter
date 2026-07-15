@@ -473,8 +473,8 @@ useHead({
               causing nuisance trips or no-fire conditions.
             </div>
             <div class="fail-solution">
-              Si₃N₄ fix → Lower moisture absorption than alumina. BLK
-              insulation resistance holds ≥100 MΩ @ 500V DC down to −40°C.
+              Si₃N₄ fix → Lower moisture absorption than alumina. BLK insulation
+              resistance holds ≥100 MΩ @ 500V DC down to −40°C.
             </div>
           </div>
         </div>
@@ -543,9 +543,8 @@ useHead({
             <div class="faq-q">Is there a MOQ for samples vs production?</div>
             <div class="faq-a">
               No MOQ for stock-SKU samples — you can order a single unit.
-              Production MOQ for standard BLK SKUs is 500 units. Custom
-              voltage or mounting configurations have a 5,000-unit production
-              MOQ.
+              Production MOQ for standard BLK SKUs is 500 units. Custom voltage
+              or mounting configurations have a 5,000-unit production MOQ.
             </div>
           </div>
         </div>
@@ -565,8 +564,8 @@ useHead({
           </p>
           <ul class="quote-why">
             <li>
-              <b>Free samples, 48-hour dispatch</b> on BLK stock SKUs — no
-              MOQ, credited to first order.
+              <b>Free samples, 48-hour dispatch</b> on BLK stock SKUs — no MOQ,
+              credited to first order.
             </li>
             <li>
               <b>Drop-in compatibility check</b> — send your current part
@@ -630,7 +629,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

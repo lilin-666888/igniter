@@ -159,45 +159,6 @@ export const ceramicStructural: ProductPage = {
       ],
     },
     {
-      type: 'anchor-specs',
-      id: 'cutting-blade-specs',
-      num: '01b · Cutting Blade Specifications',
-      headingHtml:
-        'Si₃N₄ high-speed cutting blades — <span class="accent">reference dimensions</span>.',
-      lead: 'Ultra-thin silicon nitride ceramic blades for lithium battery film, cigarette tin foil, and other precision thin-material cutting. Dimensions below are reference values — actual parameters are adjusted per application.',
-      items: [
-        {
-          title: 'Applications',
-          body: 'High-speed cutting of lithium battery films, cigarette tin foil, and other thin materials. Suitable for micron-level film cutting and precision thin-film applications.',
-        },
-        {
-          title: 'Performance',
-          body: 'Fast cutting speed, clean cutting without damaging the material, high-temperature resistance, long service life, high hardness, wear resistance, good chemical stability, and low friction coefficient.',
-        },
-      ],
-      table: {
-        headers: ['Parameter', 'Typical Value', 'Notes'],
-        rows: [
-          [
-            'Material',
-            'Silicon Nitride (Si₃N₄)',
-            'Ultra-thin ceramic construction',
-          ],
-          ['Thickness', '3.9 mm', 'Reference dimension'],
-          [
-            'Width × Length',
-            '16.9 × 80 mm',
-            'Also available: 17 × 92.5 mm',
-          ],
-          [
-            'Custom sizes',
-            'Per drawing',
-            'Ultra-thin variants available on request',
-          ],
-        ],
-      },
-    },
-    {
       type: 'benefits',
       num: '02 · Why Ceramitell for Structural Parts',
       headingHtml: 'What precision engineers <span class="accent">come to us for</span>.',
@@ -280,11 +241,12 @@ export const ceramicStructural: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your drawing, operating conditions, or part number.',
       items: [
         {
           q: 'Which ceramic material should I use for my shaft application?',
@@ -312,6 +274,5 @@ export const ceramicStructural: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

@@ -441,9 +441,7 @@ useHead({
         <h2>Questions from hydrogen appliance engineers.</h2>
         <div class="faq-grid">
           <div class="faq-item">
-            <div class="faq-q">
-              Is BLK compatible with 20% H₂ blended gas?
-            </div>
+            <div class="faq-q">Is BLK compatible with 20% H₂ blended gas?</div>
             <div class="faq-a">
               Compatibility testing with 20% H₂/80% CH₄ blend completed — no
               ignition performance degradation. Full H2Ready certification data
@@ -546,7 +544,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

@@ -32,7 +32,21 @@ function closeMobile() {
   mobileOpen.value = false;
 }
 
-watch(() => route.fullPath, closeMobile);
+/** Clear focus so :focus-within dropdowns close after SPA navigation */
+function blurNavFocus() {
+  if (!import.meta.client) return;
+  const active = document.activeElement;
+  if (active instanceof HTMLElement && active.closest("nav, .nav-mobile-drawer")) {
+    active.blur();
+  }
+}
+
+function onNavNavigate() {
+  closeMobile();
+  blurNavFocus();
+}
+
+watch(() => route.fullPath, onNavNavigate);
 
 function onEscape(event: KeyboardEvent) {
   if (event.key === "Escape") closeMobile();
@@ -122,7 +136,7 @@ onBeforeUnmount(() => {
             class="nav-dropdown"
             :class="{ 'nav-dropdown--flat': !hasGroupChildren(link) }"
           >
-            <div class="nav-dropdown-panel">
+            <div class="nav-dropdown-panel" @click="blurNavFocus">
               <div
                 v-if="hasGroupChildren(link)"
                 class="nav-mega nav-mega--columns"

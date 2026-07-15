@@ -176,11 +176,12 @@ export const ceramicHeaters: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your drawing, duty cycle, or part number.',
       items: [
         {
           q: 'Max operating temperature?',
@@ -208,6 +209,5 @@ export const ceramicHeaters: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

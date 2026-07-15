@@ -142,11 +142,12 @@ export const ceramicPowder: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your PSD target, chemistry, or batch requirements.',
       items: [
         {
           q: 'Phase for Si₃N₄ powder?',
@@ -174,6 +175,5 @@ export const ceramicPowder: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

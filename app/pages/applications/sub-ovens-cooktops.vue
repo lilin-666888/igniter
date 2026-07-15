@@ -490,9 +490,7 @@ useHead({
         </div>
         <div class="quote-form-card">
           <div class="qquote-tag">Free Samples · Reply in 24h</div>
-          <div class="qquote-title">
-            Request BLK cooking appliance samples
-          </div>
+          <div class="qquote-title">Request BLK cooking appliance samples</div>
           <div class="qquote-note">
             Include your appliance model or current igniter part number.
           </div>
@@ -531,7 +529,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

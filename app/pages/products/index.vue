@@ -171,9 +171,9 @@ useHead({
             </div>
             <p class="pc-desc">
               Hot surface igniters for biomass pellet stoves, BBQ grills, gas
-              furnaces, and industrial boilers. BLK series Si₃N₄ igniters
-              reach service temperature in 3 seconds, rated for 100,000+ duty
-              cycles. UL/CE certified.
+              furnaces, and industrial boilers. BLK series Si₃N₄ igniters reach
+              service temperature in 3 seconds, rated for 100,000+ duty cycles.
+              UL/CE certified.
             </p>
             <div class="pc-skus">
               <b>Sub-types →</b><br />
@@ -627,7 +627,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

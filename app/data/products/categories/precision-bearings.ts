@@ -163,11 +163,12 @@ export const precisionBearings: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your bore/OD, RPM, or accuracy class.',
       items: [
         {
           q: 'What precision class do I need?',
@@ -195,6 +196,5 @@ export const precisionBearings: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

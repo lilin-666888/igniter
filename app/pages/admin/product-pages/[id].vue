@@ -2,6 +2,7 @@
 import { ArrowLeftOutlined, PlusOutlined } from '@ant-design/icons-vue'
 import type { ProductPage } from '~/data/products/types'
 import type { LineupItemForm } from '~/components/admin/AdminLineupEditor.vue'
+import { defaultProductSections } from '~/utils/default-product-sections'
 
 definePageMeta({ layout: 'admin', middleware: 'admin' })
 
@@ -23,10 +24,17 @@ const saving = ref(false)
 const message = ref('')
 const loading = ref(!isNew.value)
 
+const initialPageType =
+  route.query.type === 'sku'
+    ? 'sku'
+    : route.query.type === 'category'
+      ? 'category'
+      : 'category'
+
 const form = ref({
   category_id: '' as string,
   slug: '',
-  page_type: 'category' as 'category' | 'sku',
+  page_type: (route.params.id === 'new' ? initialPageType : 'category') as 'category' | 'sku',
   parent_slug: '',
   parent_label: '',
   sort_order: 0,
@@ -43,13 +51,25 @@ const form = ref({
   breadcrumb: [] as { label: string; to?: string }[],
   hero_ctas: null as ProductPage['heroCtas'] | null,
   spotlight: null as ProductPage['spotlight'] | null,
-  sections: [] as ProductPage['sections'],
+  sections: (
+    route.params.id === 'new' ? defaultProductSections(initialPageType) : []
+  ) as ProductPage['sections'],
 })
 
-if (route.params.id === 'new') {
-  if (route.query.type === 'sku') form.value.page_type = 'sku'
-  else if (route.query.type === 'category') form.value.page_type = 'category'
+function ensureSections() {
+  if (form.value.sections.length === 0) {
+    form.value.sections = defaultProductSections(form.value.page_type)
+  }
 }
+
+watch(
+  () => form.value.page_type,
+  (pageType, prev) => {
+    if (!isNew.value || pageType === prev) return
+    form.value.sections = defaultProductSections(pageType)
+    form.value.hero_side = pageType === 'sku' ? 'spotlight' : 'quote'
+  },
+)
 
 async function loadCategories() {
   const res = await adminFetch<Array<{ id: string; slug: string; label: string }>>('/api/admin/product-menu')
@@ -97,6 +117,7 @@ async function loadPage() {
     }>(`/api/admin/product-pages/${pageId.value}`)
 
     const p = data.page
+    const hadEmptySections = !p.sections.length
     form.value = {
       category_id: data.category_id ?? '',
       slug: p.slug,
@@ -115,7 +136,13 @@ async function loadPage() {
       breadcrumb: [...p.breadcrumb],
       hero_ctas: p.heroCtas ?? null,
       spotlight: p.spotlight ?? null,
-      sections: [...p.sections],
+      sections:
+        p.sections.length > 0
+          ? [...p.sections]
+          : defaultProductSections(p.pageType),
+    }
+    if (hadEmptySections) {
+      message.value = '已按标准模板填充页面模块，请点击保存写入数据库后再编辑型号'
     }
     lineupItems.value = (data.lineupItems ?? []).map(item => ({
       id: item.id,
@@ -163,6 +190,7 @@ function removeHeroStat(index: number) {
 }
 
 function buildPayload() {
+  ensureSections()
   return {
     category_id: form.value.category_id || null,
     slug: form.value.slug,
@@ -399,11 +427,7 @@ async function save() {
 
           <a-tab-pane key="sections" tab="页面模块">
             <a-typography-paragraph type="secondary" style="margin-bottom: 12px">
-              {{
-                form.page_type === 'category'
-                  ? 'Benefits、FAQ、应用场景等模块。产品列表请在「产品列表」Tab 管理。'
-                  : '产品规格（Spec Grid）支持表格编辑与图片上传；FAQ、Downloads 等模块仍用 JSON 编辑。'
-              }}
+              页面模块按标准模板预填。三级页在「产品规格（Spec Grid）」中添加型号；二级页产品卡片请在「产品列表」Tab 管理。其余模块可用 JSON 编辑。
             </a-typography-paragraph>
             <AdminSectionsEditor v-model="form.sections" />
           </a-tab-pane>

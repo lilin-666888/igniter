@@ -529,7 +529,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

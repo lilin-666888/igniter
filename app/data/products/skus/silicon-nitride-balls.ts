@@ -137,6 +137,7 @@ export const siliconNitrideBalls: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'cert-grid',
       num: '03 · Certifications & Compliance',
@@ -189,6 +190,7 @@ export const siliconNitrideBalls: ProductPage = {
       type: 'faq',
       num: '05 · Engineering FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
+      lead: 'Direct answers from our application team. Need more? Email us with your part number, drawing, or duty cycle.',
       softBg: true,
       items: [
         {
@@ -221,6 +223,7 @@ export const siliconNitrideBalls: ProductPage = {
       type: 'related',
       num: '06 · Related',
       headingHtml: 'Explore <span class="accent">further</span>.',
+      lead: 'See the parent category, dig into the Si₃N₄ material, or explore a related product line.',
       items: [
         {
           eyebrow: 'Product Category',

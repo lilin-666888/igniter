@@ -168,7 +168,9 @@ useHead({
     <section class="s" style="padding: 72px 0">
       <div class="wrap">
         <div class="sec-num">01 · The Application</div>
-        <h2>Why BBQ grill igniters <span class="accent">fail outdoors</span>.</h2>
+        <h2>
+          Why BBQ grill igniters <span class="accent">fail outdoors</span>.
+        </h2>
         <div class="depth-grid">
           <div>
             <div
@@ -199,16 +201,16 @@ useHead({
               "
             >
               A BBQ grill igniter has to survive moisture, UV, grease vapor,
-              cold starts, and mechanical vibration. This is a more
-              demanding outdoor environment than any residential gas furnace —
-              and most Al₂O₃ igniters are only rated for indoor duty.
+              cold starts, and mechanical vibration. This is a more demanding
+              outdoor environment than any residential gas furnace — and most
+              Al₂O₃ igniters are only rated for indoor duty.
             </p>
             <p
               style="font-size: 16px; color: var(--ink-soft); line-height: 1.65"
             >
-              The BLK sealed Si₃N₄ element is impervious to moisture ingress
-              and handles outdoor temperature extremes from −30°C to +60°C
-              without performance degradation.
+              The BLK sealed Si₃N₄ element is impervious to moisture ingress and
+              handles outdoor temperature extremes from −30°C to +60°C without
+              performance degradation.
             </p>
             <div class="tech-req-label" style="margin-top: 24px">
               Technical Requirements
@@ -448,8 +450,9 @@ useHead({
           <div class="faq-item">
             <div class="faq-q">What voltage for NA vs EU grills?</div>
             <div class="faq-a">
-              North America: 120V AC (BLK-HS5-120 S). Europe: 230V AC (BLK-HS5-220 S).
-              12V DC for battery-ignition portable grills (BLK-HS1-24 S).
+              North America: 120V AC (BLK-HS5-120 S). Europe: 230V AC
+              (BLK-HS5-220 S). 12V DC for battery-ignition portable grills
+              (BLK-HS1-24 S).
             </div>
           </div>
           <div class="faq-item">
@@ -550,7 +553,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

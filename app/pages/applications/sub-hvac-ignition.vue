@@ -450,9 +450,9 @@ useHead({
           <div class="faq-item">
             <div class="faq-q">What resistance value at ambient?</div>
             <div class="faq-a">
-              BLK-HS5-120 S: ~48Ω at 25°C. BLK-HS5-220 S: ~176Ω. Used by HVAC control
-              boards for pre-ignition resistance check. Custom resistance values
-              available.
+              BLK-HS5-120 S: ~48Ω at 25°C. BLK-HS5-220 S: ~176Ω. Used by HVAC
+              control boards for pre-ignition resistance check. Custom
+              resistance values available.
             </div>
           </div>
           <div class="faq-item">
@@ -531,7 +531,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

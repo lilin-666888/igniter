@@ -142,11 +142,12 @@ export const grindingMedia: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your mill type, feed size, or purity target.',
       items: [
         {
           q: 'Which media for battery cathode?',
@@ -174,6 +175,5 @@ export const grindingMedia: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

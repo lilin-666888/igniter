@@ -211,7 +211,9 @@ useHead({
               >
               <a href="/products/ceramic-igniters">Al₂O₃ Igniter</a>
             </div>
-            <a href="/applications/sub-biomass-pellet-stoves" class="rec-cta-sm">Full Application Page →</a>
+            <a href="/applications/sub-biomass-pellet-stoves" class="rec-cta-sm"
+              >Full Application Page →</a
+            >
           </div>
         </div>
       </div>
@@ -259,9 +261,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters-final"
-                >BLK Si₃N₄</a
-              >
+              <a href="/products/silicon-nitride-igniters-final">BLK Si₃N₄</a>
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -474,9 +474,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters-final"
-                >BLK Igniter</a
-              >
+              <a href="/products/silicon-nitride-igniters-final">BLK Igniter</a>
               <a href="/products/ceramic-heaters">Ceramic Heaters</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -523,9 +521,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters-final"
-                >BLK Igniter</a
-              >
+              <a href="/products/silicon-nitride-igniters-final">BLK Igniter</a>
               <a href="/products/ceramic-igniters">Universal Hot Surface</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Get a Quote →</a>
@@ -575,9 +571,7 @@ useHead({
           <div class="rec-row">
             <div class="rec-links">
               <span class="rl">Products →</span>
-              <a href="/products/silicon-nitride-igniters-final"
-                >BLK Si₃N₄</a
-              >
+              <a href="/products/silicon-nitride-igniters-final">BLK Si₃N₄</a>
               <a href="/products/ceramic-igniters">Custom to Drawing</a>
             </div>
             <a href="#quote" class="rec-cta-sm">Discuss Application →</a>
@@ -599,8 +593,7 @@ useHead({
           </p>
           <ul class="quote-why">
             <li>
-              <b>Free samples, 48-hour dispatch</b> on stock BLK SKUs — no
-              MOQ.
+              <b>Free samples, 48-hour dispatch</b> on stock BLK SKUs — no MOQ.
             </li>
             <li>
               <b>Drop-in replacement:</b> send a part number, we match voltage,
@@ -669,7 +662,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

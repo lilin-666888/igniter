@@ -152,8 +152,8 @@ useHead({
           <div class="mkt-item">
             <div class="mkt-num">10yr+</div>
             <div class="mkt-label">
-              Typical BLK field life in standard gas furnace duty — vs 3–7yr
-              for Al₂O₃
+              Typical BLK field life in standard gas furnace duty — vs 3–7yr for
+              Al₂O₃
             </div>
           </div>
           <div class="mkt-item">
@@ -203,8 +203,8 @@ useHead({
               "
             >
               Gas furnaces fire 5–15 times per day during heating season — a
-              controlled indoor environment with a predictable duty cycle. This is
-              the most established ceramic igniter application, with
+              controlled indoor environment with a predictable duty cycle. This
+              is the most established ceramic igniter application, with
               well-documented OEM replacement dimensions and a large
               aftermarket.
             </p>
@@ -536,7 +536,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

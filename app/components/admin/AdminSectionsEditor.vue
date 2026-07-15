@@ -45,19 +45,29 @@ function updateSection(index: number, value: ProductSection) {
 function updateSpecGrid(index: number, value: SpecGridSection) {
   updateSection(index, value)
 }
+
+function removeSection(index: number) {
+  const next = [...sections.value]
+  next.splice(index, 1)
+  sections.value = next
+}
 </script>
 
 <template>
   <div class="sections-editor">
-    <a-empty v-if="sections.length === 0" description="暂无页面模块" />
+    <a-empty v-if="sections.length === 0" description="暂无页面模块（保存时会按标准模板自动填充）" />
 
     <a-card
       v-for="(section, index) in sections"
-      :key="index"
+      :key="`${section.type}-${index}`"
       :title="sectionTitle(section, index)"
       size="small"
       style="margin-bottom: 16px"
     >
+      <template #extra>
+        <a-button type="link" danger size="small" @click="removeSection(index)">删除</a-button>
+      </template>
+
       <AdminSpecGridEditor
         v-if="section.type === 'spec-grid'"
         :model-value="section"

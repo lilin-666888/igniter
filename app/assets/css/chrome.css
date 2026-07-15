@@ -158,7 +158,7 @@ nav > .wrap {
 }
 
 .nav-item:has(.nav-mega--columns) .nav-dropdown {
-  left: -24px;
+  left: -180px;
 }
 
 .nav-item:hover .nav-dropdown,
@@ -178,7 +178,7 @@ nav > .wrap {
 
 .nav-dropdown-panel:has(.nav-mega--columns) {
   max-width: calc(100vw - 48px);
-  min-width: min(660px, calc(100vw - 48px));
+  min-width: min(860px, calc(100vw - 48px));
 }
 
 .nav-dropdown--flat {
@@ -188,7 +188,7 @@ nav > .wrap {
 
 .nav-mega--columns {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 1px;
   background: var(--line);
   align-items: stretch;

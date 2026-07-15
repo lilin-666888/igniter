@@ -61,8 +61,8 @@ export const ceramicBalls: ProductPage = {
       ],
     },
     {
-      type: 'grade-guide',
-      num: '02 · Grade Guide',
+      type: 'benefits',
+      num: '02 · Why Buy From Ceramitell',
       headingHtml: 'Choosing the right <span class="accent">grade</span>.',
       lead: 'ISO 3290 grade number = max allowable deviation in micrometres. Lower grade = tighter tolerance = higher precision. Choose based on your bearing accuracy class (P0–P5) and operating speed.',
       softBg: true,
@@ -135,11 +135,12 @@ export const ceramicBalls: ProductPage = {
         },
       ],
     },
+    { type: 'casecta' },
     {
       type: 'faq',
       num: '04 · FAQ',
       headingHtml: 'The questions <span class="accent">we get most</span>.',
-      softBg: true,
+      lead: 'Direct answers from our application team. Need more? Email us with your bearing model, grade, or material preference.',
       items: [
         {
           q: 'Grade for my bearing?',
@@ -167,6 +168,5 @@ export const ceramicBalls: ProductPage = {
         },
       ],
     },
-    { type: 'casecta' },
   ],
 }

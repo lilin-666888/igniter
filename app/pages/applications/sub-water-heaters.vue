@@ -447,10 +447,10 @@ useHead({
               Can CN-300 be used as a water heater igniter replacement?
             </div>
             <div class="faq-a">
-              Yes. CN-300 is available as a replacement gas water heater ignition
-              for compatible tankless or tank-type platforms. Send us your part
-              number, voltage, and mounting size. Also, please include the
-              connector type and lead wire.
+              Yes. CN-300 is available as a replacement gas water heater
+              ignition for compatible tankless or tank-type platforms. Send us
+              your part number, voltage, and mounting size. Also, please include
+              the connector type and lead wire.
             </div>
           </div>
         </div>
@@ -525,7 +525,7 @@ useHead({
   </div>
 </template>
 
-<style>
+<style scoped>
 :root {
   --navy: #0a2647;
   --navy-2: #103a6b;

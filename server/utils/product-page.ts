@@ -1,4 +1,5 @@
 import type { LineupItem, ProductPage, ProductPageType } from '~/data/products/types'
+import { defaultProductSections } from '~/utils/default-product-sections'
 
 export type ProductLineupItemRow = {
   id: string
@@ -222,11 +223,16 @@ export function rowToListItem(row: ProductPageRow): ProductPageListItem {
 }
 
 export function bodyToProductPageRow(body: Record<string, unknown>) {
-  const sections = Array.isArray(body.sections) ? body.sections : []
+  const pageType = body.page_type as ProductPageType
+  const rawSections = Array.isArray(body.sections) ? body.sections : []
+  const sections =
+    rawSections.length > 0
+      ? (rawSections as ProductPage['sections'])
+      : defaultProductSections(pageType)
   return {
     category_id: (body.category_id as string | null) ?? null,
     slug: body.slug as string,
-    page_type: body.page_type as ProductPageType,
+    page_type: pageType,
     parent_slug: (body.parent_slug as string | null) ?? null,
     parent_label: (body.parent_label as string | null) ?? null,
     seo: body.seo ?? {},
@@ -235,7 +241,7 @@ export function bodyToProductPageRow(body: Record<string, unknown>) {
     hero_side: (body.hero_side as ProductPage['heroSide']) ?? 'quote',
     hero_ctas: body.hero_ctas ?? null,
     spotlight: body.spotlight ?? null,
-    sections: sectionsWithoutLineup(sections as ProductPage['sections']),
+    sections: sectionsWithoutLineup(sections),
     sort_order: Number(body.sort_order ?? 0),
     published: body.published !== false,
   }

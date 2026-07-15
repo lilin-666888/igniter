@@ -1,27 +1,31 @@
 <script setup lang="ts">
-const route = useRoute()
-const slug = computed(() => route.params.slug as string)
-const { post, status, error } = useBlogPost(slug)
-const { getRelatedPosts } = useBlogList()
+const route = useRoute();
+const slug = computed(() => route.params.slug as string);
+const { post, status, error } = useBlogPost(slug);
+const { getRelatedPosts } = useBlogList();
 
-const relatedPosts = computed(() => getRelatedPosts(post.value?.relatedSlugs ?? []))
+const relatedPosts = computed(() =>
+  getRelatedPosts(post.value?.relatedSlugs ?? []),
+);
 
 watchEffect(() => {
-  if (error.value || (status.value === 'success' && !post.value)) {
-    throw createError({ statusCode: 404, statusMessage: 'Article not found' })
+  if (error.value || (status.value === "success" && !post.value)) {
+    throw createError({ statusCode: 404, statusMessage: "Article not found" });
   }
-})
+});
 
 useHead({
-  title: () => `${post.value?.title ?? 'Blog'} | Ceramitell`,
-  meta: [{
-    name: 'description',
-    content: () => post.value?.excerpt ?? '',
-  }],
-})
+  title: () => `${post.value?.title ?? "Blog"} | Ceramitell`,
+  meta: [
+    {
+      name: "description",
+      content: () => post.value?.excerpt ?? "",
+    },
+  ],
+});
 
 function postLink(postSlug: string) {
-  return `/blogDetail/${postSlug}`
+  return `/blogDetail/${postSlug}`;
 }
 </script>
 
@@ -67,18 +71,26 @@ function postLink(postSlug: string) {
             <div class="icon">{{ post.heroIcon }}</div>
             <div class="lbl">{{ post.heroLabel }}</div>
           </div>
-          <div v-if="post.heroCaption" class="caption">{{ post.heroCaption }}</div>
+          <div v-if="post.heroCaption" class="caption">
+            {{ post.heroCaption }}
+          </div>
         </div>
       </div>
     </section>
 
     <div class="article-layout">
       <article class="article-body">
-        <div v-if="post?.contentHtml" class="article-html" v-html="post.contentHtml" />
+        <div
+          v-if="post?.contentHtml"
+          class="article-html"
+          v-html="post.contentHtml"
+        />
         <template v-else-if="post">
           <p>{{ post.excerpt }}</p>
           <div class="article-footnote">
-            Full article content coming soon. <NuxtLink to="/contact">Contact our engineering team</NuxtLink> for technical guidance on this topic.
+            Full article content coming soon.
+            <NuxtLink to="/contact">Contact our engineering team</NuxtLink> for
+            technical guidance on this topic.
           </div>
         </template>
       </article>
@@ -89,7 +101,8 @@ function postLink(postSlug: string) {
           <ul class="toc-list">
             <li v-for="(item, index) in post.toc" :key="item.id">
               <a :href="`#${item.id}`" :class="{ active: index === 0 }">
-                <span class="toc-num">{{ item.num }}</span>{{ item.label }}
+                <span class="toc-num">{{ item.num }}</span
+                >{{ item.label }}
               </a>
             </li>
           </ul>
@@ -98,7 +111,10 @@ function postLink(postSlug: string) {
         <div class="sidebar-cta">
           <div class="sidebar-cta-eyebrow">Ready to switch?</div>
           <h4>Request BLK samples for your application</h4>
-          <p>Free samples dispatched within 48 hours. Include your current igniter part number for fitment verification.</p>
+          <p>
+            Free samples dispatched within 48 hours. Include your current
+            igniter part number for fitment verification.
+          </p>
           <NuxtLink to="/contact">Request Free Samples →</NuxtLink>
         </div>
 
@@ -107,7 +123,9 @@ function postLink(postSlug: string) {
           <div class="sp-img">{{ post.productLink.icon }}</div>
           <div class="sp-name">{{ post.productLink.name }}</div>
           <div class="sp-desc">{{ post.productLink.desc }}</div>
-          <NuxtLink :to="post.productLink.to" class="sp-link">View full specifications →</NuxtLink>
+          <NuxtLink :to="post.productLink.to" class="sp-link"
+            >View full specifications →</NuxtLink
+          >
         </div>
       </aside>
     </div>
@@ -138,19 +156,32 @@ function postLink(postSlug: string) {
     <section class="article-cta">
       <div class="wrap">
         <h2>Ready to <span>test it yourself</span>?</h2>
-        <p>Free BLK samples dispatched within 48 hours. Tell us your current igniter part number and we confirm fit before shipping.</p>
+        <p>
+          Free BLK samples dispatched within 48 hours. Tell us your current
+          igniter part number and we confirm fit before shipping.
+        </p>
         <div class="cta-row">
-          <NuxtLink to="/contact" class="btn-primary">Request Free Samples →</NuxtLink>
-          <NuxtLink to="/products/silicon-nitride-igniters-final" class="btn-ghost-light">View BLK Full Specs</NuxtLink>
+          <NuxtLink to="/contact" class="btn-primary"
+            >Request Free Samples →</NuxtLink
+          >
+          <NuxtLink
+            to="/products/silicon-nitride-igniters-final"
+            class="btn-ghost-light"
+            >View BLK Full Specs</NuxtLink
+          >
         </div>
       </div>
     </section>
   </div>
 </template>
 
-<style>
-.blog-detail-page .wrap { max-width: 1260px; }
-.blog-detail-page .hero-wrap { max-width: 1180px; }
+<style scoped>
+.blog-detail-page .wrap {
+  max-width: 1260px;
+}
+.blog-detail-page .hero-wrap {
+  max-width: 1180px;
+}
 
 .breadcrumb {
   background: var(--bg-soft);
@@ -162,10 +193,21 @@ function postLink(postSlug: string) {
   color: var(--ink-faint);
 }
 
-.breadcrumb .wrap { display: flex; gap: 8px; align-items: center; padding: 0 40px; }
-.breadcrumb a { color: var(--ink-faint); }
-.breadcrumb a:hover { color: var(--orange); }
-.breadcrumb .sep { color: var(--line); }
+.breadcrumb .wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 40px;
+}
+.breadcrumb a {
+  color: var(--ink-faint);
+}
+.breadcrumb a:hover {
+  color: var(--orange);
+}
+.breadcrumb .sep {
+  color: var(--line);
+}
 
 .article-hero {
   background: var(--navy);
@@ -175,7 +217,7 @@ function postLink(postSlug: string) {
 }
 
 .article-hero::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -191,10 +233,17 @@ function postLink(postSlug: string) {
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--orange), var(--gold) 60%, var(--orange));
+  background: linear-gradient(
+    90deg,
+    var(--orange),
+    var(--gold) 60%,
+    var(--orange)
+  );
 }
 
-.article-hero .wrap { position: relative; }
+.article-hero .wrap {
+  position: relative;
+}
 
 .article-hero-meta {
   display: flex;
@@ -299,7 +348,9 @@ function postLink(postSlug: string) {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.article-hero-img { margin-top: 40px; }
+.article-hero-img {
+  margin-top: 40px;
+}
 
 .article-hero-img .img-ph {
   width: 100%;
@@ -312,7 +363,10 @@ function postLink(postSlug: string) {
   gap: 14px;
 }
 
-.article-hero-img .icon { font-size: 64px; opacity: 0.35; }
+.article-hero-img .icon {
+  font-size: 64px;
+  opacity: 0.35;
+}
 
 .article-hero-img .lbl {
   font-family: var(--mono);
@@ -344,7 +398,9 @@ function postLink(postSlug: string) {
   margin: 0 auto;
 }
 
-.article-body { min-width: 0; }
+.article-body {
+  min-width: 0;
+}
 
 .article-body p {
   font-size: 16.5px;
@@ -353,7 +409,10 @@ function postLink(postSlug: string) {
   margin-bottom: 24px;
 }
 
-.article-body p strong { color: var(--ink); font-weight: 700; }
+.article-body p strong {
+  color: var(--ink);
+  font-weight: 700;
+}
 
 .article-body h2 {
   font-family: var(--cond);
@@ -393,9 +452,13 @@ function postLink(postSlug: string) {
   margin-bottom: 8px;
 }
 
-.article-body li strong { color: var(--ink); }
+.article-body li strong {
+  color: var(--ink);
+}
 
-.article-img { margin: 36px 0; }
+.article-img {
+  margin: 36px 0;
+}
 
 .article-img .img-ph {
   background: linear-gradient(145deg, #e8edf5, #d4dce8);
@@ -407,7 +470,10 @@ function postLink(postSlug: string) {
   padding: 48px 24px;
 }
 
-.article-img .icon { font-size: 48px; opacity: 0.35; }
+.article-img .icon {
+  font-size: 48px;
+  opacity: 0.35;
+}
 
 .article-img .lbl {
   font-family: var(--mono);
@@ -455,7 +521,10 @@ function postLink(postSlug: string) {
   margin-top: 12px;
 }
 
-.data-table { margin: 36px 0; overflow-x: auto; }
+.data-table {
+  margin: 36px 0;
+  overflow-x: auto;
+}
 
 .data-table table {
   width: 100%;
@@ -481,9 +550,17 @@ function postLink(postSlug: string) {
   vertical-align: top;
 }
 
-.data-table tr:nth-child(even) td { background: var(--bg-soft); }
-.data-table td.highlight { font-weight: 700; color: var(--orange); }
-.data-table tr.winner td { background: rgba(242, 100, 25, 0.05); border-left: 3px solid var(--orange); }
+.data-table tr:nth-child(even) td {
+  background: var(--bg-soft);
+}
+.data-table td.highlight {
+  font-weight: 700;
+  color: var(--orange);
+}
+.data-table tr.winner td {
+  background: rgba(242, 100, 25, 0.05);
+  border-left: 3px solid var(--orange);
+}
 
 .table-note {
   font-family: var(--mono);
@@ -502,7 +579,7 @@ function postLink(postSlug: string) {
 }
 
 .takeaway::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -528,7 +605,9 @@ function postLink(postSlug: string) {
   margin-bottom: 0 !important;
 }
 
-.takeaway p strong { color: var(--gold-soft); }
+.takeaway p strong {
+  color: var(--gold-soft);
+}
 
 .article-footnote {
   font-size: 13px;
@@ -539,9 +618,15 @@ function postLink(postSlug: string) {
   margin-top: 48px;
 }
 
-.article-footnote a { color: var(--orange); font-weight: 600; }
+.article-footnote a {
+  color: var(--orange);
+  font-weight: 600;
+}
 
-.sidebar { position: sticky; top: 88px; }
+.sidebar {
+  position: sticky;
+  top: 88px;
+}
 
 .toc-card {
   background: var(--bg-soft);
@@ -560,7 +645,12 @@ function postLink(postSlug: string) {
   font-weight: 600;
 }
 
-.toc-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
 
 .toc-list a {
   font-size: 13.5px;
@@ -602,7 +692,7 @@ function postLink(postSlug: string) {
 }
 
 .sidebar-cta::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -648,7 +738,9 @@ function postLink(postSlug: string) {
   transition: background 0.15s;
 }
 
-.sidebar-cta a:hover { background: var(--orange-deep); }
+.sidebar-cta a:hover {
+  background: var(--orange-deep);
+}
 
 .sidebar-product {
   border: 1px solid var(--line);
@@ -697,7 +789,9 @@ function postLink(postSlug: string) {
   color: var(--orange);
 }
 
-.sp-link:hover { text-decoration: underline; }
+.sp-link:hover {
+  text-decoration: underline;
+}
 
 .related-section {
   background: var(--bg-soft);
@@ -705,7 +799,9 @@ function postLink(postSlug: string) {
   padding: 64px 0;
 }
 
-.related-section .wrap { max-width: 1180px; }
+.related-section .wrap {
+  max-width: 1180px;
+}
 
 .related-label {
   font-family: var(--mono);
@@ -724,7 +820,9 @@ function postLink(postSlug: string) {
   margin-bottom: 36px;
 }
 
-.related-section h2 span { color: var(--orange); }
+.related-section h2 span {
+  color: var(--orange);
+}
 
 .related-grid {
   display: grid;
@@ -736,7 +834,9 @@ function postLink(postSlug: string) {
   background: #fff;
   border: 1px solid var(--line);
   overflow: hidden;
-  transition: border-color 0.15s, transform 0.15s;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
   display: flex;
   flex-direction: column;
 }
@@ -812,7 +912,9 @@ function postLink(postSlug: string) {
   margin-bottom: 14px;
 }
 
-.article-cta h2 span { color: var(--gold); }
+.article-cta h2 span {
+  color: var(--gold);
+}
 
 .article-cta p {
   font-size: 17px;
@@ -839,7 +941,9 @@ function postLink(postSlug: string) {
   padding: 14px 32px;
 }
 
-.btn-primary:hover { background: var(--orange-deep); }
+.btn-primary:hover {
+  background: var(--orange-deep);
+}
 
 .btn-ghost-light {
   display: inline-block;
@@ -857,14 +961,27 @@ function postLink(postSlug: string) {
 }
 
 @media (max-width: 1024px) {
-  .article-layout { grid-template-columns: 1fr; }
-  .sidebar { position: static; }
-  .related-grid { grid-template-columns: 1fr 1fr; }
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: static;
+  }
+  .related-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
-  .article-hero h1 { font-size: 34px; }
-  .related-grid { grid-template-columns: 1fr; }
-  .cta-row { flex-direction: column; align-items: center; }
+  .article-hero h1 {
+    font-size: 34px;
+  }
+  .related-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 </style>

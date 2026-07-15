@@ -1,5 +1,6 @@
 import { fetchLineupItemsForAdmin } from '../../../utils/product-lineup'
 import { rowToProductPage, sectionsWithoutLineup, type ProductPageRow } from '../../../utils/product-page'
+import { defaultProductSections } from '~/utils/default-product-sections'
 
 export default defineEventHandler(async (event) => {
   const { supabase } = await requireAdmin(event)
@@ -17,6 +18,9 @@ export default defineEventHandler(async (event) => {
 
   const page = rowToProductPage(data as ProductPageRow)
   page.sections = sectionsWithoutLineup(page.sections)
+  if (page.sections.length === 0) {
+    page.sections = defaultProductSections(page.pageType)
+  }
 
   const lineupItems =
     data.page_type === 'category'
