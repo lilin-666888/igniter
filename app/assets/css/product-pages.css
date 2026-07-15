@@ -1199,6 +1199,27 @@ section.s h2 .accent {
   letter-spacing: 0.03em;
 }
 
+.spec-grid-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.spec-grid-pagination :deep(.ant-pagination-item-active) {
+  border-color: var(--navy);
+}
+
+.spec-grid-pagination :deep(.ant-pagination-item-active a) {
+  color: var(--navy);
+}
+
+.spec-grid-pagination :deep(.ant-pagination-item:hover),
+.spec-grid-pagination :deep(.ant-pagination-prev:hover .ant-pagination-item-link),
+.spec-grid-pagination :deep(.ant-pagination-next:hover .ant-pagination-item-link) {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
 /* Anchor specs */
 .anchor-spec-table {
   width: 100%;

@@ -1,3 +1,4 @@
+import { attachProductBreadcrumb } from './product-breadcrumb'
 import {
   injectLineupIntoPage,
   rowToLineupItemAdmin,
@@ -31,6 +32,7 @@ export async function fetchProductPageWithLineup(
     page = injectLineupIntoPage(page, (lineupRows ?? []) as ProductLineupItemRow[])
   }
 
+  page = await attachProductBreadcrumb(supabase, page, row.category_id)
   return sanitizeProductPageSections(page)
 }
 

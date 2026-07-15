@@ -245,9 +245,10 @@ nav > .wrap {
 
 .nav-mega-list--flat .nav-mega-link {
   padding: 14px 20px;
-  font-size: 14.5px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color: var(--navy);
+  line-height: 1.35;
 }
 
 .nav-mega-link:hover,
