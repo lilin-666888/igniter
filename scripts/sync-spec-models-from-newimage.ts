@@ -4,6 +4,8 @@
  * Folder → product page slug mapping (only updates spec-grid models/images):
  *   1.1 Silicon Nitride lgniters → silicon-nitride-igniters-final
  *   1.2 Hot Surface lgniters       → hot-surface-igniters
+ *   1.3 Alumina Ceramic Igniters   → alumina-ceramic-igniters
+ *   1.4 Silicon Carbide lgniters     → silicon-carbide-igniters
  *   1.6 Silicon Nitride Heaters    → silicon-nitride-heaters
  *
  * Run: npm run db:sync-spec-models
@@ -38,12 +40,14 @@ type Mapping = {
   folder: string
   slug: string
   mode: 'subdirs' | 'flat'
-  placeholder: 'igniter' | 'hot-surface' | 'heater'
+  placeholder: 'igniter' | 'hot-surface' | 'heater' | 'alumina' | 'silicon-carbide'
 }
 
 const MAPPINGS: Mapping[] = [
   { folder: '1.1 Silicon Nitride lgniters', slug: 'silicon-nitride-igniters-final', mode: 'subdirs', placeholder: 'igniter' },
   { folder: '1.2 Hot Surface lgniters', slug: 'hot-surface-igniters', mode: 'flat', placeholder: 'hot-surface' },
+  { folder: '1.3 Alumina Ceramic Igniters', slug: 'alumina-ceramic-igniters', mode: 'flat', placeholder: 'alumina' },
+  { folder: '1.4 Silicon Carbide lgniters', slug: 'silicon-carbide-igniters', mode: 'flat', placeholder: 'silicon-carbide' },
   { folder: '1.6 Silicon Nitride Heaters', slug: 'silicon-nitride-heaters', mode: 'flat', placeholder: 'heater' },
 ]
 
@@ -113,6 +117,40 @@ function placeholderHeaterSpec(model: string, featured: boolean): Pick<SpecCard,
   }
 }
 
+function placeholderAluminaSpec(model: string, featured: boolean): Pick<SpecCard, 'subtitle' | 'rows' | 'foot' | 'badge'> {
+  const isBlack = model.endsWith('-B')
+  const isWhite = model.endsWith('-W')
+  return {
+    subtitle: isBlack ? 'Al₂O₃ · Black' : isWhite ? 'Al₂O₃ · White' : 'Al₂O₃ · Alumina Ceramic',
+    ...(featured ? { badge: '★ Alumina' } : {}),
+    rows: [
+      { k: 'Material', v: 'Al₂O₃ (alumina)' },
+      { k: 'Rated Power', v: '250–300', unit: 'W', hot: true },
+      { k: 'Surface Temp', v: '1,000–1,200', unit: '°C' },
+      { k: 'Heat-Up', v: '3–5', unit: 'sec' },
+      { k: 'Cycle Life', v: '50,000+' },
+      { k: 'Application', v: 'Low-duty ignition' },
+    ],
+    foot: `<b>Use:</b> ${model} — legacy replacement · cost-sensitive volume programs`,
+  }
+}
+
+function placeholderSiliconCarbideSpec(model: string, featured: boolean): Pick<SpecCard, 'subtitle' | 'rows' | 'foot' | 'badge'> {
+  return {
+    subtitle: 'SiC Hot Rod · High-Temperature',
+    ...(featured ? { badge: '★ SiC Igniter' } : {}),
+    rows: [
+      { k: 'Material', v: 'SiC (silicon carbide)' },
+      { k: 'Rated Power', v: '300–400', unit: 'W', hot: true },
+      { k: 'Surface Temp', v: 'up to 1,500', unit: '°C' },
+      { k: 'Heat-Up', v: '3–5', unit: 'sec' },
+      { k: 'Cycle Life', v: '80,000+' },
+      { k: 'Application', v: 'Industrial boiler' },
+    ],
+    foot: `<b>Use:</b> ${model} — industrial boilers · commercial water heating · OEM replacement`,
+  }
+}
+
 function applyPlaceholderSpec(
   model: string,
   featured: boolean,
@@ -120,6 +158,8 @@ function applyPlaceholderSpec(
 ): Pick<SpecCard, 'subtitle' | 'rows' | 'foot' | 'badge'> {
   if (kind === 'hot-surface') return placeholderHotSurfaceSpec(model, featured)
   if (kind === 'heater') return placeholderHeaterSpec(model, featured)
+  if (kind === 'alumina') return placeholderAluminaSpec(model, featured)
+  if (kind === 'silicon-carbide') return placeholderSiliconCarbideSpec(model, featured)
   return placeholderIgniterSpec(model, featured)
 }
 
@@ -278,13 +318,7 @@ async function main() {
     console.log('')
   }
 
-  const unmapped = ['1.3 Alumina Ceramic Igniters', '1.4 Silicon Carbide lgniters']
-  console.log('Note: no product page slug mapped yet for:')
-  for (const folder of unmapped) {
-    console.log(`  - ${folder}`)
-  }
-
-  console.log('\nDone.')
+  console.log('Done.')
 }
 
 main().catch((err) => {
