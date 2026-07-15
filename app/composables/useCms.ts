@@ -1,10 +1,8 @@
 import {
-  contactInfo as fallbackContact,
   footerColumns as fallbackFooterColumns,
   footerLegal as fallbackFooterLegal,
-  navLinks as fallbackNavLinks,
-  topbarItems as fallbackTopbar,
 } from '~/data/site'
+import type { NavLink } from '~/data/site'
 import {
   catalogItems as fallbackCatalog,
   certifications as fallbackCerts,
@@ -19,6 +17,20 @@ import {
   testimonials as fallbackTestimonials,
 } from '~/data/homepage'
 
+export type SiteContactInfo = {
+  email?: string
+  phone?: string
+  display?: string
+  engineering_email?: string
+  wechat?: string
+  linkedin?: string
+  address?: string
+  factory?: string
+  business_hours?: string
+}
+
+type TopbarItem = { dot?: boolean; text: string }
+
 const cmsFetchOptions = {
   // 不使用 Nuxt payload 缓存，每次进入前台页面都拉最新数据
   getCachedData: () => undefined,
@@ -32,17 +44,11 @@ export function useSiteCms() {
     watch: [() => route.fullPath],
   })
 
-  const useFallback = computed(() => !!error.value)
-
-  const contactInfo = computed(() =>
-    useFallback.value
-      ? fallbackContact
-      : ((data.value?.contact_info as typeof fallbackContact) ?? fallbackContact),
+  const contactInfo = computed(
+    () => (data.value?.contact_info as SiteContactInfo | undefined) ?? {},
   )
-  const topbarItems = computed(() =>
-    useFallback.value
-      ? fallbackTopbar
-      : ((data.value?.topbar_items as typeof fallbackTopbar) ?? fallbackTopbar),
+  const topbarItems = computed(
+    () => (data.value?.topbar_items as TopbarItem[] | undefined) ?? [],
   )
   const { data: productMenuData } = useFetch<{ navGroups: Array<{ label: string; to: string; links: Array<{ label: string; to: string }> }> }>(
     '/api/cms/product-menu',
@@ -54,10 +60,11 @@ export function useSiteCms() {
   )
 
   const navLinks = computed(() => {
+    const base = (data.value?.nav_links as NavLink[] | undefined) ?? []
     const cmsGroups = productMenuData.value?.navGroups
-    if (!cmsGroups?.length) return fallbackNavLinks
+    if (!cmsGroups?.length) return base
 
-    return fallbackNavLinks.map((link) => {
+    return base.map((link) => {
       if (link.to !== '/products') return link
       return { ...link, groups: cmsGroups }
     })
