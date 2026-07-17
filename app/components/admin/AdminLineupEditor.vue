@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Modal, message } from 'ant-design-vue'
 import { PlusOutlined, UploadOutlined } from '@ant-design/icons-vue'
+import { resolveMediaUrl } from '~/utils/media-url'
 
 export type LineupItemForm = {
   id?: string
@@ -199,7 +200,7 @@ function clearImage() {
         <template v-if="column.key === 'image'">
           <img
             v-if="record.imageSrc"
-            :src="record.imageSrc"
+            :src="resolveMediaUrl(record.imageSrc)"
             alt=""
             class="lineup-thumb"
           >
@@ -271,7 +272,7 @@ function clearImage() {
             </a-button>
           </a-space>
           <div v-if="editing.imageSrc" class="lineup-image-preview">
-            <img :src="editing.imageSrc" alt="预览">
+            <img :src="resolveMediaUrl(editing.imageSrc)" alt="预览">
             <a-typography-text code>{{ editing.imageSrc }}</a-typography-text>
           </div>
           <a-typography-text v-else type="secondary" style="display: block; margin-top: 8px">

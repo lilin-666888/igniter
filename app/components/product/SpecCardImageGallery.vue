@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { normalizeImageList } from '~/utils/spec-card-images'
+import { resolveMediaUrl } from '~/utils/media-url'
 
 const props = defineProps<{
   images: string[] | string
@@ -8,7 +9,9 @@ const props = defineProps<{
   imageLabel?: string
 }>()
 
-const imageList = computed(() => normalizeImageList(props.images))
+const imageList = computed(() =>
+  normalizeImageList(props.images).map(resolveMediaUrl).filter(Boolean),
+)
 
 const current = ref(0)
 const lightboxOpen = ref(false)

@@ -20,7 +20,7 @@ const links = [
   <div>
     <AdminPageHeader
       title="后台概览"
-      description="管理网站动态内容。图片上传后保存相对路径（如 /uploads/xxx.jpg）。"
+      description="管理网站动态内容。图片上传至七牛云，数据库保存相对路径（如 /uploads/xxx.jpg）。"
     />
     <a-row :gutter="[16, 16]">
       <a-col

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { LineupItem } from '~/data/products/types'
+import { resolveMediaUrl } from '~/utils/media-url'
 
 defineProps<{
   num: string
@@ -26,7 +27,7 @@ defineProps<{
           </div>
         </div>
         <div class="lineup-img-slot">
-          <img v-if="item.imageSrc" :src="item.imageSrc" :alt="item.name">
+          <img v-if="item.imageSrc" :src="resolveMediaUrl(item.imageSrc)" :alt="item.name">
           <div v-else class="lineup-img-ph">
             <div class="ph-icon">{{ item.icon || '◉' }}</div>
             <div class="ph-lbl">Photo Placeholder</div>

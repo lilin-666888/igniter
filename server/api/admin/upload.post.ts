@@ -1,6 +1,4 @@
-import { randomUUID } from 'node:crypto'
-import { mkdir, writeFile } from 'node:fs/promises'
-import { join, extname } from 'node:path'
+import { extname } from 'node:path'
 
 const ALLOWED = new Set(['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg'])
 
@@ -19,11 +17,10 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, message: '不支持的图片格式' })
   }
 
-  const filename = `${randomUUID()}${ext}`
-  const relativePath = `/uploads/${filename}`
-  const uploadDir = join(process.cwd(), 'public', 'uploads')
-  await mkdir(uploadDir, { recursive: true })
-  await writeFile(join(uploadDir, filename), file.data)
+  const path = await uploadBufferToQiniu({
+    data: file.data,
+    filename: file.filename,
+  })
 
-  return { path: relativePath }
+  return { path }
 })

@@ -21,9 +21,13 @@ export default defineNuxtConfig({
     resendApiKey: process.env.RESEND_API_KEY,
     resendFrom: process.env.RESEND_FROM,
     adminEmail: process.env.ADMIN_EMAIL,
+    qiniuAccessKey: process.env.QINIU_ACCESS_KEY,
+    qiniuSecretKey: process.env.QINIU_SECRET_KEY,
+    qiniuBucket: process.env.QINIU_BUCKET,
     public: {
       supabaseUrl: process.env.SUPABASE_URL,
       supabaseKey: process.env.SUPABASE_KEY,
+      imageCdn: process.env.NUXT_PUBLIC_IMAGE_CDN || 'https://file.ceramitell.com',
     },
   },
   app: {

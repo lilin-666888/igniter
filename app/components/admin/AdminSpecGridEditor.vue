@@ -3,6 +3,7 @@ import { Modal, message } from 'ant-design-vue'
 import { PlusOutlined, UploadOutlined } from '@ant-design/icons-vue'
 import type { SpecCard, SpecGridGroup } from '~/data/products/types'
 import { getSpecCardImages } from '~/utils/spec-card-images'
+import { resolveMediaUrl } from '~/utils/media-url'
 
 export type SpecGridSection = {
   type: 'spec-grid'
@@ -319,7 +320,8 @@ function clearImages() {
 }
 
 function cardThumb(card: SpecCard) {
-  return getSpecCardImages(card)[0]
+  const src = getSpecCardImages(card)[0]
+  return src ? resolveMediaUrl(src) : undefined
 }
 
 function cardImageCount(card: SpecCard) {
@@ -591,7 +593,7 @@ const cardModalTitle = computed(() => {
               :key="`${src}-${index}`"
               class="image-list-item"
             >
-              <img :src="src" alt="预览" class="image-list-thumb">
+              <img :src="resolveMediaUrl(src)" alt="预览" class="image-list-thumb">
               <a-typography-text code class="image-list-path">{{ src }}</a-typography-text>
               <a-space>
                 <a-button size="small" :disabled="index === 0" @click="moveImage(index, -1)">
